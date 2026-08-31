@@ -1,114 +1,122 @@
 # House search preferences — LIFULL HOME'S (homes.co.jp)
 # One block per property type. Empty / null = no filter.
-# Location: ku = 区・市名; stations = 駅名 (list either or both).
+# Location: ku = 区・市名; stations = 駅名 (exact HOME'S labels).
+# price.* unit = 万円 (13000 = 1億3000万円).
 #
 # Field names align with docs/homes-co-jp-search-filters.md
 
 defaults:
   prefecture: 東京都
-  # Shared when a type omits a key (optional)
-  walk_minutes_max: null # e.g. 15 → 駅徒歩15分以内
+  walk_minutes_max: 15 # 駅徒歩15分以内
   include_bus_time: false
+  # 土地の権利: true → 所有権 only (exclude 借地権)
+  freehold: true
+  # true → 再建築可 / buildable (exclude 再建築不可)
+  constructible: true
   keyword: null
   published_within: null # 本日 | 3日以内 | 7日以内
+
+# Shared location for all types (also copied into each block)
+# ku: Toshima / Shinjuku / Shibuya / Minato / Meguro
+# stations: Shin-Itabashi, Itabashi-kuyakusho-mae, Nishi-Sugamo,
+#           Itabashi-honcho, Motohasunuma (Toei Mita Line area)
+
+_shared_location: &shared_location
+  ku:
+    - 豊島区
+    - 新宿区
+    - 渋谷区
+    - 港区
+    - 目黒区
+  stations:
+    - 新板橋
+    - 板橋区役所前
+    - 西巣鴨
+    - 板橋本町
+    - 本蓮沼
+
+# 間取り: 3 rooms or more
+_madori_3plus: &madori_3plus
+  - 3K
+  - 3DK
+  - 3LDK
+  - 4K
+  - 4DK
+  - 4LDK以上
 
 # ---------------------------------------------------------------------------
 # 一戸建て (detached house) — /kodate/{new|used}/
 # ---------------------------------------------------------------------------
 kodate:
   listing: chuko # shinchiku | chuko
-  location:
-    ku:
-      - 世田谷区
-      - 目黒区
-      # - 杉並区
-    stations:
-      - 二子玉川
-      - 自由が丘
-      # - 下北沢
+  location: *shared_location
 
   price:
-    min: null # 万円, e.g. 4000
-    max: null # e.g. 9000
-  building_area_m2:
     min: null
+    max: 13000 # 1億3000万円
+  building_area_m2:
+    min: 60 # 建物面積
     max: null
   land_area_m2:
     min: null
     max: null
-  madori: [] # e.g. [3LDK, 4LDK以上]
+  madori: *madori_3plus
   walk_minutes_max: 15
   include_bus_time: false
-  house_age_years_max: null # e.g. 20
-  renovated: [] # 全面（水回り＋内装） | 水回りまたは内装
-  images: [] # 間取り図あり | 画像あり | パノラマあり
+  freehold: true # 所有権
+  constructible: true # 再建築可
+  house_age_years_max: null
+  renovated: []
+  images: []
   keyword: null
-
-  # From「すべてのこだわり条件を見る」— use exact labels
   kodawari:
-    - 駐車場あり
-    # - 南向き
-    # - システムキッチン
+    - 所有権
 
 # ---------------------------------------------------------------------------
 # マンション (apartment) — /mansion/{new|used}/
 # ---------------------------------------------------------------------------
 mansion:
   listing: chuko # shinchiku | chuko
-  location:
-    ku:
-      - 渋谷区
-      - 港区
-    stations:
-      - 恵比寿
-      - 中目黒
+  location: *shared_location
 
   price:
     min: null
-    max: null
-  include_management_fee: false # 管理費・修繕積立金を含む
+    max: 13000 # 1億3000万円
+  include_management_fee: false
   exclusive_area_m2: # 専有面積
-    min: null
+    min: 60
     max: null
   balcony_area_20m2_plus: false
-  madori: [] # e.g. [2LDK, 3LDK]
-  walk_minutes_max: 10
+  madori: *madori_3plus
+  walk_minutes_max: 15
   include_bus_time: false
+  freehold: true # 所有権
+  constructible: true # 再建築可
   house_age_years_max: null
   renovated: []
   images: []
   keyword: null
-
   kodawari:
-    - 2階以上
-    # - オートロック
-    # - ペット相談可
+    - 所有権
 
 # ---------------------------------------------------------------------------
 # 土地 (land) — /tochi/
 # ---------------------------------------------------------------------------
 tochi:
-  location:
-    ku:
-      - 世田谷区
-      - 練馬区
-    stations:
-      - 成城学園前
-      # - 吉祥寺
+  location: *shared_location
 
   price:
     min: null
-    max: null
+    max: 6000 # 6000万円
   land_area_m2:
-    min: null
+    min: 80
     max: null
-  walk_minutes_max: 20
+  walk_minutes_max: 15
   include_bus_time: false
+  freehold: true # 所有権
+  constructible: true # 再建築可 (not 建築不可)
   building_condition: null # 建築条件付土地 | 建築条件なし土地 | null = either
-  images: [] # 外観画像あり | 画像あり | パノラマあり
+  images: []
   keyword: null
-
   kodawari:
-    - 更地
-    # - 建築条件なし土地  # also set building_condition above
-    # - 整形地
+    - 所有権
