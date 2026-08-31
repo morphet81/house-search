@@ -21,6 +21,32 @@
         tochi: "土地",
       };
 
+      const WARD_EN = {
+        千代田区: "Chiyoda-ku",
+        中央区: "Chuo-ku",
+        港区: "Minato-ku",
+        新宿区: "Shinjuku-ku",
+        文京区: "Bunkyo-ku",
+        台東区: "Taito-ku",
+        墨田区: "Sumida-ku",
+        江東区: "Koto-ku",
+        品川区: "Shinagawa-ku",
+        目黒区: "Meguro-ku",
+        大田区: "Ota-ku",
+        世田谷区: "Setagaya-ku",
+        渋谷区: "Shibuya-ku",
+        中野区: "Nakano-ku",
+        杉並区: "Suginami-ku",
+        豊島区: "Toshima-ku",
+        北区: "Kita-ku",
+        荒川区: "Arakawa-ku",
+        板橋区: "Itabashi-ku",
+        練馬区: "Nerima-ku",
+        足立区: "Adachi-ku",
+        葛飾区: "Katsushika-ku",
+        江戸川区: "Edogawa-ku",
+      };
+
       const params = new URLSearchParams(location.search);
       const type = params.get("type") || "kodate";
       const label = LABELS[type] || type;
@@ -48,11 +74,17 @@
 
           const title = it.title || it.id || "Untitled";
           const price = it.priceText || (it.priceManYen != null ? `${it.priceManYen}万円` : "—");
+          const wardEn = resolveWardEn(it);
+          const age = formatAge(it);
+          const storeys = formatStoreys(it);
+
           const bits = [
+            wardEn,
+            age,
+            storeys,
             it.madori,
             it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
             it.landAreaText,
-            it.address,
           ].filter(Boolean);
 
           const maps = it.googleMapsUrl
@@ -63,12 +95,21 @@
             : "";
 
           li.innerHTML = `
-            <div class="listing-main">
-              <div class="listing-price">${price}</div>
-              <div class="listing-title">${escapeHtml(title)}</div>
-              <div class="listing-bits">${escapeHtml(bits.join(" · "))}</div>
+            <div class="listing-card">
+              <div class="listing-photo">
+                ${
+                  it.imageUrl
+                    ? `<img src="${escapeAttr(it.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
+                    : `<div class="listing-photo-empty">No photo</div>`
+                }
+              </div>
+              <div class="listing-main">
+                <div class="listing-price">${escapeHtml(price)}</div>
+                <div class="listing-title">${escapeHtml(title)}</div>
+                <div class="listing-bits">${escapeHtml(bits.join(" · "))}</div>
+                <div class="listing-links">${[maps, homes].filter(Boolean).join(" · ")}</div>
+              </div>
             </div>
-            <div class="listing-links">${[maps, homes].filter(Boolean).join(" · ")}</div>
           `;
           list.appendChild(li);
         }
@@ -77,12 +118,49 @@
         error.textContent = String(e.message || e);
       }
 
+      function resolveWardEn(it) {
+        if (it.wardEn) return it.wardEn;
+        const addr = it.address || it.detail?.address || "";
+        const m = String(addr).match(/([\u4e00-\u9faf]+区)/);
+        if (!m) return null;
+        return WARD_EN[m[1]] || m[1];
+      }
+
+      function formatAge(it) {
+        if (it.buildingAgeYears != null) return `Built ${it.buildingAgeYears}y ago`;
+        const builtText = it.detail?.builtText || it.builtText;
+        if (builtText) {
+          const age = String(builtText).match(/築\s*(\d+)\s*年/);
+          if (age) return `Built ${age[1]}y ago`;
+        }
+        const y = it.yearBuilt ?? it.detail?.yearBuilt;
+        if (y != null) {
+          const years = Math.max(0, new Date().getFullYear() - Number(y));
+          return `Built ${years}y ago`;
+        }
+        return null;
+      }
+
+      function formatStoreys(it) {
+        if (it.storeys != null) return `${it.storeys} storeys`;
+        const structure = it.structure || it.detail?.structure;
+        if (structure) {
+          const m = String(structure).match(/(\d+)\s*階/);
+          if (m) return `${m[1]} storeys`;
+        }
+        return null;
+      }
+
       function escapeHtml(s) {
         return String(s)
           .replaceAll("&", "&amp;")
           .replaceAll("<", "&lt;")
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;");
+      }
+
+      function escapeAttr(s) {
+        return escapeHtml(s).replaceAll("'", "&#39;");
       }
     </script>
   </body>

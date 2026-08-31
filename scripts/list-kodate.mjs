@@ -81,6 +81,62 @@ const MCF = {
   所有権: "120301",
 };
 
+/** Ward (区) → English label */
+const WARD_EN = {
+  千代田区: "Chiyoda-ku",
+  中央区: "Chuo-ku",
+  港区: "Minato-ku",
+  新宿区: "Shinjuku-ku",
+  文京区: "Bunkyo-ku",
+  台東区: "Taito-ku",
+  墨田区: "Sumida-ku",
+  江東区: "Koto-ku",
+  品川区: "Shinagawa-ku",
+  目黒区: "Meguro-ku",
+  大田区: "Ota-ku",
+  世田谷区: "Setagaya-ku",
+  渋谷区: "Shibuya-ku",
+  中野区: "Nakano-ku",
+  杉並区: "Suginami-ku",
+  豊島区: "Toshima-ku",
+  北区: "Kita-ku",
+  荒川区: "Arakawa-ku",
+  板橋区: "Itabashi-ku",
+  練馬区: "Nerima-ku",
+  足立区: "Adachi-ku",
+  葛飾区: "Katsushika-ku",
+  江戸川区: "Edogawa-ku",
+};
+
+function wardFromAddress(address) {
+  if (!address) return { ward: null, wardEn: null };
+  const m = String(address).match(/([\u4e00-\u9faf]+区)/);
+  const ward = m ? m[1] : null;
+  return { ward, wardEn: ward ? WARD_EN[ward] || ward : null };
+}
+
+function parseStoreys(structureText) {
+  if (!structureText) return null;
+  const m = String(structureText).match(/(\d+)\s*階/);
+  return m ? Number(m[1]) : null;
+}
+
+function parseBuildingAge(builtText, yearBuilt) {
+  if (builtText) {
+    const age = String(builtText).match(/築\s*(\d+)\s*年/);
+    if (age) return Number(age[1]);
+    const ym = String(builtText).match(/(\d{4})\s*年/);
+    if (ym) {
+      const y = Number(ym[1]);
+      if (y > 1800) return Math.max(0, new Date().getFullYear() - y);
+    }
+  }
+  if (yearBuilt != null && Number.isFinite(Number(yearBuilt))) {
+    return Math.max(0, new Date().getFullYear() - Number(yearBuilt));
+  }
+  return null;
+}
+
 function parseArgs(argv) {
   const out = {
     prefs: path.join(root, "config/preferences.yaml"),
@@ -256,9 +312,12 @@ async function scrapeListPage(page) {
           }
         }
 
-        const alt = [...card.querySelectorAll("img")]
-          .map((img) => img.alt || "")
-          .find((a) => a && !/^掲載/.test(a));
+        const imgs = [...card.querySelectorAll("img")].filter((img) => {
+          const src = img.currentSrc || img.src || "";
+          return src && /homes\.jp|image\.|img\./.test(src) && !/logo|icon|sprite/i.test(src);
+        });
+        const mainImg = imgs[0];
+        const alt = imgs.map((img) => img.alt || "").find((a) => a && !/^掲載/.test(a));
         let title = (alt || "").replace(/の(リビング|外観|キッチン|浴室|トイレ).*$/, "").trim();
         if (!title) {
           title = (link?.getAttribute("title") || "").trim();
@@ -271,6 +330,7 @@ async function scrapeListPage(page) {
           id: idMatch ? idMatch[1] : null,
           url: href,
           title: title.slice(0, 120),
+          imageUrl: mainImg ? mainImg.currentSrc || mainImg.src : null,
           priceText: cellMap["価格"] || null,
           madori: (cellMap["間取り"] || "").split(/\s+/)[0] || null,
           landAreaText: cellMap["土地面積"] || null,
@@ -336,6 +396,10 @@ async function enrichDetail(context, item) {
 
       let address = null;
       let postalCode = null;
+      let yearBuilt = null;
+      let builtText = null;
+      let structure = null;
+      let imageUrl = null;
       try {
         for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
           const data = JSON.parse(s.textContent || "null");
@@ -345,24 +409,41 @@ async function enrichDetail(context, item) {
             lat = Number(house.geo.latitude);
             lon = Number(house.geo.longitude);
           }
+          if (house.yearBuilt != null) yearBuilt = Number(house.yearBuilt);
           const a = house.address;
           if (a) {
             postalCode = a.postalCode || null;
             const parts = [a.addressRegion, a.addressLocality, a.streetAddress].filter(Boolean);
             if (parts.length) address = parts.join("");
           }
-          const locProp = (house.additionalProperty || []).find((p) => p?.name === "所在地");
-          if (locProp?.value) {
-            // prefer 所在地 when longer/more specific than streetAddress-only
-            const v = String(locProp.value).trim();
+          const props = house.additionalProperty || [];
+          const byName = (n) => props.find((p) => p?.name === n)?.value;
+          const locProp = byName("所在地");
+          if (locProp) {
+            const v = String(locProp).trim();
             if (!address || v.length >= address.length) address = v;
           }
+          builtText = byName("築年月") || builtText;
+          structure = byName("建物構造") || structure;
+
+          const images = Array.isArray(house.image) ? house.image : house.image ? [house.image] : [];
+          const urls = images
+            .map((img) => (typeof img === "string" ? { contentUrl: img } : img))
+            .filter((img) => img?.contentUrl);
+          const exterior = urls.find((img) => /外観/.test(img.caption || ""));
+          imageUrl = (exterior || urls[0])?.contentUrl || imageUrl;
         }
       } catch {
         /* ignore bad JSON-LD */
       }
 
       if (!address) address = pick("所在地") || pick("住所");
+      if (!builtText) builtText = pick("築年月") || pick("築年数");
+      if (!structure) structure = pick("建物構造");
+      if (!imageUrl) {
+        const og = document.querySelector('meta[property="og:image"]')?.content;
+        if (og) imageUrl = og;
+      }
 
       return {
         landRight: pick("土地の権利") || pick("土地権利"),
@@ -379,11 +460,29 @@ async function enrichDetail(context, item) {
         lon: Number.isFinite(lon) ? lon : null,
         address: address || null,
         postalCode,
+        yearBuilt: Number.isFinite(yearBuilt) ? yearBuilt : null,
+        builtText: builtText || null,
+        structure: structure || null,
+        imageUrl: imageUrl || null,
       };
     });
 
     const location = buildGoogleMapsLocation(detail);
-    return { ...item, detail, ...location };
+    const { ward, wardEn } = wardFromAddress(detail.address || location.address);
+    const buildingAgeYears = parseBuildingAge(detail.builtText, detail.yearBuilt);
+    const storeys = parseStoreys(detail.structure);
+    return {
+      ...item,
+      detail,
+      ...location,
+      ward,
+      wardEn,
+      yearBuilt: detail.yearBuilt,
+      buildingAgeYears,
+      storeys,
+      structure: detail.structure,
+      imageUrl: detail.imageUrl || item.imageUrl || null,
+    };
   } catch (e) {
     return { ...item, detailError: String(e.message || e) };
   } finally {
