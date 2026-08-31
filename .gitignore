@@ -4,5 +4,6 @@
 /kodate-after-expand.yml
 .DS_Store
 node_modules/
+output/
 .env
 .env.*
