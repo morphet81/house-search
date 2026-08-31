@@ -9,6 +9,8 @@
  * Location = union of ku search + station search (deduped by listing id).
  * Price max 13000万円: site only has 1.5億 step → query uses 15000, then client-filter.
  * constructible: drop listings that mention 再建築不可 (list + detail check).
+ * Detail pass reads map-viewer lat/lon (same pin HOME'S shows) → googleMapsUrl.
+ * Use --skip-detail to skip detail/maps (faster, list-only).
  */
 
 import fs from "node:fs";
@@ -324,24 +326,111 @@ async function enrichDetail(context, item) {
       const pick = (label) => {
         const re = new RegExp(label + "\\s*([^\\n]+)");
         const m = text.match(re);
-        return m ? m[1].trim().slice(0, 80) : null;
+        return m ? m[1].trim().slice(0, 120) : null;
       };
+
+      // HOME'S property pin (not realtor office)
+      const mapEl = document.querySelector("map-viewer-google-map[data-lat][data-lon]");
+      let lat = mapEl ? Number(mapEl.getAttribute("data-lat")) : null;
+      let lon = mapEl ? Number(mapEl.getAttribute("data-lon")) : null;
+
+      let address = null;
+      let postalCode = null;
+      try {
+        for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+          const data = JSON.parse(s.textContent || "null");
+          const house = data?.mainEntity;
+          if (!house) continue;
+          if (house.geo?.latitude != null && house.geo?.longitude != null) {
+            lat = Number(house.geo.latitude);
+            lon = Number(house.geo.longitude);
+          }
+          const a = house.address;
+          if (a) {
+            postalCode = a.postalCode || null;
+            const parts = [a.addressRegion, a.addressLocality, a.streetAddress].filter(Boolean);
+            if (parts.length) address = parts.join("");
+          }
+          const locProp = (house.additionalProperty || []).find((p) => p?.name === "所在地");
+          if (locProp?.value) {
+            // prefer 所在地 when longer/more specific than streetAddress-only
+            const v = String(locProp.value).trim();
+            if (!address || v.length >= address.length) address = v;
+          }
+        }
+      } catch {
+        /* ignore bad JSON-LD */
+      }
+
+      if (!address) address = pick("所在地") || pick("住所");
+
       return {
-        landRight: pick("土地の権利"),
+        landRight: pick("土地の権利") || pick("土地権利"),
         leaseType: pick("借地権の種類・期間"),
         zoning: pick("用途地域"),
         cityPlan: pick("都市計画"),
         landUse: pick("地目"),
         rebuildForbidden: /再建築不可/.test(text),
-        freeholdMention: /土地の権利\s*所有権/.test(text) || /所有権/.test(pick("土地の権利") || ""),
+        freeholdMention:
+          /土地の権利\s*所有権/.test(text) ||
+          /土地権利\s*所有権/.test(text) ||
+          /所有権/.test(pick("土地の権利") || pick("土地権利") || ""),
+        lat: Number.isFinite(lat) ? lat : null,
+        lon: Number.isFinite(lon) ? lon : null,
+        address: address || null,
+        postalCode,
       };
     });
-    return { ...item, detail };
+
+    const location = buildGoogleMapsLocation(detail);
+    return { ...item, detail, ...location };
   } catch (e) {
     return { ...item, detailError: String(e.message || e) };
   } finally {
     await page.close();
   }
+}
+
+/** Prefer exact HOME'S map pin; fall back to address query at best published precision. */
+function buildGoogleMapsLocation(detail) {
+  const address = detail?.address || null;
+  const lat = detail?.lat ?? null;
+  const lon = detail?.lon ?? null;
+
+  if (lat != null && lon != null) {
+    const q = `${lat},${lon}`;
+    return {
+      lat,
+      lon,
+      address,
+      locationAccuracy: "coordinates", // same pin as HOME'S map-viewer
+      googleMapsUrl: `https://www.google.com/maps?q=${encodeURIComponent(q)}`,
+    };
+  }
+
+  if (address) {
+    let locationAccuracy = "area";
+    if (/[0-9０-９]+([-ー−ノ之][0-9０-９]+)?(番|号)/.test(address) || /\d+-\d+/.test(address)) {
+      locationAccuracy = "banchi";
+    } else if (/丁目/.test(address)) {
+      locationAccuracy = "chome";
+    }
+    return {
+      lat: null,
+      lon: null,
+      address,
+      locationAccuracy,
+      googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`,
+    };
+  }
+
+  return {
+    lat: null,
+    lon: null,
+    address: null,
+    locationAccuracy: null,
+    googleMapsUrl: null,
+  };
 }
 
 async function mapPool(items, concurrency, fn) {
@@ -448,11 +537,14 @@ async function main() {
     items = clientFilter(items, prefs);
     console.error(`after list client filter: ${items.length}`);
 
-    if (prefs.constructible && !args.skipDetail && items.length) {
-      console.error(`detail check (constructible / freehold)…`);
+    // Detail pass: maps pin + freehold/constructible verification
+    if (!args.skipDetail && items.length) {
+      console.error(`detail enrich (maps / freehold / constructible)…`);
       items = await mapPool(items, 3, (it) => enrichDetail(context, it));
       items = clientFilter(items, prefs);
       console.error(`after detail filter: ${items.length}`);
+    } else if (args.skipDetail) {
+      console.error("skip-detail: no googleMapsUrl / detail checks");
     }
 
     items.sort((a, b) => (a.priceManYen ?? 1e12) - (b.priceManYen ?? 1e12));
@@ -478,20 +570,23 @@ async function main() {
 
     fs.mkdirSync(path.dirname(args.out), { recursive: true });
     fs.writeFileSync(args.out, JSON.stringify(payload, null, 2));
-    console.error(`\nwrote ${args.out} (${items.length} listings)`);
 
-    // also print compact table to stdout
-    for (const it of items) {
-      console.log(
-        [
-          it.priceText || "?",
-          it.madori || "?",
-          it.buildingAreaText || "?",
-          it.title || it.id,
-          it.url,
-        ].join("\t")
-      );
+    const withMaps = items.filter((it) => it.googleMapsUrl).length;
+    const viaKu = items.filter((it) => it.matchedVia?.includes("ku")).length;
+    const viaStation = items.filter((it) => it.matchedVia?.includes("station")).length;
+    const prices = items.map((it) => it.priceManYen).filter((n) => n != null);
+    const priceMin = prices.length ? Math.min(...prices) : null;
+    const priceMax = prices.length ? Math.max(...prices) : null;
+
+    console.log(`Found ${items.length} kodate listing(s).`);
+    if (prices.length) {
+      console.log(`Price range: ${priceMin.toLocaleString()}–${priceMax.toLocaleString()} 万円`);
     }
+    console.log(`Matched via: ku=${viaKu}, station=${viaStation}`);
+    if (!args.skipDetail) {
+      console.log(`Google Maps URLs: ${withMaps}/${items.length}`);
+    }
+    console.log(`Results: ${args.out}`);
   } finally {
     await browser.close();
   }
