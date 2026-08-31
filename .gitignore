@@ -1,0 +1,8 @@
+.playwright/
+.playwright-cli/
+/homes-home.yml
+/kodate-after-expand.yml
+.DS_Store
+node_modules/
+.env
+.env.*
