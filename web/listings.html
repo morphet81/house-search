@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listings</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <p class="back"><a href="/">← All types</a></p>
+      <h1 id="heading">Listings</h1>
+      <p id="summary" class="lead"></p>
+      <div id="error" class="empty" hidden></div>
+      <ol id="listings" class="listing-list"></ol>
+    </main>
+    <script type="module">
+      const LABELS = {
+        kodate: "一戸建て",
+        mansion: "マンション",
+        tochi: "土地",
+      };
+
+      const params = new URLSearchParams(location.search);
+      const type = params.get("type") || "kodate";
+      const label = LABELS[type] || type;
+
+      document.title = `${label} listings`;
+      document.getElementById("heading").textContent = label;
+
+      const summary = document.getElementById("summary");
+      const list = document.getElementById("listings");
+      const error = document.getElementById("error");
+
+      try {
+        const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
+        if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
+        const data = await res.json();
+        const items = data.listings || [];
+        const scraped = data.scrapedAt
+          ? new Date(data.scrapedAt).toLocaleString()
+          : "—";
+        summary.textContent = `${items.length} listing(s) · scraped ${scraped}`;
+
+        for (const it of items) {
+          const li = document.createElement("li");
+          li.className = "listing";
+
+          const title = it.title || it.id || "Untitled";
+          const price = it.priceText || (it.priceManYen != null ? `${it.priceManYen}万円` : "—");
+          const bits = [
+            it.madori,
+            it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
+            it.landAreaText,
+            it.address,
+          ].filter(Boolean);
+
+          const maps = it.googleMapsUrl
+            ? `<a href="${it.googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>`
+            : "";
+          const homes = it.url
+            ? `<a href="${it.url}" target="_blank" rel="noopener">HOME'S</a>`
+            : "";
+
+          li.innerHTML = `
+            <div class="listing-main">
+              <div class="listing-price">${price}</div>
+              <div class="listing-title">${escapeHtml(title)}</div>
+              <div class="listing-bits">${escapeHtml(bits.join(" · "))}</div>
+            </div>
+            <div class="listing-links">${[maps, homes].filter(Boolean).join(" · ")}</div>
+          `;
+          list.appendChild(li);
+        }
+      } catch (e) {
+        error.hidden = false;
+        error.textContent = String(e.message || e);
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+    </script>
+  </body>
+</html>

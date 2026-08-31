@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>House search results</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>House search results</h1>
+      <p class="lead">Property types with scraped results in <code>output/</code>.</p>
+      <ul id="results" class="type-list"></ul>
+      <p id="empty" class="empty" hidden>No result files yet. Run <code>npm run list:kodate</code> first.</p>
+    </main>
+    <script type="module">
+      const TYPE_ORDER = ["kodate", "mansion", "tochi"];
+      const list = document.getElementById("results");
+      const empty = document.getElementById("empty");
+
+      const res = await fetch("/api/results");
+      const data = await res.json();
+      const results = (data.results || []).sort((a, b) => {
+        const ia = TYPE_ORDER.indexOf(a.type);
+        const ib = TYPE_ORDER.indexOf(b.type);
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+      });
+
+      if (!results.length) {
+        empty.hidden = false;
+      } else {
+        for (const r of results) {
+          const li = document.createElement("li");
+          const scraped = r.scrapedAt
+            ? new Date(r.scrapedAt).toLocaleString()
+            : "unknown time";
+          li.innerHTML = `
+            <a class="type-link" href="${r.pageUrl}">
+              <span class="type-label">${r.label}</span>
+              <span class="type-meta">${r.count ?? "?"} listings · ${scraped}</span>
+            </a>
+          `;
+          list.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

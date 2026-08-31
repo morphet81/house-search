@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {
     "list:kodate": "node scripts/list-kodate.mjs",
+    "serve": "node scripts/serve.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
