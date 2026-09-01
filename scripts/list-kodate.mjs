@@ -82,6 +82,7 @@ const MADORI = {
 
 const MCF = {
   所有権: "120301",
+  駐車場あり: "320801",
 };
 
 /** Ward (区) → English label */
@@ -229,6 +230,7 @@ function buildCondParams(prefs, { cities = [], stations = [] } = {}) {
 
   const kodawari = [...(prefs.kodawari || [])];
   if (prefs.freehold && !kodawari.includes("所有権")) kodawari.push("所有権");
+  if (prefs.parking && !kodawari.includes("駐車場あり")) kodawari.push("駐車場あり");
   for (const label of kodawari) {
     const code = MCF[label];
     if (!code) {

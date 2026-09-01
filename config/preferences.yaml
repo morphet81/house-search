@@ -13,6 +13,8 @@ defaults:
   freehold: true
   # true → 再建築可 / buildable (exclude 再建築不可)
   constructible: true
+  # true → 駐車場あり
+  parking: true
   keyword: null
   published_within: null # 本日 | 3日以内 | 7日以内
 
@@ -65,12 +67,14 @@ kodate:
   include_bus_time: false
   freehold: true # 所有権
   constructible: true # 再建築可
+  parking: true # 駐車場あり
   house_age_years_max: null
   renovated: []
   images: []
   keyword: null
   kodawari:
     - 所有権
+    - 駐車場あり
 
 # ---------------------------------------------------------------------------
 # マンション (apartment) — /mansion/{new|used}/
@@ -92,12 +96,14 @@ mansion:
   include_bus_time: false
   freehold: true # 所有権
   constructible: true # 再建築可
+  parking: true # 駐車場あり
   house_age_years_max: null
   renovated: []
   images: []
   keyword: null
   kodawari:
     - 所有権
+    - 駐車場あり
 
 # ---------------------------------------------------------------------------
 # 土地 (land) — /tochi/
@@ -115,8 +121,10 @@ tochi:
   include_bus_time: false
   freehold: true # 所有権
   constructible: true # 再建築可 (not 建築不可)
+  parking: true # 駐車場あり (when tagged on land listings)
   building_condition: null # 建築条件付土地 | 建築条件なし土地 | null = either
   images: []
   keyword: null
   kodawari:
     - 所有権
+    - 駐車場あり
