@@ -3,10 +3,11 @@
  * Local results browser.
  *
  *   npm run serve
- *   node scripts/serve.mjs [--port=3456] [--no-open]
+ *   node scripts/serve.mjs [--port=3456] [--open]
  *
  * Serves web/ + output/. Landing page links to each property-type
  * result file found under output/*.json.
+ * Does not open a browser unless --open is passed.
  */
 
 import http from "node:http";
@@ -28,10 +29,10 @@ const TYPE_META = {
 
 function parseArgs(argv) {
   let port = 3456;
-  let openBrowser = true;
+  let openBrowser = false;
   for (const a of argv) {
     if (a.startsWith("--port=")) port = Number(a.slice(7)) || port;
-    if (a === "--no-open") openBrowser = false;
+    if (a === "--open") openBrowser = true;
   }
   return { port, openBrowser };
 }

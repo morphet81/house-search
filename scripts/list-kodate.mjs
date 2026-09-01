@@ -10,7 +10,9 @@
  * Price max 13000万円: site only has 1.5億 step → query uses 15000, then client-filter.
  * constructible: drop listings that mention 再建築不可 (list + detail check).
  * Detail pass reads map-viewer lat/lon (same pin HOME'S shows) → googleMapsUrl.
+ * Dedupe same physical house (near pins + same building area); keep richer listing.
  * Use --skip-detail to skip detail/maps (faster, list-only).
+ * Standalone dedupe: npm run dedupe
  */
 
 import fs from "node:fs";
@@ -18,6 +20,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { load as loadYaml } from "js-yaml";
 import { chromium } from "playwright";
+import { dedupeListings } from "./lib/dedupe.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -110,9 +113,14 @@ const WARD_EN = {
 
 function wardFromAddress(address) {
   if (!address) return { ward: null, wardEn: null };
-  const m = String(address).match(/([\u4e00-\u9faf]+区)/);
+  const addr = String(address);
+  // Prefer known 区 names (avoid matching 東京都北区 as one token)
+  for (const [jp, en] of Object.entries(WARD_EN)) {
+    if (addr.includes(jp)) return { ward: jp, wardEn: en };
+  }
+  const m = addr.match(/([^都道府県]+区)/);
   const ward = m ? m[1] : null;
-  return { ward, wardEn: ward ? WARD_EN[ward] || ward : null };
+  return { ward, wardEn: ward ? WARD_EN[ward] || null : null };
 }
 
 function parseStoreys(structureText) {
@@ -646,6 +654,13 @@ async function main() {
       console.error("skip-detail: no googleMapsUrl / detail checks");
     }
 
+    const beforeDedupe = items.length;
+    const deduped = dedupeListings(items);
+    items = deduped.listings;
+    console.error(
+      `after dedupe: ${items.length} (removed ${deduped.removed.length} across ${deduped.clusters} clusters)`
+    );
+
     items.sort((a, b) => (a.priceManYen ?? 1e12) - (b.priceManYen ?? 1e12));
 
     const payload = {
@@ -664,6 +679,13 @@ async function main() {
         constructible: !!prefs.constructible,
       },
       count: items.length,
+      dedupe: {
+        before: beforeDedupe,
+        after: items.length,
+        removedCount: deduped.removed.length,
+        clusters: deduped.clusters,
+        removed: deduped.removed,
+      },
       listings: items.map(({ rawText, ...rest }) => rest),
     };
 
@@ -678,6 +700,9 @@ async function main() {
     const priceMax = prices.length ? Math.max(...prices) : null;
 
     console.log(`Found ${items.length} kodate listing(s).`);
+    if (deduped.removed.length) {
+      console.log(`Deduped: removed ${deduped.removed.length} duplicate posting(s).`);
+    }
     if (prices.length) {
       console.log(`Price range: ${priceMin.toLocaleString()}–${priceMax.toLocaleString()} 万円`);
     }

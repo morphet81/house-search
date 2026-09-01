@@ -119,11 +119,17 @@
       }
 
       function resolveWardEn(it) {
-        if (it.wardEn) return it.wardEn;
-        const addr = it.address || it.detail?.address || "";
-        const m = String(addr).match(/([\u4e00-\u9faf]+区)/);
-        if (!m) return null;
-        return WARD_EN[m[1]] || m[1];
+        const known = new Set(Object.values(WARD_EN));
+        if (it.wardEn && known.has(it.wardEn)) return it.wardEn;
+        if (it.ward && WARD_EN[it.ward]) return WARD_EN[it.ward];
+
+        const addr = [it.address, it.detail?.address, it.ward, it.wardEn]
+          .filter(Boolean)
+          .join(" ");
+        for (const [jp, en] of Object.entries(WARD_EN)) {
+          if (addr.includes(jp)) return en;
+        }
+        return null;
       }
 
       function formatAge(it) {
