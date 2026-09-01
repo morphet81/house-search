@@ -206,8 +206,43 @@ body.map-page .leaflet-container {
 }
 
 .listing-photo {
+  position: relative;
   background: #eceae5;
   min-height: 7.5rem;
+}
+
+.listing-new-badge {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  padding: 0.2rem 0.5rem;
+  background: #e63946;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.listing-card--new {
+  border-left: 3px solid #e63946;
+}
+
+.filter-new {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-new input {
+  margin: 0;
+  accent-color: var(--accent);
 }
 
 .listing-photo img {
@@ -288,6 +323,11 @@ code {
   .sort-bar,
   .empty {
     display: none !important;
+  }
+
+  .listing-new-badge {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 
   h1 {

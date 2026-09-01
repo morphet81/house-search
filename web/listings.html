@@ -19,6 +19,10 @@
           <option value="age-asc">Age · newest first</option>
           <option value="age-desc">Age · oldest first</option>
         </select>
+        <label class="filter-new">
+          <input type="checkbox" id="new-only" />
+          New only
+        </label>
         <button type="button" id="export-pdf" class="export-btn">Export PDF</button>
         <a id="map-link" class="export-btn map-link" href="#">Map</a>
       </div>
@@ -68,6 +72,7 @@
       const summary = document.getElementById("summary");
       const sortBar = document.getElementById("sort-bar");
       const sortSelect = document.getElementById("sort");
+      const newOnlyCheckbox = document.getElementById("new-only");
       const exportBtn = document.getElementById("export-pdf");
       const mapLink = document.getElementById("map-link");
       const list = document.getElementById("listings");
@@ -77,6 +82,7 @@
       const AGE_SORTS = new Set(["age-asc", "age-desc"]);
 
       let items = [];
+      let delta = null;
       let scrapedLabel = "—";
 
       mapLink.href = `/map.html?type=${encodeURIComponent(type)}`;
@@ -86,10 +92,10 @@
         if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
         const data = await res.json();
         items = data.listings || [];
+        delta = data.delta || null;
         scrapedLabel = data.scrapedAt
           ? new Date(data.scrapedAt).toLocaleString()
           : "—";
-        summary.textContent = `${items.length} listing(s) · scraped ${scrapedLabel}`;
 
         if (items.length) {
           sortBar.hidden = false;
@@ -101,12 +107,21 @@
           }
           const initialSort = readSortFromUrl();
           sortSelect.value = initialSort;
+          newOnlyCheckbox.checked = params.get("newOnly") === "1";
+          updateSummary();
           sortSelect.addEventListener("change", () => {
             writeSortToUrl(sortSelect.value);
             renderList();
           });
+          newOnlyCheckbox.addEventListener("change", () => {
+            writeNewOnlyToUrl(newOnlyCheckbox.checked);
+            updateSummary();
+            renderList();
+          });
           exportBtn.addEventListener("click", exportPdf);
           renderList();
+        } else {
+          updateSummary();
         }
       } catch (e) {
         error.hidden = false;
@@ -115,10 +130,11 @@
 
       function exportPdf() {
         const sort = sortSelect.value;
+        const visible = visibleItems();
         const prevTitle = document.title;
         const prevSummary = summary.textContent;
-        document.title = `${label} listings (${items.length})`;
-        summary.textContent = `${items.length} listing(s) · scraped ${scrapedLabel} · sorted ${sortLabel(sort)}`;
+        document.title = `${label} listings (${visible.length})`;
+        summary.textContent = `${visible.length} listing(s) · scraped ${scrapedLabel} · sorted ${sortLabel(sort)}`;
         window.addEventListener(
           "afterprint",
           () => {
@@ -156,8 +172,39 @@
         history.replaceState(null, "", `${location.pathname}?${next}`);
       }
 
+      function writeNewOnlyToUrl(checked) {
+        const next = new URLSearchParams(location.search);
+        if (checked) next.set("newOnly", "1");
+        else next.delete("newOnly");
+        history.replaceState(null, "", `${location.pathname}?${next}`);
+      }
+
+      function newCount() {
+        return items.filter((it) => it.isNew).length;
+      }
+
+      function updateSummary() {
+        const parts = [`${items.length} listing(s)`];
+        const fresh = newCount();
+        if (fresh) parts.push(`${fresh} new`);
+        if (delta && (delta.addedCount || delta.removedCount)) {
+          parts.push(`+${delta.addedCount} / -${delta.removedCount} since last run`);
+        }
+        parts.push(`scraped ${scrapedLabel}`);
+        if (newOnlyCheckbox.checked) {
+          const shown = items.filter((it) => it.isNew).length;
+          parts.unshift(`${shown} new listing(s) shown`);
+        }
+        summary.textContent = parts.join(" · ");
+      }
+
+      function visibleItems() {
+        if (newOnlyCheckbox.checked) return items.filter((it) => it.isNew);
+        return items;
+      }
+
       function renderList() {
-        const sorted = sortItems(items, sortSelect.value);
+        const sorted = sortItems(visibleItems(), sortSelect.value);
         list.replaceChildren();
         for (const it of sorted) {
           list.appendChild(buildListing(it));
@@ -242,14 +289,19 @@
           ? `<a href="${escapeAttr(it.url)}" target="_blank" rel="noopener">HOME'S</a>`
           : "";
 
+        const newBadge = it.isNew
+          ? `<span class="listing-new-badge">New!</span>`
+          : "";
+
         li.innerHTML = `
-          <div class="listing-card">
+          <div class="listing-card${it.isNew ? " listing-card--new" : ""}">
             <div class="listing-photo">
               ${
                 it.imageUrl
                   ? `<img src="${escapeAttr(it.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
                   : `<div class="listing-photo-empty">No photo</div>`
               }
+              ${newBadge}
             </div>
             <div class="listing-main">
               <div class="listing-price">${escapeHtml(price)}</div>

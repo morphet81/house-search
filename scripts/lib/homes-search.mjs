@@ -838,6 +838,28 @@ export async function runHomesSearch(typeKey, argv = []) {
 
     items.sort((a, b) => (a.priceManYen ?? 1e12) - (b.priceManYen ?? 1e12));
 
+    let previousIds = null;
+    if (fs.existsSync(args.out)) {
+      try {
+        const previous = JSON.parse(fs.readFileSync(args.out, "utf8"));
+        previousIds = new Set((previous.listings || []).map((it) => it.id));
+      } catch {
+        previousIds = null;
+      }
+    }
+
+    const currentIds = new Set(items.map((it) => it.id));
+    const addedIds = previousIds
+      ? [...currentIds].filter((id) => !previousIds.has(id))
+      : [];
+    const removedIds = previousIds
+      ? [...previousIds].filter((id) => !currentIds.has(id))
+      : [];
+
+    for (const it of items) {
+      if (addedIds.includes(it.id)) it.isNew = true;
+    }
+
     const payload = {
       scrapedAt: new Date().toISOString(),
       source: "homes.co.jp",
@@ -845,6 +867,12 @@ export async function runHomesSearch(typeKey, argv = []) {
       prefsFile: path.relative(root, args.prefs),
       filters: filtersPayload(typeCfg, prefs),
       count: items.length,
+      delta: {
+        addedCount: addedIds.length,
+        removedCount: removedIds.length,
+        addedIds,
+        removedIds,
+      },
       dedupe: {
         before: beforeDedupe,
         after: items.length,
@@ -866,6 +894,11 @@ export async function runHomesSearch(typeKey, argv = []) {
     const priceMax = prices.length ? Math.max(...prices) : null;
 
     console.log(`Found ${items.length} ${typeCfg.labelJa} listing(s).`);
+    if (previousIds) {
+      console.log(`Since last run: +${addedIds.length} added, -${removedIds.length} removed.`);
+    } else {
+      console.log(`Since last run: no previous results (first run for this type).`);
+    }
     if (deduped.removed.length) {
       console.log(`Deduped: removed ${deduped.removed.length} duplicate posting(s).`);
     }
