@@ -20,6 +20,7 @@
           <option value="age-desc">Age · oldest first</option>
         </select>
         <button type="button" id="export-pdf" class="export-btn">Export PDF</button>
+        <a id="map-link" class="export-btn map-link" href="#">Map</a>
       </div>
       <div id="error" class="empty" hidden></div>
       <ol id="listings" class="listing-list"></ol>
@@ -68,6 +69,7 @@
       const sortBar = document.getElementById("sort-bar");
       const sortSelect = document.getElementById("sort");
       const exportBtn = document.getElementById("export-pdf");
+      const mapLink = document.getElementById("map-link");
       const list = document.getElementById("listings");
       const error = document.getElementById("error");
 
@@ -76,6 +78,8 @@
 
       let items = [];
       let scrapedLabel = "—";
+
+      mapLink.href = `/map.html?type=${encodeURIComponent(type)}`;
 
       try {
         const res = await fetch(`/output/${encodeURIComponent(type)}.json`);

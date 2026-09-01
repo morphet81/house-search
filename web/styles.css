@@ -73,6 +73,12 @@ h1 {
   background: var(--card);
   color: var(--ink);
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.map-link {
+  margin-left: 0;
 }
 
 .export-btn:hover {
@@ -83,6 +89,52 @@ h1 {
 .export-btn:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
+}
+
+.map-layout {
+  max-width: 72rem;
+}
+
+.map-canvas {
+  width: 100%;
+  height: min(72vh, 40rem);
+  min-height: 22rem;
+  border: 1px solid var(--line);
+  background: #e8e6e1;
+  z-index: 0;
+}
+
+.map-popup-photo {
+  display: block;
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  margin: 0 0 0.45rem;
+  background: #eceae5;
+}
+
+.map-popup-price {
+  font-weight: 700;
+}
+
+.map-popup-title {
+  font-weight: 550;
+  font-size: 0.92rem;
+}
+
+.map-popup-bits,
+.map-popup-links {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.map-popup-links a {
+  color: var(--accent);
+}
+
+body.map-page .leaflet-container {
+  font: inherit;
 }
 
 .back {

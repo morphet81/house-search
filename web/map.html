@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Map</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body class="map-page">
+    <main class="page map-layout">
+      <p class="back"><a id="back-list" href="/listings.html">← List</a></p>
+      <h1 id="heading">Map</h1>
+      <p id="summary" class="lead"></p>
+      <div id="error" class="empty" hidden></div>
+      <div id="map" class="map-canvas" role="region" aria-label="Listings map"></div>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module">
+      const LABELS = {
+        kodate: "一戸建て",
+        mansion: "マンション",
+        tochi: "土地",
+      };
+
+      const params = new URLSearchParams(location.search);
+      const type = params.get("type") || "kodate";
+      const label = LABELS[type] || type;
+
+      document.title = `${label} map`;
+      document.getElementById("heading").textContent = `${label} map`;
+      document.getElementById("back-list").href = `/listings.html?type=${encodeURIComponent(type)}`;
+
+      const summary = document.getElementById("summary");
+      const error = document.getElementById("error");
+      const mapEl = document.getElementById("map");
+
+      try {
+        const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
+        if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
+        const data = await res.json();
+        const items = data.listings || [];
+        const pinned = items.filter(
+          (it) =>
+            it.lat != null &&
+            it.lon != null &&
+            Number.isFinite(Number(it.lat)) &&
+            Number.isFinite(Number(it.lon))
+        );
+
+        summary.textContent =
+          pinned.length === items.length
+            ? `${pinned.length} listing(s) on map`
+            : `${pinned.length} of ${items.length} listing(s) have coordinates`;
+
+        if (!pinned.length) {
+          error.hidden = false;
+          error.textContent = "No listings with map coordinates.";
+          mapEl.hidden = true;
+        } else {
+          const map = L.map(mapEl, { scrollWheelZoom: true });
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          }).addTo(map);
+
+          const bounds = [];
+          for (const it of pinned) {
+            const lat = Number(it.lat);
+            const lon = Number(it.lon);
+            bounds.push([lat, lon]);
+            const price =
+              it.priceText || (it.priceManYen != null ? `${it.priceManYen}万円` : "—");
+            const title = it.title || it.id || "Listing";
+            const age =
+              it.buildingAgeYears != null ? `Built ${it.buildingAgeYears}y ago` : null;
+            const bits = [age, it.madori, it.buildingAreaText || it.landAreaText]
+              .filter(Boolean)
+              .join(" · ");
+            const links = [
+              it.url
+                ? `<a href="${escapeAttr(it.url)}" target="_blank" rel="noopener">HOME'S</a>`
+                : "",
+              it.googleMapsUrl
+                ? `<a href="${escapeAttr(it.googleMapsUrl)}" target="_blank" rel="noopener">Google Maps</a>`
+                : "",
+            ]
+              .filter(Boolean)
+              .join(" · ");
+
+            const photo = it.imageUrl
+              ? `<img class="map-popup-photo" src="${escapeAttr(it.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
+              : "";
+
+            L.marker([lat, lon])
+              .addTo(map)
+              .bindPopup(
+                `<div class="map-popup">
+                  ${photo}
+                  <div class="map-popup-price">${escapeHtml(price)}</div>
+                  <div class="map-popup-title">${escapeHtml(title)}</div>
+                  ${bits ? `<div class="map-popup-bits">${escapeHtml(bits)}</div>` : ""}
+                  ${links ? `<div class="map-popup-links">${links}</div>` : ""}
+                </div>`,
+                { maxWidth: 260 }
+              );
+          }
+
+          if (bounds.length === 1) {
+            map.setView(bounds[0], 15);
+          } else {
+            map.fitBounds(bounds, { padding: [36, 36], maxZoom: 15 });
+          }
+
+          // Leaflet needs a resize pass after layout
+          requestAnimationFrame(() => map.invalidateSize());
+        }
+      } catch (e) {
+        error.hidden = false;
+        error.textContent = String(e.message || e);
+        mapEl.hidden = true;
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
+      function escapeAttr(s) {
+        return escapeHtml(s).replaceAll("'", "&#39;");
+      }
+    </script>
+  </body>
+</html>
