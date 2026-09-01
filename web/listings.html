@@ -19,6 +19,7 @@
           <option value="age-asc">Age · newest first</option>
           <option value="age-desc">Age · oldest first</option>
         </select>
+        <button type="button" id="export-pdf" class="export-btn">Export PDF</button>
       </div>
       <div id="error" class="empty" hidden></div>
       <ol id="listings" class="listing-list"></ol>
@@ -66,6 +67,7 @@
       const summary = document.getElementById("summary");
       const sortBar = document.getElementById("sort-bar");
       const sortSelect = document.getElementById("sort");
+      const exportBtn = document.getElementById("export-pdf");
       const list = document.getElementById("listings");
       const error = document.getElementById("error");
 
@@ -73,16 +75,17 @@
       const AGE_SORTS = new Set(["age-asc", "age-desc"]);
 
       let items = [];
+      let scrapedLabel = "—";
 
       try {
         const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
         if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
         const data = await res.json();
         items = data.listings || [];
-        const scraped = data.scrapedAt
+        scrapedLabel = data.scrapedAt
           ? new Date(data.scrapedAt).toLocaleString()
           : "—";
-        summary.textContent = `${items.length} listing(s) · scraped ${scraped}`;
+        summary.textContent = `${items.length} listing(s) · scraped ${scrapedLabel}`;
 
         if (items.length) {
           sortBar.hidden = false;
@@ -98,11 +101,40 @@
             writeSortToUrl(sortSelect.value);
             renderList();
           });
+          exportBtn.addEventListener("click", exportPdf);
           renderList();
         }
       } catch (e) {
         error.hidden = false;
         error.textContent = String(e.message || e);
+      }
+
+      function exportPdf() {
+        const sort = sortSelect.value;
+        const prevTitle = document.title;
+        const prevSummary = summary.textContent;
+        document.title = `${label} listings (${items.length})`;
+        summary.textContent = `${items.length} listing(s) · scraped ${scrapedLabel} · sorted ${sortLabel(sort)}`;
+        window.addEventListener(
+          "afterprint",
+          () => {
+            document.title = prevTitle;
+            summary.textContent = prevSummary;
+          },
+          { once: true }
+        );
+        window.print();
+      }
+
+      function sortLabel(sort) {
+        return (
+          {
+            "price-asc": "Price · low → high",
+            "price-desc": "Price · high → low",
+            "age-asc": "Age · newest first",
+            "age-desc": "Age · oldest first",
+          }[sort] || sort
+        );
       }
 
       function readSortFromUrl() {

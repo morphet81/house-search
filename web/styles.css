@@ -41,6 +41,7 @@ h1 {
 .sort-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.65rem;
   margin: 0 0 1.25rem;
 }
@@ -60,6 +61,26 @@ h1 {
 }
 
 .sort-select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.export-btn {
+  font: inherit;
+  margin-left: auto;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.export-btn:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
@@ -193,4 +214,75 @@ h1 {
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.9em;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .back,
+  .sort-bar,
+  .empty {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .lead {
+    margin-bottom: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .listing-list {
+    gap: 0.5rem;
+  }
+
+  .listing {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-color: #ccc;
+  }
+
+  .listing-card {
+    grid-template-columns: 7rem 1fr;
+    gap: 0.65rem;
+  }
+
+  .listing-photo {
+    min-height: 5.5rem;
+  }
+
+  .listing-photo-empty {
+    min-height: 5.5rem;
+  }
+
+  .listing-main {
+    padding: 0.55rem 0.65rem 0.55rem 0;
+  }
+
+  .listing-links a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .listing-links a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    word-break: break-all;
+  }
 }
