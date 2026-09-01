@@ -17,6 +17,9 @@ defaults:
   parking: true
   keyword: null
   published_within: null # 本日 | 3日以内 | 7日以内
+  # Max building age (築年数). Exact — script re-filters after scrape;
+  # HOME'S query uses next coarser step (22 → 25年以内).
+  house_age_years_max: 22
 
 # Shared location for all types (also copied into each block)
 # ku: Toshima / Shinjuku / Shibuya / Minato / Meguro
@@ -82,7 +85,6 @@ kodate:
   freehold: true # 所有権
   constructible: true # 再建築可
   parking: true # 駐車場あり
-  house_age_years_max: null
   renovated: []
   images: []
   keyword: null
@@ -111,7 +113,6 @@ mansion:
   freehold: true # 所有権
   constructible: true # 再建築可
   parking: true # 駐車場あり
-  house_age_years_max: null
   renovated: []
   images: []
   keyword: null

@@ -11,6 +11,15 @@
       <p class="back"><a href="/">← All types</a></p>
       <h1 id="heading">Listings</h1>
       <p id="summary" class="lead"></p>
+      <div id="sort-bar" class="sort-bar" hidden>
+        <label class="sort-label" for="sort">Sort</label>
+        <select id="sort" class="sort-select" aria-label="Sort listings">
+          <option value="price-asc">Price · low → high</option>
+          <option value="price-desc">Price · high → low</option>
+          <option value="age-asc">Age · newest first</option>
+          <option value="age-desc">Age · oldest first</option>
+        </select>
+      </div>
       <div id="error" class="empty" hidden></div>
       <ol id="listings" class="listing-list"></ol>
     </main>
@@ -55,67 +64,166 @@
       document.getElementById("heading").textContent = label;
 
       const summary = document.getElementById("summary");
+      const sortBar = document.getElementById("sort-bar");
+      const sortSelect = document.getElementById("sort");
       const list = document.getElementById("listings");
       const error = document.getElementById("error");
+
+      const SORT_VALUES = new Set(["price-asc", "price-desc", "age-asc", "age-desc"]);
+      const AGE_SORTS = new Set(["age-asc", "age-desc"]);
+
+      let items = [];
 
       try {
         const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
         if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
         const data = await res.json();
-        const items = data.listings || [];
+        items = data.listings || [];
         const scraped = data.scrapedAt
           ? new Date(data.scrapedAt).toLocaleString()
           : "—";
         summary.textContent = `${items.length} listing(s) · scraped ${scraped}`;
 
-        for (const it of items) {
-          const li = document.createElement("li");
-          li.className = "listing";
-
-          const title = it.title || it.id || "Untitled";
-          const price = it.priceText || (it.priceManYen != null ? `${it.priceManYen}万円` : "—");
-          const wardEn = resolveWardEn(it);
-          const age = formatAge(it);
-          const storeys = formatStoreys(it);
-
-          const bits = [
-            wardEn,
-            age,
-            storeys,
-            it.madori,
-            it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
-            it.landAreaText,
-          ].filter(Boolean);
-
-          const maps = it.googleMapsUrl
-            ? `<a href="${it.googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>`
-            : "";
-          const homes = it.url
-            ? `<a href="${it.url}" target="_blank" rel="noopener">HOME'S</a>`
-            : "";
-
-          li.innerHTML = `
-            <div class="listing-card">
-              <div class="listing-photo">
-                ${
-                  it.imageUrl
-                    ? `<img src="${escapeAttr(it.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
-                    : `<div class="listing-photo-empty">No photo</div>`
-                }
-              </div>
-              <div class="listing-main">
-                <div class="listing-price">${escapeHtml(price)}</div>
-                <div class="listing-title">${escapeHtml(title)}</div>
-                <div class="listing-bits">${escapeHtml(bits.join(" · "))}</div>
-                <div class="listing-links">${[maps, homes].filter(Boolean).join(" · ")}</div>
-              </div>
-            </div>
-          `;
-          list.appendChild(li);
+        if (items.length) {
+          sortBar.hidden = false;
+          if (type === "tochi") {
+            for (const opt of sortSelect.querySelectorAll('option[value^="age-"]')) {
+              opt.hidden = true;
+              opt.disabled = true;
+            }
+          }
+          const initialSort = readSortFromUrl();
+          sortSelect.value = initialSort;
+          sortSelect.addEventListener("change", () => {
+            writeSortToUrl(sortSelect.value);
+            renderList();
+          });
+          renderList();
         }
       } catch (e) {
         error.hidden = false;
         error.textContent = String(e.message || e);
+      }
+
+      function readSortFromUrl() {
+        const sort = params.get("sort");
+        if (sort && SORT_VALUES.has(sort)) {
+          if (type === "tochi" && AGE_SORTS.has(sort)) return "price-asc";
+          return sort;
+        }
+        return "price-asc";
+      }
+
+      function writeSortToUrl(sort) {
+        const next = new URLSearchParams(location.search);
+        next.set("sort", sort);
+        history.replaceState(null, "", `${location.pathname}?${next}`);
+      }
+
+      function renderList() {
+        const sorted = sortItems(items, sortSelect.value);
+        list.replaceChildren();
+        for (const it of sorted) {
+          list.appendChild(buildListing(it));
+        }
+      }
+
+      function sortItems(rows, sort) {
+        const copy = [...rows];
+        copy.sort((a, b) => {
+          if (sort === "price-asc" || sort === "price-desc") {
+            const pa = priceValue(a);
+            const pb = priceValue(b);
+            const dir = sort === "price-asc" ? 1 : -1;
+            if (pa == null && pb == null) return 0;
+            if (pa == null) return 1;
+            if (pb == null) return -1;
+            return (pa - pb) * dir;
+          }
+          const aa = ageValue(a);
+          const ba = ageValue(b);
+          const dir = sort === "age-asc" ? 1 : -1;
+          if (aa == null && ba == null) return 0;
+          if (aa == null) return 1;
+          if (ba == null) return -1;
+          return (aa - ba) * dir;
+        });
+        return copy;
+      }
+
+      function priceValue(it) {
+        if (it.priceManYen != null && Number.isFinite(it.priceManYen)) return it.priceManYen;
+        const text = it.priceText || "";
+        const t = String(text).replace(/,/g, "").replace(/\s/g, "");
+        const oku = t.match(/([\d.]+)\s*億/);
+        const man = t.match(/([\d.]+)\s*万/);
+        if (oku && man) return Math.round(parseFloat(oku[1]) * 10000 + parseFloat(man[1]));
+        if (oku) return Math.round(parseFloat(oku[1]) * 10000);
+        if (man) return Math.round(parseFloat(man[1]));
+        return null;
+      }
+
+      function ageValue(it) {
+        if (it.buildingAgeYears != null && Number.isFinite(it.buildingAgeYears)) {
+          return it.buildingAgeYears;
+        }
+        const builtText = it.detail?.builtText || it.builtText;
+        if (builtText) {
+          if (/新築/.test(String(builtText))) return 0;
+          const age = String(builtText).match(/築\s*(\d+)\s*年/);
+          if (age) return Number(age[1]);
+          const ym = String(builtText).match(/(\d{4})\s*年/);
+          if (ym) return Math.max(0, new Date().getFullYear() - Number(ym[1]));
+        }
+        const y = it.yearBuilt ?? it.detail?.yearBuilt;
+        if (y != null) return Math.max(0, new Date().getFullYear() - Number(y));
+        return null;
+      }
+
+      function buildListing(it) {
+        const li = document.createElement("li");
+        li.className = "listing";
+
+        const title = it.title || it.id || "Untitled";
+        const price = it.priceText || (it.priceManYen != null ? `${it.priceManYen}万円` : "—");
+        const wardEn = resolveWardEn(it);
+        const age = formatAge(it);
+        const storeys = formatStoreys(it);
+
+        const bits = [
+          wardEn,
+          age,
+          storeys,
+          it.madori,
+          it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
+          it.landAreaText,
+        ].filter(Boolean);
+
+        const maps = it.googleMapsUrl
+          ? `<a href="${escapeAttr(it.googleMapsUrl)}" target="_blank" rel="noopener">Google Maps</a>`
+          : "";
+        const homes = it.url
+          ? `<a href="${escapeAttr(it.url)}" target="_blank" rel="noopener">HOME'S</a>`
+          : "";
+
+        li.innerHTML = `
+          <div class="listing-card">
+            <div class="listing-photo">
+              ${
+                it.imageUrl
+                  ? `<img src="${escapeAttr(it.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
+                  : `<div class="listing-photo-empty">No photo</div>`
+              }
+            </div>
+            <div class="listing-main">
+              <div class="listing-price">${escapeHtml(price)}</div>
+              <div class="listing-title">${escapeHtml(title)}</div>
+              <div class="listing-bits">${escapeHtml(bits.join(" · "))}</div>
+              <div class="listing-links">${[maps, homes].filter(Boolean).join(" · ")}</div>
+            </div>
+          </div>
+        `;
+        return li;
       }
 
       function resolveWardEn(it) {

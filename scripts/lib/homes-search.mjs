@@ -123,6 +123,7 @@ export const PROPERTY_TYPES = {
     supportsExclusiveArea: false,
     supportsLandArea: true,
     supportsParkingMcf: true,
+    supportsBuildingAge: true,
   },
   mansion: {
     key: "mansion",
@@ -135,6 +136,7 @@ export const PROPERTY_TYPES = {
     supportsExclusiveArea: true,
     supportsLandArea: false,
     supportsParkingMcf: true,
+    supportsBuildingAge: true,
   },
   tochi: {
     key: "tochi",
@@ -147,6 +149,7 @@ export const PROPERTY_TYPES = {
     supportsExclusiveArea: false,
     supportsLandArea: true,
     supportsParkingMcf: false, // not in tochi こだわり modal
+    supportsBuildingAge: false,
   },
 };
 
@@ -169,9 +172,11 @@ function parseStoreys(structureText) {
 
 function parseBuildingAge(builtText, yearBuilt) {
   if (builtText) {
-    const age = String(builtText).match(/築\s*(\d+)\s*年/);
+    const t = String(builtText);
+    if (/新築/.test(t)) return 0;
+    const age = t.match(/築\s*(\d+)\s*年/);
     if (age) return Number(age[1]);
-    const ym = String(builtText).match(/(\d{4})\s*年/);
+    const ym = t.match(/(\d{4})\s*年/);
     if (ym) {
       const y = Number(ym[1]);
       if (y > 1800) return Math.max(0, new Date().getFullYear() - y);
@@ -179,6 +184,30 @@ function parseBuildingAge(builtText, yearBuilt) {
   }
   if (yearBuilt != null && Number.isFinite(Number(yearBuilt))) {
     return Math.max(0, new Date().getFullYear() - Number(yearBuilt));
+  }
+  return null;
+}
+
+/** HOME'S 築年数 select steps (年以内). */
+const HOUSE_AGE_STEPS = [3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+
+/** Nearest HOME'S houseageh step ≥ target (e.g. 22 → 25). */
+function houseAgeCeil(maxYears) {
+  if (maxYears == null) return null;
+  for (const s of HOUSE_AGE_STEPS) {
+    if (s >= maxYears) return s;
+  }
+  return HOUSE_AGE_STEPS[HOUSE_AGE_STEPS.length - 1];
+}
+
+function resolveListingAgeYears(it) {
+  if (it.buildingAgeYears != null && Number.isFinite(it.buildingAgeYears)) {
+    return it.buildingAgeYears;
+  }
+  const texts = [it.builtText, it.detail?.builtText, it.rawText, it.title].filter(Boolean);
+  for (const text of texts) {
+    const age = parseBuildingAge(text, it.yearBuilt ?? it.detail?.yearBuilt);
+    if (age != null) return age;
   }
   return null;
 }
@@ -303,6 +332,11 @@ function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
     params.set("cond[balcony]", "1");
   }
 
+  if (typeCfg.supportsBuildingAge && prefs.house_age_years_max != null) {
+    const step = houseAgeCeil(prefs.house_age_years_max);
+    if (step != null) params.set("cond[houseageh]", String(step));
+  }
+
   // 建築条件 (tochi)
   if (prefs.building_condition === "建築条件付土地") {
     params.set("cond[buildingcond][1]", "1");
@@ -380,11 +414,18 @@ async function scrapeListPage(page, pathSegment) {
             (c.textContent || "").trim().replace(/\s+/g, " ")
           );
           for (let i = 0; i + 1 < flat.length; i++) {
-            if (["価格", "間取り", "土地面積", "建物面積", "専有面積"].includes(flat[i])) {
+            if (
+              ["価格", "間取り", "土地面積", "建物面積", "専有面積", "築年数", "築年月", "建築年"].includes(
+                flat[i]
+              )
+            ) {
               cellMap[flat[i]] = flat[i + 1];
             }
           }
         }
+
+        const builtText =
+          cellMap["築年数"] || cellMap["築年月"] || cellMap["建築年"] || cellMap["建築年（築年数）"] || null;
 
         const imgs = [...card.querySelectorAll("img")].filter((img) => {
           const src = img.currentSrc || img.src || "";
@@ -410,6 +451,7 @@ async function scrapeListPage(page, pathSegment) {
           landAreaText: cellMap["土地面積"] || null,
           buildingAreaText: cellMap["建物面積"] || cellMap["専有面積"] || null,
           exclusiveAreaText: cellMap["専有面積"] || null,
+          builtText,
           walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
           rawText: raw.replace(/<[^>]+>/g, " ").slice(0, 500),
         };
@@ -617,7 +659,7 @@ async function mapPool(items, concurrency, fn) {
   return out;
 }
 
-function clientFilter(typeCfg, items, prefs) {
+function clientFilter(typeCfg, items, prefs, { strictAge = false } = {}) {
   return items.filter((it) => {
     const price = parseManYen(it.priceText);
     it.priceManYen = price;
@@ -665,6 +707,17 @@ function clientFilter(typeCfg, items, prefs) {
       return false;
     }
 
+    const maxAge = prefs.house_age_years_max;
+    if (typeCfg.supportsBuildingAge && maxAge != null) {
+      const age = resolveListingAgeYears(it);
+      if (age != null) {
+        it.buildingAgeYears = age;
+        if (age > maxAge) return false;
+      } else if (strictAge) {
+        return false;
+      }
+    }
+
     return true;
   });
 }
@@ -685,6 +738,10 @@ function filtersPayload(typeCfg, prefs) {
   if (typeCfg.supportsBuildingArea) filters.buildingAreaMinM2 = prefs.building_area_m2?.min ?? null;
   if (typeCfg.supportsExclusiveArea) filters.exclusiveAreaMinM2 = prefs.exclusive_area_m2?.min ?? null;
   if (typeCfg.supportsLandArea) filters.landAreaMinM2 = prefs.land_area_m2?.min ?? null;
+  if (typeCfg.supportsBuildingAge && prefs.house_age_years_max != null) {
+    filters.houseAgeYearsMax = prefs.house_age_years_max;
+    filters.houseAgeQueryStep = houseAgeCeil(prefs.house_age_years_max);
+  }
   return filters;
 }
 
@@ -708,6 +765,12 @@ export async function runHomesSearch(typeKey, argv = []) {
   if (typeCfg.hasListingKind) console.error("listing:", prefs.listing);
   console.error("ku:", prefs.location?.ku?.join(", "));
   console.error("stations:", prefs.location?.stations?.join(", "));
+  if (typeCfg.supportsBuildingAge && prefs.house_age_years_max != null) {
+    const step = houseAgeCeil(prefs.house_age_years_max);
+    console.error(
+      `house age max: ${prefs.house_age_years_max} (HOME'S query: ${step}年以内, client re-filter exact)`
+    );
+  }
 
   const browser = await chromium.launch({
     headless: !args.headed,
@@ -752,16 +815,18 @@ export async function runHomesSearch(typeKey, argv = []) {
     let items = [...byId.values()];
     console.error(`\nunique before client filter: ${items.length}`);
 
-    items = clientFilter(typeCfg, items, prefs);
+    items = clientFilter(typeCfg, items, prefs, { strictAge: false });
     console.error(`after list client filter: ${items.length}`);
 
     if (!args.skipDetail && items.length) {
       console.error(`detail enrich (maps / freehold / constructible)…`);
       items = await mapPool(items, 3, (it) => enrichDetail(context, it));
-      items = clientFilter(typeCfg, items, prefs);
+      items = clientFilter(typeCfg, items, prefs, { strictAge: true });
       console.error(`after detail filter: ${items.length}`);
     } else if (args.skipDetail) {
       console.error("skip-detail: no googleMapsUrl / detail checks");
+      items = clientFilter(typeCfg, items, prefs, { strictAge: true });
+      console.error(`after age-only strict filter: ${items.length}`);
     }
 
     const beforeDedupe = items.length;
