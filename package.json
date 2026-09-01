@@ -8,6 +8,9 @@
   "type": "module",
   "scripts": {
     "list:kodate": "node scripts/list-kodate.mjs",
+    "list:mansion": "node scripts/list-mansion.mjs",
+    "list:tochi": "node scripts/list-tochi.mjs",
+    "list:all": "node scripts/list-all.mjs",
     "dedupe": "node scripts/dedupe-output.mjs",
     "serve": "node scripts/serve.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
