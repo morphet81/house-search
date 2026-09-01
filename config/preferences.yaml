@@ -20,8 +20,8 @@ defaults:
 
 # Shared location for all types (also copied into each block)
 # ku: Toshima / Shinjuku / Shibuya / Minato / Meguro
-# stations: Shin-Itabashi, Itabashi-kuyakusho-mae, Nishi-Sugamo,
-#           Itabashi-honcho, Motohasunuma (Toei Mita Line area)
+# stations: Mita Line area + Setagaya / Shibuya west (Denentoshi,
+#           Setagaya, Toyoko, Keio, Inokashira, Odakyu)
 
 _shared_location: &shared_location
   ku:
@@ -36,6 +36,20 @@ _shared_location: &shared_location
     - 西巣鴨
     - 板橋本町
     - 本蓮沼
+    - 池尻大橋
+    - 三軒茶屋
+    - 西太子堂
+    - 若林
+    - 駒沢大学
+    - 祐天寺
+    - 学芸大学
+    - 代々木上原
+    - 下北沢
+    - 駒場東大前
+    - 幡ヶ谷
+    - 笹塚
+    - 代田橋
+    - 明大前
 
 # 間取り: 3 rooms or more
 _madori_3plus: &madori_3plus
