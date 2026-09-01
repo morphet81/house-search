@@ -679,6 +679,7 @@ async function main() {
         walkMinutesMax: prefs.walk_minutes_max ?? null,
         freehold: !!prefs.freehold,
         constructible: !!prefs.constructible,
+        parking: !!prefs.parking,
       },
       count: items.length,
       dedupe: {
