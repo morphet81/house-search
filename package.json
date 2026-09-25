@@ -10,6 +10,8 @@
     "list:kodate": "node scripts/list-kodate.mjs",
     "list:mansion": "node scripts/list-mansion.mjs",
     "list:tochi": "node scripts/list-tochi.mjs",
+    "list:kodate-rent": "node scripts/list-kodate-rent.mjs",
+    "list:mansion-rent": "node scripts/list-mansion-rent.mjs",
     "list:all": "node scripts/list-all.mjs",
     "dedupe": "node scripts/dedupe-output.mjs",
     "serve": "node scripts/serve.mjs",

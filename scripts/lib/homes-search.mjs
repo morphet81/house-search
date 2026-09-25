@@ -1,5 +1,6 @@
 /**
- * Shared LIFULL HOME'S buy-list scraper for kodate / mansion / tochi.
+ * Shared LIFULL HOME'S list scraper for buy (kodate / mansion / tochi)
+ * and rent (kodate_rent / mansion_rent).
  */
 
 import fs from "node:fs";
@@ -61,6 +62,51 @@ const STATION = {
   笹塚: "86304927",
   代田橋: "86304928",
   明大前: "86304929",
+  自由が丘: "88205055",
+  田園調布: "88205056",
+  多摩川: "88205057",
+  新丸子: "88205058",
+  豪徳寺: "87304995",
+  経堂: "87304996",
+  用賀: "88505095",
+  二子玉川: "88505090",
+  二子新地: "88505096",
+  桜台: "86004787",
+  江古田: "86004786",
+  東長崎: "86004785",
+  椎名町: "86004784",
+  要町: "63706379",
+  千川: "63706378",
+  小竹向原: "63704817",
+  新江古田: "90709077",
+  練馬: "86004788",
+  豊島園: "86004819",
+  中村橋: "86004789",
+  // Iidabashi ±2 stops (path = HOME'S /{slug}_{sid}-st/ when line prefix unknown)
+  飯田橋: "iidabashi_00751",
+  市ケ谷: "ichigaya_00752",
+  四ツ谷: "yotsuya_00753",
+  水道橋: "suidobashi_00750",
+  御茶ノ水: "ochanomizu_00749",
+  早稲田: "waseda_06349",
+  神楽坂: "kagurazaka_06350",
+  九段下: "kudanshita_06351",
+  竹橋: "takebashi_06352",
+  護国寺: "63706381",
+  江戸川橋: "63706382",
+  麹町: "63706383",
+  後楽園: "korakuen_06319",
+  東大前: "todaimae_09069",
+  牛込柳町: "90709696",
+  牛込神楽坂: "90709697",
+  春日: "58706411",
+  本郷三丁目: "hongo-sanchome_06320",
+  // LFI Tokyo ±15–20 min walk
+  板橋: "itabashi_00631",
+  北池袋: "kitaikebukuro_04746",
+  滝野川一丁目: "takinogawa-itchome_06460",
+  新庚申塚: "shin-koshinzuka_06462",
+  庚申塚: "koshinzuka_06463",
 };
 
 const MADORI = {
@@ -117,6 +163,8 @@ export const PROPERTY_TYPES = {
     label: "kodate",
     labelJa: "一戸建て",
     pathSegment: "kodate",
+    baseType: "kodate",
+    deal: "buy",
     hasListingKind: true,
     supportsMadori: true,
     supportsBuildingArea: true,
@@ -124,12 +172,16 @@ export const PROPERTY_TYPES = {
     supportsLandArea: true,
     supportsParkingMcf: true,
     supportsBuildingAge: true,
+    supportsFreehold: true,
+    supportsConstructible: true,
   },
   mansion: {
     key: "mansion",
     label: "mansion",
     labelJa: "マンション",
     pathSegment: "mansion",
+    baseType: "mansion",
+    deal: "buy",
     hasListingKind: true,
     supportsMadori: true,
     supportsBuildingArea: false,
@@ -137,12 +189,16 @@ export const PROPERTY_TYPES = {
     supportsLandArea: false,
     supportsParkingMcf: true,
     supportsBuildingAge: true,
+    supportsFreehold: true,
+    supportsConstructible: true,
   },
   tochi: {
     key: "tochi",
     label: "tochi",
     labelJa: "土地",
     pathSegment: "tochi",
+    baseType: "tochi",
+    deal: "buy",
     hasListingKind: false,
     supportsMadori: false,
     supportsBuildingArea: false,
@@ -150,6 +206,42 @@ export const PROPERTY_TYPES = {
     supportsLandArea: true,
     supportsParkingMcf: false, // not in tochi こだわり modal
     supportsBuildingAge: false,
+    supportsFreehold: true,
+    supportsConstructible: true,
+  },
+  kodate_rent: {
+    key: "kodate_rent",
+    label: "kodate_rent",
+    labelJa: "賃貸一戸建て",
+    pathSegment: "kodate",
+    baseType: "kodate",
+    deal: "rent",
+    hasListingKind: false,
+    supportsMadori: true,
+    supportsBuildingArea: false,
+    supportsExclusiveArea: true,
+    supportsLandArea: false,
+    supportsParkingMcf: true,
+    supportsBuildingAge: true,
+    supportsFreehold: false,
+    supportsConstructible: false,
+  },
+  mansion_rent: {
+    key: "mansion_rent",
+    label: "mansion_rent",
+    labelJa: "賃貸マンション",
+    pathSegment: "mansion",
+    baseType: "mansion",
+    deal: "rent",
+    hasListingKind: false,
+    supportsMadori: true,
+    supportsBuildingArea: false,
+    supportsExclusiveArea: true,
+    supportsLandArea: false,
+    supportsParkingMcf: true,
+    supportsBuildingAge: true,
+    supportsFreehold: false,
+    supportsConstructible: false,
   },
 };
 
@@ -224,14 +316,31 @@ function moneyroomCeil(manYen) {
   return steps[steps.length - 1];
 }
 
+/** HOME'S rent 賃料 select steps (万円). Return option value string. */
+const MONTH_MONEY_STEPS = [
+  "2.0", "2.5", "3.0", "3.5", "4.0", "4.5", "5.0", "5.5", "6.0", "6.5",
+  "7.0", "7.5", "8.0", "8.5", "9.0", "9.5", "10", "10.5", "11", "11.5",
+  "12", "12.5", "13", "13.5", "14", "14.5", "15", "15.5", "16", "16.5",
+  "17", "17.5", "18", "18.5", "19", "19.5", "20", "21", "22", "23", "24",
+  "25", "26", "27", "28", "29", "30", "35", "40", "45", "50", "70", "100",
+];
+
+function monthMoneyCeil(manYen) {
+  if (manYen == null) return null;
+  for (const s of MONTH_MONEY_STEPS) {
+    if (parseFloat(s) >= manYen) return s;
+  }
+  return MONTH_MONEY_STEPS[MONTH_MONEY_STEPS.length - 1];
+}
+
 function parseManYen(text) {
   if (!text) return null;
   const t = text.replace(/,/g, "").replace(/\s/g, "");
   const oku = t.match(/([\d.]+)\s*億/);
   const man = t.match(/([\d.]+)\s*万/);
-  if (oku && man) return Math.round(parseFloat(oku[1]) * 10000 + parseFloat(man[1]));
-  if (oku) return Math.round(parseFloat(oku[1]) * 10000);
-  if (man) return Math.round(parseFloat(man[1]));
+  if (oku && man) return parseFloat(oku[1]) * 10000 + parseFloat(man[1]);
+  if (oku) return parseFloat(oku[1]) * 10000;
+  if (man) return parseFloat(man[1]);
   return null;
 }
 
@@ -251,6 +360,11 @@ function resolveCities(names) {
   return codes;
 }
 
+/** HOME'S station key: 8-digit roseneki code, or `{slug}_{sid}` path segment. */
+function isStationPath(code) {
+  return /[a-z]/i.test(String(code));
+}
+
 function resolveStations(names) {
   const codes = [];
   for (const name of names || []) {
@@ -261,8 +375,25 @@ function resolveStations(names) {
   return codes;
 }
 
+function splitStationKeys(stations) {
+  const roseneki = [];
+  const paths = [];
+  for (const code of stations || []) {
+    if (isStationPath(code)) paths.push(code);
+    else roseneki.push(code);
+  }
+  return { roseneki, paths };
+}
+
+function stationPathListUrl(base, pathKey) {
+  return base.replace(/\/list\/?$/, `/${pathKey}-st/list/`);
+}
+
 function listingBase(typeCfg, prefs) {
   const seg = typeCfg.pathSegment;
+  if (typeCfg.deal === "rent") {
+    return `https://www.homes.co.jp/chintai/${seg}/tokyo/list/`;
+  }
   if (!typeCfg.hasListingKind) {
     return `https://www.homes.co.jp/${seg}/tokyo/list/`;
   }
@@ -272,21 +403,32 @@ function listingBase(typeCfg, prefs) {
 
 function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
   const params = new URLSearchParams();
+  const isRent = typeCfg.deal === "rent";
 
   for (const code of cities) {
     params.set(`cond[city][${code}]`, code);
   }
   for (const code of stations) {
+    if (isStationPath(code)) continue; // path stations use /{slug}_{sid}-st/list/
     params.set(`cond[roseneki][${code}]`, code);
   }
 
   const priceMax = prefs.price?.max;
-  if (priceMax != null) {
-    params.set("cond[moneyroomh]", String(moneyroomCeil(priceMax)));
-  }
   const priceMin = prefs.price?.min;
-  if (priceMin != null && priceMin > 0) {
-    params.set("cond[moneyroom]", String(priceMin));
+  if (isRent) {
+    if (priceMax != null) {
+      params.set("cond[monthmoneyroomh]", String(monthMoneyCeil(priceMax)));
+    }
+    if (priceMin != null && priceMin > 0) {
+      params.set("cond[monthmoneyroom]", String(monthMoneyCeil(priceMin)));
+    }
+  } else {
+    if (priceMax != null) {
+      params.set("cond[moneyroomh]", String(moneyroomCeil(priceMax)));
+    }
+    if (priceMin != null && priceMin > 0) {
+      params.set("cond[moneyroom]", String(priceMin));
+    }
   }
 
   if (typeCfg.supportsBuildingArea) {
@@ -314,7 +456,7 @@ function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
     params.set("cond[walkminutesh]", String(prefs.walk_minutes_max));
   }
   if (prefs.include_bus_time) {
-    params.set("cond[buswalk]", "1");
+    params.set(isRent ? "cond[bustime]" : "cond[buswalk]", "1");
   }
 
   if (typeCfg.supportsMadori) {
@@ -344,8 +486,13 @@ function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
     params.set("cond[buildingcond][2]", "2");
   }
 
-  const kodawari = [...(prefs.kodawari || [])];
-  if (prefs.freehold && !kodawari.includes("所有権")) kodawari.push("所有権");
+  const kodawari = [...(prefs.kodawari || [])].filter((label) => {
+    if (isRent && label === "所有権") return false;
+    return true;
+  });
+  if (typeCfg.supportsFreehold && prefs.freehold && !kodawari.includes("所有権")) {
+    kodawari.push("所有権");
+  }
   if (typeCfg.supportsParkingMcf && prefs.parking && !kodawari.includes("駐車場あり")) {
     kodawari.push("駐車場あり");
   }
@@ -368,7 +515,40 @@ function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
 export function loadTypePrefs(file, typeKey) {
   const doc = loadYaml(fs.readFileSync(file, "utf8"));
   const defaults = doc.defaults || {};
-  return { ...defaults, ...(doc[typeKey] || {}) };
+  const typeCfg = PROPERTY_TYPES[typeKey];
+  if (!typeCfg) throw new Error(`Unknown property type: ${typeKey}`);
+
+  const baseKey = typeCfg.baseType || typeKey;
+  const typePrefs = doc[baseKey] || {};
+  const merged = { ...defaults, ...typePrefs };
+  const budget = defaults.budget || {};
+
+  if (typeCfg.deal === "rent") {
+    const rentCfg = doc.rent || {};
+    if (rentCfg[baseKey] === false) {
+      throw new Error(`Rent search disabled for ${baseKey} in preferences (rent.${baseKey}: false)`);
+    }
+    // Map kodate building area → exclusive area for chintai housearea filter
+    let exclusive = merged.exclusive_area_m2 || null;
+    if (!exclusive && merged.building_area_m2) {
+      exclusive = merged.building_area_m2;
+    }
+    merged.exclusive_area_m2 = exclusive;
+    merged.price = {
+      min: merged.rent_price?.min ?? null,
+      max: merged.rent_price?.max ?? budget.rent_max ?? null,
+    };
+    merged.freehold = false;
+    merged.constructible = false;
+    merged.kodawari = (merged.kodawari || []).filter((k) => k !== "所有権");
+  } else {
+    merged.price = {
+      min: typePrefs.price?.min ?? null,
+      max: typePrefs.price?.max ?? budget.buy_max ?? null,
+    };
+  }
+
+  return merged;
 }
 
 export function parseSearchArgs(argv, typeKey) {
@@ -454,21 +634,131 @@ async function scrapeListPage(page, pathSegment) {
           builtText,
           walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
           rawText: raw.replace(/<[^>]+>/g, " ").slice(0, 500),
+          deal: "buy",
         };
       })
       .filter((x) => x.id && x.url);
   }, pathSegment);
 }
 
-async function totalCount(page) {
+/** Rent list pages: one row per room (.prg-room with /chintai/room/ link). */
+async function scrapeRentListPage(page) {
   return page.evaluate(() => {
-    const t = document.body.innerText || "";
-    const m = t.match(/([\d,]+)\s*件/);
-    return m ? Number(m[1].replace(/,/g, "")) : null;
+    const rooms = [...document.querySelectorAll(".prg-room")];
+    return rooms
+      .map((room) => {
+        const link = room.querySelector("a[href*='/chintai/room/']");
+        const href = (link?.href || "").split("?")[0];
+        const idMatch = href.match(/\/room\/([a-f0-9]+)/);
+        if (!idMatch) return null;
+
+        let root = room.parentElement;
+        for (let i = 0; i < 14 && root; i++) {
+          if (root.querySelector?.(".bukkenSpec") && root.contains(room)) break;
+          root = root.parentElement;
+        }
+        const spec = root?.querySelector(".bukkenSpec") || null;
+        const specText = (spec?.innerText || "").replace(/\s+/g, " ");
+        const buildingText = (root?.innerText || "").replace(/\s+/g, " ");
+        const raw = (room.innerText || "").replace(/\s+/g, " ").trim();
+
+        const priceMatch = raw.match(/([\d.]+)\s*万円/);
+        const madoriMatch = raw.match(/\b(\d(?:SLDK|LDK|DK|K)|ワンルーム)\b/);
+        const areaMatch = raw.match(/([\d.]+)\s*m[²2]/i);
+        const walkMatch = (specText || buildingText).match(/徒歩\s*(\d+)\s*分/);
+        const builtMatch =
+          (specText || buildingText).match(/築\s*(\d+)\s*年/) ||
+          (specText || buildingText).match(/(\d+)\s*年\s*[\/／]/);
+        const address =
+          spec?.querySelector("td.address")?.textContent?.trim() ||
+          (specText.match(/所在地\s+([^\s]+(?:\s+[^\s]+)?)/) || [])[1] ||
+          null;
+
+        const titleImg = [...(root || room).querySelectorAll("img")].find((img) => {
+          const alt = img.alt || "";
+          return alt && !/^掲載|閲覧|お気に入り|間取り/.test(alt);
+        });
+        let title = (titleImg?.alt || "")
+          .replace(/の(リビング|外観|キッチン|浴室|トイレ|間取り).*$/, "")
+          .trim();
+        if (!title) title = (link?.getAttribute("title") || "").trim();
+
+        const imgs = [...(root || room).querySelectorAll("img")].filter((img) => {
+          const src = img.currentSrc || img.src || img.getAttribute("data-src") || "";
+          return (
+            src &&
+            /homes\.jp|image\.|img\.|cdn/.test(src) &&
+            !/logo|icon|sprite|loading|visited|default|utility/i.test(src)
+          );
+        });
+        const mainImg = imgs[0];
+        const areaText = areaMatch ? `${areaMatch[1]}m²` : null;
+        const ageYears = builtMatch ? Number(builtMatch[1]) : null;
+
+        return {
+          id: idMatch[1],
+          url: href,
+          title: title.slice(0, 120),
+          imageUrl: mainImg
+            ? mainImg.currentSrc || mainImg.src || mainImg.getAttribute("data-src")
+            : null,
+          priceText: priceMatch ? `${priceMatch[1]}万円` : null,
+          madori: madoriMatch?.[1] || null,
+          landAreaText: null,
+          buildingAreaText: areaText,
+          exclusiveAreaText: areaText,
+          builtText: ageYears != null ? `築${ageYears}年` : null,
+          walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
+          address,
+          rawText: raw.slice(0, 500),
+          deal: "rent",
+        };
+      })
+      .filter(Boolean);
   });
 }
 
-async function scrapeAllPages(page, listUrl, pathSegment) {
+function isNavRaceError(err) {
+  const msg = String(err?.message || err);
+  return /Execution context was destroyed|Most likely because of a navigation|Target closed/i.test(msg);
+}
+
+/** HOME'S list pages often soft-redirect after first paint; wait + retry evaluates. */
+async function gotoListAndSettle(page, url) {
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+  try {
+    await page.waitForLoadState("networkidle", { timeout: 8000 });
+  } catch {
+    /* slow third-parties — ignore */
+  }
+  await new Promise((r) => setTimeout(r, 600));
+  try {
+    await page.waitForSelector("body", { state: "attached", timeout: 10000 });
+  } catch {
+    /* continue; retry below may still succeed */
+  }
+}
+
+async function evaluateStable(page, fn, arg) {
+  let lastErr;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      try {
+        await page.waitForLoadState("domcontentloaded", { timeout: 5000 });
+      } catch {
+        /* ignore */
+      }
+      return arg === undefined ? await page.evaluate(fn) : await page.evaluate(fn, arg);
+    } catch (err) {
+      lastErr = err;
+      if (!isNavRaceError(err)) throw err;
+      await new Promise((r) => setTimeout(r, 400 + attempt * 350));
+    }
+  }
+  throw lastErr;
+}
+
+async function scrapeAllPages(page, listUrl, typeCfg) {
   const results = [];
   let pageNo = 1;
   let guard = 0;
@@ -477,10 +767,33 @@ async function scrapeAllPages(page, listUrl, pathSegment) {
       pageNo === 1
         ? listUrl
         : `${listUrl}${listUrl.includes("?") ? "&" : "?"}page=${pageNo}`;
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await new Promise((r) => setTimeout(r, 800));
-    const count = await totalCount(page);
-    const batch = await scrapeListPage(page, pathSegment);
+
+    let count = null;
+    let batch = [];
+    let lastErr;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        await gotoListAndSettle(page, url);
+        count = await evaluateStable(page, () => {
+          const t = document.body.innerText || "";
+          const m = t.match(/([\d,]+)\s*件/);
+          return m ? Number(m[1].replace(/,/g, "")) : null;
+        });
+        batch =
+          typeCfg.deal === "rent"
+            ? await scrapeRentListPage(page)
+            : await scrapeListPage(page, typeCfg.pathSegment);
+        lastErr = null;
+        break;
+      } catch (err) {
+        lastErr = err;
+        if (!isNavRaceError(err)) throw err;
+        console.error(`  page ${pageNo}: nav race, retry ${attempt + 1}/3`);
+        await new Promise((r) => setTimeout(r, 700 + attempt * 500));
+      }
+    }
+    if (lastErr) throw lastErr;
+
     if (!batch.length) break;
     results.push(...batch);
     console.error(`  page ${pageNo}: +${batch.length} (site says ${count ?? "?"} total)`);
@@ -549,6 +862,21 @@ async function enrichDetail(context, item) {
       const mapEl = document.querySelector("map-viewer-google-map[data-lat][data-lon]");
       let lat = mapEl ? Number(mapEl.getAttribute("data-lat")) : null;
       let lon = mapEl ? Number(mapEl.getAttribute("data-lon")) : null;
+
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+        for (const s of document.querySelectorAll("script")) {
+          const t = s.textContent || "";
+          const m =
+            t.match(/latitude["\s:=]+([\d.]+)[\s\S]{0,80}?longitude["\s:=]+([\d.]+)/i) ||
+            t.match(/"lat"\s*:\s*([\d.]+)[\s\S]{0,40}?"lng"\s*:\s*([\d.]+)/) ||
+            t.match(/"lat"\s*:\s*([\d.]+)[\s\S]{0,40}?"lon"\s*:\s*([\d.]+)/);
+          if (m) {
+            lat = Number(m[1]);
+            lon = Number(m[2]);
+            break;
+          }
+        }
+      }
 
       let address = null;
       let postalCode = null;
@@ -695,6 +1023,7 @@ function clientFilter(typeCfg, items, prefs, { strictAge = false } = {}) {
     }
 
     if (
+      typeCfg.supportsConstructible &&
       prefs.constructible &&
       (/再建築不可|再建不|建築不可/.test(it.rawText || "") ||
         /再建築不可|再建不|建築不可/.test(it.title || "") ||
@@ -703,7 +1032,13 @@ function clientFilter(typeCfg, items, prefs, { strictAge = false } = {}) {
       return false;
     }
 
-    if (prefs.freehold && it.detail && it.detail.landRight && !/所有権/.test(it.detail.landRight)) {
+    if (
+      typeCfg.supportsFreehold &&
+      prefs.freehold &&
+      it.detail &&
+      it.detail.landRight &&
+      !/所有権/.test(it.detail.landRight)
+    ) {
       return false;
     }
 
@@ -725,12 +1060,13 @@ function clientFilter(typeCfg, items, prefs, { strictAge = false } = {}) {
 function filtersPayload(typeCfg, prefs) {
   const filters = {
     type: typeCfg.key,
+    deal: typeCfg.deal,
     ku: prefs.location?.ku || [],
     stations: prefs.location?.stations || [],
     priceMaxManYen: prefs.price?.max ?? null,
     walkMinutesMax: prefs.walk_minutes_max ?? null,
-    freehold: !!prefs.freehold,
-    constructible: !!prefs.constructible,
+    freehold: typeCfg.supportsFreehold ? !!prefs.freehold : false,
+    constructible: typeCfg.supportsConstructible ? !!prefs.constructible : false,
     parking: !!prefs.parking,
   };
   if (typeCfg.hasListingKind) filters.listing = prefs.listing;
@@ -747,7 +1083,7 @@ function filtersPayload(typeCfg, prefs) {
 
 /**
  * Run a full scrape for one property type.
- * @param {"kodate"|"mansion"|"tochi"} typeKey
+ * @param {"kodate"|"mansion"|"tochi"|"kodate_rent"|"mansion_rent"} typeKey
  * @param {string[]} argv process.argv.slice(2)
  */
 export async function runHomesSearch(typeKey, argv = []) {
@@ -761,10 +1097,16 @@ export async function runHomesSearch(typeKey, argv = []) {
   const base = listingBase(typeCfg, prefs);
 
   console.error("type:", typeKey);
+  console.error("deal:", typeCfg.deal);
   console.error("prefs:", args.prefs);
   if (typeCfg.hasListingKind) console.error("listing:", prefs.listing);
   console.error("ku:", prefs.location?.ku?.join(", "));
   console.error("stations:", prefs.location?.stations?.join(", "));
+  console.error(
+    typeCfg.deal === "rent"
+      ? `rent max: ${prefs.price?.max ?? "—"} 万円/月`
+      : `buy max: ${prefs.price?.max ?? "—"} 万円`
+  );
   if (typeCfg.supportsBuildingAge && prefs.house_age_years_max != null) {
     const step = houseAgeCeil(prefs.house_age_years_max);
     console.error(
@@ -791,24 +1133,37 @@ export async function runHomesSearch(typeKey, argv = []) {
       const q = buildCondParams(typeCfg, prefs, { cities });
       const url = `${base}?${q.toString()}`;
       console.error("\n[ku search]", url.slice(0, 120) + "…");
-      const rows = await scrapeAllPages(page, url, typeCfg.pathSegment);
+      const rows = await scrapeAllPages(page, url, typeCfg);
       for (const r of rows) {
         byId.set(r.id, { ...r, matchedVia: ["ku"] });
       }
     }
 
     if (stations.length) {
-      const q = buildCondParams(typeCfg, prefs, { stations });
-      const url = `${base}?${q.toString()}`;
-      console.error("\n[station search]", url.slice(0, 120) + "…");
-      const rows = await scrapeAllPages(page, url, typeCfg.pathSegment);
-      for (const r of rows) {
-        const prev = byId.get(r.id);
-        if (prev) {
-          prev.matchedVia = [...new Set([...(prev.matchedVia || []), "station"])];
-        } else {
-          byId.set(r.id, { ...r, matchedVia: ["station"] });
+      const { roseneki, paths } = splitStationKeys(stations);
+      const mergeStationRows = (rows) => {
+        for (const r of rows) {
+          const prev = byId.get(r.id);
+          if (prev) {
+            prev.matchedVia = [...new Set([...(prev.matchedVia || []), "station"])];
+          } else {
+            byId.set(r.id, { ...r, matchedVia: ["station"] });
+          }
         }
+      };
+
+      if (roseneki.length) {
+        const q = buildCondParams(typeCfg, prefs, { stations: roseneki });
+        const url = `${base}?${q.toString()}`;
+        console.error("\n[station search]", url.slice(0, 120) + "…");
+        mergeStationRows(await scrapeAllPages(page, url, typeCfg));
+      }
+
+      for (const pathKey of paths) {
+        const q = buildCondParams(typeCfg, prefs, { stations: [] });
+        const url = `${stationPathListUrl(base, pathKey)}?${q.toString()}`;
+        console.error("\n[station path]", pathKey, url.slice(0, 120) + "…");
+        mergeStationRows(await scrapeAllPages(page, url, typeCfg));
       }
     }
 
@@ -864,6 +1219,7 @@ export async function runHomesSearch(typeKey, argv = []) {
       scrapedAt: new Date().toISOString(),
       source: "homes.co.jp",
       type: typeKey,
+      deal: typeCfg.deal,
       prefsFile: path.relative(root, args.prefs),
       filters: filtersPayload(typeCfg, prefs),
       count: items.length,
@@ -892,6 +1248,7 @@ export async function runHomesSearch(typeKey, argv = []) {
     const prices = items.map((it) => it.priceManYen).filter((n) => n != null);
     const priceMin = prices.length ? Math.min(...prices) : null;
     const priceMax = prices.length ? Math.max(...prices) : null;
+    const priceUnit = typeCfg.deal === "rent" ? "万円/月" : "万円";
 
     console.log(`Found ${items.length} ${typeCfg.labelJa} listing(s).`);
     if (previousIds) {
@@ -903,7 +1260,7 @@ export async function runHomesSearch(typeKey, argv = []) {
       console.log(`Deduped: removed ${deduped.removed.length} duplicate posting(s).`);
     }
     if (prices.length) {
-      console.log(`Price range: ${priceMin.toLocaleString()}–${priceMax.toLocaleString()} 万円`);
+      console.log(`Price range: ${priceMin.toLocaleString()}–${priceMax.toLocaleString()} ${priceUnit}`);
     }
     console.log(`Matched via: ku=${viaKu}, station=${viaStation}`);
     if (!args.skipDetail) {

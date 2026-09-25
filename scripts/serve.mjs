@@ -22,9 +22,11 @@ const webDir = path.join(root, "web");
 const outputDir = path.join(root, "output");
 
 const TYPE_META = {
-  kodate: { label: "一戸建て", labelEn: "Detached house" },
-  mansion: { label: "マンション", labelEn: "Apartment" },
-  tochi: { label: "土地", labelEn: "Land" },
+  kodate: { label: "一戸建て", labelEn: "Detached house", deal: "buy" },
+  mansion: { label: "マンション", labelEn: "Apartment", deal: "buy" },
+  tochi: { label: "土地", labelEn: "Land", deal: "buy" },
+  kodate_rent: { label: "一戸建て", labelEn: "Detached house", deal: "rent" },
+  mansion_rent: { label: "マンション", labelEn: "Apartment", deal: "rent" },
 };
 
 function parseArgs(argv) {
@@ -62,19 +64,22 @@ function listResultFiles() {
       const full = path.join(outputDir, f);
       let count = null;
       let scrapedAt = null;
+      let deal = TYPE_META[type]?.deal || null;
       try {
         const data = JSON.parse(fs.readFileSync(full, "utf8"));
         count = Array.isArray(data.listings) ? data.listings.length : data.count ?? null;
         scrapedAt = data.scrapedAt ?? null;
+        if (data.deal) deal = data.deal;
       } catch {
         /* ignore */
       }
-      const meta = TYPE_META[type] || { label: type, labelEn: type };
+      const meta = TYPE_META[type] || { label: type, labelEn: type, deal: deal || "buy" };
       return {
         type,
         file: f,
         label: meta.label,
         labelEn: meta.labelEn,
+        deal: deal || meta.deal || "buy",
         count,
         scrapedAt,
         jsonUrl: `/output/${encodeURIComponent(f)}`,

@@ -38,6 +38,17 @@ h1 {
   margin: 0 0 1rem;
 }
 
+.deal-section {
+  margin: 0 0 2rem;
+}
+
+.deal-heading {
+  font-size: 1.2rem;
+  font-weight: 650;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
 .sort-bar {
   display: flex;
   align-items: center;

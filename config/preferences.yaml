@@ -1,17 +1,23 @@
 # House search preferences — LIFULL HOME'S (homes.co.jp)
 # One block per property type. Empty / null = no filter.
 # Location: ku = 区・市名; stations = 駅名 (exact HOME'S labels).
-# price.* unit = 万円 (13000 = 1億3000万円).
+# budget.buy_max unit = 万円 purchase (13000 = 1億3000万円).
+# budget.rent_max unit = 万円/月 rent.
+# Type price.max overrides budget.buy_max when set.
 #
 # Field names align with docs/homes-co-jp-search-filters.md
 
 defaults:
   prefecture: 東京都
+  # Max budgets (buy = purchase price; rent = monthly 賃料)
+  budget:
+    buy_max: 11000 # 1億3000万円
+    rent_max: 25 # 25万円/月
   walk_minutes_max: 15 # 駅徒歩15分以内
   include_bus_time: false
-  # 土地の権利: true → 所有権 only (exclude 借地権)
+  # 土地の権利: true → 所有権 only (exclude 借地権) — buy only
   freehold: true
-  # true → 再建築可 / buildable (exclude 再建築不可)
+  # true → 再建築可 / buildable (exclude 再建築不可) — buy only
   constructible: true
   # true → 駐車場あり
   parking: true
@@ -19,12 +25,13 @@ defaults:
   published_within: null # 本日 | 3日以内 | 7日以内
   # Max building age (築年数). Exact — script re-filters after scrape;
   # HOME'S query uses next coarser step (22 → 25年以内).
-  house_age_years_max: 22
+  house_age_years_max: 30
 
 # Shared location for all types (also copied into each block)
-# ku: Toshima / Shinjuku / Shibuya / Minato / Meguro
+# ku: Toshima / Shinjuku / Shibuya / Minato / Meguro / Nerima / Bunkyo
 # stations: Mita Line area + Setagaya / Shibuya west (Denentoshi,
-#           Setagaya, Toyoko, Keio, Inokashira, Odakyu)
+#           Toyoko, Oimachi, Odakyu, Keio, Inokashira) + northwest
+#           Tokyo (Seibu Ikebukuro, Fukutoshin, Oedo) + Iidabashi ±2
 
 _shared_location: &shared_location
   ku:
@@ -33,12 +40,20 @@ _shared_location: &shared_location
     - 渋谷区
     - 港区
     - 目黒区
+    - 練馬区
+    - 文京区
   stations:
     - 新板橋
     - 板橋区役所前
     - 西巣鴨
     - 板橋本町
     - 本蓮沼
+    # LFI Tokyo ±15–20 min (Additional + Borderline)
+    - 板橋
+    - 滝野川一丁目
+    - 新庚申塚
+    - 庚申塚
+    - 北池袋
     - 池尻大橋
     - 三軒茶屋
     - 西太子堂
@@ -53,6 +68,39 @@ _shared_location: &shared_location
     - 笹塚
     - 代田橋
     - 明大前
+    - 自由が丘
+    - 田園調布
+    - 多摩川
+    - 新丸子
+    - 豪徳寺
+    - 経堂
+    - 用賀
+    - 二子玉川
+    - 二子新地
+    - 東長崎
+    - 椎名町
+    - 要町
+    - 千川
+    - 新江古田
+    # Iidabashi ±2 stops, no transfer (JR / Tozai / Yurakucho / Namboku / Oedo)
+    - 飯田橋
+    - 市ケ谷
+    - 四ツ谷
+    - 水道橋
+    - 御茶ノ水
+    - 早稲田
+    - 神楽坂
+    - 九段下
+    - 竹橋
+    - 護国寺
+    - 江戸川橋
+    - 麹町
+    - 後楽園
+    - 東大前
+    - 牛込柳町
+    - 牛込神楽坂
+    - 春日
+    - 本郷三丁目
 
 # 間取り: 3 rooms or more
 _madori_3plus: &madori_3plus
@@ -72,9 +120,9 @@ kodate:
 
   price:
     min: null
-    max: 13000 # 1億3000万円
+    max: null # inherit defaults.budget.buy_max
   building_area_m2:
-    min: 60 # 建物面積
+    min: 100 # 建物面積
     max: null
   land_area_m2:
     min: null
@@ -101,10 +149,10 @@ mansion:
 
   price:
     min: null
-    max: 13000 # 1億3000万円
+    max: null # inherit defaults.budget.buy_max
   include_management_fee: false
   exclusive_area_m2: # 専有面積
-    min: 60
+    min: 100
     max: null
   balcony_area_20m2_plus: false
   madori: *madori_3plus
@@ -121,14 +169,14 @@ mansion:
     - 駐車場あり
 
 # ---------------------------------------------------------------------------
-# 土地 (land) — /tochi/
+# 土地 (land) — /tochi/ (buy only)
 # ---------------------------------------------------------------------------
 tochi:
   location: *shared_location
 
   price:
     min: null
-    max: 6000 # 6000万円
+    max: 6000 # override budget.buy_max — 6000万円
   land_area_m2:
     min: 80
     max: null
@@ -143,3 +191,12 @@ tochi:
   kodawari:
     - 所有権
     - 駐車場あり
+
+# ---------------------------------------------------------------------------
+# Rent (賃貸) — /chintai/{mansion|kodate}/
+# Reuses mansion / kodate filters + defaults.budget.rent_max.
+# freehold / constructible / tochi do not apply.
+# ---------------------------------------------------------------------------
+rent:
+  mansion: true
+  kodate: true
