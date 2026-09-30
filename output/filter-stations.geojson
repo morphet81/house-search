@@ -1,0 +1,1164 @@
+{
+  "type": "FeatureCollection",
+  "generatedAt": "2026-09-30T06:52:25.294Z",
+  "prefsFile": "config/preferences.yaml",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7415775,
+          35.6779456
+        ]
+      },
+      "properties": {
+        "name": "永田町"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7373002,
+          35.7542018
+        ]
+      },
+      "properties": {
+        "name": "王子"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6669207,
+          35.6612659
+        ]
+      },
+      "properties": {
+        "name": "下北沢"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7179257,
+          35.6703261
+        ]
+      },
+      "properties": {
+        "name": "外苑前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6862161,
+          35.6298732
+        ]
+      },
+      "properties": {
+        "name": "学芸大学"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7359501,
+          35.7009139
+        ]
+      },
+      "properties": {
+        "name": "牛込神楽坂"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7255744,
+          35.6994561
+        ]
+      },
+      "properties": {
+        "name": "牛込柳町"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7521717,
+          35.6957078
+        ]
+      },
+      "properties": {
+        "name": "九段下"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7472412,
+          35.7365848
+        ]
+      },
+      "properties": {
+        "name": "駒込"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6844553,
+          35.6586714
+        ]
+      },
+      "properties": {
+        "name": "駒場東大前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6611562,
+          35.6331934
+        ]
+      },
+      "properties": {
+        "name": "駒沢大学"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7078233,
+          35.6462452
+        ]
+      },
+      "properties": {
+        "name": "恵比寿"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7239567,
+          35.6263599
+        ]
+      },
+      "properties": {
+        "name": "五反田"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.751621,
+          35.7069764
+        ]
+      },
+      "properties": {
+        "name": "後楽園"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7513591,
+          35.6608011
+        ]
+      },
+      "properties": {
+        "name": "御成門"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7642442,
+          35.7003968
+        ]
+      },
+      "properties": {
+        "name": "御茶ノ水"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7274629,
+          35.7190787
+        ]
+      },
+      "properties": {
+        "name": "護国寺"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.722442,
+          35.6529443
+        ]
+      },
+      "properties": {
+        "name": "広尾"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7297221,
+          35.7396036
+        ]
+      },
+      "properties": {
+        "name": "庚申塚"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7335636,
+          35.7095155
+        ]
+      },
+      "properties": {
+        "name": "江戸川橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7306846,
+          35.6316762
+        ]
+      },
+      "properties": {
+        "name": "高輪台"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7376514,
+          35.6840244
+        ]
+      },
+      "properties": {
+        "name": "麹町"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6673643,
+          35.6737288
+        ]
+      },
+      "properties": {
+        "name": "笹塚"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6719618,
+          35.6437264
+        ]
+      },
+      "properties": {
+        "name": "三軒茶屋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7378147,
+          35.6517754
+        ]
+      },
+      "properties": {
+        "name": "三田"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7293666,
+          35.6861887
+        ]
+      },
+      "properties": {
+        "name": "四ツ谷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7368177,
+          35.6913915
+        ]
+      },
+      "properties": {
+        "name": "市ケ谷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6957299,
+          35.7751437
+        ]
+      },
+      "properties": {
+        "name": "志村坂上"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6685473,
+          35.6078281
+        ]
+      },
+      "properties": {
+        "name": "自由が丘"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749832,
+          35.655327
+        ]
+      },
+      "properties": {
+        "name": "芝公園"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7185442,
+          35.6994361
+        ]
+      },
+      "properties": {
+        "name": "若松河田"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7228546,
+          35.7592219
+        ]
+      },
+      "properties": {
+        "name": "十条"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7002994,
+          35.6576868
+        ]
+      },
+      "properties": {
+        "name": "渋谷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7535551,
+          35.7081558
+        ]
+      },
+      "properties": {
+        "name": "春日"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6864641,
+          35.6805832
+        ]
+      },
+      "properties": {
+        "name": "初台"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7306336,
+          35.7415243
+        ]
+      },
+      "properties": {
+        "name": "新庚申塚"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7199032,
+          35.7487966
+        ]
+      },
+      "properties": {
+        "name": "新板橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7342275,
+          35.7039203
+        ]
+      },
+      "properties": {
+        "name": "神楽坂"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6935856,
+          35.6571089
+        ]
+      },
+      "properties": {
+        "name": "神泉"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7450477,
+          35.662964
+        ]
+      },
+      "properties": {
+        "name": "神谷町"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7522067,
+          35.7021326
+        ]
+      },
+      "properties": {
+        "name": "水道橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7421173,
+          35.7460173
+        ]
+      },
+      "properties": {
+        "name": "西ケ原"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7329388,
+          35.7445689
+        ]
+      },
+      "properties": {
+        "name": "西ヶ原四丁目"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7286973,
+          35.7435537
+        ]
+      },
+      "properties": {
+        "name": "西巣鴨"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7235842,
+          35.6731353
+        ]
+      },
+      "properties": {
+        "name": "青山一丁目"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7202453,
+          35.7789263
+        ]
+      },
+      "properties": {
+        "name": "赤羽"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7439828,
+          35.6550406
+        ]
+      },
+      "properties": {
+        "name": "赤羽橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7367021,
+          35.6720678
+        ]
+      },
+      "properties": {
+        "name": "赤坂"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7457048,
+          35.7275882
+        ]
+      },
+      "properties": {
+        "name": "千石"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7391684,
+          35.6377427
+        ]
+      },
+      "properties": {
+        "name": "泉岳寺"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.721191,
+          35.7058028
+        ]
+      },
+      "properties": {
+        "name": "早稲田"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7394273,
+          35.7334119
+        ]
+      },
+      "properties": {
+        "name": "巣鴨"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7277426,
+          35.735513
+        ]
+      },
+      "properties": {
+        "name": "巣鴨新田"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6915618,
+          35.6683099
+        ]
+      },
+      "properties": {
+        "name": "代々木公園"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6777618,
+          35.6684101
+        ]
+      },
+      "properties": {
+        "name": "代々木上原"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7032158,
+          35.6481206
+        ]
+      },
+      "properties": {
+        "name": "代官山"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7292393,
+          35.7314455
+        ]
+      },
+      "properties": {
+        "name": "大塚"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7353992,
+          35.7473062
+        ]
+      },
+      "properties": {
+        "name": "滝野川一丁目"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6728696,
+          35.6604542
+        ]
+      },
+      "properties": {
+        "name": "池ノ上"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6848201,
+          35.6509763
+        ]
+      },
+      "properties": {
+        "name": "池尻大橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.706626,
+          35.7319455
+        ]
+      },
+      "properties": {
+        "name": "池袋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.760698,
+          35.6906303
+        ]
+      },
+      "properties": {
+        "name": "竹橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6991017,
+          35.644283
+        ]
+      },
+      "properties": {
+        "name": "中目黒"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.676184,
+          35.6175433
+        ]
+      },
+      "properties": {
+        "name": "都立大学"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7581767,
+          35.7173365
+        ]
+      },
+      "properties": {
+        "name": "東大前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.725606,
+          35.665731
+        ]
+      },
+      "properties": {
+        "name": "乃木坂"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7345887,
+          35.6442232
+        ]
+      },
+      "properties": {
+        "name": "白金高輪"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7265652,
+          35.6381027
+        ]
+      },
+      "properties": {
+        "name": "白金台"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7521578,
+          35.7215048
+        ]
+      },
+      "properties": {
+        "name": "白山"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6768648,
+          35.6769485
+        ]
+      },
+      "properties": {
+        "name": "幡ヶ谷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7415832,
+          35.6852213
+        ]
+      },
+      "properties": {
+        "name": "半蔵門"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.719565,
+          35.7466013
+        ]
+      },
+      "properties": {
+        "name": "板橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71004,
+          35.7513477
+        ]
+      },
+      "properties": {
+        "name": "板橋区役所前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7055249,
+          35.7614305
+        ]
+      },
+      "properties": {
+        "name": "板橋本町"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7474821,
+          35.7010327
+        ]
+      },
+      "properties": {
+        "name": "飯田橋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7373997,
+          35.7501777
+        ]
+      },
+      "properties": {
+        "name": "飛鳥山"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7125432,
+          35.6651609
+        ]
+      },
+      "properties": {
+        "name": "表参道"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.713046,
+          35.6253418
+        ]
+      },
+      "properties": {
+        "name": "不動前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7035674,
+          35.6199049
+        ]
+      },
+      "properties": {
+        "name": "武蔵小山"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7074299,
+          35.784898
+        ]
+      },
+      "properties": {
+        "name": "北赤羽"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7167718,
+          35.741241
+        ]
+      },
+      "properties": {
+        "name": "北池袋"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7031503,
+          35.7688639
+        ]
+      },
+      "properties": {
+        "name": "本蓮沼"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7361025,
+          35.6567021
+        ]
+      },
+      "properties": {
+        "name": "麻布十番"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7049956,
+          35.6688036
+        ]
+      },
+      "properties": {
+        "name": "明治神宮前"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7157332,
+          35.6340669
+        ]
+      },
+      "properties": {
+        "name": "目黒"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6916954,
+          35.6377894
+        ]
+      },
+      "properties": {
+        "name": "祐天寺"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7412872,
+          35.6708419
+        ]
+      },
+      "properties": {
+        "name": "溜池山王"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7327747,
+          35.6636418
+        ]
+      },
+      "properties": {
+        "name": "六本木"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.738849,
+          35.6649728
+        ]
+      },
+      "properties": {
+        "name": "六本木一丁目"
+      }
+    }
+  ]
+}
