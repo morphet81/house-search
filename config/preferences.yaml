@@ -11,8 +11,8 @@ defaults:
   prefecture: 東京都
   # Max budgets (buy = purchase price; rent = monthly 賃料)
   budget:
-    buy_max: 13000 # 1億3000万円 (¥130M)
-    rent_max: 32 # 32万円/月
+    buy_max: 11500 # 1億3000万円 (¥130M)
+    rent_max: 35 # 35万円/月
   walk_minutes_max: 15 # 駅徒歩15分以内
   include_bus_time: false
   # 土地の権利: true → 所有権 only (exclude 借地権) — buy only
