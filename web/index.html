@@ -53,7 +53,7 @@
             : "unknown time";
           li.innerHTML = `
             <a class="type-link" href="${r.pageUrl}">
-              <span class="type-label">${r.label}</span>
+              <span class="type-label">${r.labelEn || r.label}</span>
               <span class="type-meta">${r.count ?? "?"} listings · ${scraped}</span>
             </a>
           `;
