@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T06:45:59.301Z",
+  "scrapedAt": "2026-09-30T07:46:54.420Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -116,49 +116,21 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 7,
+  "count": 8,
   "delta": {
-    "addedCount": 5,
-    "removedCount": 15,
+    "addedCount": 1,
+    "removedCount": 0,
     "addedIds": [
-      "2bdea5a16e11cf6cfb054d707fd5706c17a747cf",
-      "d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be",
-      "56ebb4fdcbfb3e9828615ece2708300618c45732",
-      "14047955b06e51d7f51b2ae9b8e8b1186124857b",
-      "61412aca358e721eb2a82eb63bef09bc8cc1b283"
+      "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14"
     ],
-    "removedIds": [
-      "f5623b98b66227fbf674b827fca499cd0c0e99cd",
-      "60cffb461f780f17304168b6feb228346ce9d9eb",
-      "aea48f475b3300bbba82ef4b907187cf50dda48d",
-      "2b726972964fc831a0bc3d6ee570c599680271e3",
-      "6ca19cd1679bb424146410f4b6fe078c766e2d7e",
-      "22d54e2c4153587e4c794e7e39ae66c5b73b9c6e",
-      "3f656b9a918e6d80edf349f4bc71cb7907b2092e",
-      "4c4e510ee351c80320381b66c6fab1e3894ad644",
-      "e84c125e3c5cb2d5687c700728eccd07cc38fe4b",
-      "2e6ba1d55ee44daa5ad3a26d9043700aa28e40af",
-      "15ac63bc07cbb6d2aed56f3f68dc98cd79fcd70b",
-      "6a0d41892de0d501e31c1ac408bee1e720275d65",
-      "aa3c22ade858e87afea1bc938e081ffeb03ae4bd",
-      "b4e2afd90b8e88675b19e5cc47986280c967a814",
-      "f5086041c2da4003d1020a78573f69c4317a1ccd"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 9,
-    "after": 7,
-    "removedCount": 2,
+    "after": 8,
+    "removedCount": 1,
     "clusters": 1,
     "removed": [
-      {
-        "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
-        "url": "https://www.homes.co.jp/chintai/room/c1b9583c38ac7fd7d72a546e8178328cc1d6cf14/",
-        "keptId": "61412aca358e721eb2a82eb63bef09bc8cc1b283",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 27
-      },
       {
         "id": "2ab934de22d25e6bee1cc794e028e5780f382370",
         "url": "https://www.homes.co.jp/chintai/room/2ab934de22d25e6bee1cc794e028e5780f382370/",
@@ -201,6 +173,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/05",
         "lat": 35.781733572903,
         "lon": 139.6927420435,
         "address": "東京都板橋区東坂下１丁目",
@@ -208,8 +181,7 @@
         "yearBuilt": 2007,
         "builtText": "2007年7月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150753%2Frent%2F32273%2F2%2F2%2Fzal5.jpg",
-        "publishedText": "情報公開日\n\n2026/09/05"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150753%2Frent%2F32273%2F2%2F2%2Fzal5.jpg"
       },
       "lat": 35.781733572903,
       "lon": 139.6927420435,
@@ -220,7 +192,6 @@
       "yearBuilt": 2007,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true,
       "publishedAt": "2026-09-05",
       "publishedText": "情報公開日\n\n2026/09/05"
     },
@@ -255,6 +226,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/07/20",
         "lat": 35.780441495779,
         "lon": 139.70309899197,
         "address": "東京都北区赤羽北3丁目26-5",
@@ -262,8 +234,7 @@
         "yearBuilt": 2004,
         "builtText": "2004年7月",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F30fe55ad%2F42423_116551_2_132000_132000.jpg%3Ft%3D20260723104536",
-        "publishedText": "情報公開日\n\n2026/07/20"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F30fe55ad%2F42423_116551_2_132000_132000.jpg%3Ft%3D20260723104536"
       },
       "lat": 35.780441495779,
       "lon": 139.70309899197,
@@ -274,7 +245,6 @@
       "yearBuilt": 2004,
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "isNew": true,
       "publishedAt": "2026-07-20",
       "publishedText": "情報公開日\n\n2026/07/20"
     },
@@ -309,6 +279,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/07/06",
         "lat": 35.775448695223,
         "lon": 139.72272502343,
         "address": "東京都北区赤羽南1丁目",
@@ -316,8 +287,7 @@
         "yearBuilt": 1998,
         "builtText": "1998年5月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fad97d84d%2F32733_854767_1_132000_132000.jpg%3Ft%3D20260706111932",
-        "publishedText": "情報公開日\n\n2026/07/06"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fad97d84d%2F32733_854767_1_132000_132000.jpg%3Ft%3D20260706111932"
       },
       "lat": 35.775448695223,
       "lon": 139.72272502343,
@@ -328,7 +298,6 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true,
       "publishedAt": "2026-07-06",
       "publishedText": "情報公開日\n\n2026/07/06"
     },
@@ -363,6 +332,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/22",
         "lat": 35.623774432272,
         "lon": 139.69311640783,
         "address": "東京都目黒区目黒本町４丁目",
@@ -370,8 +340,7 @@
         "yearBuilt": 2001,
         "builtText": "2001年2月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107196%2Frent%2F172581%2F2%2F2%2Fbqlq.jpg",
-        "publishedText": "情報公開日\n\n2026/09/22"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107196%2Frent%2F172581%2F2%2F2%2Fbqlq.jpg"
       },
       "lat": 35.623774432272,
       "lon": 139.69311640783,
@@ -382,9 +351,62 @@
       "yearBuilt": 2001,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true,
       "publishedAt": "2026-09-22",
       "publishedText": "情報公開日\n\n2026/09/22"
+    },
+    {
+      "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
+      "url": "https://www.homes.co.jp/chintai/room/c1b9583c38ac7fd7d72a546e8178328cc1d6cf14/",
+      "title": "目黒本町マンション",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe800d070-9815-4c0d-8c85-42cfd9541bf0_property_picture_9533_large.jpg",
+      "priceText": "28万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "78.17m²",
+      "exclusiveAreaText": "78.17m²",
+      "builtText": "築26年",
+      "walkMinutes": 15,
+      "address": "東京都目黒区目黒本町４丁目24-21",
+      "deal": "rent",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 28,
+      "exclusiveAreaM2": 78.17,
+      "buildingAreaM2": 78.17,
+      "buildingAgeYears": 25,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/18",
+        "lat": 35.623596944034,
+        "lon": 139.69280838554,
+        "address": "東京都目黒区目黒本町４丁目24-21",
+        "postalCode": "1520002",
+        "yearBuilt": 2001,
+        "builtText": "2001年2月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe800d070-9815-4c0d-8c85-42cfd9541bf0_property_picture_9533_large.jpg"
+      },
+      "lat": 35.623596944034,
+      "lon": 139.69280838554,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.623596944034%2C139.69280838554",
+      "ward": "目黒区",
+      "wardEn": "Meguro-ku",
+      "yearBuilt": 2001,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-18",
+      "publishedText": "情報公開日\n\n2026/09/18",
+      "isNew": true
     },
     {
       "id": "61412aca358e721eb2a82eb63bef09bc8cc1b283",
@@ -417,6 +439,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/07/12",
         "lat": 35.623348368055,
         "lon": 139.69307698377,
         "address": "東京都目黒区目黒本町4丁目24-21",
@@ -424,8 +447,7 @@
         "yearBuilt": 2001,
         "builtText": "2001年2月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F13084%2F13084041%2F13084041_2.jpg%3F20260902154635",
-        "publishedText": "情報公開日\n\n2026/07/12"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F13084%2F13084041%2F13084041_2.jpg%3F20260902154635"
       },
       "lat": 35.623348368055,
       "lon": 139.69307698377,
@@ -436,13 +458,11 @@
       "yearBuilt": 2001,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "dedupedFrom": [
-        "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
-        "2ab934de22d25e6bee1cc794e028e5780f382370"
-      ],
-      "isNew": true,
       "publishedAt": "2026-07-12",
-      "publishedText": "情報公開日\n\n2026/07/12"
+      "publishedText": "情報公開日\n\n2026/07/12",
+      "dedupedFrom": [
+        "2ab934de22d25e6bee1cc794e028e5780f382370"
+      ]
     },
     {
       "id": "cc58fb0f83594a8992e2313642020b65377cf01c",
@@ -475,6 +495,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/05/08",
         "lat": 35.734787201413,
         "lon": 139.703241929,
         "address": "東京都豊島区池袋３丁目",
@@ -482,8 +503,7 @@
         "yearBuilt": 1992,
         "builtText": "1992年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105714%2Frent%2F44161%2F2%2F2%2Fdlw0.jpg",
-        "publishedText": "情報公開日\n\n2026/05/08"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105714%2Frent%2F44161%2F2%2F2%2Fdlw0.jpg"
       },
       "lat": 35.734787201413,
       "lon": 139.703241929,
@@ -528,6 +548,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/06/07",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -535,8 +556,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年5月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14615%2F14615361%2F14615361_2.jpg%3F20260607123652",
-        "publishedText": "情報公開日\n\n2026/06/11"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14615%2F14615361%2F14615361_2.jpg%3F20260607123652"
       },
       "lat": 35.63580533495,
       "lon": 139.68398920204,
@@ -547,8 +567,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-11",
-      "publishedText": "情報公開日\n\n2026/06/11"
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日\n\n2026/06/07"
     }
   ]
 }

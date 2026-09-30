@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T06:40:24.911Z",
+  "scrapedAt": "2026-09-30T07:41:00.384Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -145,6 +145,8 @@
       "exclusiveAreaText": null,
       "builtText": null,
       "walkMinutes": null,
+      "address": "東京都豊島区池袋本町1丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.739824082023%2C139.71169295213",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -162,6 +164,7 @@
         "freeholdMention": true,
         "priceText": "8,980万円",
         "landAreaText": "57.93m²",
+        "publishedText": "情報公開日：2026/09/06（24日前 公開）",
         "lat": 35.739824082023,
         "lon": 139.71169295213,
         "address": "東京都豊島区池袋本町1丁目",
@@ -169,14 +172,11 @@
         "yearBuilt": 2008,
         "builtText": "2008年7月（築19年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11490%2F2%2F1%2Fcpeo.jpg",
-        "publishedText": "情報公開日：2026/09/06（24日前 公開）"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11490%2F2%2F1%2Fcpeo.jpg"
       },
       "lat": 35.739824082023,
       "lon": 139.71169295213,
-      "address": "東京都豊島区池袋本町1丁目",
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.739824082023%2C139.71169295213",
       "ward": "豊島区",
       "wardEn": "Toshima-ku",
       "yearBuilt": 2008,
@@ -198,6 +198,8 @@
       "exclusiveAreaText": null,
       "builtText": null,
       "walkMinutes": null,
+      "address": "東京都北区西ケ原4丁目17",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.743686286908%2C139.73769253032",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -215,6 +217,7 @@
         "freeholdMention": true,
         "priceText": "9,950万円",
         "landAreaText": "121.03m²",
+        "publishedText": "情報公開日：2026/08/26（35日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -222,14 +225,11 @@
         "yearBuilt": 2013,
         "builtText": "2013年3月（築14年）",
         "structure": "木造/2階建",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg",
-        "publishedText": "情報公開日：2026/08/26（35日前 公開）"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg"
       },
       "lat": 35.743686286908,
       "lon": 139.73769253032,
-      "address": "東京都北区西ケ原4丁目17",
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.743686286908%2C139.73769253032",
       "ward": "北区",
       "wardEn": "Kita-ku",
       "yearBuilt": 2013,
@@ -251,6 +251,8 @@
       "exclusiveAreaText": null,
       "builtText": null,
       "walkMinutes": null,
+      "address": "東京都豊島区上池袋3丁目129-25",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.739142432598%2C139.71985061918",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -268,6 +270,7 @@
         "freeholdMention": true,
         "priceText": "11,980万円",
         "landAreaText": "78.84m²",
+        "publishedText": "情報公開日：2026/09/19（11日前 公開）",
         "lat": 35.739142432598,
         "lon": 139.71985061918,
         "address": "東京都豊島区上池袋3丁目129-25",
@@ -275,14 +278,11 @@
         "yearBuilt": 2021,
         "builtText": "2021年5月（築6年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg",
-        "publishedText": "情報公開日：2026/09/19（11日前 公開）"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg"
       },
       "lat": 35.739142432598,
       "lon": 139.71985061918,
-      "address": "東京都豊島区上池袋3丁目129-25",
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.739142432598%2C139.71985061918",
       "ward": "豊島区",
       "wardEn": "Toshima-ku",
       "yearBuilt": 2021,
@@ -304,6 +304,8 @@
       "exclusiveAreaText": null,
       "builtText": null,
       "walkMinutes": null,
+      "address": "東京都板橋区板橋4丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.749100997126%2C139.71852588655",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -321,6 +323,7 @@
         "freeholdMention": true,
         "priceText": "12,000万円",
         "landAreaText": "61.15m²",
+        "publishedText": "情報公開日：2026/07/30（62日前 公開）",
         "lat": 35.749100997126,
         "lon": 139.71852588655,
         "address": "東京都板橋区板橋4丁目",
@@ -328,14 +331,11 @@
         "yearBuilt": 2023,
         "builtText": "2023年5月（築4年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500728%2Fsale%2F106%2F2%2F1%2Fztw8.jpg",
-        "publishedText": "情報公開日：2026/07/30（62日前 公開）"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500728%2Fsale%2F106%2F2%2F1%2Fztw8.jpg"
       },
       "lat": 35.749100997126,
       "lon": 139.71852588655,
-      "address": "東京都板橋区板橋4丁目",
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.749100997126%2C139.71852588655",
       "ward": "板橋区",
       "wardEn": "Itabashi-ku",
       "yearBuilt": 2023,
@@ -348,22 +348,25 @@
     {
       "id": "b-1199420000534",
       "url": "https://www.homes.co.jp/kodate/b-1199420000534/",
-      "title": "",
+      "title": "一戸建て未入居南台2丁目 新築戸建 全2棟PR",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119942%2Fsale%2F534%2F2%2F1%2F07pq.jpg",
       "priceText": "12,880万円",
-      "madori": "3LDK",
-      "landAreaText": "90.08m²",
-      "buildingAreaText": "115.42m²",
+      "madori": null,
+      "landAreaText": "90.08m²3LDK",
+      "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 13,
+      "address": "東京都中野区南台2丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.682401657887%2C139.66992714271",
       "deal": "buy",
       "matchedVia": [
         "station"
       ],
       "priceManYen": 12880,
-      "buildingAreaM2": 115.42,
+      "buildingAreaM2": null,
       "landAreaM2": 90.08,
+      "buildingAgeYears": 2,
       "detail": {
         "landRight": "所有権",
         "leaseType": null,
@@ -374,6 +377,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "90.08m²",
+        "publishedText": "情報公開日：2025/07/03（454日前 公開）",
         "lat": 35.682401657887,
         "lon": 139.66992714271,
         "address": "東京都中野区南台2丁目",
@@ -381,18 +385,14 @@
         "yearBuilt": 2025,
         "builtText": "2025年9月（築2年）",
         "structure": "木造/2階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119942%2Fsale%2F534%2F2%2F1%2F07pq.jpg",
-        "publishedText": "情報公開日：2025/07/03（454日前 公開）"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119942%2Fsale%2F534%2F2%2F1%2F07pq.jpg"
       },
       "lat": 35.682401657887,
       "lon": 139.66992714271,
-      "address": "東京都中野区南台2丁目",
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.682401657887%2C139.66992714271",
       "ward": "中野区",
       "wardEn": "Nakano-ku",
       "yearBuilt": 2025,
-      "buildingAgeYears": 2,
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2025-07-03",
