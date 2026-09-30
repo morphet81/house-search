@@ -4,6 +4,8 @@
 /kodate-after-expand.yml
 .DS_Store
 node_modules/
-output/
+# Track listing JSON; ignore other scrape artifacts under output/
+output/*
+!output/*.json
 .env
 .env.*

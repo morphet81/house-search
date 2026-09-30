@@ -1,0 +1,52 @@
+name: Update listings
+
+on:
+  schedule:
+    # 02:00 and 14:00 Japan Standard Time (UTC+9)
+    - cron: "0 17 * * *" # 02:00 JST
+    - cron: "0 5 * * *" # 14:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: list-all
+  cancel-in-progress: false
+
+jobs:
+  list-all:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chrome
+        run: npx playwright install --with-deps chrome
+
+      - name: Run list:all
+        run: npm run list:all
+
+      - name: Commit and push updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/*.json
+          if git diff --staged --quiet; then
+            echo "No listing changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update listings $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin HEAD:main
