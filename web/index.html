@@ -29,7 +29,7 @@
       <p id="empty" class="empty" hidden>No result files yet. Run <code>npm run list:all</code> first.</p>
     </main>
     <script type="module">
-      import { TYPES, outputUrl } from "./site.js";
+      import { TYPES, outputUrl, formatCriteria } from "./site.js";
 
       const TYPE_ORDER = TYPES.map((t) => t.type);
 
@@ -45,15 +45,17 @@
             const res = await fetch(outputUrl(meta.type));
             if (!res.ok) return null;
             const data = await res.json();
+            const deal = data.deal || meta.deal;
             return {
               type: meta.type,
               label: meta.label,
               labelEn: meta.labelEn,
-              deal: data.deal || meta.deal,
+              deal,
               count: Array.isArray(data.listings)
                 ? data.listings.length
                 : (data.count ?? null),
               scrapedAt: data.scrapedAt ?? null,
+              criteria: formatCriteria(data.filters, { deal }),
               pageUrl: `listings.html?type=${encodeURIComponent(meta.type)}`,
             };
           } catch {
@@ -73,16 +75,30 @@
       const sale = results.filter((r) => (r.deal || "buy") === "buy");
       const rent = results.filter((r) => r.deal === "rent");
 
+      function escapeHtml(s) {
+        return String(s)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
       function appendItems(listEl, items) {
         for (const r of items) {
           const li = document.createElement("li");
           const scraped = r.scrapedAt
             ? new Date(r.scrapedAt).toLocaleString()
             : "unknown time";
+          const criteriaHtml = r.criteria.length
+            ? `<ul class="type-criteria">${r.criteria
+                .map((c) => `<li>${escapeHtml(c)}</li>`)
+                .join("")}</ul>`
+            : "";
           li.innerHTML = `
             <a class="type-link" href="${r.pageUrl}">
-              <span class="type-label">${r.labelEn || r.label}</span>
-              <span class="type-meta">${r.count ?? "?"} listings · ${scraped}</span>
+              <span class="type-label">${escapeHtml(r.labelEn || r.label)}</span>
+              <span class="type-meta">${r.count ?? "?"} listings · ${escapeHtml(scraped)}</span>
+              ${criteriaHtml}
             </a>
           `;
           listEl.appendChild(li);

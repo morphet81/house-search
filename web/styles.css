@@ -195,6 +195,19 @@ body.map-page .leaflet-container {
   font-size: 0.92rem;
 }
 
+.type-criteria {
+  margin: 0.4rem 0 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  list-style: disc;
+}
+
+.type-criteria li {
+  margin: 0.1rem 0;
+}
+
 .empty {
   padding: 1rem 1.1rem;
   background: var(--card);
