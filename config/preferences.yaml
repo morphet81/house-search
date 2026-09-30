@@ -11,7 +11,7 @@ defaults:
   prefecture: 東京都
   # Max budgets (buy = purchase price; rent = monthly 賃料)
   budget:
-    buy_max: 11000 # 1億3000万円
+    buy_max: 13000 # 1億3000万円 (¥130M)
     rent_max: 32 # 32万円/月
   walk_minutes_max: 15 # 駅徒歩15分以内
   include_bus_time: false
@@ -35,7 +35,7 @@ defaults:
 _shared_location: &shared_location
   ku: []
   stations:
-    # Campus / Mita north + Toden
+    # Campus / Mita north + Toden + Saikyo (LFI ±4)
     - 新板橋
     - 板橋
     - 西巣鴨
@@ -45,11 +45,22 @@ _shared_location: &shared_location
     - 本蓮沼
     - 志村坂上
     - 千石
+    - 白山
     - 滝野川一丁目
+    - 西ヶ原四丁目
     - 新庚申塚
     - 庚申塚
+    - 巣鴨新田
+    - 飛鳥山
+    - 大塚
+    - 王子
+    - 西ケ原
+    - 駒込
     - 池袋
+    - 北池袋
     - 十条
+    - 赤羽
+    - 北赤羽
     # Line 1 belt (Iidabashi)
     - 飯田橋
     - 市ケ谷
@@ -168,10 +179,10 @@ mansion:
     max: null # inherit defaults.budget.buy_max
   include_management_fee: false
   exclusive_area_m2: # 専有面積
-    min: 100
+    min: 75
     max: null
   balcony_area_20m2_plus: false
-  madori: *madori_3plus
+  madori: *madori_3plus # 3 rooms+
   walk_minutes_max: 15
   include_bus_time: false
   house_age_years_max: 35

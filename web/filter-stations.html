@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filter stations</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body class="map-page">
+    <main class="page map-layout">
+      <p class="back"><a href="/">← All types</a></p>
+      <h1>Filter stations</h1>
+      <p id="summary" class="lead">Loading…</p>
+      <div id="error" class="empty" hidden></div>
+      <div id="map" class="map-canvas" role="region" aria-label="Filter stations map"></div>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module">
+      const summary = document.getElementById("summary");
+      const error = document.getElementById("error");
+      const mapEl = document.getElementById("map");
+
+      try {
+        const res = await fetch("/output/filter-stations.geojson");
+        if (!res.ok) throw new Error(`No filter-stations.geojson (HTTP ${res.status})`);
+        const data = await res.json();
+        const features = data.features || [];
+        summary.textContent = `${features.length} station(s) from search preferences`;
+
+        if (!features.length) {
+          error.hidden = false;
+          error.textContent = "No station coordinates.";
+          mapEl.hidden = true;
+        } else {
+          const map = L.map(mapEl, { scrollWheelZoom: true });
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          }).addTo(map);
+
+          const bounds = [];
+          for (const f of features) {
+            const [lon, lat] = f.geometry.coordinates;
+            const name = f.properties?.name || "";
+            L.circleMarker([lat, lon], {
+              radius: 6,
+              weight: 1,
+              color: "#0b5fff",
+              fillColor: "#0b5fff",
+              fillOpacity: 0.75,
+            })
+              .bindPopup(name)
+              .bindTooltip(name, { direction: "top", offset: [0, -6] })
+              .addTo(map);
+            bounds.push([lat, lon]);
+          }
+          map.fitBounds(bounds, { padding: [40, 40] });
+        }
+      } catch (e) {
+        error.hidden = false;
+        error.textContent = String(e.message || e);
+        mapEl.hidden = true;
+        summary.textContent = "";
+      }
+    </script>
+  </body>
+</html>

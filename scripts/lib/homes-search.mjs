@@ -43,7 +43,7 @@ const TOKYO_CITY = {
 };
 
 const STATION = {
-  // Campus / Mita north + Toden
+  // Campus / Mita north + Toden + Saikyo (LFI ±4)
   新板橋: "58706415",
   板橋: "9500631",
   西巣鴨: "58706414",
@@ -53,11 +53,22 @@ const STATION = {
   本蓮沼: "58706418",
   志村坂上: "58706419",
   千石: "58706413",
-  滝野川一丁目: "takinogawa-itchome_06460",
-  新庚申塚: "shin-koshinzuka_06462",
+  白山: "58706412",
+  滝野川一丁目: "takinogawaitchome_06460",
+  西ヶ原四丁目: "nishigaharayonchome_06461",
+  新庚申塚: "shinkoshinzuka_06462",
   庚申塚: "koshinzuka_06463",
+  巣鴨新田: "sugamoshinden_06464",
+  飛鳥山: "asukayama_06459",
+  大塚: "9100584",
+  王子: "58500601",
+  西ケ原: "58506394",
+  駒込: "58500586",
   池袋: "57700488",
+  北池袋: "kitaikebukuro_04746",
   十条: "9500632",
+  赤羽: "9500533",
+  北赤羽: "9500633",
   // Line 1 belt (Iidabashi)
   飯田橋: "58900751",
   市ケ谷: "58500752",
