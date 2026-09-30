@@ -605,17 +605,36 @@ async function scrapeListPage(page, pathSegment) {
     const idRe = new RegExp(`/${seg}/(b-\\d+)/`);
     const hrefNeedle = `/${seg}/b-`;
 
-    // Kodate/mansion use .prg-building; tochi list uses .prg-kksBukken (horizontal specs).
-    const kks = [...document.querySelectorAll(".prg-kksBukken")].filter((card) =>
-      card.querySelector(`a[href*="${hrefNeedle}"]`)
-    );
-    const buildings = [...document.querySelectorAll(".prg-building")].filter((card) =>
-      card.querySelector(`a[href*="${hrefNeedle}"]`)
-    );
-    const cards = seg === "tochi" && kks.length ? kks : buildings.length ? buildings : kks;
+    // Kodate/mansion: .prg-building. Tochi: both .prg-kksBukken (PR/horizontal)
+    // and .prg-building (compact specs). Prefer union, dedupe by id.
+    const seenEls = new Set();
+    const cards = [];
+    for (const sel of [".prg-kksBukken", ".prg-building"]) {
+      for (const card of document.querySelectorAll(sel)) {
+        if (seenEls.has(card)) continue;
+        if (!card.querySelector(`a[href*="${hrefNeedle}"]`)) continue;
+        seenEls.add(card);
+        cards.push(card);
+      }
+    }
 
     function cellText(el) {
       return (el?.textContent || "").trim().replace(/\s+/g, " ");
+    }
+
+    function looksLikeHeaderRow(cells) {
+      return (
+        cells.some((h) => /^(価格|所在地|交通|土地面積|建物面積|専有面積|間取り|築)/.test(h)) &&
+        !cells.some((h) => /\d[\d,]*\s*万円/.test(h) || /[\d.]+\s*(?:m[²2]|㎡)/i.test(h))
+      );
+    }
+
+    function isPriceValue(v) {
+      return /(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?\s*万円/.test(String(v || ""));
+    }
+
+    function isAreaValue(v) {
+      return /[\d,.]+\s*(?:m[²2]|㎡)/i.test(String(v || ""));
     }
 
     function fillFromHorizontalTables(card, cellMap) {
@@ -623,113 +642,105 @@ async function scrapeListPage(page, pathSegment) {
       for (let r = 0; r + 1 < rows.length; r++) {
         const headers = [...rows[r].querySelectorAll("th,td")].map(cellText);
         const values = [...rows[r + 1].querySelectorAll("th,td")].map(cellText);
-        const looksLikeHeader =
-          headers.some((h) => /^(価格|所在地|交通|土地面積|建物面積|専有面積|間取り|築)/.test(h)) &&
-          !headers.some((h) => /\d+\s*万円/.test(h));
-        if (!looksLikeHeader) continue;
+        if (!looksLikeHeaderRow(headers)) continue;
         headers.forEach((h, i) => {
           if (!h || !values[i]) return;
           const key = h.replace(/\/.*$/, ""); // "土地面積/坪" → "土地面積"
-          if (!cellMap[key]) cellMap[key] = values[i];
-          if (!cellMap[h]) cellMap[h] = values[i];
+          cellMap[key] = values[i];
+          cellMap[h] = values[i];
         });
       }
     }
 
     function fillFromRawText(raw, cellMap) {
-      if (!cellMap["価格"]) {
+      if (!isPriceValue(cellMap["価格"])) {
         const m = raw.match(/((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)\s*万円/);
         if (m) cellMap["価格"] = `${m[1]}万円`;
       }
-      if (!cellMap["土地面積"]) {
+      if (!isAreaValue(cellMap["土地面積"])) {
         const m = raw.match(/([\d,.]+)\s*(?:m[²2]|㎡)/i);
         if (m) cellMap["土地面積"] = `${m[1]}m²`;
       }
     }
 
-    return cards
-      .map((card) => {
-        const link = card.querySelector(`a[href*="${hrefNeedle}"]`);
-        const href = (link?.href || "").split("?")[0];
-        const idMatch = href.match(idRe);
-        if (!idMatch) return null;
+    const byId = new Map();
+    for (const card of cards) {
+      const link = card.querySelector(`a[href*="${hrefNeedle}"]`);
+      const href = (link?.href || "").split("?")[0];
+      const idMatch = href.match(idRe);
+      if (!idMatch) continue;
 
-        const cellMap = {};
-        card.querySelectorAll("tr").forEach((tr) => {
-          const cells = [...tr.querySelectorAll("th,td")].map(cellText);
-          for (let i = 0; i + 1 < cells.length; i += 2) {
-            if (cells[i] && cells[i + 1] && cells[i].length < 20) {
-              const key = cells[i].replace(/\/.*$/, "");
-              cellMap[key] = cells[i + 1];
-              cellMap[cells[i]] = cells[i + 1];
-            }
-          }
-        });
-        fillFromHorizontalTables(card, cellMap);
-        if (!cellMap["価格"]) {
-          const flat = [...card.querySelectorAll("td,th")].map(cellText);
-          for (let i = 0; i + 1 < flat.length; i++) {
-            if (
-              ["価格", "間取り", "土地面積", "建物面積", "専有面積", "築年数", "築年月", "建築年"].includes(
-                flat[i]
-              ) ||
-              /^土地面積/.test(flat[i])
-            ) {
-              const key = flat[i].replace(/\/.*$/, "");
-              cellMap[key] = flat[i + 1];
-              cellMap[flat[i]] = flat[i + 1];
-            }
+      const cellMap = {};
+      card.querySelectorAll("tr").forEach((tr) => {
+        const cells = [...tr.querySelectorAll("th,td")].map(cellText);
+        if (looksLikeHeaderRow(cells)) return; // don't pair header labels with each other
+        for (let i = 0; i + 1 < cells.length; i += 2) {
+          if (cells[i] && cells[i + 1] && cells[i].length < 20) {
+            const key = cells[i].replace(/\/.*$/, "");
+            cellMap[key] = cells[i + 1];
+            cellMap[cells[i]] = cells[i + 1];
           }
         }
+      });
+      fillFromHorizontalTables(card, cellMap);
 
-        const builtText =
-          cellMap["築年数"] || cellMap["築年月"] || cellMap["建築年"] || cellMap["建築年（築年数）"] || null;
+      const builtText =
+        cellMap["築年数"] || cellMap["築年月"] || cellMap["建築年"] || cellMap["建築年（築年数）"] || null;
 
-        const imgs = [...card.querySelectorAll("img")].filter((img) => {
-          const src = img.currentSrc || img.src || "";
-          return src && /homes\.jp|image\.|img\./.test(src) && !/logo|icon|sprite/i.test(src);
-        });
-        const mainImg = imgs[0];
-        const alt = imgs.map((img) => img.alt || "").find((a) => a && !/^掲載/.test(a));
-        let title = (alt || "").replace(/の(リビング|外観|キッチン|浴室|トイレ).*$/, "").trim();
-        if (!title) {
-          title = (link?.getAttribute("title") || "").trim();
-        }
-        if (!title) {
-          const heading = card.querySelector("h2,h3,.moduleHead");
-          title = (heading?.textContent || "").replace(/\s+/g, " ").trim();
-        }
+      const imgs = [...card.querySelectorAll("img")].filter((img) => {
+        const src = img.currentSrc || img.src || "";
+        return src && /homes\.jp|image\.|img\./.test(src) && !/logo|icon|sprite/i.test(src);
+      });
+      const mainImg = imgs[0];
+      const alt = imgs.map((img) => img.alt || "").find((a) => a && !/^掲載/.test(a));
+      let title = (alt || "").replace(/の(リビング|外観|キッチン|浴室|トイレ).*$/, "").trim();
+      if (!title) {
+        title = (link?.getAttribute("title") || "").trim();
+      }
+      if (!title) {
+        const heading = card.querySelector("h2,h3,.moduleHead");
+        title = (heading?.textContent || "").replace(/\s+/g, " ").trim();
+      }
 
-        const raw = (card.innerText || "").replace(/\t/g, " ");
-        fillFromRawText(raw, cellMap);
-        const walkMatch = raw.match(/徒歩\s*(\d+)\s*分/);
+      const raw = (card.innerText || "").replace(/\t/g, " ");
+      fillFromRawText(raw, cellMap);
+      const walkMatch = raw.match(/徒歩\s*(\d+)\s*分/);
 
-        // Skip agent-only widgets that link to listings but have no specs
-        if (!cellMap["価格"] && !cellMap["土地面積"] && !cellMap["建物面積"] && !cellMap["専有面積"]) {
-          // Keep if this is a normal building card with madori/age; otherwise drop empty shells
-          if (!cellMap["間取り"] && !builtText && /お気に入りに登録|資料請求|見学予約/.test(raw) && raw.length < 200) {
-            return null;
-          }
-        }
+      // Skip agent-only chrome with no listing specs
+      if (!isPriceValue(cellMap["価格"]) && !isAreaValue(cellMap["土地面積"]) && !isAreaValue(cellMap["建物面積"]) && !isAreaValue(cellMap["専有面積"])) {
+        if (!cellMap["間取り"] && !builtText) continue;
+      }
 
-        return {
-          id: idMatch[1],
-          url: href,
-          title: title.slice(0, 120),
-          imageUrl: mainImg ? mainImg.currentSrc || mainImg.src : null,
-          priceText: cellMap["価格"] || null,
-          madori: (cellMap["間取り"] || "").split(/\s+/)[0] || null,
-          landAreaText: cellMap["土地面積"] || cellMap["土地面積/坪"] || null,
-          buildingAreaText: cellMap["建物面積"] || cellMap["専有面積"] || null,
-          exclusiveAreaText: cellMap["専有面積"] || null,
-          builtText,
-          walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
-          rawText: raw.replace(/<[^>]+>/g, " ").slice(0, 500),
-          deal: "buy",
-        };
-      })
-      .filter(Boolean)
-      .filter((x) => x.id && x.url);
+      const row = {
+        id: idMatch[1],
+        url: href,
+        title: title.slice(0, 120),
+        imageUrl: mainImg ? mainImg.currentSrc || mainImg.src : null,
+        priceText: isPriceValue(cellMap["価格"]) ? cellMap["価格"] : null,
+        madori: (cellMap["間取り"] || "").split(/\s+/)[0] || null,
+        landAreaText: isAreaValue(cellMap["土地面積"])
+          ? cellMap["土地面積"]
+          : isAreaValue(cellMap["土地面積/坪"])
+            ? cellMap["土地面積/坪"]
+            : null,
+        buildingAreaText: cellMap["建物面積"] || cellMap["専有面積"] || null,
+        exclusiveAreaText: cellMap["専有面積"] || null,
+        builtText,
+        walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
+        rawText: raw.replace(/<[^>]+>/g, " ").slice(0, 500),
+        deal: "buy",
+      };
+
+      const prev = byId.get(row.id);
+      if (!prev) {
+        byId.set(row.id, row);
+        continue;
+      }
+      // Prefer the card that has price / land area filled in
+      const score = (r) => (r.priceText ? 2 : 0) + (r.landAreaText || r.buildingAreaText ? 1 : 0) + (r.title ? 1 : 0);
+      if (score(row) > score(prev)) byId.set(row.id, row);
+    }
+    return [...byId.values()];
   }, pathSegment);
 }
 
