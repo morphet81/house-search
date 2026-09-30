@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Map</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,7 +14,7 @@
   </head>
   <body class="map-page">
     <main class="page map-layout">
-      <p class="back"><a id="back-list" href="/listings.html">← List</a></p>
+      <p class="back"><a id="back-list" href="listings.html">← List</a></p>
       <h1 id="heading">Map</h1>
       <p id="summary" class="lead"></p>
       <div id="error" class="empty" hidden></div>
@@ -26,13 +26,7 @@
       crossorigin=""
     ></script>
     <script type="module">
-      const LABELS = {
-        kodate: "Detached house",
-        mansion: "Apartment",
-        tochi: "Land",
-        kodate_rent: "Detached house",
-        mansion_rent: "Apartment",
-      };
+      import { LABELS, outputUrl } from "./site.js";
 
       const params = new URLSearchParams(location.search);
       const type = params.get("type") || "kodate";
@@ -40,14 +34,14 @@
 
       document.title = `${label} map`;
       document.getElementById("heading").textContent = `${label} map`;
-      document.getElementById("back-list").href = `/listings.html?type=${encodeURIComponent(type)}`;
+      document.getElementById("back-list").href = `listings.html?type=${encodeURIComponent(type)}`;
 
       const summary = document.getElementById("summary");
       const error = document.getElementById("error");
       const mapEl = document.getElementById("map");
 
       try {
-        const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
+        const res = await fetch(outputUrl(type));
         if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
         const data = await res.json();
         const items = data.listings || [];

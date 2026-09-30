@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>House search results</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="page">
       <h1>House search results</h1>
       <p class="lead">
         Property types with scraped results in <code>output/</code>.
-        <a href="/filter-stations.html">Filter stations map</a>
+        <a href="filter-stations.html">Filter stations map</a>
       </p>
 
       <section class="deal-section" aria-labelledby="sale-heading">
@@ -29,7 +29,9 @@
       <p id="empty" class="empty" hidden>No result files yet. Run <code>npm run list:all</code> first.</p>
     </main>
     <script type="module">
-      const TYPE_ORDER = ["kodate", "mansion", "tochi", "kodate_rent", "mansion_rent"];
+      import { TYPES, outputUrl } from "./site.js";
+
+      const TYPE_ORDER = TYPES.map((t) => t.type);
 
       const saleList = document.getElementById("sale-results");
       const rentList = document.getElementById("rent-results");
@@ -37,13 +39,36 @@
       const rentEmpty = document.getElementById("rent-empty");
       const empty = document.getElementById("empty");
 
-      const res = await fetch("/api/results");
-      const data = await res.json();
-      const results = (data.results || []).sort((a, b) => {
-        const ia = TYPE_ORDER.indexOf(a.type);
-        const ib = TYPE_ORDER.indexOf(b.type);
-        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
-      });
+      const loaded = await Promise.all(
+        TYPES.map(async (meta) => {
+          try {
+            const res = await fetch(outputUrl(meta.type));
+            if (!res.ok) return null;
+            const data = await res.json();
+            return {
+              type: meta.type,
+              label: meta.label,
+              labelEn: meta.labelEn,
+              deal: data.deal || meta.deal,
+              count: Array.isArray(data.listings)
+                ? data.listings.length
+                : (data.count ?? null),
+              scrapedAt: data.scrapedAt ?? null,
+              pageUrl: `listings.html?type=${encodeURIComponent(meta.type)}`,
+            };
+          } catch {
+            return null;
+          }
+        })
+      );
+
+      const results = loaded
+        .filter(Boolean)
+        .sort((a, b) => {
+          const ia = TYPE_ORDER.indexOf(a.type);
+          const ib = TYPE_ORDER.indexOf(b.type);
+          return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+        });
 
       const sale = results.filter((r) => (r.deal || "buy") === "buy");
       const rent = results.filter((r) => r.deal === "rent");

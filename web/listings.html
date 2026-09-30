@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Listings</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="page">
-      <p class="back"><a href="/">← All types</a></p>
+      <p class="back"><a href="index.html">← All types</a></p>
       <h1 id="heading">Listings</h1>
       <p id="summary" class="lead"></p>
       <div id="sort-bar" class="sort-bar" hidden>
@@ -30,13 +30,7 @@
       <ol id="listings" class="listing-list"></ol>
     </main>
     <script type="module">
-      const LABELS = {
-        kodate: "Detached house",
-        mansion: "Apartment",
-        tochi: "Land",
-        kodate_rent: "Detached house",
-        mansion_rent: "Apartment",
-      };
+      import { LABELS, outputUrl } from "./site.js";
 
       const WARD_EN = {
         千代田区: "Chiyoda-ku",
@@ -87,10 +81,10 @@
       let delta = null;
       let scrapedLabel = "—";
 
-      mapLink.href = `/map.html?type=${encodeURIComponent(type)}`;
+      mapLink.href = `map.html?type=${encodeURIComponent(type)}`;
 
       try {
-        const res = await fetch(`/output/${encodeURIComponent(type)}.json`);
+        const res = await fetch(outputUrl(type));
         if (!res.ok) throw new Error(`No results file for ${type} (HTTP ${res.status})`);
         const data = await res.json();
         items = data.listings || [];

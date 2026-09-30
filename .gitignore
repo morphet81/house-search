@@ -7,5 +7,6 @@ node_modules/
 # Track listing JSON; ignore other scrape artifacts under output/
 output/*
 !output/*.json
+!output/*.geojson
 .env
 .env.*

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Filter stations</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,7 +14,7 @@
   </head>
   <body class="map-page">
     <main class="page map-layout">
-      <p class="back"><a href="/">← All types</a></p>
+      <p class="back"><a href="index.html">← All types</a></p>
       <h1>Filter stations</h1>
       <p id="summary" class="lead">Loading…</p>
       <div id="error" class="empty" hidden></div>
@@ -26,12 +26,14 @@
       crossorigin=""
     ></script>
     <script type="module">
+      import { outputUrl } from "./site.js";
+
       const summary = document.getElementById("summary");
       const error = document.getElementById("error");
       const mapEl = document.getElementById("map");
 
       try {
-        const res = await fetch("/output/filter-stations.geojson");
+        const res = await fetch(outputUrl("filter-stations.geojson"));
         if (!res.ok) throw new Error(`No filter-stations.geojson (HTTP ${res.status})`);
         const data = await res.json();
         const features = data.features || [];
