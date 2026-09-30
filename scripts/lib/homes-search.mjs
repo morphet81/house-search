@@ -711,6 +711,13 @@ async function scrapeListPage(page, pathSegment) {
         if (!cellMap["間取り"] && !builtText) continue;
       }
 
+      const address =
+        (cellMap["所在地"] && !/^(価格|交通|土地面積|建物面積)/.test(cellMap["所在地"])
+          ? cellMap["所在地"]
+          : null) ||
+        (raw.match(/((?:東京都|神奈川県|埼玉県|千葉県)[^\s]{2,40})/) || [])[1] ||
+        null;
+
       const row = {
         id: idMatch[1],
         url: href,
@@ -727,6 +734,10 @@ async function scrapeListPage(page, pathSegment) {
         exclusiveAreaText: cellMap["専有面積"] || null,
         builtText,
         walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
+        address,
+        googleMapsUrl: address
+          ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+          : null,
         rawText: raw.replace(/<[^>]+>/g, " ").slice(0, 500),
         deal: "buy",
       };

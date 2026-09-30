@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T06:20:21.417Z",
+  "scrapedAt": "2026-09-30T06:40:24.911Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,24 +120,10 @@
   },
   "count": 5,
   "delta": {
-    "addedCount": 4,
-    "removedCount": 8,
-    "addedIds": [
-      "b-1388540011490",
-      "b-1357690020807",
-      "b-35007280000106",
-      "b-1199420000534"
-    ],
-    "removedIds": [
-      "b-1388540011330",
-      "b-1571110000624",
-      "b-1259350000085",
-      "b-1243980000751",
-      "b-86220001849",
-      "b-1422520000080",
-      "b-1244810011604",
-      "b-94040000044"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
     "before": 5,
@@ -174,6 +160,8 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "8,980万円",
+        "landAreaText": "57.93m²",
         "lat": 35.739824082023,
         "lon": 139.71169295213,
         "address": "東京都豊島区池袋本町1丁目",
@@ -193,8 +181,7 @@
       "yearBuilt": 2008,
       "buildingAgeYears": 19,
       "storeys": 3,
-      "structure": "木造/3階建",
-      "isNew": true
+      "structure": "木造/3階建"
     },
     {
       "id": "b-1516150002849",
@@ -223,6 +210,8 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "9,950万円",
+        "landAreaText": "121.03m²",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -271,6 +260,8 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "11,980万円",
+        "landAreaText": "78.84m²",
         "lat": 35.739142432598,
         "lon": 139.71985061918,
         "address": "東京都豊島区上池袋3丁目129-25",
@@ -290,8 +281,7 @@
       "yearBuilt": 2021,
       "buildingAgeYears": 6,
       "storeys": 3,
-      "structure": "木造/3階建",
-      "isNew": true
+      "structure": "木造/3階建"
     },
     {
       "id": "b-35007280000106",
@@ -320,6 +310,8 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "12,000万円",
+        "landAreaText": "61.15m²",
         "lat": 35.749100997126,
         "lon": 139.71852588655,
         "address": "東京都板橋区板橋4丁目",
@@ -339,8 +331,7 @@
       "yearBuilt": 2023,
       "buildingAgeYears": 4,
       "storeys": 3,
-      "structure": "木造/3階建",
-      "isNew": true
+      "structure": "木造/3階建"
     },
     {
       "id": "b-1199420000534",
@@ -369,6 +360,8 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": null,
+        "landAreaText": "90.08m²",
         "lat": 35.682401657887,
         "lon": 139.66992714271,
         "address": "東京都中野区南台2丁目",
@@ -388,8 +381,7 @@
       "yearBuilt": 2025,
       "buildingAgeYears": 2,
       "storeys": 2,
-      "structure": "木造/2階建",
-      "isNew": true
+      "structure": "木造/2階建"
     }
   ]
 }

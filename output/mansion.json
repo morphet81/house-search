@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T06:21:54.620Z",
+  "scrapedAt": "2026-09-30T06:41:55.220Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -119,36 +119,16 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 15,
-    "removedCount": 3,
-    "addedIds": [
-      "b-1571270000011",
-      "b-35007040000146",
-      "b-1540370000256",
-      "b-35006130000082",
-      "b-1216390038582",
-      "b-1251460111042",
-      "b-39051320000340",
-      "b-1526290002181",
-      "b-1476140000712",
-      "b-1261160003393",
-      "b-35007350000032",
-      "b-1267650035049",
-      "b-1275790000919",
-      "b-1216390038503",
-      "b-1388540011167"
-    ],
-    "removedIds": [
-      "b-1388540010535",
-      "b-1216390039010",
-      "b-1337110002087"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
-    "before": 21,
+    "before": 20,
     "after": 18,
-    "removedCount": 3,
-    "clusters": 3,
+    "removedCount": 2,
+    "clusters": 2,
     "removed": [
       {
         "id": "b-1216390039963",
@@ -165,14 +145,6 @@
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 27
-      },
-      {
-        "id": "b-1552210002207",
-        "url": "https://www.homes.co.jp/mansion/b-1552210002207/",
-        "keptId": "b-1267650035049",
-        "reason": "same_property_less_detail",
-        "richness": 28,
-        "keptRichness": 28
       }
     ]
   },
@@ -184,7 +156,7 @@
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157127%2Fsale%2F11%2F2%2F2%2Fpcqv.jpg",
       "priceText": "5,980万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "83m²",
       "buildingAreaText": "83m²",
       "exclusiveAreaText": "83m²",
       "builtText": null,
@@ -204,6 +176,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "5,980万円",
+        "landAreaText": null,
         "lat": 35.781016209653,
         "lon": 139.69482939476,
         "address": "東京都板橋区東坂下1丁目4",
@@ -223,8 +197,7 @@
       "yearBuilt": 2003,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-35007040000146",
@@ -233,7 +206,7 @@
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500704%2Fsale%2F146%2F2%2F1%2F3jde.jpg",
       "priceText": "5,999万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "83.8m²",
       "buildingAreaText": "83.8m²",
       "exclusiveAreaText": "83.8m²",
       "builtText": null,
@@ -253,6 +226,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": null,
+        "landAreaText": null,
         "lat": 35.768283136846,
         "lon": 139.69243511145,
         "address": "東京都板橋区前野町3丁目",
@@ -272,8 +247,7 @@
       "yearBuilt": 2000,
       "buildingAgeYears": 26,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1540370000256",
@@ -282,7 +256,7 @@
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F154037%2Fsale%2F256%2F11%2F1%2Fr1es.jpg",
       "priceText": "6,580万円",
       "madori": "3SLDK",
-      "landAreaText": null,
+      "landAreaText": "75.8m²",
       "buildingAreaText": "75.8m²",
       "exclusiveAreaText": "75.8m²",
       "builtText": null,
@@ -302,6 +276,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "6,580万円",
+        "landAreaText": null,
         "lat": 35.792678881097,
         "lon": 139.69848139159,
         "address": "東京都北区浮間2丁目5-3",
@@ -324,8 +300,7 @@
       "structure": "RC(鉄筋コンクリート)",
       "dedupedFrom": [
         "b-1216390039963"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-35006130000082",
@@ -334,7 +309,7 @@
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500613%2Fsale%2F82%2F11%2F3%2F6rp4.jpg",
       "priceText": "6,980万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "78.51m²",
       "buildingAreaText": "78.51m²",
       "exclusiveAreaText": "78.51m²",
       "builtText": null,
@@ -354,6 +329,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "6,980万円",
+        "landAreaText": null,
         "lat": 35.788436792893,
         "lon": 139.70636978019,
         "address": "東京都北区浮間1丁目",
@@ -373,8 +350,7 @@
       "yearBuilt": 1992,
       "buildingAgeYears": 35,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "isNew": true
+      "structure": "SRC(鉄骨鉄筋コンクリート)"
     },
     {
       "id": "b-1216390038582",
@@ -383,7 +359,7 @@
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F1%2Fjk0g.jpg",
       "priceText": "7,180万円",
       "madori": "4LDK",
-      "landAreaText": null,
+      "landAreaText": "80.2m²",
       "buildingAreaText": "80.2m²",
       "exclusiveAreaText": "80.2m²",
       "builtText": null,
@@ -403,6 +379,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "7,180万円",
+        "landAreaText": null,
         "lat": 35.769392651025,
         "lon": 139.68933421953,
         "address": "東京都板橋区前野町4丁目",
@@ -425,8 +403,7 @@
       "structure": "RC(鉄筋コンクリート)",
       "dedupedFrom": [
         "b-1526290002105"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-1251460111042",
@@ -435,7 +412,7 @@
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F1%2F1%2Fiq6r.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "78.45m²",
       "buildingAreaText": "78.45m²",
       "exclusiveAreaText": "78.45m²",
       "builtText": null,
@@ -455,6 +432,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "7,280万円",
+        "landAreaText": null,
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -474,8 +453,7 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 25,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-39051320000349",
@@ -484,7 +462,7 @@
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F349%2F2%2F1%2Fqldj.jpg",
       "priceText": "7,770万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "81.11m²",
       "buildingAreaText": "81.11m²",
       "exclusiveAreaText": "81.11m²",
       "builtText": null,
@@ -504,6 +482,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "7,770万円",
+        "landAreaText": null,
         "lat": 35.767350511443,
         "lon": 139.69420055435,
         "address": "東京都板橋区前野町3丁目33-1",
@@ -532,7 +512,7 @@
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F345%2F9%2F1%2Fhqll.jpg",
       "priceText": "7,999万円",
       "madori": "4LDK",
-      "landAreaText": null,
+      "landAreaText": "84.47m²",
       "buildingAreaText": "84.47m²",
       "exclusiveAreaText": "84.47m²",
       "builtText": null,
@@ -552,6 +532,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "7,999万円",
+        "landAreaText": null,
         "lat": 35.773949651769,
         "lon": 139.70026005071,
         "address": "東京都板橋区小豆沢1丁目",
@@ -580,7 +562,7 @@
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F340%2F11%2F3%2F7lh8.jpg",
       "priceText": "8,880万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "75.42m²",
       "buildingAreaText": "75.42m²",
       "exclusiveAreaText": "75.42m²",
       "builtText": null,
@@ -600,6 +582,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "8,880万円",
+        "landAreaText": null,
         "lat": 35.770261972515,
         "lon": 139.698785047,
         "address": "東京都板橋区大原町13-12",
@@ -619,8 +603,7 @@
       "yearBuilt": 2003,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "isNew": true
+      "structure": "SRC(鉄骨鉄筋コンクリート)"
     },
     {
       "id": "b-1526290002181",
@@ -629,7 +612,7 @@
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152629%2Fsale%2F2181%2F2%2F1%2F7jv3.jpg",
       "priceText": "9,280万円",
       "madori": "4LDK",
-      "landAreaText": null,
+      "landAreaText": "107.1m²",
       "buildingAreaText": "107.1m²",
       "exclusiveAreaText": "107.1m²",
       "builtText": null,
@@ -649,6 +632,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "9,280万円",
+        "landAreaText": null,
         "lat": 35.780183894942,
         "lon": 139.68786529876,
         "address": "東京都板橋区坂下1丁目4",
@@ -668,8 +653,7 @@
       "yearBuilt": 1993,
       "buildingAgeYears": 34,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1476140000712",
@@ -678,7 +662,7 @@
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147614%2Fsale%2F712%2F2%2F1%2Fxua7.jpg",
       "priceText": "10,500万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "75.19m²",
       "buildingAreaText": "75.19m²",
       "exclusiveAreaText": "75.19m²",
       "builtText": null,
@@ -698,6 +682,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "10,500万円",
+        "landAreaText": null,
         "lat": 35.756469586109,
         "lon": 139.7175923359,
         "address": "東京都板橋区加賀1丁目21-1",
@@ -717,8 +703,7 @@
       "yearBuilt": 2016,
       "buildingAgeYears": 11,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1261160003393",
@@ -727,7 +712,7 @@
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3393%2F11%2F1%2Fwjwp.jpg",
       "priceText": "10,890万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "75.04m²",
       "buildingAreaText": "75.04m²",
       "exclusiveAreaText": "75.04m²",
       "builtText": null,
@@ -747,6 +732,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "10,890万円",
+        "landAreaText": null,
         "lat": 35.712555093874,
         "lon": 139.71774075663,
         "address": "東京都新宿区西早稲田1丁目23-16",
@@ -766,8 +753,7 @@
       "yearBuilt": 1999,
       "buildingAgeYears": 28,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1267650039069",
@@ -776,7 +762,7 @@
       "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F39069%2F11%2F3%2F8j79.jpg",
       "priceText": "10,980万円",
       "madori": "4LDK",
-      "landAreaText": null,
+      "landAreaText": "82.12m²",
       "buildingAreaText": "82.12m²",
       "exclusiveAreaText": "82.12m²",
       "builtText": null,
@@ -796,6 +782,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "10,980万円",
+        "landAreaText": null,
         "lat": 35.754929736091,
         "lon": 139.71671136173,
         "address": "東京都板橋区加賀1丁目14-1",
@@ -824,7 +812,7 @@
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500735%2Fsale%2F32%2F2%2F1%2Fasnj.jpg",
       "priceText": "12,499万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "83.86m²",
       "buildingAreaText": "83.86m²",
       "exclusiveAreaText": "83.86m²",
       "builtText": null,
@@ -844,6 +832,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "12,499万円",
+        "landAreaText": null,
         "lat": 35.635373860233,
         "lon": 139.67894770319,
         "address": "東京都世田谷区下馬4丁目",
@@ -863,8 +853,7 @@
       "yearBuilt": 2000,
       "buildingAgeYears": 27,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1267650035049",
@@ -873,7 +862,7 @@
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F35049%2F11%2F4%2Fiyau.jpg",
       "priceText": "12,699万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "75.02m²",
       "buildingAreaText": "75.02m²",
       "exclusiveAreaText": "75.02m²",
       "builtText": null,
@@ -893,6 +882,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "12,699万円",
+        "landAreaText": null,
         "lat": 35.73562709155,
         "lon": 139.72344573272,
         "address": "東京都豊島区上池袋1丁目32-20",
@@ -912,11 +903,7 @@
       "yearBuilt": 2006,
       "buildingAgeYears": 21,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "dedupedFrom": [
-        "b-1552210002207"
-      ],
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1275790000919",
@@ -925,7 +912,7 @@
       "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127579%2Fsale%2F919%2F11%2F3%2Fg9hi.jpg",
       "priceText": "12,780万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "88.92m²",
       "buildingAreaText": "88.92m²",
       "exclusiveAreaText": "88.92m²",
       "builtText": null,
@@ -945,6 +932,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "12,780万円",
+        "landAreaText": null,
         "lat": 35.711718237284,
         "lon": 139.71750081066,
         "address": "東京都新宿区西早稲田1丁目",
@@ -964,8 +953,7 @@
       "yearBuilt": 1993,
       "buildingAgeYears": 33,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "isNew": true
+      "structure": "SRC(鉄骨鉄筋コンクリート)"
     },
     {
       "id": "b-1216390038503",
@@ -974,7 +962,7 @@
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38503%2F2%2F9%2Fftpv.jpg",
       "priceText": "12,800万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "98.13m²",
       "buildingAreaText": "98.13m²",
       "exclusiveAreaText": "98.13m²",
       "builtText": null,
@@ -994,6 +982,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": null,
+        "landAreaText": null,
         "lat": 35.701921339785,
         "lon": 139.7195418641,
         "address": "東京都新宿区戸山1丁目",
@@ -1013,8 +1003,7 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     },
     {
       "id": "b-1388540011167",
@@ -1023,7 +1012,7 @@
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11167%2F2%2F1%2Fj7bi.jpg",
       "priceText": "12,800万円",
       "madori": "3LDK",
-      "landAreaText": null,
+      "landAreaText": "98.13m²",
       "buildingAreaText": "98.13m²",
       "exclusiveAreaText": "98.13m²",
       "builtText": null,
@@ -1043,6 +1032,8 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
+        "priceText": "12,800万円",
+        "landAreaText": null,
         "lat": 35.702055203917,
         "lon": 139.71917966729,
         "address": "東京都新宿区戸山1丁目",
@@ -1062,8 +1053,7 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "structure": "RC(鉄筋コンクリート)"
     }
   ]
 }
