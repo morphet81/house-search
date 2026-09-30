@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T21:13:15.353Z",
+  "scrapedAt": "2026-09-30T22:47:23.690Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -99,7 +99,7 @@
       "芝公園",
       "御成門"
     ],
-    "priceMaxManYen": 32,
+    "priceMaxManYen": 35,
     "walkMinutesMax": 15,
     "freehold": false,
     "constructible": false,
@@ -116,19 +116,76 @@
     "houseAgeYearsMax": 30,
     "houseAgeQueryStep": 30
   },
-  "count": 0,
+  "count": 1,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "472adfefd631e1c8e4ef5ba69223edb11d682ecc"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 0,
-    "after": 0,
+    "before": 1,
+    "after": 1,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
   },
-  "listings": []
+  "listings": [
+    {
+      "id": "472adfefd631e1c8e4ef5ba69223edb11d682ecc",
+      "url": "https://www.homes.co.jp/chintai/room/472adfefd631e1c8e4ef5ba69223edb11d682ecc/",
+      "title": "JR京浜東北・根岸線 赤羽駅 徒歩10分の賃貸一戸建て",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa4a391f6-06ec-40fb-9871-ede292f8b787_property_picture_6564_large.jpg",
+      "priceText": "33万円",
+      "madori": "4SLDK",
+      "landAreaText": null,
+      "buildingAreaText": "108.94m²",
+      "exclusiveAreaText": "108.94m²",
+      "builtText": "築21年",
+      "walkMinutes": 10,
+      "address": "東京都北区赤羽西３丁目",
+      "deal": "rent",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 33,
+      "exclusiveAreaM2": 108.94,
+      "buildingAreaM2": 108.94,
+      "buildingAgeYears": 20,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/24",
+        "lat": 35.770719432253,
+        "lon": 139.71996517106,
+        "address": "東京都北区赤羽西３丁目",
+        "postalCode": "1150055",
+        "yearBuilt": 2006,
+        "builtText": "2006年2月",
+        "structure": "木造",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa4a391f6-06ec-40fb-9871-ede292f8b787_property_picture_6564_large.jpg"
+      },
+      "lat": 35.770719432253,
+      "lon": 139.71996517106,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.770719432253%2C139.71996517106",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 2006,
+      "storeys": null,
+      "structure": "木造",
+      "publishedAt": "2026-09-24",
+      "publishedText": "情報公開日\n\n2026/09/24",
+      "isNew": true
+    }
+  ]
 }
