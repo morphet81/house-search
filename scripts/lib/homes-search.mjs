@@ -604,34 +604,79 @@ async function scrapeListPage(page, pathSegment) {
   return page.evaluate((seg) => {
     const idRe = new RegExp(`/${seg}/(b-\\d+)/`);
     const hrefNeedle = `/${seg}/b-`;
-    const cards = [...document.querySelectorAll(".prg-building")];
+
+    // Kodate/mansion use .prg-building; tochi list uses .prg-kksBukken (horizontal specs).
+    const kks = [...document.querySelectorAll(".prg-kksBukken")].filter((card) =>
+      card.querySelector(`a[href*="${hrefNeedle}"]`)
+    );
+    const buildings = [...document.querySelectorAll(".prg-building")].filter((card) =>
+      card.querySelector(`a[href*="${hrefNeedle}"]`)
+    );
+    const cards = seg === "tochi" && kks.length ? kks : buildings.length ? buildings : kks;
+
+    function cellText(el) {
+      return (el?.textContent || "").trim().replace(/\s+/g, " ");
+    }
+
+    function fillFromHorizontalTables(card, cellMap) {
+      const rows = [...card.querySelectorAll("tr")];
+      for (let r = 0; r + 1 < rows.length; r++) {
+        const headers = [...rows[r].querySelectorAll("th,td")].map(cellText);
+        const values = [...rows[r + 1].querySelectorAll("th,td")].map(cellText);
+        const looksLikeHeader =
+          headers.some((h) => /^(価格|所在地|交通|土地面積|建物面積|専有面積|間取り|築)/.test(h)) &&
+          !headers.some((h) => /\d+\s*万円/.test(h));
+        if (!looksLikeHeader) continue;
+        headers.forEach((h, i) => {
+          if (!h || !values[i]) return;
+          const key = h.replace(/\/.*$/, ""); // "土地面積/坪" → "土地面積"
+          if (!cellMap[key]) cellMap[key] = values[i];
+          if (!cellMap[h]) cellMap[h] = values[i];
+        });
+      }
+    }
+
+    function fillFromRawText(raw, cellMap) {
+      if (!cellMap["価格"]) {
+        const m = raw.match(/((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)\s*万円/);
+        if (m) cellMap["価格"] = `${m[1]}万円`;
+      }
+      if (!cellMap["土地面積"]) {
+        const m = raw.match(/([\d,.]+)\s*(?:m[²2]|㎡)/i);
+        if (m) cellMap["土地面積"] = `${m[1]}m²`;
+      }
+    }
+
     return cards
       .map((card) => {
         const link = card.querySelector(`a[href*="${hrefNeedle}"]`);
         const href = (link?.href || "").split("?")[0];
         const idMatch = href.match(idRe);
+        if (!idMatch) return null;
 
         const cellMap = {};
         card.querySelectorAll("tr").forEach((tr) => {
-          const cells = [...tr.querySelectorAll("th,td")].map((c) =>
-            (c.textContent || "").trim().replace(/\s+/g, " ")
-          );
+          const cells = [...tr.querySelectorAll("th,td")].map(cellText);
           for (let i = 0; i + 1 < cells.length; i += 2) {
             if (cells[i] && cells[i + 1] && cells[i].length < 20) {
+              const key = cells[i].replace(/\/.*$/, "");
+              cellMap[key] = cells[i + 1];
               cellMap[cells[i]] = cells[i + 1];
             }
           }
         });
+        fillFromHorizontalTables(card, cellMap);
         if (!cellMap["価格"]) {
-          const flat = [...card.querySelectorAll("td,th")].map((c) =>
-            (c.textContent || "").trim().replace(/\s+/g, " ")
-          );
+          const flat = [...card.querySelectorAll("td,th")].map(cellText);
           for (let i = 0; i + 1 < flat.length; i++) {
             if (
               ["価格", "間取り", "土地面積", "建物面積", "専有面積", "築年数", "築年月", "建築年"].includes(
                 flat[i]
-              )
+              ) ||
+              /^土地面積/.test(flat[i])
             ) {
+              const key = flat[i].replace(/\/.*$/, "");
+              cellMap[key] = flat[i + 1];
               cellMap[flat[i]] = flat[i + 1];
             }
           }
@@ -650,18 +695,31 @@ async function scrapeListPage(page, pathSegment) {
         if (!title) {
           title = (link?.getAttribute("title") || "").trim();
         }
+        if (!title) {
+          const heading = card.querySelector("h2,h3,.moduleHead");
+          title = (heading?.textContent || "").replace(/\s+/g, " ").trim();
+        }
 
         const raw = (card.innerText || "").replace(/\t/g, " ");
+        fillFromRawText(raw, cellMap);
         const walkMatch = raw.match(/徒歩\s*(\d+)\s*分/);
 
+        // Skip agent-only widgets that link to listings but have no specs
+        if (!cellMap["価格"] && !cellMap["土地面積"] && !cellMap["建物面積"] && !cellMap["専有面積"]) {
+          // Keep if this is a normal building card with madori/age; otherwise drop empty shells
+          if (!cellMap["間取り"] && !builtText && /お気に入りに登録|資料請求|見学予約/.test(raw) && raw.length < 200) {
+            return null;
+          }
+        }
+
         return {
-          id: idMatch ? idMatch[1] : null,
+          id: idMatch[1],
           url: href,
           title: title.slice(0, 120),
           imageUrl: mainImg ? mainImg.currentSrc || mainImg.src : null,
           priceText: cellMap["価格"] || null,
           madori: (cellMap["間取り"] || "").split(/\s+/)[0] || null,
-          landAreaText: cellMap["土地面積"] || null,
+          landAreaText: cellMap["土地面積"] || cellMap["土地面積/坪"] || null,
           buildingAreaText: cellMap["建物面積"] || cellMap["専有面積"] || null,
           exclusiveAreaText: cellMap["専有面積"] || null,
           builtText,
@@ -670,6 +728,7 @@ async function scrapeListPage(page, pathSegment) {
           deal: "buy",
         };
       })
+      .filter(Boolean)
       .filter((x) => x.id && x.url);
   }, pathSegment);
 }
@@ -756,9 +815,32 @@ function isNavRaceError(err) {
   return /Execution context was destroyed|Most likely because of a navigation|Target closed/i.test(msg);
 }
 
+function isTimeoutError(err) {
+  const name = err?.name || "";
+  const msg = String(err?.message || err);
+  return name === "TimeoutError" || /Timeout \d+ms exceeded/i.test(msg);
+}
+
+function isRetryableNavError(err) {
+  return isNavRaceError(err) || isTimeoutError(err);
+}
+
 /** HOME'S list pages often soft-redirect after first paint; wait + retry evaluates. */
 async function gotoListAndSettle(page, url) {
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+  let lastErr;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+      lastErr = null;
+      break;
+    } catch (err) {
+      lastErr = err;
+      if (!isRetryableNavError(err) || attempt === 2) throw err;
+      console.error(`  goto timeout/race, retry ${attempt + 1}/3`);
+      await new Promise((r) => setTimeout(r, 1000 + attempt * 1500));
+    }
+  }
+  if (lastErr) throw lastErr;
   try {
     await page.waitForLoadState("networkidle", { timeout: 8000 });
   } catch {
@@ -820,8 +902,8 @@ async function scrapeAllPages(page, listUrl, typeCfg) {
         break;
       } catch (err) {
         lastErr = err;
-        if (!isNavRaceError(err)) throw err;
-        console.error(`  page ${pageNo}: nav race, retry ${attempt + 1}/3`);
+        if (!isRetryableNavError(err)) throw err;
+        console.error(`  page ${pageNo}: ${isTimeoutError(err) ? "timeout" : "nav race"}, retry ${attempt + 1}/3`);
         await new Promise((r) => setTimeout(r, 700 + attempt * 500));
       }
     }
@@ -889,7 +971,8 @@ async function enrichDetail(context, item) {
       const pick = (label) => {
         const re = new RegExp(label + "\\s*([^\\n]+)");
         const m = text.match(re);
-        return m ? m[1].trim().slice(0, 120) : null;
+        const v = m ? m[1].trim().slice(0, 120) : null;
+        return v || null;
       };
 
       const mapEl = document.querySelector("map-viewer-google-map[data-lat][data-lon]");
@@ -962,6 +1045,15 @@ async function enrichDetail(context, item) {
         if (og) imageUrl = og;
       }
 
+      const pricePick = pick("価格");
+      const priceMatch =
+        (pricePick && pricePick.match(/((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)\s*万円/)) ||
+        text.match(/価格[^\n]{0,40}?((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)\s*万円/);
+      const landPick = pick("土地面積/坪") || pick("土地面積");
+      const landMatch =
+        (landPick && landPick.match(/([\d,.]+)\s*(?:m[²2]|㎡)/i)) ||
+        text.match(/土地面積[^\n]{0,40}?([\d,.]+)\s*(?:m[²2]|㎡)/i);
+
       return {
         landRight: pick("土地の権利") || pick("土地権利"),
         leaseType: pick("借地権の種類・期間"),
@@ -973,6 +1065,8 @@ async function enrichDetail(context, item) {
           /土地の権利\s*所有権/.test(text) ||
           /土地権利\s*所有権/.test(text) ||
           /所有権/.test(pick("土地の権利") || pick("土地権利") || ""),
+        priceText: priceMatch ? `${priceMatch[1]}万円` : null,
+        landAreaText: landMatch ? `${landMatch[1]}m²` : landPick || null,
         lat: Number.isFinite(lat) ? lat : null,
         lon: Number.isFinite(lon) ? lon : null,
         address: address || null,
@@ -999,6 +1093,8 @@ async function enrichDetail(context, item) {
       storeys,
       structure: detail.structure,
       imageUrl: detail.imageUrl || item.imageUrl || null,
+      priceText: item.priceText || detail.priceText || null,
+      landAreaText: item.landAreaText || detail.landAreaText || null,
     };
   } catch (e) {
     return { ...item, detailError: String(e.message || e) };
@@ -1196,7 +1292,14 @@ export async function runHomesSearch(typeKey, argv = []) {
         const q = buildCondParams(typeCfg, prefs, { stations: [] });
         const url = `${stationPathListUrl(base, pathKey)}?${q.toString()}`;
         console.error("\n[station path]", pathKey, url.slice(0, 120) + "…");
-        mergeStationRows(await scrapeAllPages(page, url, typeCfg));
+        try {
+          mergeStationRows(await scrapeAllPages(page, url, typeCfg));
+        } catch (err) {
+          if (!isRetryableNavError(err)) throw err;
+          console.error(
+            `[station path] ${pathKey}: giving up after retries (${err?.name || "error"}: ${String(err?.message || err).slice(0, 120)})`
+          );
+        }
       }
     }
 

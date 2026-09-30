@@ -275,7 +275,7 @@
           storeys,
           it.madori,
           it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
-          it.landAreaText,
+          it.landAreaText || (it.landAreaM2 != null ? `${it.landAreaM2}m²` : null),
         ].filter(Boolean);
 
         const maps = it.googleMapsUrl
