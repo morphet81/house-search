@@ -158,7 +158,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fa8ha.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fa8ha.jpg",
+        "publishedText": "情報公開日：2026/09/07（23日前 公開）"
       },
       "lat": 35.759930626431,
       "lon": 139.72952173744,
@@ -170,7 +171,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-09-07",
+      "publishedText": "情報公開日：2026/09/07（23日前 公開）"
     },
     {
       "id": "b-1571620000358",
@@ -207,7 +210,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F358%2F2%2F1%2Fvh3f.jpg"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F358%2F2%2F1%2Fvh3f.jpg",
+        "publishedText": "情報公開日：2026/09/06（24日前 公開）"
       },
       "lat": 35.760240047734,
       "lon": 139.72996002103,
@@ -219,7 +223,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-09-06",
+      "publishedText": "情報公開日：2026/09/06（24日前 公開）"
     },
     {
       "id": "b-1170260012309",
@@ -256,7 +262,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F117026%2Fsale%2F12309%2F2%2F2%2F6a6m.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F117026%2Fsale%2F12309%2F2%2F2%2F6a6m.jpg",
+        "publishedText": "情報公開日：2026/03/09（205日前 公開）"
       },
       "lat": 35.763493502046,
       "lon": 139.70666798228,
@@ -268,7 +275,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-03-09",
+      "publishedText": "情報公開日：2026/03/09（205日前 公開）"
     },
     {
       "id": "b-1388540011562",
@@ -305,7 +314,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11562%2F2%2F1%2F4ae0.jpg"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11562%2F2%2F1%2F4ae0.jpg",
+        "publishedText": "情報公開日：2026/09/16（14日前 公開）"
       },
       "lat": 35.761072139682,
       "lon": 139.72859704786,
@@ -317,7 +327,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-09-16",
+      "publishedText": "情報公開日：2026/09/16（14日前 公開）"
     },
     {
       "id": "b-1210390001205",
@@ -354,7 +366,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121039%2Fsale%2F1205%2F2%2F2%2F8zkk.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121039%2Fsale%2F1205%2F2%2F2%2F8zkk.jpg",
+        "publishedText": "情報公開日：2026/09/04（26日前 公開）"
       },
       "lat": 35.761108250434,
       "lon": 139.72873564573,
@@ -366,7 +379,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-09-04",
+      "publishedText": "情報公開日：2026/09/04（26日前 公開）"
     },
     {
       "id": "b-1571620000352",
@@ -403,7 +418,8 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F352%2F2%2F1%2Fcmsi.jpg"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F352%2F2%2F1%2Fcmsi.jpg",
+        "publishedText": "情報公開日：2026/09/05（25日前 公開）"
       },
       "lat": 35.760240047734,
       "lon": 139.72996002103,
@@ -415,7 +431,9 @@
       "yearBuilt": null,
       "buildingAgeYears": null,
       "storeys": null,
-      "structure": null
+      "structure": null,
+      "publishedAt": "2026-09-05",
+      "publishedText": "情報公開日：2026/09/05（25日前 公開）"
     }
   ]
 }

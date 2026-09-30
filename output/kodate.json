@@ -169,7 +169,8 @@
         "yearBuilt": 2008,
         "builtText": "2008年7月（築19年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11490%2F2%2F1%2Fcpeo.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11490%2F2%2F1%2Fcpeo.jpg",
+        "publishedText": "情報公開日：2026/09/06（24日前 公開）"
       },
       "lat": 35.739824082023,
       "lon": 139.71169295213,
@@ -181,7 +182,9 @@
       "yearBuilt": 2008,
       "buildingAgeYears": 19,
       "storeys": 3,
-      "structure": "木造/3階建"
+      "structure": "木造/3階建",
+      "publishedAt": "2026-09-06",
+      "publishedText": "情報公開日：2026/09/06（24日前 公開）"
     },
     {
       "id": "b-1516150002849",
@@ -219,7 +222,8 @@
         "yearBuilt": 2013,
         "builtText": "2013年3月（築14年）",
         "structure": "木造/2階建",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg",
+        "publishedText": "情報公開日：2026/08/26（35日前 公開）"
       },
       "lat": 35.743686286908,
       "lon": 139.73769253032,
@@ -231,7 +235,9 @@
       "yearBuilt": 2013,
       "buildingAgeYears": 14,
       "storeys": 2,
-      "structure": "木造/2階建"
+      "structure": "木造/2階建",
+      "publishedAt": "2026-08-26",
+      "publishedText": "情報公開日：2026/08/26（35日前 公開）"
     },
     {
       "id": "b-1357690020807",
@@ -269,7 +275,8 @@
         "yearBuilt": 2021,
         "builtText": "2021年5月（築6年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg",
+        "publishedText": "情報公開日：2026/09/19（11日前 公開）"
       },
       "lat": 35.739142432598,
       "lon": 139.71985061918,
@@ -281,7 +288,9 @@
       "yearBuilt": 2021,
       "buildingAgeYears": 6,
       "storeys": 3,
-      "structure": "木造/3階建"
+      "structure": "木造/3階建",
+      "publishedAt": "2026-09-19",
+      "publishedText": "情報公開日：2026/09/19（11日前 公開）"
     },
     {
       "id": "b-35007280000106",
@@ -319,7 +328,8 @@
         "yearBuilt": 2023,
         "builtText": "2023年5月（築4年）",
         "structure": "木造/3階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500728%2Fsale%2F106%2F2%2F1%2Fztw8.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500728%2Fsale%2F106%2F2%2F1%2Fztw8.jpg",
+        "publishedText": "情報公開日：2026/07/30（62日前 公開）"
       },
       "lat": 35.749100997126,
       "lon": 139.71852588655,
@@ -331,7 +341,9 @@
       "yearBuilt": 2023,
       "buildingAgeYears": 4,
       "storeys": 3,
-      "structure": "木造/3階建"
+      "structure": "木造/3階建",
+      "publishedAt": "2026-07-30",
+      "publishedText": "情報公開日：2026/07/30（62日前 公開）"
     },
     {
       "id": "b-1199420000534",
@@ -369,7 +381,8 @@
         "yearBuilt": 2025,
         "builtText": "2025年9月（築2年）",
         "structure": "木造/2階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119942%2Fsale%2F534%2F2%2F1%2F07pq.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119942%2Fsale%2F534%2F2%2F1%2F07pq.jpg",
+        "publishedText": "情報公開日：2025/07/03（454日前 公開）"
       },
       "lat": 35.682401657887,
       "lon": 139.66992714271,
@@ -381,7 +394,9 @@
       "yearBuilt": 2025,
       "buildingAgeYears": 2,
       "storeys": 2,
-      "structure": "木造/2階建"
+      "structure": "木造/2階建",
+      "publishedAt": "2025-07-03",
+      "publishedText": "情報公開日：2025/07/03（454日前 公開）"
     }
   ]
 }

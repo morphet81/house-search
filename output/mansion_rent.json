@@ -208,7 +208,8 @@
         "yearBuilt": 2007,
         "builtText": "2007年7月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150753%2Frent%2F32273%2F2%2F2%2Fzal5.jpg"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150753%2Frent%2F32273%2F2%2F2%2Fzal5.jpg",
+        "publishedText": "情報公開日\n\n2026/09/05"
       },
       "lat": 35.781733572903,
       "lon": 139.6927420435,
@@ -219,7 +220,9 @@
       "yearBuilt": 2007,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "isNew": true,
+      "publishedAt": "2026-09-05",
+      "publishedText": "情報公開日\n\n2026/09/05"
     },
     {
       "id": "d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be",
@@ -259,7 +262,8 @@
         "yearBuilt": 2004,
         "builtText": "2004年7月",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F30fe55ad%2F42423_116551_2_132000_132000.jpg%3Ft%3D20260723104536"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F30fe55ad%2F42423_116551_2_132000_132000.jpg%3Ft%3D20260723104536",
+        "publishedText": "情報公開日\n\n2026/07/20"
       },
       "lat": 35.780441495779,
       "lon": 139.70309899197,
@@ -270,7 +274,9 @@
       "yearBuilt": 2004,
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "isNew": true
+      "isNew": true,
+      "publishedAt": "2026-07-20",
+      "publishedText": "情報公開日\n\n2026/07/20"
     },
     {
       "id": "56ebb4fdcbfb3e9828615ece2708300618c45732",
@@ -310,7 +316,8 @@
         "yearBuilt": 1998,
         "builtText": "1998年5月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fad97d84d%2F32733_854767_1_132000_132000.jpg%3Ft%3D20260706111932"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fad97d84d%2F32733_854767_1_132000_132000.jpg%3Ft%3D20260706111932",
+        "publishedText": "情報公開日\n\n2026/07/06"
       },
       "lat": 35.775448695223,
       "lon": 139.72272502343,
@@ -321,7 +328,9 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "isNew": true,
+      "publishedAt": "2026-07-06",
+      "publishedText": "情報公開日\n\n2026/07/06"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -361,7 +370,8 @@
         "yearBuilt": 2001,
         "builtText": "2001年2月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107196%2Frent%2F172581%2F2%2F2%2Fbqlq.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107196%2Frent%2F172581%2F2%2F2%2Fbqlq.jpg",
+        "publishedText": "情報公開日\n\n2026/09/22"
       },
       "lat": 35.623774432272,
       "lon": 139.69311640783,
@@ -372,7 +382,9 @@
       "yearBuilt": 2001,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "isNew": true
+      "isNew": true,
+      "publishedAt": "2026-09-22",
+      "publishedText": "情報公開日\n\n2026/09/22"
     },
     {
       "id": "61412aca358e721eb2a82eb63bef09bc8cc1b283",
@@ -412,7 +424,8 @@
         "yearBuilt": 2001,
         "builtText": "2001年2月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F13084%2F13084041%2F13084041_2.jpg%3F20260902154635"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F13084%2F13084041%2F13084041_2.jpg%3F20260902154635",
+        "publishedText": "情報公開日\n\n2026/07/12"
       },
       "lat": 35.623348368055,
       "lon": 139.69307698377,
@@ -427,7 +440,9 @@
         "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
         "2ab934de22d25e6bee1cc794e028e5780f382370"
       ],
-      "isNew": true
+      "isNew": true,
+      "publishedAt": "2026-07-12",
+      "publishedText": "情報公開日\n\n2026/07/12"
     },
     {
       "id": "cc58fb0f83594a8992e2313642020b65377cf01c",
@@ -467,7 +482,8 @@
         "yearBuilt": 1992,
         "builtText": "1992年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105714%2Frent%2F44161%2F2%2F2%2Fdlw0.jpg"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105714%2Frent%2F44161%2F2%2F2%2Fdlw0.jpg",
+        "publishedText": "情報公開日\n\n2026/05/08"
       },
       "lat": 35.734787201413,
       "lon": 139.703241929,
@@ -477,7 +493,9 @@
       "wardEn": "Toshima-ku",
       "yearBuilt": 1992,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-05-08",
+      "publishedText": "情報公開日\n\n2026/05/08"
     },
     {
       "id": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
@@ -517,7 +535,8 @@
         "yearBuilt": 2002,
         "builtText": "2002年5月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14615%2F14615361%2F14615361_2.jpg%3F20260607123652"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14615%2F14615361%2F14615361_2.jpg%3F20260607123652",
+        "publishedText": "情報公開日\n\n2026/06/11"
       },
       "lat": 35.63580533495,
       "lon": 139.68398920204,
@@ -527,7 +546,9 @@
       "wardEn": "Setagaya-ku",
       "yearBuilt": 2002,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-06-11",
+      "publishedText": "情報公開日\n\n2026/06/11"
     }
   ]
 }

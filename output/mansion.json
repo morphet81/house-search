@@ -185,7 +185,8 @@
         "yearBuilt": 2003,
         "builtText": "2003年9月（築24年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157127%2Fsale%2F11%2F2%2F2%2Fpcqv.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157127%2Fsale%2F11%2F2%2F2%2Fpcqv.jpg",
+        "publishedText": "情報公開日：2026/09/07（23日前 公開）"
       },
       "lat": 35.781016209653,
       "lon": 139.69482939476,
@@ -197,7 +198,9 @@
       "yearBuilt": 2003,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-07",
+      "publishedText": "情報公開日：2026/09/07（23日前 公開）"
     },
     {
       "id": "b-35007040000146",
@@ -235,7 +238,8 @@
         "yearBuilt": 2000,
         "builtText": "2000年12月（築26年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500704%2Fsale%2F146%2F2%2F1%2F3jde.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500704%2Fsale%2F146%2F2%2F1%2F3jde.jpg",
+        "publishedText": "情報公開日：2026/01/22（251日前 公開）"
       },
       "lat": 35.768283136846,
       "lon": 139.69243511145,
@@ -247,7 +251,9 @@
       "yearBuilt": 2000,
       "buildingAgeYears": 26,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-01-22",
+      "publishedText": "情報公開日：2026/01/22（251日前 公開）"
     },
     {
       "id": "b-1540370000256",
@@ -285,7 +291,8 @@
         "yearBuilt": 2009,
         "builtText": "2009年9月（築18年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F154037%2Fsale%2F256%2F11%2F1%2Fr1es.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F154037%2Fsale%2F256%2F11%2F1%2Fr1es.jpg",
+        "publishedText": "情報公開日：2026/04/03（180日前 公開）"
       },
       "lat": 35.792678881097,
       "lon": 139.69848139159,
@@ -300,7 +307,9 @@
       "structure": "RC(鉄筋コンクリート)",
       "dedupedFrom": [
         "b-1216390039963"
-      ]
+      ],
+      "publishedAt": "2026-04-03",
+      "publishedText": "情報公開日：2026/04/03（180日前 公開）"
     },
     {
       "id": "b-35006130000082",
@@ -338,7 +347,8 @@
         "yearBuilt": 1992,
         "builtText": "1992年3月（築35年）",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500613%2Fsale%2F82%2F11%2F3%2F6rp4.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500613%2Fsale%2F82%2F11%2F3%2F6rp4.jpg",
+        "publishedText": "情報公開日：2026/07/11（81日前 公開）"
       },
       "lat": 35.788436792893,
       "lon": 139.70636978019,
@@ -350,7 +360,9 @@
       "yearBuilt": 1992,
       "buildingAgeYears": 35,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)"
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-07-11",
+      "publishedText": "情報公開日：2026/07/11（81日前 公開）"
     },
     {
       "id": "b-1216390038582",
@@ -388,7 +400,8 @@
         "yearBuilt": 2002,
         "builtText": "2002年9月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F1%2Fjk0g.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F1%2Fjk0g.jpg",
+        "publishedText": "情報公開日：2026/06/20（102日前 公開）"
       },
       "lat": 35.769392651025,
       "lon": 139.68933421953,
@@ -403,7 +416,9 @@
       "structure": "RC(鉄筋コンクリート)",
       "dedupedFrom": [
         "b-1526290002105"
-      ]
+      ],
+      "publishedAt": "2026-06-20",
+      "publishedText": "情報公開日：2026/06/20（102日前 公開）"
     },
     {
       "id": "b-1251460111042",
@@ -441,7 +456,8 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F1%2F1%2Fiq6r.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F1%2F1%2Fiq6r.jpg",
+        "publishedText": "情報公開日：2026/08/27（34日前 公開）"
       },
       "lat": 35.79211277634,
       "lon": 139.69633381942,
@@ -453,7 +469,9 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 25,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-08-27",
+      "publishedText": "情報公開日：2026/08/27（34日前 公開）"
     },
     {
       "id": "b-39051320000349",
@@ -491,7 +509,8 @@
         "yearBuilt": 2005,
         "builtText": "2005年12月（築21年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F349%2F2%2F1%2Fqldj.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F349%2F2%2F1%2Fqldj.jpg",
+        "publishedText": "情報公開日：2026/09/25（5日前 公開）"
       },
       "lat": 35.767350511443,
       "lon": 139.69420055435,
@@ -503,7 +522,9 @@
       "yearBuilt": 2005,
       "buildingAgeYears": 21,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-25",
+      "publishedText": "情報公開日：2026/09/25（5日前 公開）"
     },
     {
       "id": "b-1571620000345",
@@ -541,7 +562,8 @@
         "yearBuilt": 1995,
         "builtText": "1995年10月（築31年）",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F345%2F9%2F1%2Fhqll.jpg"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F345%2F9%2F1%2Fhqll.jpg",
+        "publishedText": "情報公開日：2026/08/30（31日前 公開）"
       },
       "lat": 35.773949651769,
       "lon": 139.70026005071,
@@ -553,7 +575,9 @@
       "yearBuilt": 1995,
       "buildingAgeYears": 31,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)"
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-08-30",
+      "publishedText": "情報公開日：2026/08/30（31日前 公開）"
     },
     {
       "id": "b-39051320000340",
@@ -591,7 +615,8 @@
         "yearBuilt": 2003,
         "builtText": "2003年1月（築24年）",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F340%2F11%2F3%2F7lh8.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3905132%2Fsale%2F340%2F11%2F3%2F7lh8.jpg",
+        "publishedText": "情報公開日：2026/09/20（10日前 公開）"
       },
       "lat": 35.770261972515,
       "lon": 139.698785047,
@@ -603,7 +628,9 @@
       "yearBuilt": 2003,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)"
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-09-20",
+      "publishedText": "情報公開日：2026/09/20（10日前 公開）"
     },
     {
       "id": "b-1526290002181",
@@ -641,7 +668,8 @@
         "yearBuilt": 1993,
         "builtText": "1993年2月（築34年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152629%2Fsale%2F2181%2F2%2F1%2F7jv3.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152629%2Fsale%2F2181%2F2%2F1%2F7jv3.jpg",
+        "publishedText": "情報公開日：2026/07/09（83日前 公開）"
       },
       "lat": 35.780183894942,
       "lon": 139.68786529876,
@@ -653,7 +681,9 @@
       "yearBuilt": 1993,
       "buildingAgeYears": 34,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-07-09",
+      "publishedText": "情報公開日：2026/07/09（83日前 公開）"
     },
     {
       "id": "b-1476140000712",
@@ -691,7 +721,8 @@
         "yearBuilt": 2016,
         "builtText": "2016年1月（築11年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147614%2Fsale%2F712%2F2%2F1%2Fxua7.jpg"
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147614%2Fsale%2F712%2F2%2F1%2Fxua7.jpg",
+        "publishedText": "情報公開日：2026/08/03（58日前 公開）"
       },
       "lat": 35.756469586109,
       "lon": 139.7175923359,
@@ -703,7 +734,9 @@
       "yearBuilt": 2016,
       "buildingAgeYears": 11,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-08-03",
+      "publishedText": "情報公開日：2026/08/03（58日前 公開）"
     },
     {
       "id": "b-1261160003393",
@@ -741,7 +774,8 @@
         "yearBuilt": 1999,
         "builtText": "1999年3月（築28年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3393%2F11%2F1%2Fwjwp.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3393%2F11%2F1%2Fwjwp.jpg",
+        "publishedText": "情報公開日：2026/02/22（220日前 公開）"
       },
       "lat": 35.712555093874,
       "lon": 139.71774075663,
@@ -753,7 +787,9 @@
       "yearBuilt": 1999,
       "buildingAgeYears": 28,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-02-22",
+      "publishedText": "情報公開日：2026/02/22（220日前 公開）"
     },
     {
       "id": "b-1267650039069",
@@ -791,7 +827,8 @@
         "yearBuilt": 1998,
         "builtText": "1998年2月（築29年）",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F39069%2F11%2F3%2F8j79.jpg"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F39069%2F11%2F3%2F8j79.jpg",
+        "publishedText": "情報公開日：2026/09/06（24日前 公開）"
       },
       "lat": 35.754929736091,
       "lon": 139.71671136173,
@@ -803,7 +840,9 @@
       "yearBuilt": 1998,
       "buildingAgeYears": 29,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)"
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-09-06",
+      "publishedText": "情報公開日：2026/09/06（24日前 公開）"
     },
     {
       "id": "b-35007350000032",
@@ -841,7 +880,8 @@
         "yearBuilt": 2000,
         "builtText": "2000年3月（築27年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500735%2Fsale%2F32%2F2%2F1%2Fasnj.jpg"
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500735%2Fsale%2F32%2F2%2F1%2Fasnj.jpg",
+        "publishedText": "情報公開日：2026/02/28（214日前 公開）"
       },
       "lat": 35.635373860233,
       "lon": 139.67894770319,
@@ -853,7 +893,9 @@
       "yearBuilt": 2000,
       "buildingAgeYears": 27,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-02-28",
+      "publishedText": "情報公開日：2026/02/28（214日前 公開）"
     },
     {
       "id": "b-1267650035049",
@@ -891,7 +933,8 @@
         "yearBuilt": 2006,
         "builtText": "2006年2月（築21年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F35049%2F11%2F4%2Fiyau.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F35049%2F11%2F4%2Fiyau.jpg",
+        "publishedText": "情報公開日：2026/01/08（265日前 公開）"
       },
       "lat": 35.73562709155,
       "lon": 139.72344573272,
@@ -903,7 +946,9 @@
       "yearBuilt": 2006,
       "buildingAgeYears": 21,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-01-08",
+      "publishedText": "情報公開日：2026/01/08（265日前 公開）"
     },
     {
       "id": "b-1275790000919",
@@ -941,7 +986,8 @@
         "yearBuilt": 1993,
         "builtText": "1993年10月（築33年）",
         "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127579%2Fsale%2F919%2F11%2F3%2Fg9hi.jpg"
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127579%2Fsale%2F919%2F11%2F3%2Fg9hi.jpg",
+        "publishedText": "情報公開日：2026/07/16（76日前 公開）"
       },
       "lat": 35.711718237284,
       "lon": 139.71750081066,
@@ -953,7 +999,9 @@
       "yearBuilt": 1993,
       "buildingAgeYears": 33,
       "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)"
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-07-16",
+      "publishedText": "情報公開日：2026/07/16（76日前 公開）"
     },
     {
       "id": "b-1216390038503",
@@ -991,7 +1039,8 @@
         "yearBuilt": 2002,
         "builtText": "2002年10月（築24年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38503%2F2%2F9%2Fftpv.jpg"
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38503%2F2%2F9%2Fftpv.jpg",
+        "publishedText": "情報公開日：2026/06/16（106日前 公開）"
       },
       "lat": 35.701921339785,
       "lon": 139.7195418641,
@@ -1003,7 +1052,9 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-06-16",
+      "publishedText": "情報公開日：2026/06/16（106日前 公開）"
     },
     {
       "id": "b-1388540011167",
@@ -1041,7 +1092,8 @@
         "yearBuilt": 2002,
         "builtText": "2002年10月（築24年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11167%2F2%2F1%2Fj7bi.jpg"
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138854%2Fsale%2F11167%2F2%2F1%2Fj7bi.jpg",
+        "publishedText": "情報公開日：2026/06/11（111日前 公開）"
       },
       "lat": 35.702055203917,
       "lon": 139.71917966729,
@@ -1053,7 +1105,9 @@
       "yearBuilt": 2002,
       "buildingAgeYears": 24,
       "storeys": null,
-      "structure": "RC(鉄筋コンクリート)"
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-06-11",
+      "publishedText": "情報公開日：2026/06/11（111日前 公開）"
     }
   ]
 }

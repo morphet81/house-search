@@ -983,6 +983,23 @@ function buildGoogleMapsLocation(detail) {
   };
 }
 
+function parsePublishedAt(text) {
+  if (!text) return null;
+  const s = String(text);
+  // e.g. 情報公開日：2026/09/06（24日前 公開）
+  const m =
+    s.match(/情報公開日\s*[:：]?\s*(\d{4})[\/\-年](\d{1,2})[\/\-月](\d{1,2})/) ||
+    s.match(/公開日\s*[:：]?\s*(\d{4})[\/\-年](\d{1,2})[\/\-月](\d{1,2})/);
+  if (!m) return null;
+  const y = Number(m[1]);
+  const mo = Number(m[2]);
+  const d = Number(m[3]);
+  if (![y, mo, d].every(Number.isFinite)) return null;
+  const dt = new Date(Date.UTC(y, mo - 1, d));
+  if (Number.isNaN(dt.getTime())) return null;
+  return dt.toISOString().slice(0, 10); // YYYY-MM-DD
+}
+
 async function enrichDetail(context, item) {
   const page = await context.newPage();
   try {
@@ -1076,6 +1093,10 @@ async function enrichDetail(context, item) {
         (landPick && landPick.match(/([\d,.]+)\s*(?:m[²2]|㎡)/i)) ||
         text.match(/土地面積[^\n]{0,40}?([\d,.]+)\s*(?:m[²2]|㎡)/i);
 
+      const publishedLine =
+        (text.match(/情報公開日\s*[:：]?\s*[^\n]+/) || text.match(/公開日\s*[:：]?\s*[^\n]+/) || [])[0] ||
+        null;
+
       return {
         landRight: pick("土地の権利") || pick("土地権利"),
         leaseType: pick("借地権の種類・期間"),
@@ -1089,6 +1110,7 @@ async function enrichDetail(context, item) {
           /所有権/.test(pick("土地の権利") || pick("土地権利") || ""),
         priceText: priceMatch ? `${priceMatch[1]}万円` : null,
         landAreaText: landMatch ? `${landMatch[1]}m²` : landPick || null,
+        publishedText: publishedLine,
         lat: Number.isFinite(lat) ? lat : null,
         lon: Number.isFinite(lon) ? lon : null,
         address: address || null,
@@ -1104,6 +1126,7 @@ async function enrichDetail(context, item) {
     const { ward, wardEn } = wardFromAddress(detail.address || location.address);
     const buildingAgeYears = parseBuildingAge(detail.builtText, detail.yearBuilt);
     const storeys = parseStoreys(detail.structure);
+    const publishedAt = parsePublishedAt(detail.publishedText) || item.publishedAt || null;
     return {
       ...item,
       detail,
@@ -1117,6 +1140,8 @@ async function enrichDetail(context, item) {
       imageUrl: detail.imageUrl || item.imageUrl || null,
       priceText: item.priceText || detail.priceText || null,
       landAreaText: item.landAreaText || detail.landAreaText || null,
+      publishedAt,
+      publishedText: detail.publishedText || item.publishedText || null,
     };
   } catch (e) {
     return { ...item, detailError: String(e.message || e) };
