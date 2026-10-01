@@ -1077,6 +1077,8 @@ async function scrapeRentListPage(page) {
         const reikinText = feesMatch ? feesMatch[4] : null;
         const guaranteeText = feesMatch ? feesMatch[5] : null;
         const shikibikiText = feesMatch ? feesMatch[6] : null;
+        // List often only flags 即入居可; full 入居可能時期 comes from detail enrich.
+        const availableText = /即入居可/.test(raw) ? "即時" : null;
 
         return {
           id: idMatch[1],
@@ -1098,6 +1100,7 @@ async function scrapeRentListPage(page) {
           reikinText,
           guaranteeText,
           shikibikiText,
+          availableText,
           rawText: raw.slice(0, 500),
           deal: "rent",
         };
@@ -1313,6 +1316,7 @@ async function enrichDetail(context, item) {
       let builtText = null;
       let structure = null;
       let imageUrl = null;
+      let availableText = null;
       try {
         for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
           const data = JSON.parse(s.textContent || "null");
@@ -1338,6 +1342,7 @@ async function enrichDetail(context, item) {
           }
           builtText = byName("築年月") || builtText;
           structure = byName("建物構造") || structure;
+          availableText = byName("入居可能時期") || byName("入居時期") || availableText;
 
           const images = Array.isArray(house.image) ? house.image : house.image ? [house.image] : [];
           const urls = images
@@ -1353,6 +1358,13 @@ async function enrichDetail(context, item) {
       if (!address) address = pick("所在地") || pick("住所");
       if (!builtText) builtText = pick("築年月") || pick("築年数");
       if (!structure) structure = pick("建物構造");
+      if (!availableText) {
+        availableText =
+          pick("入居可能時期") ||
+          pick("入居時期") ||
+          (text.match(/入居可能時期\s*\n?\s*([^\n]+)/) || [])[1]?.trim() ||
+          null;
+      }
       if (!imageUrl) {
         const og = document.querySelector('meta[property="og:image"]')?.content;
         if (og) imageUrl = og;
@@ -1422,6 +1434,7 @@ async function enrichDetail(context, item) {
         guaranteeText,
         shikibikiText,
         managementFeeText: managementFee,
+        availableText: availableText || null,
       };
     });
 
@@ -1437,6 +1450,7 @@ async function enrichDetail(context, item) {
     const shikibikiText = item.shikibikiText || detail.shikibikiText || null;
     const managementFeeText = item.managementFeeText || detail.managementFeeText || null;
     const priceText = item.priceText || detail.priceText || null;
+    const availableText = detail.availableText || item.availableText || null;
 
     const base = {
       ...item,
@@ -1473,6 +1487,7 @@ async function enrichDetail(context, item) {
       guaranteeText,
       shikibikiText,
       managementFeeText,
+      availableText,
       reikinMonths: reikin.months,
       reikinYen: reikin.yen,
       shikikinMonths: parseRentFeeToken(shikikinText).months,

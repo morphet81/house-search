@@ -354,6 +354,7 @@
         const listedFor = formatListedFor(it.publishedAt || it.detail?.publishedAt);
         const keyMoney = isRent ? formatKeyMoney(it) : null;
         const oneOff = isRent ? formatOneOff(it) : null;
+        const available = isRent ? formatAvailable(it) : null;
 
         const bits = [
           wardEn,
@@ -362,6 +363,7 @@
           it.madori,
           it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
           it.landAreaText || (it.landAreaM2 != null ? `${it.landAreaM2}m²` : null),
+          available,
           keyMoney,
           oneOff,
           listedFor,
@@ -419,6 +421,16 @@
         if (v == null) return null;
         const rounded = Number.isInteger(v) ? String(v) : v.toFixed(1).replace(/\.0$/, "");
         return `One-off ~${rounded}万円`;
+      }
+
+      function formatAvailable(it) {
+        const raw = it.availableText || it.detail?.availableText || null;
+        if (!raw) return null;
+        const t = String(raw).trim();
+        if (!t) return null;
+        if (/^(即時|即入居|即入居可)$/.test(t) || t === "すぐに入居可") return "Available now";
+        if (/相談/.test(t) && t.length <= 6) return `Available: ${t}`;
+        return `Available ${t}`;
       }
 
       function resolveWardEn(it) {
