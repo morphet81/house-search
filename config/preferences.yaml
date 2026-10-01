@@ -8,11 +8,7 @@
 # Field names align with docs/homes-co-jp-search-filters.md
 
 defaults:
-  prefecture:
-    - 東京都
-    - 神奈川県
-    - 埼玉県
-    - 千葉県
+  prefecture: 東京都
   # Max budgets (buy = purchase price; rent = monthly 賃料)
   budget:
     buy_max: 11500 # 1億3000万円 (¥130M)
@@ -34,7 +30,8 @@ defaults:
 # Named station groups. Buy / rent locations pick which groups to use.
 _station_sets:
   tokyo_lfi:
-    # Campus / Mita north + Toden + Saikyo (LFI ±4)
+    # LFI Tokyo (Takinogawa) school-bus catchments + campus ±4 rail stops.
+    # Campus / Mita north + Toden + Saikyo
     - 新板橋
     - 板橋
     - 西巣鴨
@@ -127,137 +124,20 @@ _station_sets:
     - 五反田
     - 芝公園
     - 御成門
-  saint_maur:
-    # Saint Maur International School (Yamate-cho) ≤20 min transit
-    - 元町・中華街
-    - 石川町
-    - 山手
-    - 日本大通り
-    - 馬車道
-    - みなとみらい
-    - 新高島
-    - 関内
-    - 桜木町
-    - 根岸
-    - 磯子
-    - 伊勢佐木長者町
-    - 日ノ出町
-  seibu_shinjuku:
-    # 西武新宿線 (incl. Saitama)
-    - 西武新宿
-    - 高田馬場
-    - 下落合
-    - 中井
-    - 新井薬師前
-    - 沼袋
-    - 野方
-    - 都立家政
-    - 鷺ノ宮
-    - 下井草
-    - 井荻
-    - 上井草
-    - 上石神井
-    - 武蔵関
-    - 東伏見
-    - 西武柳沢
-    - 田無
-    - 花小金井
-    - 小平
-    - 久米川
-    - 東村山
-    - 所沢
-    - 航空公園
-    - 新所沢
-    - 入曽
-    - 狭山市
-    - 新狭山
-    - 南大塚
-    - 本川越
-  seibu_ikebukuro:
-    # 西武池袋線 (incl. Saitama); 池袋 already in tokyo_lfi
-    - 椎名町
-    - 東長崎
-    - 江古田
-    - 桜台
-    - 練馬
-    - 中村橋
-    - 富士見台
-    - 練馬高野台
-    - 石神井公園
-    - 大泉学園
-    - 保谷
-    - ひばりヶ丘
-    - 東久留米
-    - 清瀬
-    - 秋津
-    - 所沢
-    - 西所沢
-    - 小手指
-    - 狭山ヶ丘
-    - 武蔵藤沢
-    - 稲荷山公園
-    - 入間市
-    - 仏子
-    - 元加治
-    - 飯能
-  chuo_sobu:
-    # JR中央・総武緩行線 (HOME'S「総武線」; Chiba→Mitaka)
-    - 千葉
-    - 西千葉
-    - 稲毛
-    - 新検見川
-    - 幕張
-    - 幕張本郷
-    - 津田沼
-    - 東船橋
-    - 船橋
-    - 西船橋
-    - 下総中山
-    - 本八幡
-    - 市川
-    - 小岩
-    - 新小岩
-    - 平井
-    - 亀戸
-    - 錦糸町
-    - 両国
-    - 浅草橋
-    - 秋葉原
-    - 御茶ノ水
-    - 水道橋
-    - 飯田橋
-    - 市ケ谷
-    - 四ツ谷
-    - 信濃町
-    - 千駄ケ谷
-    - 代々木
-    - 新宿
-    - 大久保
-    - 東中野
-    - 中野
-    - 高円寺
-    - 阿佐ケ谷
-    - 荻窪
-    - 西荻窪
-    - 吉祥寺
-    - 三鷹
 
-# Buy (sale) vs rent station catchments — edit independently.
+# Buy / rent catchments — LFI focus only (edit independently if needed).
+# ku 北区: whole ward covering LFI campus neighbourhood (滝野川).
 _buy_location: &buy_location
-  ku: []
+  ku:
+    - 北区
   station_sets:
     - tokyo_lfi
-    - saint_maur
 
 _rent_location: &rent_location
   ku:
-    - 世田谷区 # entire ward (in addition to station sets)
+    - 北区
   station_sets:
     - tokyo_lfi
-    - saint_maur
-    - seibu_shinjuku
-    - seibu_ikebukuro
-    - chuo_sobu
 
 # 間取り: 3 rooms or more
 _madori_3plus: &madori_3plus
