@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generatedAt": "2026-10-01T03:27:55.376Z",
+  "generatedAt": "2026-10-01T03:44:11.593Z",
   "prefsFile": "config/preferences.yaml",
   "deal": "rent",
   "features": [
@@ -1429,6 +1429,1224 @@
       },
       "properties": {
         "name": "日ノ出町",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7001398,
+          35.6947489
+        ]
+      },
+      "properties": {
+        "name": "西武新宿",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7044742,
+          35.7134826
+        ]
+      },
+      "properties": {
+        "name": "高田馬場",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6961837,
+          35.7158218
+        ]
+      },
+      "properties": {
+        "name": "下落合",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6876328,
+          35.7164847
+        ]
+      },
+      "properties": {
+        "name": "中井",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6710056,
+          35.7155615
+        ]
+      },
+      "properties": {
+        "name": "新井薬師前",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6645715,
+          35.7192234
+        ]
+      },
+      "properties": {
+        "name": "沼袋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6530921,
+          35.7185207
+        ]
+      },
+      "properties": {
+        "name": "野方",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6446653,
+          35.7224188
+        ]
+      },
+      "properties": {
+        "name": "都立家政",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6381305,
+          35.7228612
+        ]
+      },
+      "properties": {
+        "name": "鷺ノ宮",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6243173,
+          35.7240078
+        ]
+      },
+      "properties": {
+        "name": "下井草",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6148551,
+          35.7247476
+        ]
+      },
+      "properties": {
+        "name": "井荻",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.603862,
+          35.7251161
+        ]
+      },
+      "properties": {
+        "name": "上井草",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5913839,
+          35.7259605
+        ]
+      },
+      "properties": {
+        "name": "上石神井",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5770122,
+          35.7272781
+        ]
+      },
+      "properties": {
+        "name": "武蔵関",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5642364,
+          35.7287024
+        ]
+      },
+      "properties": {
+        "name": "東伏見",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5525914,
+          35.7286376
+        ]
+      },
+      "properties": {
+        "name": "西武柳沢",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8031205,
+          35.7327411
+        ]
+      },
+      "properties": {
+        "name": "田無",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5132235,
+          35.7261822
+        ]
+      },
+      "properties": {
+        "name": "花小金井",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.842935,
+          35.7062861
+        ]
+      },
+      "properties": {
+        "name": "小平",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4791393,
+          35.74726
+        ]
+      },
+      "properties": {
+        "name": "久米川",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641101,
+          35.7330684
+        ]
+      },
+      "properties": {
+        "name": "東村山",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4733096,
+          35.7867907
+        ]
+      },
+      "properties": {
+        "name": "所沢",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4667256,
+          35.7987604
+        ]
+      },
+      "properties": {
+        "name": "航空公園",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.456071,
+          35.8068392
+        ]
+      },
+      "properties": {
+        "name": "新所沢",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.427694,
+          35.8345061
+        ]
+      },
+      "properties": {
+        "name": "入曽",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4132001,
+          35.8572924
+        ]
+      },
+      "properties": {
+        "name": "狭山市",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4331973,
+          35.8740134
+        ]
+      },
+      "properties": {
+        "name": "新狭山",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.454295,
+          35.8898272
+        ]
+      },
+      "properties": {
+        "name": "南大塚",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4820423,
+          35.914559
+        ]
+      },
+      "properties": {
+        "name": "本川越",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6948922,
+          35.7264476
+        ]
+      },
+      "properties": {
+        "name": "椎名町",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6828652,
+          35.7303794
+        ]
+      },
+      "properties": {
+        "name": "東長崎",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6740052,
+          35.7367695
+        ]
+      },
+      "properties": {
+        "name": "江古田",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6623844,
+          35.7387537
+        ]
+      },
+      "properties": {
+        "name": "桜台",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654186,
+          35.7381286
+        ]
+      },
+      "properties": {
+        "name": "練馬",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638773,
+          35.7361546
+        ]
+      },
+      "properties": {
+        "name": "中村橋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6299762,
+          35.7359405
+        ]
+      },
+      "properties": {
+        "name": "富士見台",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6168898,
+          35.7406022
+        ]
+      },
+      "properties": {
+        "name": "練馬高野台",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6069909,
+          35.7434548
+        ]
+      },
+      "properties": {
+        "name": "石神井公園",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5865223,
+          35.7495045
+        ]
+      },
+      "properties": {
+        "name": "大泉学園",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5673646,
+          35.7483016
+        ]
+      },
+      "properties": {
+        "name": "保谷",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5447014,
+          35.751609
+        ]
+      },
+      "properties": {
+        "name": "ひばりヶ丘",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5340853,
+          35.7602506
+        ]
+      },
+      "properties": {
+        "name": "東久留米",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6190428,
+          35.7144962
+        ]
+      },
+      "properties": {
+        "name": "清瀬",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6323721,
+          35.7636566
+        ]
+      },
+      "properties": {
+        "name": "秋津",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4563785,
+          35.7887008
+        ]
+      },
+      "properties": {
+        "name": "西所沢",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4377917,
+          35.8006184
+        ]
+      },
+      "properties": {
+        "name": "小手指",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.416788,
+          35.8104966
+        ]
+      },
+      "properties": {
+        "name": "狭山ヶ丘",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4121346,
+          35.8211484
+        ]
+      },
+      "properties": {
+        "name": "武蔵藤沢",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3986781,
+          35.845385
+        ]
+      },
+      "properties": {
+        "name": "稲荷山公園",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3901317,
+          35.8426832
+        ]
+      },
+      "properties": {
+        "name": "入間市",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3594614,
+          35.8378577
+        ]
+      },
+      "properties": {
+        "name": "仏子",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.345729,
+          35.8405537
+        ]
+      },
+      "properties": {
+        "name": "元加治",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3190593,
+          35.8510047
+        ]
+      },
+      "properties": {
+        "name": "飯能",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1146261,
+          35.61331
+        ]
+      },
+      "properties": {
+        "name": "千葉",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1031925,
+          35.6227712
+        ]
+      },
+      "properties": {
+        "name": "西千葉",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.092676,
+          35.6369851
+        ]
+      },
+      "properties": {
+        "name": "稲毛",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0729624,
+          35.6518043
+        ]
+      },
+      "properties": {
+        "name": "新検見川",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0579299,
+          35.6593791
+        ]
+      },
+      "properties": {
+        "name": "幕張",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0418106,
+          35.6725312
+        ]
+      },
+      "properties": {
+        "name": "幕張本郷",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0203458,
+          35.6912757
+        ]
+      },
+      "properties": {
+        "name": "津田沼",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0042802,
+          35.6998087
+        ]
+      },
+      "properties": {
+        "name": "東船橋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9849722,
+          35.7017306
+        ]
+      },
+      "properties": {
+        "name": "船橋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9589576,
+          35.7082032
+        ]
+      },
+      "properties": {
+        "name": "西船橋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9428623,
+          35.7143952
+        ]
+      },
+      "properties": {
+        "name": "下総中山",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9276594,
+          35.7207437
+        ]
+      },
+      "properties": {
+        "name": "本八幡",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9082311,
+          35.7288383
+        ]
+      },
+      "properties": {
+        "name": "市川",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.882171,
+          35.7326772
+        ]
+      },
+      "properties": {
+        "name": "小岩",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8582645,
+          35.7167909
+        ]
+      },
+      "properties": {
+        "name": "新小岩",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.842813,
+          35.706497
+        ]
+      },
+      "properties": {
+        "name": "平井",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8244156,
+          35.6975819
+        ]
+      },
+      "properties": {
+        "name": "亀戸",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8150431,
+          35.6963122
+        ]
+      },
+      "properties": {
+        "name": "錦糸町",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.792755,
+          35.6960022
+        ]
+      },
+      "properties": {
+        "name": "両国",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.786178,
+          35.6968013
+        ]
+      },
+      "properties": {
+        "name": "浅草橋",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7740416,
+          35.6988944
+        ]
+      },
+      "properties": {
+        "name": "秋葉原",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7204947,
+          35.6800236
+        ]
+      },
+      "properties": {
+        "name": "信濃町",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7111184,
+          35.6810827
+        ]
+      },
+      "properties": {
+        "name": "千駄ケ谷",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7020698,
+          35.6830147
+        ]
+      },
+      "properties": {
+        "name": "代々木",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6987623,
+          35.6887259
+        ]
+      },
+      "properties": {
+        "name": "新宿",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6967847,
+          35.7015333
+        ]
+      },
+      "properties": {
+        "name": "大久保",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6848675,
+          35.7062503
+        ]
+      },
+      "properties": {
+        "name": "東中野",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6657858,
+          35.7057793
+        ]
+      },
+      "properties": {
+        "name": "中野",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.650004,
+          35.7053388
+        ]
+      },
+      "properties": {
+        "name": "高円寺",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6354184,
+          35.7049709
+        ]
+      },
+      "properties": {
+        "name": "阿佐ケ谷",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6208339,
+          35.7041801
+        ]
+      },
+      "properties": {
+        "name": "荻窪",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6004427,
+          35.7040345
+        ]
+      },
+      "properties": {
+        "name": "西荻窪",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5785748,
+          35.7024743
+        ]
+      },
+      "properties": {
+        "name": "吉祥寺",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5601491,
+          35.701901
+        ]
+      },
+      "properties": {
+        "name": "三鷹",
         "deal": "rent"
       }
     }

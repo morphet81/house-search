@@ -150,23 +150,149 @@ const STATION = {
   磯子: "9300614",
   伊勢佐木長者町: "60406664",
   日ノ出町: "89405158",
+  // Seibu Shinjuku (rent catchment)
+  西武新宿: "43704822",
+  高田馬場: "43700582",
+  下落合: "43704823",
+  中井: "43704824",
+  新井薬師前: "43704825",
+  沼袋: "43704826",
+  野方: "43704827",
+  都立家政: "43704828",
+  鷺ノ宮: "43704829",
+  下井草: "43704830",
+  井荻: "43704831",
+  上井草: "43704832",
+  上石神井: "43704833",
+  武蔵関: "43704834",
+  東伏見: "43704835",
+  西武柳沢: "43704836",
+  田無: "43704837",
+  花小金井: "43704838",
+  小平: "43704839",
+  久米川: "43704840",
+  東村山: "43704841",
+  所沢: "43704798",
+  航空公園: "43704842",
+  新所沢: "43704843",
+  入曽: "43704844",
+  狭山市: "43704845",
+  新狭山: "43704846",
+  南大塚: "43704847",
+  本川越: "43704848",
+  // Seibu Ikebukuro (rent catchment)
+  椎名町: "42904784",
+  東長崎: "42904785",
+  江古田: "42904786",
+  桜台: "42904787",
+  練馬: "42904788",
+  中村橋: "42904789",
+  富士見台: "42904790",
+  練馬高野台: "42907572",
+  石神井公園: "42904791",
+  大泉学園: "42904792",
+  保谷: "42904793",
+  ひばりヶ丘: "42904794",
+  東久留米: "42904795",
+  清瀬: "42904796",
+  秋津: "42904797",
+  西所沢: "42904799",
+  小手指: "42904800",
+  狭山ヶ丘: "42904801",
+  武蔵藤沢: "42904802",
+  稲荷山公園: "42904803",
+  入間市: "42904804",
+  仏子: "42904805",
+  元加治: "42904806",
+  飯能: "42904807",
+  // JR Chuo-Sobu local / 総武線 (rent catchment)
+  千葉: "19400208",
+  西千葉: "19401917",
+  稲毛: "19401918",
+  新検見川: "19401919",
+  幕張: "19401920",
+  幕張本郷: "19401921",
+  津田沼: "19401922",
+  東船橋: "19401923",
+  船橋: "19401924",
+  西船橋: "19400708",
+  下総中山: "19401925",
+  本八幡: "19401926",
+  市川: "19401927",
+  小岩: "19401928",
+  新小岩: "19401929",
+  平井: "19401930",
+  亀戸: "19401931",
+  錦糸町: "19400207",
+  両国: "19401932",
+  浅草橋: "19401933",
+  秋葉原: "19400592",
+  信濃町: "19400754",
+  千駄ケ谷: "19400755",
+  代々木: "19400580",
+  新宿: "19400231",
+  大久保: "19400756",
+  東中野: "19400757",
+  中野: "19400758",
+  高円寺: "19400759",
+  阿佐ケ谷: "19400760",
+  荻窪: "19400761",
+  西荻窪: "19400762",
+  吉祥寺: "19400763",
+  三鷹: "19400242",
 };
 
-/** Stations whose HOME'S list URL lives under /kanagawa/ (rest → /tokyo/). */
-const KANAGAWA_STATIONS = new Set([
-  "元町・中華街",
-  "石川町",
-  "山手",
-  "日本大通り",
-  "馬車道",
-  "みなとみらい",
-  "新高島",
-  "関内",
-  "桜木町",
-  "根岸",
-  "磯子",
-  "伊勢佐木長者町",
-  "日ノ出町",
+/** HOME'S list URL prefecture for each station name (default tokyo). */
+const STATION_LIST_PREF = new Map([
+  ...[
+    "元町・中華街",
+    "石川町",
+    "山手",
+    "日本大通り",
+    "馬車道",
+    "みなとみらい",
+    "新高島",
+    "関内",
+    "桜木町",
+    "根岸",
+    "磯子",
+    "伊勢佐木長者町",
+    "日ノ出町",
+  ].map((n) => [n, "kanagawa"]),
+  ...[
+    "所沢",
+    "航空公園",
+    "新所沢",
+    "入曽",
+    "狭山市",
+    "新狭山",
+    "南大塚",
+    "本川越",
+    "西所沢",
+    "小手指",
+    "狭山ヶ丘",
+    "武蔵藤沢",
+    "稲荷山公園",
+    "入間市",
+    "仏子",
+    "元加治",
+    "飯能",
+  ].map((n) => [n, "saitama"]),
+  ...[
+    "千葉",
+    "西千葉",
+    "稲毛",
+    "新検見川",
+    "幕張",
+    "幕張本郷",
+    "津田沼",
+    "東船橋",
+    "船橋",
+    "西船橋",
+    "下総中山",
+    "本八幡",
+    "市川",
+  ].map((n) => [n, "chiba"]),
 ]);
 
 const MADORI = {
@@ -435,17 +561,17 @@ function resolveStations(names) {
   return codes;
 }
 
-/** @returns {{ tokyo: string[], kanagawa: string[] }} HOME'S station keys by pref. */
+/** @returns {Record<string, string[]>} HOME'S station keys keyed by pref slug. */
 function resolveStationsByPref(names) {
-  const tokyo = [];
-  const kanagawa = [];
+  const byPref = { tokyo: [], kanagawa: [], saitama: [], chiba: [] };
   for (const name of names || []) {
     const code = STATION[name];
     if (!code) throw new Error(`Unknown station (add to STATION map): ${name}`);
-    if (KANAGAWA_STATIONS.has(name)) kanagawa.push(code);
-    else tokyo.push(code);
+    const pref = STATION_LIST_PREF.get(name) || "tokyo";
+    if (!byPref[pref]) byPref[pref] = [];
+    byPref[pref].push(code);
   }
-  return { tokyo, kanagawa };
+  return byPref;
 }
 
 function splitStationKeys(stations) {
@@ -470,6 +596,8 @@ function normalizePrefectures(prefs) {
 
 function prefPathSlug(pref) {
   if (pref === "神奈川県" || pref === "kanagawa") return "kanagawa";
+  if (pref === "埼玉県" || pref === "saitama") return "saitama";
+  if (pref === "千葉県" || pref === "chiba") return "chiba";
   if (pref === "東京都" || pref === "tokyo") return "tokyo";
   throw new Error(`Unsupported prefecture (add slug map): ${pref}`);
 }
@@ -1493,8 +1621,12 @@ export async function runHomesSearch(typeKey, argv = []) {
   const cities = resolveCities(prefs.location?.ku || []);
   const stationsByPref = resolveStationsByPref(prefs.location?.stations || []);
   const prefsList = normalizePrefectures(prefs);
-  const baseTokyo = listingBase(typeCfg, prefs, "東京都");
-  const baseKanagawa = listingBase(typeCfg, prefs, "神奈川県");
+  const prefBases = {
+    tokyo: listingBase(typeCfg, prefs, "東京都"),
+    kanagawa: listingBase(typeCfg, prefs, "神奈川県"),
+    saitama: listingBase(typeCfg, prefs, "埼玉県"),
+    chiba: listingBase(typeCfg, prefs, "千葉県"),
+  };
 
   console.error("type:", typeKey);
   console.error("deal:", typeCfg.deal);
@@ -1504,7 +1636,10 @@ export async function runHomesSearch(typeKey, argv = []) {
   console.error("ku:", prefs.location?.ku?.join(", "));
   console.error("stations:", prefs.location?.stations?.join(", "));
   console.error(
-    `stations by pref: tokyo=${stationsByPref.tokyo.length}, kanagawa=${stationsByPref.kanagawa.length}`
+    "stations by pref: " +
+      Object.entries(stationsByPref)
+        .map(([k, v]) => `${k}=${v.length}`)
+        .join(", ")
   );
   console.error(
     typeCfg.deal === "rent"
@@ -1536,7 +1671,7 @@ export async function runHomesSearch(typeKey, argv = []) {
     if (cities.length) {
       // ku codes are Tokyo wards today — search tokyo list
       const q = buildCondParams(typeCfg, prefs, { cities });
-      const url = `${baseTokyo}?${q.toString()}`;
+      const url = `${prefBases.tokyo}?${q.toString()}`;
       console.error("\n[ku search]", url.slice(0, 120) + "…");
       const rows = await scrapeAllPages(page, url, typeCfg);
       for (const r of rows) {
@@ -1579,8 +1714,9 @@ export async function runHomesSearch(typeKey, argv = []) {
       }
     };
 
-    await searchStationsOnBase(baseTokyo, stationsByPref.tokyo, "tokyo");
-    await searchStationsOnBase(baseKanagawa, stationsByPref.kanagawa, "kanagawa");
+    for (const [pref, codes] of Object.entries(stationsByPref)) {
+      await searchStationsOnBase(prefBases[pref], codes, pref);
+    }
 
     let items = [...byId.values()];
     console.error(`\nunique before client filter: ${items.length}`);

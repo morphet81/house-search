@@ -24,21 +24,65 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const outDir = path.join(root, "output");
 
-const KANAGAWA_STATIONS = new Set([
-  "元町・中華街",
-  "石川町",
-  "山手",
-  "日本大通り",
-  "馬車道",
-  "みなとみらい",
-  "新高島",
-  "関内",
-  "桜木町",
-  "根岸",
-  "磯子",
-  "伊勢佐木長者町",
-  "日ノ出町",
+const STATION_PREF_JA = new Map([
+  ...[
+    "元町・中華街",
+    "石川町",
+    "山手",
+    "日本大通り",
+    "馬車道",
+    "みなとみらい",
+    "新高島",
+    "関内",
+    "桜木町",
+    "根岸",
+    "磯子",
+    "伊勢佐木長者町",
+    "日ノ出町",
+  ].map((n) => [n, "神奈川県"]),
+  ...[
+    "所沢",
+    "航空公園",
+    "新所沢",
+    "入曽",
+    "狭山市",
+    "新狭山",
+    "南大塚",
+    "本川越",
+    "西所沢",
+    "小手指",
+    "狭山ヶ丘",
+    "武蔵藤沢",
+    "稲荷山公園",
+    "入間市",
+    "仏子",
+    "元加治",
+    "飯能",
+  ].map((n) => [n, "埼玉県"]),
+  ...[
+    "千葉",
+    "西千葉",
+    "稲毛",
+    "新検見川",
+    "幕張",
+    "幕張本郷",
+    "津田沼",
+    "東船橋",
+    "船橋",
+    "西船橋",
+    "下総中山",
+    "本八幡",
+    "市川",
+  ].map((n) => [n, "千葉県"]),
 ]);
+
+const PREF_VIEWBOX = {
+  // Include western Tokyo (Seibu / Mitaka belt) — lon down to ~139.45
+  東京都: { viewbox: "139.40,35.82,139.92,35.55", inBox: (lat, lon) => lat >= 35.55 && lat <= 35.82 && lon >= 139.4 && lon <= 139.92 },
+  神奈川県: { viewbox: "139.45,35.55,139.75,35.25", inBox: (lat, lon) => lat >= 35.25 && lat <= 35.55 && lon >= 139.45 && lon <= 139.75 },
+  埼玉県: { viewbox: "139.25,36.05,139.85,35.70", inBox: (lat, lon) => lat >= 35.7 && lat <= 36.05 && lon >= 139.25 && lon <= 139.85 },
+  千葉県: { viewbox: "139.85,35.75,140.25,35.50", inBox: (lat, lon) => lat >= 35.5 && lat <= 35.75 && lon >= 139.85 && lon <= 140.25 },
+};
 
 function parseArgs(argv) {
   let prefs = path.join(root, "config/preferences.yaml");
@@ -93,11 +137,8 @@ async function geocodeNominatim(name, prefecture = "東京都") {
   url.searchParams.set("format", "json");
   url.searchParams.set("limit", "5");
   url.searchParams.set("countrycodes", "jp");
-  if (prefecture === "神奈川県") {
-    url.searchParams.set("viewbox", "139.45,35.55,139.75,35.25");
-  } else {
-    url.searchParams.set("viewbox", "139.55,35.82,139.92,35.55");
-  }
+  const box = PREF_VIEWBOX[prefecture] || PREF_VIEWBOX["東京都"];
+  url.searchParams.set("viewbox", box.viewbox);
   url.searchParams.set("bounded", "1");
 
   const res = await fetch(url, {
@@ -110,16 +151,11 @@ async function geocodeNominatim(name, prefecture = "東京都") {
   const rows = await res.json();
   if (!Array.isArray(rows) || !rows.length) return null;
 
-  const inBox =
-    prefecture === "神奈川県"
-      ? (lat, lon) => lat >= 35.25 && lat <= 35.55 && lon >= 139.45 && lon <= 139.75
-      : (lat, lon) => lat >= 35.55 && lat <= 35.82 && lon >= 139.55 && lon <= 139.92;
-
   for (const row of rows) {
     const lat = Number(row.lat);
     const lon = Number(row.lon);
     if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
-    if (!inBox(lat, lon)) continue;
+    if (!box.inBox(lat, lon)) continue;
     return { lat, lon, display: row.display_name || null };
   }
   return null;
@@ -138,7 +174,7 @@ async function resolveCoords(names, cached) {
       console.error(`  cache  ${name}`);
     } else {
       try {
-        const prefecture = KANAGAWA_STATIONS.has(name) ? "神奈川県" : "東京都";
+        const prefecture = STATION_PREF_JA.get(name) || "東京都";
         const hit = await geocodeNominatim(name, prefecture);
         await sleep(1100);
         if (hit) {
