@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T21:37:19.627Z",
+  "scrapedAt": "2026-10-01T22:12:30.544Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -110,9 +110,11 @@
   },
   "count": 6,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1388540011562"
+    ],
     "removedIds": []
   },
   "dedupe": {
@@ -356,7 +358,8 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-16",
-      "publishedText": "情報公開日：2026/09/16（16日前 公開）"
+      "publishedText": "情報公開日：2026/09/16（16日前 公開）",
+      "isNew": true
     },
     {
       "id": "b-1210390001205",

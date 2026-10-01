@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T21:33:57.739Z",
+  "scrapedAt": "2026-10-01T22:09:24.629Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -122,9 +122,11 @@
   },
   "count": 3,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1388540011490"
+    ],
     "removedIds": []
   },
   "dedupe": {
@@ -192,7 +194,8 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（26日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（26日前 公開）",
+      "isNew": true
     },
     {
       "id": "b-1421770029947",

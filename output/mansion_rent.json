@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T21:40:45.803Z",
+  "scrapedAt": "2026-10-01T22:15:43.531Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -11,6 +11,8 @@
       "北区"
     ],
     "stations": [
+      "石神井公園",
+      "大泉学園",
       "新板橋",
       "板橋",
       "西巣鴨",
@@ -118,20 +120,18 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 15,
+  "count": 16,
   "delta": {
     "addedCount": 1,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [
-      "3edecc67c64f1a83edd2859c4eb6cecac8436c4f"
+      "2ea0eeca1cba8d6aa3da5e263eded352435472ef"
     ],
-    "removedIds": [
-      "90ac604c21eb2879727d2b81677b7b217c5c18d7"
-    ]
+    "removedIds": []
   },
   "dedupe": {
-    "before": 28,
-    "after": 15,
+    "before": 29,
+    "after": 16,
     "removedCount": 13,
     "clusters": 7,
     "removed": [
@@ -148,8 +148,8 @@
         "url": "https://www.homes.co.jp/chintai/room/9f5c4113a705de904a2b0b4d54b4441de03471f6/",
         "keptId": "6a0d41892de0d501e31c1ac408bee1e720275d65",
         "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
+        "richness": 28,
+        "keptRichness": 28
       },
       {
         "id": "da1cf720942ec8cd917b802d2221104461d9dde4",
@@ -157,7 +157,7 @@
         "keptId": "6a0d41892de0d501e31c1ac408bee1e720275d65",
         "reason": "same_property_less_detail",
         "richness": 26,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
@@ -242,6 +242,77 @@
     ]
   },
   "listings": [
+    {
+      "id": "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
+      "url": "https://www.homes.co.jp/chintai/room/2ea0eeca1cba8d6aa3da5e263eded352435472ef/",
+      "title": "西武池袋線 石神井公園駅 徒歩13分の賃貸マンション",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4737f470-de3d-46b9-a0d3-71a99d782bfb_property_picture_10290_large.jpg",
+      "priceText": "16.9万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "80.51m²",
+      "exclusiveAreaText": "80.51m²",
+      "builtText": "築29年",
+      "walkMinutes": 13,
+      "address": "東京都練馬区石神井町５丁目",
+      "managementFeeText": "16,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 16.9,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 50.7,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 80.51,
+      "buildingAreaM2": 80.51,
+      "buildingAgeYears": 28,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/27",
+        "lat": 35.737380365057,
+        "lon": 139.60380667521,
+        "address": "東京都練馬区石神井町５丁目",
+        "postalCode": "1770041",
+        "yearBuilt": 1998,
+        "builtText": "1998年9月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4737f470-de3d-46b9-a0d3-71a99d782bfb_property_picture_10290_large.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "16,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.737380365057,
+      "lon": 139.60380667521,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.737380365057%2C139.60380667521",
+      "ward": "練馬区",
+      "wardEn": "Nerima-ku",
+      "yearBuilt": 1998,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-27",
+      "publishedText": "情報公開日\n\n2026/09/27",
+      "isNew": true
+    },
     {
       "id": "2bdea5a16e11cf6cfb054d707fd5706c17a747cf",
       "url": "https://www.homes.co.jp/chintai/room/2bdea5a16e11cf6cfb054d707fd5706c17a747cf/",
@@ -853,7 +924,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/07",
+        "publishedText": "情報公開日\n\n2026/06/11",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -878,8 +949,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-07",
-      "publishedText": "情報公開日\n\n2026/06/07"
+      "publishedAt": "2026-06-11",
+      "publishedText": "情報公開日\n\n2026/06/11"
     },
     {
       "id": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
@@ -956,8 +1027,7 @@
         "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "69434f185607d9053d3bb12960819d1840a90bda",
         "f57b09897a8ed6a23aa19b38ce14ab9bb1558ab5"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "4c4e510ee351c80320381b66c6fab1e3894ad644",
@@ -1144,7 +1214,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/28",
+        "publishedText": "情報公開日\n\n2026/09/27",
         "lat": 35.665726971483,
         "lon": 139.66334836993,
         "address": "東京都世田谷区代田６丁目15-5",
@@ -1169,8 +1239,8 @@
       "yearBuilt": 1992,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-28",
-      "publishedText": "情報公開日\n\n2026/09/28",
+      "publishedAt": "2026-09-27",
+      "publishedText": "情報公開日\n\n2026/09/27",
       "dedupedFrom": [
         "5a1dd64a6a4ccc4d49e55003cdd366881ecd0f65"
       ]
@@ -1179,7 +1249,7 @@
       "id": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
       "url": "https://www.homes.co.jp/chintai/room/bad7ae10fdb632d62b7b71f83020168c7e44244c/",
       "title": "サンテラス高輪",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
       "priceText": "34.8万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -1217,7 +1287,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/19",
+        "publishedText": "情報公開日\n\n2026/09/22",
         "lat": 35.625417553702,
         "lon": 139.73376039067,
         "address": "東京都品川区北品川６丁目6-11",
@@ -1225,7 +1295,7 @@
         "yearBuilt": 1997,
         "builtText": "1997年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -1242,8 +1312,8 @@
       "yearBuilt": 1997,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-19",
-      "publishedText": "情報公開日\n\n2026/09/19",
+      "publishedAt": "2026-09-22",
+      "publishedText": "情報公開日\n\n2026/09/22",
       "dedupedFrom": [
         "f272529fc2463b5affd6ac7c5b7ec52d57fe7573"
       ]
@@ -1251,7 +1321,7 @@
     {
       "id": "6a0d41892de0d501e31c1ac408bee1e720275d65",
       "url": "https://www.homes.co.jp/chintai/room/6a0d41892de0d501e31c1ac408bee1e720275d65/",
-      "title": "若林プレムヒルズ",
+      "title": "（新品設備）若林プレムヒルズ ゲンガク",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F117949%2F2%2F2%2Fvkhx.jpg",
       "priceText": "35万円",
       "madori": "3LDK",
@@ -1259,7 +1329,7 @@
       "buildingAreaText": "92.93m²",
       "exclusiveAreaText": "92.93m²",
       "builtText": "築13年",
-      "walkMinutes": 15,
+      "walkMinutes": 6,
       "address": "東京都世田谷区若林２丁目19-16",
       "managementFeeText": "50,000円",
       "shikikinText": "1ヶ月",
