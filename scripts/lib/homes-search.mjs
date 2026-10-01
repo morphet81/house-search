@@ -152,6 +152,23 @@ const STATION = {
   日ノ出町: "89405158",
 };
 
+/** Stations whose HOME'S list URL lives under /kanagawa/ (rest → /tokyo/). */
+const KANAGAWA_STATIONS = new Set([
+  "元町・中華街",
+  "石川町",
+  "山手",
+  "日本大通り",
+  "馬車道",
+  "みなとみらい",
+  "新高島",
+  "関内",
+  "桜木町",
+  "根岸",
+  "磯子",
+  "伊勢佐木長者町",
+  "日ノ出町",
+]);
+
 const MADORI = {
   ワンルーム: "11",
   "1K": "12",
@@ -418,6 +435,19 @@ function resolveStations(names) {
   return codes;
 }
 
+/** @returns {{ tokyo: string[], kanagawa: string[] }} HOME'S station keys by pref. */
+function resolveStationsByPref(names) {
+  const tokyo = [];
+  const kanagawa = [];
+  for (const name of names || []) {
+    const code = STATION[name];
+    if (!code) throw new Error(`Unknown station (add to STATION map): ${name}`);
+    if (KANAGAWA_STATIONS.has(name)) kanagawa.push(code);
+    else tokyo.push(code);
+  }
+  return { tokyo, kanagawa };
+}
+
 function splitStationKeys(stations) {
   const roseneki = [];
   const paths = [];
@@ -432,16 +462,22 @@ function stationPathListUrl(base, pathKey) {
   return base.replace(/\/list\/?$/, `/${pathKey}-st/list/`);
 }
 
-function prefPathSlug(prefs) {
-  const p = prefs?.prefecture || "東京都";
-  if (p === "神奈川県" || p === "kanagawa") return "kanagawa";
-  if (p === "東京都" || p === "tokyo") return "tokyo";
-  throw new Error(`Unsupported prefecture (add slug map): ${p}`);
+function normalizePrefectures(prefs) {
+  const raw = prefs?.prefecture ?? "東京都";
+  const list = Array.isArray(raw) ? raw : [raw];
+  return list.map((p) => String(p).trim()).filter(Boolean);
 }
 
-function listingBase(typeCfg, prefs) {
+function prefPathSlug(pref) {
+  if (pref === "神奈川県" || pref === "kanagawa") return "kanagawa";
+  if (pref === "東京都" || pref === "tokyo") return "tokyo";
+  throw new Error(`Unsupported prefecture (add slug map): ${pref}`);
+}
+
+function listingBase(typeCfg, prefs, prefOverride) {
+  const prefsList = normalizePrefectures(prefs);
+  const pref = prefPathSlug(prefOverride || prefsList[0] || "東京都");
   const seg = typeCfg.pathSegment;
-  const pref = prefPathSlug(prefs);
   if (typeCfg.deal === "rent") {
     return `https://www.homes.co.jp/chintai/${seg}/${pref}/list/`;
   }
@@ -1433,15 +1469,21 @@ export async function runHomesSearch(typeKey, argv = []) {
   const args = parseSearchArgs(argv, typeKey);
   const prefs = loadTypePrefs(args.prefs, typeKey);
   const cities = resolveCities(prefs.location?.ku || []);
-  const stations = resolveStations(prefs.location?.stations || []);
-  const base = listingBase(typeCfg, prefs);
+  const stationsByPref = resolveStationsByPref(prefs.location?.stations || []);
+  const prefsList = normalizePrefectures(prefs);
+  const baseTokyo = listingBase(typeCfg, prefs, "東京都");
+  const baseKanagawa = listingBase(typeCfg, prefs, "神奈川県");
 
   console.error("type:", typeKey);
   console.error("deal:", typeCfg.deal);
   console.error("prefs:", args.prefs);
   if (typeCfg.hasListingKind) console.error("listing:", prefs.listing);
+  console.error("prefecture:", prefsList.join(", "));
   console.error("ku:", prefs.location?.ku?.join(", "));
   console.error("stations:", prefs.location?.stations?.join(", "));
+  console.error(
+    `stations by pref: tokyo=${stationsByPref.tokyo.length}, kanagawa=${stationsByPref.kanagawa.length}`
+  );
   console.error(
     typeCfg.deal === "rent"
       ? `rent max: ${prefs.price?.max ?? "—"} 万円/月`
@@ -1470,8 +1512,9 @@ export async function runHomesSearch(typeKey, argv = []) {
 
   try {
     if (cities.length) {
+      // ku codes are Tokyo wards today — search tokyo list
       const q = buildCondParams(typeCfg, prefs, { cities });
-      const url = `${base}?${q.toString()}`;
+      const url = `${baseTokyo}?${q.toString()}`;
       console.error("\n[ku search]", url.slice(0, 120) + "…");
       const rows = await scrapeAllPages(page, url, typeCfg);
       for (const r of rows) {
@@ -1479,40 +1522,43 @@ export async function runHomesSearch(typeKey, argv = []) {
       }
     }
 
-    if (stations.length) {
-      const { roseneki, paths } = splitStationKeys(stations);
-      const mergeStationRows = (rows) => {
-        for (const r of rows) {
-          const prev = byId.get(r.id);
-          if (prev) {
-            prev.matchedVia = [...new Set([...(prev.matchedVia || []), "station"])];
-          } else {
-            byId.set(r.id, { ...r, matchedVia: ["station"] });
-          }
+    const mergeStationRows = (rows) => {
+      for (const r of rows) {
+        const prev = byId.get(r.id);
+        if (prev) {
+          prev.matchedVia = [...new Set([...(prev.matchedVia || []), "station"])];
+        } else {
+          byId.set(r.id, { ...r, matchedVia: ["station"] });
         }
-      };
+      }
+    };
 
+    const searchStationsOnBase = async (base, codes, label) => {
+      if (!codes.length) return;
+      const { roseneki, paths } = splitStationKeys(codes);
       if (roseneki.length) {
         const q = buildCondParams(typeCfg, prefs, { stations: roseneki });
         const url = `${base}?${q.toString()}`;
-        console.error("\n[station search]", url.slice(0, 120) + "…");
+        console.error(`\n[station search ${label}]`, url.slice(0, 120) + "…");
         mergeStationRows(await scrapeAllPages(page, url, typeCfg));
       }
-
       for (const pathKey of paths) {
         const q = buildCondParams(typeCfg, prefs, { stations: [] });
         const url = `${stationPathListUrl(base, pathKey)}?${q.toString()}`;
-        console.error("\n[station path]", pathKey, url.slice(0, 120) + "…");
+        console.error(`\n[station path ${label}]`, pathKey, url.slice(0, 120) + "…");
         try {
           mergeStationRows(await scrapeAllPages(page, url, typeCfg));
         } catch (err) {
           if (!isRetryableNavError(err)) throw err;
           console.error(
-            `[station path] ${pathKey}: giving up after retries (${err?.name || "error"}: ${String(err?.message || err).slice(0, 120)})`
+            `[station path ${label}] ${pathKey}: giving up after retries (${err?.name || "error"}: ${String(err?.message || err).slice(0, 120)})`
           );
         }
       }
-    }
+    };
+
+    await searchStationsOnBase(baseTokyo, stationsByPref.tokyo, "tokyo");
+    await searchStationsOnBase(baseKanagawa, stationsByPref.kanagawa, "kanagawa");
 
     let items = [...byId.values()];
     console.error(`\nunique before client filter: ${items.length}`);

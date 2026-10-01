@@ -8,7 +8,9 @@
 # Field names align with docs/homes-co-jp-search-filters.md
 
 defaults:
-  prefecture: 神奈川県
+  prefecture:
+    - 東京都
+    - 神奈川県
   # Max budgets (buy = purchase price; rent = monthly 賃料)
   budget:
     buy_max: 11500 # 1億3000万円 (¥130M)
@@ -29,18 +31,110 @@ defaults:
 
 # Shared location for all types (also copied into each block)
 # ku: unused — station search only.
-# stations: Saint Maur International School (Yamate-cho) ≤20 min transit.
-#           Walk hubs: 元町・中華街 / 石川町 / 山手. Prior LFI Tokyo list in git.
+# stations: LFI Tokyo school-bus catchments + Saint Maur (Yokohama) ≤20 min.
 
 _shared_location: &shared_location
   ku: []
   stations:
-    # Walk / near-walk to campus
+    # --- LFI Tokyo (campus / bus catchments) ---
+    # Campus / Mita north + Toden + Saikyo (LFI ±4)
+    - 新板橋
+    - 板橋
+    - 西巣鴨
+    - 巣鴨
+    - 板橋区役所前
+    - 板橋本町
+    - 本蓮沼
+    - 志村坂上
+    - 千石
+    - 白山
+    - 滝野川一丁目
+    - 西ヶ原四丁目
+    - 新庚申塚
+    - 庚申塚
+    - 巣鴨新田
+    - 飛鳥山
+    - 大塚
+    - 王子
+    - 西ケ原
+    - 駒込
+    - 池袋
+    - 北池袋
+    - 十条
+    - 赤羽
+    - 北赤羽
+    # Line 1 belt (Iidabashi)
+    - 飯田橋
+    - 市ケ谷
+    - 四ツ谷
+    - 水道橋
+    - 御茶ノ水
+    - 神楽坂
+    - 九段下
+    - 竹橋
+    - 江戸川橋
+    - 護国寺
+    - 早稲田
+    - 牛込神楽坂
+    - 牛込柳町
+    - 若松河田
+    - 春日
+    - 後楽園
+    - 東大前
+    - 麹町
+    - 永田町
+    # Lines 3–4 (Aoyama / Yoyogi)
+    - 半蔵門
+    - 青山一丁目
+    - 外苑前
+    - 表参道
+    - 渋谷
+    - 乃木坂
+    - 赤坂
+    - 明治神宮前
+    - 代々木公園
+    - 代々木上原
+    - 初台
+    - 幡ヶ谷
+    - 笹塚
+    - 神泉
+    - 駒場東大前
+    - 池ノ上
+    - 下北沢
+    - 池尻大橋
+    - 三軒茶屋
+    - 駒沢大学
+    # Lines 5–6–8–10 (Meguro / Minato)
+    - 中目黒
+    - 代官山
+    - 祐天寺
+    - 学芸大学
+    - 都立大学
+    - 自由が丘
+    - 目黒
+    - 不動前
+    - 武蔵小山
+    - 恵比寿
+    - 広尾
+    - 六本木
+    - 六本木一丁目
+    - 神谷町
+    - 溜池山王
+    - 麻布十番
+    - 赤羽橋
+    - 白金高輪
+    - 白金台
+    - 三田
+    - 泉岳寺
+    - 高輪台
+    - 五反田
+    - 芝公園
+    - 御成門
+    # --- Saint Maur Yokohama ≤20 min ---
     - 元町・中華街
     - 石川町
     - 山手
     - 日本大通り
-    # Minatomirai + JR Negishi belt
     - 馬車道
     - みなとみらい
     - 新高島
@@ -48,7 +142,6 @@ _shared_location: &shared_location
     - 桜木町
     - 根岸
     - 磯子
-    # Blue Line / Keikyu edge
     - 伊勢佐木長者町
     - 日ノ出町
 

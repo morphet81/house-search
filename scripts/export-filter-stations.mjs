@@ -119,15 +119,32 @@ async function main() {
   const cached = loadExistingCoords();
   const features = [];
   const missing = [];
-  const prefecture = doc.defaults?.prefecture || "東京都";
+  const rawPref = doc.defaults?.prefecture || "東京都";
+  const prefsList = Array.isArray(rawPref) ? rawPref : [rawPref];
+  const kanagawaNames = new Set([
+    "元町・中華街",
+    "石川町",
+    "山手",
+    "日本大通り",
+    "馬車道",
+    "みなとみらい",
+    "新高島",
+    "関内",
+    "桜木町",
+    "根岸",
+    "磯子",
+    "伊勢佐木長者町",
+    "日ノ出町",
+  ]);
 
-  console.error(`Stations in prefs: ${names.length} (${prefecture})`);
+  console.error(`Stations in prefs: ${names.length} (${prefsList.join(", ")})`);
   for (const name of names) {
     let coords = cached.get(name) || null;
     if (coords) {
       console.error(`  cache  ${name}`);
     } else {
       try {
+        const prefecture = kanagawaNames.has(name) ? "神奈川県" : "東京都";
         const hit = await geocodeNominatim(name, prefecture);
         await sleep(1100); // Nominatim usage policy
         if (hit) {
