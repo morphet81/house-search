@@ -18,10 +18,26 @@
           <option value="price-desc">Price · high → low</option>
           <option value="age-asc">Age · newest first</option>
           <option value="age-desc">Age · oldest first</option>
+          <option value="oneoff-asc" hidden disabled>One-off · low → high</option>
+          <option value="oneoff-desc" hidden disabled>One-off · high → low</option>
         </select>
         <label class="filter-new">
           <input type="checkbox" id="new-only" />
           New only
+        </label>
+        <label id="oneoff-filter-wrap" class="oneoff-filter" hidden>
+          <span class="sort-label">One-off ≤</span>
+          <input
+            type="number"
+            id="oneoff-max"
+            class="oneoff-input"
+            min="0"
+            step="1"
+            placeholder="万円"
+            inputmode="decimal"
+            aria-label="Max one-off move-in cost in 万円"
+          />
+          <span class="sort-label">万円</span>
         </label>
         <button type="button" id="export-pdf" class="export-btn">Export PDF</button>
         <a id="map-link" class="export-btn map-link" href="#">Map</a>
@@ -61,6 +77,7 @@
       const params = new URLSearchParams(location.search);
       const type = params.get("type") || "kodate";
       const label = LABELS[type] || type;
+      const isRent = type === "kodate_rent" || type === "mansion_rent";
 
       document.title = `${label} listings`;
       document.getElementById("heading").textContent = label;
@@ -69,13 +86,23 @@
       const sortBar = document.getElementById("sort-bar");
       const sortSelect = document.getElementById("sort");
       const newOnlyCheckbox = document.getElementById("new-only");
+      const oneOffWrap = document.getElementById("oneoff-filter-wrap");
+      const oneOffMaxInput = document.getElementById("oneoff-max");
       const exportBtn = document.getElementById("export-pdf");
       const mapLink = document.getElementById("map-link");
       const list = document.getElementById("listings");
       const error = document.getElementById("error");
 
-      const SORT_VALUES = new Set(["price-asc", "price-desc", "age-asc", "age-desc"]);
+      const SORT_VALUES = new Set([
+        "price-asc",
+        "price-desc",
+        "age-asc",
+        "age-desc",
+        "oneoff-asc",
+        "oneoff-desc",
+      ]);
       const AGE_SORTS = new Set(["age-asc", "age-desc"]);
+      const ONEOFF_SORTS = new Set(["oneoff-asc", "oneoff-desc"]);
 
       let items = [];
       let delta = null;
@@ -101,6 +128,17 @@
               opt.disabled = true;
             }
           }
+          if (isRent) {
+            oneOffWrap.hidden = false;
+            for (const opt of sortSelect.querySelectorAll('option[value^="oneoff-"]')) {
+              opt.hidden = false;
+              opt.disabled = false;
+            }
+            const oneOffFromUrl = params.get("oneOffMax");
+            if (oneOffFromUrl != null && oneOffFromUrl !== "") {
+              oneOffMaxInput.value = oneOffFromUrl;
+            }
+          }
           const initialSort = readSortFromUrl();
           sortSelect.value = initialSort;
           newOnlyCheckbox.checked = params.get("newOnly") === "1";
@@ -114,6 +152,13 @@
             updateSummary();
             renderList();
           });
+          if (isRent) {
+            oneOffMaxInput.addEventListener("input", () => {
+              writeOneOffMaxToUrl(oneOffMaxInput.value);
+              updateSummary();
+              renderList();
+            });
+          }
           exportBtn.addEventListener("click", exportPdf);
           renderList();
         } else {
@@ -149,6 +194,8 @@
             "price-desc": "Price · high → low",
             "age-asc": "Age · newest first",
             "age-desc": "Age · oldest first",
+            "oneoff-asc": "One-off · low → high",
+            "oneoff-desc": "One-off · high → low",
           }[sort] || sort
         );
       }
@@ -157,6 +204,7 @@
         const sort = params.get("sort");
         if (sort && SORT_VALUES.has(sort)) {
           if (type === "tochi" && AGE_SORTS.has(sort)) return "price-asc";
+          if (!isRent && ONEOFF_SORTS.has(sort)) return "price-asc";
           return sort;
         }
         return "price-asc";
@@ -175,6 +223,21 @@
         history.replaceState(null, "", `${location.pathname}?${next}`);
       }
 
+      function writeOneOffMaxToUrl(value) {
+        const next = new URLSearchParams(location.search);
+        if (value !== "" && Number.isFinite(Number(value))) next.set("oneOffMax", String(value));
+        else next.delete("oneOffMax");
+        history.replaceState(null, "", `${location.pathname}?${next}`);
+      }
+
+      function oneOffMaxValue() {
+        if (!isRent) return null;
+        const v = oneOffMaxInput.value.trim();
+        if (v === "") return null;
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      }
+
       function newCount() {
         return items.filter((it) => it.isNew).length;
       }
@@ -187,16 +250,22 @@
           parts.push(`+${delta.addedCount} / -${delta.removedCount} since last run`);
         }
         parts.push(`scraped ${scrapedLabel}`);
-        if (newOnlyCheckbox.checked) {
-          const shown = items.filter((it) => it.isNew).length;
-          parts.unshift(`${shown} new listing(s) shown`);
-        }
+        const shown = visibleItems().length;
+        if (shown !== items.length) parts.unshift(`${shown} shown`);
         summary.textContent = parts.join(" · ");
       }
 
       function visibleItems() {
-        if (newOnlyCheckbox.checked) return items.filter((it) => it.isNew);
-        return items;
+        let rows = items;
+        if (newOnlyCheckbox.checked) rows = rows.filter((it) => it.isNew);
+        const maxOneOff = oneOffMaxValue();
+        if (maxOneOff != null) {
+          rows = rows.filter((it) => {
+            const v = oneOffValue(it);
+            return v != null && v <= maxOneOff;
+          });
+        }
+        return rows;
       }
 
       function renderList() {
@@ -214,6 +283,15 @@
             const pa = priceValue(a);
             const pb = priceValue(b);
             const dir = sort === "price-asc" ? 1 : -1;
+            if (pa == null && pb == null) return 0;
+            if (pa == null) return 1;
+            if (pb == null) return -1;
+            return (pa - pb) * dir;
+          }
+          if (sort === "oneoff-asc" || sort === "oneoff-desc") {
+            const pa = oneOffValue(a);
+            const pb = oneOffValue(b);
+            const dir = sort === "oneoff-asc" ? 1 : -1;
             if (pa == null && pb == null) return 0;
             if (pa == null) return 1;
             if (pb == null) return -1;
@@ -239,6 +317,11 @@
         if (oku && man) return Math.round(parseFloat(oku[1]) * 10000 + parseFloat(man[1]));
         if (oku) return Math.round(parseFloat(oku[1]) * 10000);
         if (man) return Math.round(parseFloat(man[1]));
+        return null;
+      }
+
+      function oneOffValue(it) {
+        if (it.oneOffManYen != null && Number.isFinite(it.oneOffManYen)) return it.oneOffManYen;
         return null;
       }
 
@@ -269,6 +352,8 @@
         const age = formatAge(it);
         const storeys = formatStoreys(it);
         const listedFor = formatListedFor(it.publishedAt || it.detail?.publishedAt);
+        const keyMoney = isRent ? formatKeyMoney(it) : null;
+        const oneOff = isRent ? formatOneOff(it) : null;
 
         const bits = [
           wardEn,
@@ -277,6 +362,8 @@
           it.madori,
           it.buildingAreaText || (it.buildingAreaM2 != null ? `${it.buildingAreaM2}m²` : null),
           it.landAreaText || (it.landAreaM2 != null ? `${it.landAreaM2}m²` : null),
+          keyMoney,
+          oneOff,
           listedFor,
         ].filter(Boolean);
 
@@ -310,6 +397,28 @@
           </div>
         `;
         return li;
+      }
+
+      function formatKeyMoney(it) {
+        if (it.reikinMonths != null && Number.isFinite(it.reikinMonths)) {
+          if (it.reikinMonths === 0) return "Key money 0 mo";
+          const n = Number.isInteger(it.reikinMonths)
+            ? String(it.reikinMonths)
+            : String(it.reikinMonths);
+          return `Key money ${n} mo`;
+        }
+        if (it.reikinYen != null && Number.isFinite(it.reikinYen)) {
+          return `Key money ${Math.round(it.reikinYen / 10000 * 10) / 10}万円`;
+        }
+        if (it.reikinText) return `Key money ${it.reikinText}`;
+        return null;
+      }
+
+      function formatOneOff(it) {
+        const v = oneOffValue(it);
+        if (v == null) return null;
+        const rounded = Number.isInteger(v) ? String(v) : v.toFixed(1).replace(/\.0$/, "");
+        return `One-off ~${rounded}万円`;
       }
 
       function resolveWardEn(it) {

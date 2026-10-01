@@ -777,9 +777,63 @@ async function scrapeListPage(page, pathSegment) {
   }, pathSegment);
 }
 
+/**
+ * Parse HOME'S rent fee token: 無/なし/- / Nヶ月 / N円 / N万円.
+ * @returns {{ months: number|null, yen: number|null }}
+ */
+function parseRentFeeToken(token) {
+  const t = String(token || "").trim();
+  if (!t) return { months: null, yen: null };
+  if (/^(?:無|なし|[-ー－]|―|—)$/.test(t)) return { months: 0, yen: 0 };
+  const months = t.match(/^([\d.]+)\s*ヶ月$/);
+  if (months) return { months: parseFloat(months[1]), yen: null };
+  const man = t.match(/^([\d.]+)\s*万(?:円)?$/);
+  if (man) return { months: null, yen: parseFloat(man[1]) * 10000 };
+  const yen = t.match(/^([\d,]+)\s*円$/);
+  if (yen) return { months: null, yen: Number(yen[1].replace(/,/g, "")) };
+  return { months: null, yen: null };
+}
+
+/** Convert fee token to 万円 using rent (万円/月) when token is in months. */
+function feeTokenToManYen(token, rentManYen) {
+  const { months, yen } = parseRentFeeToken(token);
+  if (yen != null) return Math.round((yen / 10000) * 100) / 100;
+  if (months != null && rentManYen != null) {
+    return Math.round(months * rentManYen * 100) / 100;
+  }
+  return null;
+}
+
+/**
+ * Estimate move-in one-off (万円): 敷金 + 礼金 + 保証金 + 仲介(assume 1 month).
+ * 敷引・償却 excluded (taken from deposit later). First month rent excluded.
+ */
+function estimateRentOneOffManYen({
+  rentManYen,
+  shikikinToken,
+  reikinToken,
+  guaranteeToken,
+  agentMonths = 1,
+}) {
+  if (rentManYen == null || !Number.isFinite(rentManYen)) return null;
+  const parts = [
+    feeTokenToManYen(shikikinToken, rentManYen),
+    feeTokenToManYen(reikinToken, rentManYen),
+    feeTokenToManYen(guaranteeToken, rentManYen),
+    Math.round(agentMonths * rentManYen * 100) / 100,
+  ];
+  if (parts.some((p) => p == null)) return null;
+  return Math.round(parts.reduce((a, b) => a + b, 0) * 100) / 100;
+}
+
 /** Rent list pages: one row per room (.prg-room with /chintai/room/ link). */
 async function scrapeRentListPage(page) {
   return page.evaluate(() => {
+    const feePart = "(?:無|なし|[-ー－]|―|—|[\\d.]+ヶ月|[\\d,]+円|[\\d.]+万円)";
+    const feesRe = new RegExp(
+      `([\\d.]+)\\s*万円\\s*/\\s*(\\S+)\\s+(${feePart})/(${feePart})/(${feePart})/(${feePart})`
+    );
+
     const rooms = [...document.querySelectorAll(".prg-room")];
     return rooms
       .map((room) => {
@@ -799,6 +853,7 @@ async function scrapeRentListPage(page) {
         const raw = (room.innerText || "").replace(/\s+/g, " ").trim();
 
         const priceMatch = raw.match(/([\d.]+)\s*万円/);
+        const feesMatch = raw.match(feesRe);
         const madoriMatch = raw.match(/\b(\d(?:SLDK|LDK|DK|K)|ワンルーム)\b/);
         const areaMatch = raw.match(/([\d.]+)\s*m[²2]/i);
         const walkMatch = (specText || buildingText).match(/徒歩\s*(\d+)\s*分/);
@@ -831,6 +886,12 @@ async function scrapeRentListPage(page) {
         const areaText = areaMatch ? `${areaMatch[1]}m²` : null;
         const ageYears = builtMatch ? Number(builtMatch[1]) : null;
 
+        const managementFeeText = feesMatch ? feesMatch[2] : null;
+        const shikikinText = feesMatch ? feesMatch[3] : null;
+        const reikinText = feesMatch ? feesMatch[4] : null;
+        const guaranteeText = feesMatch ? feesMatch[5] : null;
+        const shikibikiText = feesMatch ? feesMatch[6] : null;
+
         return {
           id: idMatch[1],
           url: href,
@@ -846,6 +907,11 @@ async function scrapeRentListPage(page) {
           builtText: ageYears != null ? `築${ageYears}年` : null,
           walkMinutes: walkMatch ? Number(walkMatch[1]) : null,
           address,
+          managementFeeText,
+          shikikinText,
+          reikinText,
+          guaranteeText,
+          shikibikiText,
           rawText: raw.slice(0, 500),
           deal: "rent",
         };
@@ -1119,6 +1185,30 @@ async function enrichDetail(context, item) {
         (text.match(/情報公開日\s*[:：]?\s*[^\n]+/) || text.match(/公開日\s*[:：]?\s*[^\n]+/) || [])[0] ||
         null;
 
+      // Also pick fee labels from detail for rent
+      const shikikinReikin = text.match(/敷金\s*[\/／]\s*礼金\s*\n?\s*([^\n]+)/);
+      let shikikinText = null;
+      let reikinText = null;
+      if (shikikinReikin) {
+        const parts = shikikinReikin[1].split(/[\/／]/).map((s) => s.trim());
+        if (parts.length >= 2) {
+          shikikinText = parts[0];
+          reikinText = parts[1];
+        }
+      }
+      const guaranteeLine = text.match(/保証金\s*[\/／]\s*敷引[・･]償却金?\s*\n?\s*([^\n]+)/);
+      let guaranteeText = null;
+      let shikibikiText = null;
+      if (guaranteeLine) {
+        const parts = guaranteeLine[1].split(/[\/／]/).map((s) => s.trim());
+        if (parts.length >= 2) {
+          guaranteeText = parts[0];
+          shikibikiText = parts[1];
+        }
+      }
+      const managementFee =
+        (text.match(/管理費等\s*\n?\s*([^\n]+)/) || [])[1]?.trim() || null;
+
       return {
         landRight: pick("土地の権利") || pick("土地権利"),
         leaseType: pick("借地権の種類・期間"),
@@ -1141,6 +1231,11 @@ async function enrichDetail(context, item) {
         builtText: builtText || null,
         structure: structure || null,
         imageUrl: imageUrl || null,
+        shikikinText,
+        reikinText,
+        guaranteeText,
+        shikibikiText,
+        managementFeeText: managementFee,
       };
     });
 
@@ -1149,7 +1244,15 @@ async function enrichDetail(context, item) {
     const buildingAgeYears = parseBuildingAge(detail.builtText, detail.yearBuilt);
     const storeys = parseStoreys(detail.structure);
     const publishedAt = parsePublishedAt(detail.publishedText) || item.publishedAt || null;
-    return {
+
+    const shikikinText = item.shikikinText || detail.shikikinText || null;
+    const reikinText = item.reikinText || detail.reikinText || null;
+    const guaranteeText = item.guaranteeText || detail.guaranteeText || null;
+    const shikibikiText = item.shikibikiText || detail.shikibikiText || null;
+    const managementFeeText = item.managementFeeText || detail.managementFeeText || null;
+    const priceText = item.priceText || detail.priceText || null;
+
+    const base = {
       ...item,
       detail,
       ...location,
@@ -1160,10 +1263,35 @@ async function enrichDetail(context, item) {
       storeys,
       structure: detail.structure,
       imageUrl: detail.imageUrl || item.imageUrl || null,
-      priceText: item.priceText || detail.priceText || null,
+      priceText,
       landAreaText: item.landAreaText || detail.landAreaText || null,
       publishedAt,
       publishedText: detail.publishedText || item.publishedText || null,
+    };
+
+    if (item.deal !== "rent") return base;
+
+    const rentManYen = parseManYen(priceText);
+    const reikin = parseRentFeeToken(reikinText);
+    const oneOffManYen = estimateRentOneOffManYen({
+      rentManYen,
+      shikikinToken: shikikinText,
+      reikinToken: reikinText,
+      guaranteeToken: guaranteeText,
+    });
+
+    return {
+      ...base,
+      shikikinText,
+      reikinText,
+      guaranteeText,
+      shikibikiText,
+      managementFeeText,
+      reikinMonths: reikin.months,
+      reikinYen: reikin.yen,
+      shikikinMonths: parseRentFeeToken(shikikinText).months,
+      oneOffManYen: oneOffManYen ?? item.oneOffManYen ?? null,
+      oneOffAssumesAgentMonths: 1,
     };
   } catch (e) {
     return { ...item, detailError: String(e.message || e) };
@@ -1190,6 +1318,20 @@ function clientFilter(typeCfg, items, prefs, { strictAge = false } = {}) {
     const price = parseManYen(it.priceText);
     it.priceManYen = price;
     if (prefs.price?.max != null && price != null && price > prefs.price.max) return false;
+
+    if (typeCfg.deal === "rent") {
+      const reikin = parseRentFeeToken(it.reikinText);
+      it.reikinMonths = reikin.months;
+      it.reikinYen = reikin.yen;
+      it.shikikinMonths = parseRentFeeToken(it.shikikinText).months;
+      it.oneOffManYen = estimateRentOneOffManYen({
+        rentManYen: price,
+        shikikinToken: it.shikikinText,
+        reikinToken: it.reikinText,
+        guaranteeToken: it.guaranteeText,
+      });
+      it.oneOffAssumesAgentMonths = 1;
+    }
 
     if (typeCfg.supportsBuildingArea) {
       const bArea = parseSqm(it.buildingAreaText);
