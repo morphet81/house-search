@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T01:49:17.540Z",
+  "scrapedAt": "2026-10-01T03:48:49.280Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -132,36 +132,27 @@
   },
   "count": 32,
   "delta": {
-    "addedCount": 18,
-    "removedCount": 1,
+    "addedCount": 5,
+    "removedCount": 5,
     "addedIds": [
-      "b-1566840000666",
-      "b-1429760020315",
-      "b-35007690000145",
-      "b-1388970018996",
-      "b-37051900001440",
-      "b-35007590000520",
-      "b-1388970019358",
-      "b-8690105170",
-      "b-1261160003731",
-      "b-1538400011334",
-      "b-1580800000025",
-      "b-8690107895",
-      "b-1357690020875",
-      "b-1388970018490",
-      "b-1032050010177",
-      "b-77710033461",
-      "b-1424730001098",
-      "b-1509590000451"
+      "b-56060000501",
+      "b-8690107411",
+      "b-1429760019871",
+      "b-1230340085079",
+      "b-1267650039069"
     ],
     "removedIds": [
-      "b-1251460111042"
+      "b-1429760020315",
+      "b-1388970018996",
+      "b-8690105170",
+      "b-1538400011334",
+      "b-1421770029491"
     ]
   },
   "dedupe": {
-    "before": 37,
+    "before": 38,
     "after": 32,
-    "removedCount": 5,
+    "removedCount": 6,
     "clusters": 5,
     "removed": [
       {
@@ -183,10 +174,18 @@
       {
         "id": "b-8690106969",
         "url": "https://www.homes.co.jp/mansion/b-8690106969/",
-        "keptId": "b-1429760020315",
+        "keptId": "b-56060000501",
         "reason": "same_property_less_detail",
         "richness": 27,
-        "keptRichness": 27
+        "keptRichness": 30
+      },
+      {
+        "id": "b-1429760020315",
+        "url": "https://www.homes.co.jp/mansion/b-1429760020315/",
+        "keptId": "b-56060000501",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 30
       },
       {
         "id": "b-1517120003238",
@@ -263,23 +262,22 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-20",
-      "publishedText": "情報公開日：2026/07/20（73日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/07/20（73日前 公開）"
     },
     {
-      "id": "b-1429760020315",
-      "url": "https://www.homes.co.jp/mansion/b-1429760020315/",
-      "title": "",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142976%2Fsale%2F20315%2F11%2F2%2F6lvp.jpg",
+      "id": "b-56060000501",
+      "url": "https://www.homes.co.jp/mansion/b-56060000501/",
+      "title": "中古マンションヒルコートテラス横浜汐見台Ｆ棟/ 3階PR",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F5606%2Fsale%2F501%2F2%2F1%2F9it8.jpg",
       "priceText": "4,780万円",
-      "madori": "3LDK",
+      "madori": null,
       "landAreaText": "76.23m²",
-      "buildingAreaText": "76.23m²",
-      "exclusiveAreaText": "76.23m²",
+      "buildingAreaText": "76.23m² 3LDK",
+      "exclusiveAreaText": "76.23m² 3LDK",
       "builtText": null,
-      "walkMinutes": null,
-      "address": "神奈川県横浜市磯子区汐見台2丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.400120671556%2C139.60909075521",
+      "walkMinutes": 11,
+      "address": "神奈川県横浜市磯子区汐見台2丁目5-13",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.400137336991%2C139.60911491917",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -297,23 +295,23 @@
         "freeholdMention": true,
         "priceText": "4,780万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/07/10（83日前 公開）",
-        "lat": 35.400120671556,
-        "lon": 139.60909075521,
-        "address": "神奈川県横浜市磯子区汐見台2丁目",
+        "publishedText": "情報公開日：2026/07/12（81日前 公開）",
+        "lat": 35.400137336991,
+        "lon": 139.60911491917,
+        "address": "神奈川県横浜市磯子区汐見台2丁目5-13",
         "postalCode": "235-0022",
         "yearBuilt": 2014,
         "builtText": "2014年10月（築13年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142976%2Fsale%2F20315%2F11%2F2%2F6lvp.jpg",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F5606%2Fsale%2F501%2F2%2F1%2F9it8.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
         "managementFeeText": "11,700円"
       },
-      "lat": 35.400120671556,
-      "lon": 139.60909075521,
+      "lat": 35.400137336991,
+      "lon": 139.60911491917,
       "locationAccuracy": "coordinates",
       "ward": "横浜市磯子区",
       "wardEn": null,
@@ -321,10 +319,11 @@
       "buildingAgeYears": 13,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-10",
-      "publishedText": "情報公開日：2026/07/10（83日前 公開）",
+      "publishedAt": "2026-07-12",
+      "publishedText": "情報公開日：2026/07/12（81日前 公開）",
       "dedupedFrom": [
-        "b-8690106969"
+        "b-8690106969",
+        "b-1429760020315"
       ],
       "isNew": true
     },
@@ -384,14 +383,13 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-29",
-      "publishedText": "情報公開日：2026/08/29（33日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/29（33日前 公開）"
     },
     {
-      "id": "b-1388970018996",
-      "url": "https://www.homes.co.jp/mansion/b-1388970018996/",
+      "id": "b-8690107411",
+      "url": "https://www.homes.co.jp/mansion/b-8690107411/",
       "title": "",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138897%2Fsale%2F18996%2F11%2F3%2Fxqrd.jpg",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F107411%2F2%2F1%2Fe7rb.jpg",
       "priceText": "5,190万円",
       "madori": "3LDK",
       "landAreaText": "80.06m²",
@@ -399,8 +397,8 @@
       "exclusiveAreaText": "80.06m²",
       "builtText": null,
       "walkMinutes": null,
-      "address": "神奈川県横浜市中区根岸旭台1-9",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.419428995966%2C139.63817002736",
+      "address": "神奈川県横浜市中区根岸旭台",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.419570848858%2C139.63531470826",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -411,30 +409,30 @@
       "detail": {
         "landRight": "所有権",
         "leaseType": null,
-        "zoning": null,
+        "zoning": "第一種中高層住居専用地域",
         "cityPlan": null,
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "5,190万円",
+        "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/04（58日前 公開）",
-        "lat": 35.419428995966,
-        "lon": 139.63817002736,
-        "address": "神奈川県横浜市中区根岸旭台1-9",
+        "publishedText": "情報公開日：2026/08/05（57日前 公開）",
+        "lat": 35.419570848858,
+        "lon": 139.63531470826,
+        "address": "神奈川県横浜市中区根岸旭台",
         "postalCode": "231-0854",
         "yearBuilt": 2004,
         "builtText": "2004年1月（築23年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138897%2Fsale%2F18996%2F11%2F3%2Fxqrd.jpg",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F107411%2F2%2F1%2Fe7rb.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
         "managementFeeText": "22,165円"
       },
-      "lat": 35.419428995966,
-      "lon": 139.63817002736,
+      "lat": 35.419570848858,
+      "lon": 139.63531470826,
       "locationAccuracy": "coordinates",
       "ward": "横浜市中区",
       "wardEn": null,
@@ -442,8 +440,8 @@
       "buildingAgeYears": 23,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-04",
-      "publishedText": "情報公開日：2026/08/04（58日前 公開）",
+      "publishedAt": "2026-08-05",
+      "publishedText": "情報公開日：2026/08/05（57日前 公開）",
       "isNew": true
     },
     {
@@ -502,8 +500,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-06-08",
-      "publishedText": "情報公開日：2026/06/08（115日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/06/08（115日前 公開）"
     },
     {
       "id": "b-35007590000520",
@@ -561,8 +558,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-01",
-      "publishedText": "情報公開日：2026/09/01（30日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/01（30日前 公開）"
     },
     {
       "id": "b-1571270000011",
@@ -739,8 +735,7 @@
       "publishedText": "情報公開日：2026/09/16（15日前 公開）",
       "dedupedFrom": [
         "b-1517120003238"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-1540370000256",
@@ -804,6 +799,65 @@
       ]
     },
     {
+      "id": "b-1429760019871",
+      "url": "https://www.homes.co.jp/mansion/b-1429760019871/",
+      "title": "",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142976%2Fsale%2F19871%2F11%2F2%2F5r3q.jpg",
+      "priceText": "6,980万円",
+      "madori": "3LDK",
+      "landAreaText": "82.18m²",
+      "buildingAreaText": "82.18m²",
+      "exclusiveAreaText": "82.18m²",
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "神奈川県横浜市中区池袋",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.419552878538%2C139.64894216485",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 6980,
+      "exclusiveAreaM2": 82.18,
+      "buildingAreaM2": 82.18,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種低層住居専用地域",
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "6,980万円",
+        "landAreaText": null,
+        "publishedText": "情報公開日：2026/06/07（116日前 公開）",
+        "lat": 35.419552878538,
+        "lon": 139.64894216485,
+        "address": "神奈川県横浜市中区池袋",
+        "postalCode": "231-0834",
+        "yearBuilt": 2023,
+        "builtText": "2023年2月（築4年）",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142976%2Fsale%2F19871%2F11%2F2%2F5r3q.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "15,880円"
+      },
+      "lat": 35.419552878538,
+      "lon": 139.64894216485,
+      "locationAccuracy": "coordinates",
+      "ward": "横浜市中区",
+      "wardEn": null,
+      "yearBuilt": 2023,
+      "buildingAgeYears": 4,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日：2026/06/07（116日前 公開）",
+      "isNew": true
+    },
+    {
       "id": "b-35006130000082",
       "url": "https://www.homes.co.jp/mansion/b-35006130000082/",
       "title": "",
@@ -860,65 +914,6 @@
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-07-11",
       "publishedText": "情報公開日：2026/07/11（82日前 公開）"
-    },
-    {
-      "id": "b-8690105170",
-      "url": "https://www.homes.co.jp/mansion/b-8690105170/",
-      "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F105170%2F11%2F5%2Finwr.jpg",
-      "priceText": "6,980万円",
-      "madori": "3LDK",
-      "landAreaText": "82.18m²",
-      "buildingAreaText": "82.18m²",
-      "exclusiveAreaText": "82.18m²",
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "神奈川県横浜市中区池袋",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.419609526887%2C139.64849081198",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 6980,
-      "exclusiveAreaM2": 82.18,
-      "buildingAreaM2": 82.18,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "準住居地域",
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日：2025/12/02（303日前 公開）",
-        "lat": 35.419609526887,
-        "lon": 139.64849081198,
-        "address": "神奈川県横浜市中区池袋",
-        "postalCode": "231-0834",
-        "yearBuilt": 2023,
-        "builtText": "2023年2月（築4年）",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F105170%2F11%2F5%2Finwr.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "15,880円"
-      },
-      "lat": 35.419609526887,
-      "lon": 139.64849081198,
-      "locationAccuracy": "coordinates",
-      "ward": "横浜市中区",
-      "wardEn": null,
-      "yearBuilt": 2023,
-      "buildingAgeYears": 4,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2025-12-02",
-      "publishedText": "情報公開日：2025/12/02（303日前 公開）",
-      "isNew": true
     },
     {
       "id": "b-1216390038582",
@@ -1037,14 +1032,13 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-17",
-      "publishedText": "情報公開日：2026/09/17（14日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/17（14日前 公開）"
     },
     {
-      "id": "b-1538400011334",
-      "url": "https://www.homes.co.jp/mansion/b-1538400011334/",
+      "id": "b-1230340085079",
+      "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
       "title": "",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fupl1.jpg",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fevt4.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -1071,7 +1065,7 @@
         "freeholdMention": true,
         "priceText": "7,280万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/26（36日前 公開）",
+        "publishedText": "情報公開日：2026/09/04（27日前 公開）",
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -1079,7 +1073,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fupl1.jpg",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fevt4.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -1095,8 +1089,8 @@
       "buildingAgeYears": 25,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（36日前 公開）",
+      "publishedAt": "2026-09-04",
+      "publishedText": "情報公開日：2026/09/04（27日前 公開）",
       "isNew": true
     },
     {
@@ -1155,8 +1149,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（27日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/04（27日前 公開）"
     },
     {
       "id": "b-39051320000349",
@@ -1272,8 +1265,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-30",
-      "publishedText": "情報公開日：2026/09/30（1日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/30（1日前 公開）"
     },
     {
       "id": "b-1357690020875",
@@ -1331,8 +1323,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-23",
-      "publishedText": "情報公開日：2026/09/23（8日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/23（8日前 公開）"
     },
     {
       "id": "b-1421770029040",
@@ -1448,8 +1439,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-06-13",
-      "publishedText": "情報公開日：2026/06/13（110日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/06/13（110日前 公開）"
     },
     {
       "id": "b-1032050010177",
@@ -1507,8 +1497,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2025-11-02",
-      "publishedText": "情報公開日：2025/11/02（333日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2025/11/02（333日前 公開）"
     },
     {
       "id": "b-1421770028855",
@@ -1743,21 +1732,20 @@
       "publishedText": "情報公開日：2026/09/07（24日前 公開）",
       "dedupedFrom": [
         "b-91200002092"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-1424730001098",
       "url": "https://www.homes.co.jp/mansion/b-1424730001098/",
-      "title": "中古マンションライオンズステージ関内メダリオン/ 8階PR",
+      "title": "",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142473%2Fsale%2F1098%2F2%2F2%2F0yzk.jpg",
       "priceText": "10,480万円",
-      "madori": null,
+      "madori": "3LDK",
       "landAreaText": "86.18m²",
-      "buildingAreaText": "86.18m² 3LDK",
-      "exclusiveAreaText": "86.18m² 3LDK",
+      "buildingAreaText": "86.18m²",
+      "exclusiveAreaText": "86.18m²",
       "builtText": null,
-      "walkMinutes": 3,
+      "walkMinutes": null,
       "address": "神奈川県横浜市中区太田町3丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.447234754527%2C139.63786367578",
       "deal": "buy",
@@ -1802,8 +1790,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-20",
-      "publishedText": "情報公開日：2026/08/20（42日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/20（42日前 公開）"
     },
     {
       "id": "b-1476140000712",
@@ -1866,15 +1853,15 @@
     {
       "id": "b-1261160003393",
       "url": "https://www.homes.co.jp/mansion/b-1261160003393/",
-      "title": "",
+      "title": "中古マンション西早稲田シティタワー/ 11階PR",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3393%2F11%2F1%2Fwjwp.jpg",
       "priceText": "10,890万円",
-      "madori": "3LDK",
+      "madori": null,
       "landAreaText": "75.04m²",
-      "buildingAreaText": "75.04m²",
-      "exclusiveAreaText": "75.04m²",
+      "buildingAreaText": "75.04m² 3LDK",
+      "exclusiveAreaText": "75.04m² 3LDK",
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 2,
       "address": "東京都新宿区西早稲田1丁目23-16",
       "googleMapsUrl": "https://www.google.com/maps?q=35.712555093874%2C139.71774075663",
       "deal": "buy",
@@ -1920,6 +1907,65 @@
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-02-22",
       "publishedText": "情報公開日：2026/02/22（221日前 公開）"
+    },
+    {
+      "id": "b-1267650039069",
+      "url": "https://www.homes.co.jp/mansion/b-1267650039069/",
+      "title": "",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F39069%2F11%2F3%2F8j79.jpg",
+      "priceText": "10,980万円",
+      "madori": "4LDK",
+      "landAreaText": "82.12m²",
+      "buildingAreaText": "82.12m²",
+      "exclusiveAreaText": "82.12m²",
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都板橋区加賀1丁目14-1",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.754929736091%2C139.71671136173",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 10980,
+      "exclusiveAreaM2": 82.12,
+      "buildingAreaM2": 82.12,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "10,980万円",
+        "landAreaText": null,
+        "publishedText": "情報公開日：2026/09/06（25日前 公開）",
+        "lat": 35.754929736091,
+        "lon": 139.71671136173,
+        "address": "東京都板橋区加賀1丁目14-1",
+        "postalCode": "173-0003",
+        "yearBuilt": 1998,
+        "builtText": "1998年2月（築29年）",
+        "structure": "SRC(鉄骨鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F39069%2F11%2F3%2F8j79.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "10,520円"
+      },
+      "lat": 35.754929736091,
+      "lon": 139.71671136173,
+      "locationAccuracy": "coordinates",
+      "ward": "板橋区",
+      "wardEn": "Itabashi-ku",
+      "yearBuilt": 1998,
+      "buildingAgeYears": 29,
+      "storeys": null,
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-09-06",
+      "publishedText": "情報公開日：2026/09/06（25日前 公開）",
+      "isNew": true
     },
     {
       "id": "b-1421770029054",
@@ -1980,64 +2026,6 @@
       "publishedText": "情報公開日：2026/07/31（62日前 公開）"
     },
     {
-      "id": "b-1421770029491",
-      "url": "https://www.homes.co.jp/mansion/b-1421770029491/",
-      "title": "",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F29491%2F11%2F3%2Fkypw.jpg",
-      "priceText": "10,980万円",
-      "madori": "4LDK",
-      "landAreaText": "82.12m²",
-      "buildingAreaText": "82.12m²",
-      "exclusiveAreaText": "82.12m²",
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都板橋区加賀1丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.755249736644%2C139.71807984356",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 10980,
-      "exclusiveAreaM2": 82.12,
-      "buildingAreaM2": 82.12,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "準工業地域",
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "10,980万円",
-        "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/21（41日前 公開）",
-        "lat": 35.755249736644,
-        "lon": 139.71807984356,
-        "address": "東京都板橋区加賀1丁目",
-        "postalCode": "173-0003",
-        "yearBuilt": 1998,
-        "builtText": "1998年2月（築29年）",
-        "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F29491%2F11%2F3%2Fkypw.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "10,520円"
-      },
-      "lat": 35.755249736644,
-      "lon": 139.71807984356,
-      "locationAccuracy": "coordinates",
-      "ward": "板橋区",
-      "wardEn": "Itabashi-ku",
-      "yearBuilt": 1998,
-      "buildingAgeYears": 29,
-      "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "publishedAt": "2026-08-21",
-      "publishedText": "情報公開日：2026/08/21（41日前 公開）"
-    },
-    {
       "id": "b-1509590000451",
       "url": "https://www.homes.co.jp/mansion/b-1509590000451/",
       "title": "中古マンションコルティーレ山手町グランドエステート/ 2階PR",
@@ -2093,8 +2081,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-29",
-      "publishedText": "情報公開日：2026/08/29（33日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/29（33日前 公開）"
     }
   ]
 }

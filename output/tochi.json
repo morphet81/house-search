@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T01:51:09.928Z",
+  "scrapedAt": "2026-10-01T03:50:25.169Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -121,27 +121,9 @@
   },
   "count": 22,
   "delta": {
-    "addedCount": 17,
+    "addedCount": 0,
     "removedCount": 0,
-    "addedIds": [
-      "b-1420270002907",
-      "b-1559440000047",
-      "b-1414390003998",
-      "b-1429760018869",
-      "b-1473160000748",
-      "b-35007600000213",
-      "b-1501660000465",
-      "b-78730032938",
-      "b-8690107844",
-      "b-1564340000047",
-      "b-1070270009879",
-      "b-1074240095499",
-      "b-1191380011016",
-      "b-1414390005987",
-      "b-1552880000056",
-      "b-77710033663",
-      "b-8690105517"
-    ],
+    "addedIds": [],
     "removedIds": []
   },
   "dedupe": {
@@ -155,7 +137,7 @@
     {
       "id": "b-1420270002907",
       "url": "https://www.homes.co.jp/tochi/b-1420270002907/",
-      "title": "",
+      "title": "PR土地横浜市中区立野 土地",
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fc596b86e%2F15738_112672_1_132000_132000.jpg%3Ft%3D20260531172221",
       "priceText": "1,780万円",
       "madori": null,
@@ -163,7 +145,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 5,
       "address": "神奈川県横浜市中区立野",
       "googleMapsUrl": "https://www.google.com/maps?q=35.429398146784%2C139.64836293572",
       "deal": "buy",
@@ -207,13 +189,12 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-05-31",
-      "publishedText": "情報公開日：2026/05/31（123日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/05/31（123日前 公開）"
     },
     {
       "id": "b-1559440000047",
       "url": "https://www.homes.co.jp/tochi/b-1559440000047/",
-      "title": "PR土地JR「山手」駅徒歩10分売地",
+      "title": "",
       "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F155944%2Fsale%2F47%2F2%2F1%2F6sbn.jpg",
       "priceText": "2,180万円",
       "madori": null,
@@ -221,7 +202,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": 10,
+      "walkMinutes": null,
       "address": "神奈川県横浜市中区仲尾台",
       "googleMapsUrl": "https://www.google.com/maps?q=35.424485229625%2C139.64325272991",
       "deal": "buy",
@@ -265,8 +246,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日：2026/08/06（56日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/06（56日前 公開）"
     },
     {
       "id": "b-1414390003998",
@@ -323,8 +303,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2024-07-12",
-      "publishedText": "情報公開日：2024/07/12（811日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2024/07/12（811日前 公開）"
     },
     {
       "id": "b-1429760018869",
@@ -381,8 +360,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-03-01",
-      "publishedText": "情報公開日：2026/03/01（214日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/03/01（214日前 公開）"
     },
     {
       "id": "b-1473160000748",
@@ -439,8 +417,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-07-13",
-      "publishedText": "情報公開日：2026/07/13（80日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/07/13（80日前 公開）"
     },
     {
       "id": "b-1412500000746",
@@ -611,8 +588,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日：2026/09/05（26日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/05（26日前 公開）"
     },
     {
       "id": "b-1501660000465",
@@ -669,8 +645,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-18",
-      "publishedText": "情報公開日：2026/09/18（13日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/18（13日前 公開）"
     },
     {
       "id": "b-78730032938",
@@ -727,8 +702,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-18",
-      "publishedText": "情報公開日：2026/09/18（13日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/18（13日前 公開）"
     },
     {
       "id": "b-8690107844",
@@ -785,8 +759,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-25",
-      "publishedText": "情報公開日：2026/09/25（6日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/25（6日前 公開）"
     },
     {
       "id": "b-1170260012309",
@@ -900,8 +873,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-06-26",
-      "publishedText": "情報公開日：2026/06/26（97日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/06/26（97日前 公開）"
     },
     {
       "id": "b-1070270009879",
@@ -958,8 +930,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-05-29",
-      "publishedText": "情報公開日：2026/05/29（125日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/05/29（125日前 公開）"
     },
     {
       "id": "b-1074240095499",
@@ -1016,8 +987,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2025-10-02",
-      "publishedText": "情報公開日：2025/10/02（364日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2025/10/02（364日前 公開）"
     },
     {
       "id": "b-1191380011016",
@@ -1074,8 +1044,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2025-10-16",
-      "publishedText": "情報公開日：2025/10/16（350日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2025/10/16（350日前 公開）"
     },
     {
       "id": "b-1414390005987",
@@ -1132,8 +1101,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-03-20",
-      "publishedText": "情報公開日：2026/03/20（195日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/03/20（195日前 公開）"
     },
     {
       "id": "b-1552880000056",
@@ -1190,8 +1158,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-03-16",
-      "publishedText": "情報公開日：2026/03/16（199日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/03/16（199日前 公開）"
     },
     {
       "id": "b-77710033663",
@@ -1248,8 +1215,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-07",
-      "publishedText": "情報公開日：2026/09/07（24日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/07（24日前 公開）"
     },
     {
       "id": "b-8690105517",
@@ -1306,8 +1272,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-01-17",
-      "publishedText": "情報公開日：2026/01/17（257日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/01/17（257日前 公開）"
     },
     {
       "id": "b-1210390001205",

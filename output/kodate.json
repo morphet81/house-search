@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T01:47:22.724Z",
+  "scrapedAt": "2026-10-01T03:46:49.843Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -131,26 +131,22 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 10,
+  "count": 9,
   "delta": {
-    "addedCount": 8,
-    "removedCount": 0,
+    "addedCount": 1,
+    "removedCount": 2,
     "addedIds": [
-      "b-1394340004379",
-      "b-1357690020367",
-      "b-1418240005076",
-      "b-1496700006896",
-      "b-1235790006310",
-      "b-1411960002561",
-      "b-1191380011478",
-      "b-35506100001079"
+      "b-86540019162"
     ],
-    "removedIds": []
+    "removedIds": [
+      "b-1418240005076",
+      "b-1496700006896"
+    ]
   },
   "dedupe": {
     "before": 14,
-    "after": 10,
-    "removedCount": 4,
+    "after": 9,
+    "removedCount": 5,
     "clusters": 2,
     "removed": [
       {
@@ -162,8 +158,8 @@
         "keptRichness": 29
       },
       {
-        "id": "b-1565830000107",
-        "url": "https://www.homes.co.jp/kodate/b-1565830000107/",
+        "id": "b-8690107375",
+        "url": "https://www.homes.co.jp/kodate/b-8690107375/",
         "keptId": "b-1411960002561",
         "reason": "same_property_less_detail",
         "richness": 29,
@@ -172,6 +168,14 @@
       {
         "id": "b-74250030489",
         "url": "https://www.homes.co.jp/kodate/b-74250030489/",
+        "keptId": "b-1411960002561",
+        "reason": "same_property_less_detail",
+        "richness": 29,
+        "keptRichness": 29
+      },
+      {
+        "id": "b-1418240005076",
+        "url": "https://www.homes.co.jp/kodate/b-1418240005076/",
         "keptId": "b-1411960002561",
         "reason": "same_property_less_detail",
         "richness": 29,
@@ -191,15 +195,15 @@
     {
       "id": "b-1394340004379",
       "url": "https://www.homes.co.jp/kodate/b-1394340004379/",
-      "title": "",
+      "title": "中古一戸建て中区根岸町3丁目 中古戸建てPR",
       "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F139434%2Fsale%2F4379%2F2%2F1%2Fv1j8.jpg",
       "priceText": "4,549万円",
-      "madori": "3SLDK",
-      "landAreaText": "61.64m²",
-      "buildingAreaText": "103.49m²",
+      "madori": null,
+      "landAreaText": "61.64m²3SLDK",
+      "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 12,
       "address": "神奈川県横浜市中区根岸町3丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.41882915072%2C139.64147004909",
       "deal": "buy",
@@ -207,7 +211,7 @@
         "station"
       ],
       "priceManYen": 4549,
-      "buildingAreaM2": 103.49,
+      "buildingAreaM2": null,
       "landAreaM2": 61.64,
       "detail": {
         "landRight": "所有権",
@@ -244,8 +248,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-04-24",
-      "publishedText": "情報公開日：2026/04/24（160日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/04/24（160日前 公開）"
     },
     {
       "id": "b-1357690020367",
@@ -303,126 +306,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-11",
-      "publishedText": "情報公開日：2026/08/11（51日前 公開）",
-      "isNew": true
-    },
-    {
-      "id": "b-1418240005076",
-      "url": "https://www.homes.co.jp/kodate/b-1418240005076/",
-      "title": "中古一戸建て山手駅 歩14分 横浜市中区山元町3丁目PR",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141824%2Fsale%2F5076%2F2%2F1%2Fgl0g.jpg",
-      "priceText": "5,880万円",
-      "madori": null,
-      "landAreaText": "66.17m²4LDK",
-      "buildingAreaText": null,
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": 14,
-      "address": "神奈川県横浜市中区山元町3丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.42878017809%2C139.63853934857",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 5880,
-      "buildingAreaM2": null,
-      "landAreaM2": 66.17,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "近隣商業地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "5,880万円",
-        "landAreaText": "66.17m²",
-        "publishedText": "情報公開日：2025/09/04（392日前 公開）",
-        "lat": 35.42878017809,
-        "lon": 139.63853934857,
-        "address": "神奈川県横浜市中区山元町3丁目",
-        "postalCode": "231-0851",
-        "yearBuilt": 2025,
-        "builtText": "2025年9月（築2年）",
-        "structure": "木造/2階建",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141824%2Fsale%2F5076%2F2%2F1%2Fgl0g.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": null
-      },
-      "lat": 35.42878017809,
-      "lon": 139.63853934857,
-      "locationAccuracy": "coordinates",
-      "ward": "横浜市中区",
-      "wardEn": null,
-      "yearBuilt": 2025,
-      "buildingAgeYears": 2,
-      "storeys": 2,
-      "structure": "木造/2階建",
-      "publishedAt": "2025-09-04",
-      "publishedText": "情報公開日：2025/09/04（392日前 公開）",
-      "isNew": true
-    },
-    {
-      "id": "b-1496700006896",
-      "url": "https://www.homes.co.jp/kodate/b-1496700006896/",
-      "title": "中古一戸建て横浜市中区山元町3丁目 新築未入居戸建 全2棟 A号棟PR",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F149670%2Fsale%2F6896%2F2%2F2%2Fzvdo.jpg",
-      "priceText": "5,880万円",
-      "madori": null,
-      "landAreaText": "66.17m²4LDK",
-      "buildingAreaText": null,
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": 14,
-      "address": "神奈川県横浜市中区山元町3丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.428704359024%2C139.63875655538",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 5880,
-      "buildingAreaM2": null,
-      "landAreaM2": 66.17,
-      "buildingAgeYears": 2,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "近隣商業地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "5,880万円",
-        "landAreaText": "66.17m²",
-        "publishedText": "情報公開日：2025/03/29（551日前 公開）",
-        "lat": 35.428704359024,
-        "lon": 139.63875655538,
-        "address": "神奈川県横浜市中区山元町3丁目",
-        "postalCode": "231-0851",
-        "yearBuilt": 2025,
-        "builtText": "2025年8月（築2年）",
-        "structure": "木造/3階建",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F149670%2Fsale%2F6896%2F2%2F2%2Fzvdo.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": null
-      },
-      "lat": 35.428704359024,
-      "lon": 139.63875655538,
-      "locationAccuracy": "coordinates",
-      "ward": "横浜市中区",
-      "wardEn": null,
-      "yearBuilt": 2025,
-      "storeys": 3,
-      "structure": "木造/3階建",
-      "publishedAt": "2025-03-29",
-      "publishedText": "情報公開日：2025/03/29（551日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/11（51日前 公開）"
     },
     {
       "id": "b-1235790006310",
@@ -480,8 +364,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2025-11-30",
-      "publishedText": "情報公開日：2025/11/30（305日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2025/11/30（305日前 公開）"
     },
     {
       "id": "b-1411960002561",
@@ -542,10 +425,10 @@
       "publishedText": "情報公開日：2026/04/07（177日前 公開）",
       "dedupedFrom": [
         "b-75080033099",
-        "b-1565830000107",
-        "b-74250030489"
-      ],
-      "isNew": true
+        "b-8690107375",
+        "b-74250030489",
+        "b-1418240005076"
+      ]
     },
     {
       "id": "b-1191380011478",
@@ -606,7 +489,65 @@
       "publishedText": "情報公開日：2026/08/10（52日前 公開）",
       "dedupedFrom": [
         "b-1560330000817"
+      ]
+    },
+    {
+      "id": "b-86540019162",
+      "url": "https://www.homes.co.jp/kodate/b-86540019162/",
+      "title": "中古一戸建て横浜市西区霞ケ丘 中古一戸建てPR",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8654%2Fsale%2F19162%2F2%2F2%2F3q75.jpg",
+      "priceText": "6,490万円",
+      "madori": null,
+      "landAreaText": "91.97m²3SLDK",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": 13,
+      "address": "神奈川県横浜市西区霞ケ丘",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.44306612859%2C139.61963538669",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
       ],
+      "priceManYen": 6490,
+      "buildingAreaM2": null,
+      "landAreaM2": 91.97,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第二種中高層住居専用地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": null,
+        "landAreaText": "91.97m²",
+        "publishedText": "情報公開日：2026/05/22（132日前 公開）",
+        "lat": 35.44306612859,
+        "lon": 139.61963538669,
+        "address": "神奈川県横浜市西区霞ケ丘",
+        "postalCode": "220-0035",
+        "yearBuilt": 2023,
+        "builtText": "2023年2月（築4年）",
+        "structure": "木造/3階建",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8654%2Fsale%2F19162%2F2%2F2%2F3q75.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "・修繕積立金"
+      },
+      "lat": 35.44306612859,
+      "lon": 139.61963538669,
+      "locationAccuracy": "coordinates",
+      "ward": "横浜市西区",
+      "wardEn": null,
+      "yearBuilt": 2023,
+      "buildingAgeYears": 4,
+      "storeys": 3,
+      "structure": "木造/3階建",
+      "publishedAt": "2026-05-22",
+      "publishedText": "情報公開日：2026/05/22（132日前 公開）",
       "isNew": true
     },
     {
@@ -670,15 +611,15 @@
     {
       "id": "b-1516150002849",
       "url": "https://www.homes.co.jp/kodate/b-1516150002849/",
-      "title": "",
+      "title": "中古一戸建て北区西ケ原4丁目 一戸建てPR",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg",
       "priceText": "9,950万円",
-      "madori": "4SLDK",
-      "landAreaText": "121.03m²",
-      "buildingAreaText": "107.23m²",
+      "madori": null,
+      "landAreaText": "121.03m²4SLDK",
+      "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 8,
       "address": "東京都北区西ケ原4丁目17",
       "googleMapsUrl": "https://www.google.com/maps?q=35.743686286908%2C139.73769253032",
       "deal": "buy",
@@ -686,7 +627,7 @@
         "station"
       ],
       "priceManYen": 9950,
-      "buildingAreaM2": 107.23,
+      "buildingAreaM2": null,
       "landAreaM2": 121.03,
       "detail": {
         "landRight": "所有権",
@@ -781,8 +722,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日：2026/08/06（56日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/06（56日前 公開）"
     }
   ]
 }
