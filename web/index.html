@@ -11,17 +11,26 @@
       <h1>House search results</h1>
       <p class="lead">
         Property types with scraped results in <code>output/</code>.
-        <a href="filter-stations.html">Filter stations map</a>
+        Station maps:
+        <a href="filter-stations.html?deal=buy">sale</a>
+        ·
+        <a href="filter-stations.html?deal=rent">rent</a>
       </p>
 
       <section class="deal-section" aria-labelledby="sale-heading">
-        <h2 id="sale-heading" class="deal-heading">For sale</h2>
+        <h2 id="sale-heading" class="deal-heading">
+          For sale
+          <a class="deal-map-link" href="filter-stations.html?deal=buy">stations map</a>
+        </h2>
         <ul id="sale-results" class="type-list"></ul>
         <p id="sale-empty" class="empty" hidden>No sale results yet.</p>
       </section>
 
       <section class="deal-section" aria-labelledby="rent-heading">
-        <h2 id="rent-heading" class="deal-heading">For rent</h2>
+        <h2 id="rent-heading" class="deal-heading">
+          For rent
+          <a class="deal-map-link" href="filter-stations.html?deal=rent">stations map</a>
+        </h2>
         <ul id="rent-results" class="type-list"></ul>
         <p id="rent-empty" class="empty" hidden>No rent results yet.</p>
       </section>

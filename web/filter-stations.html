@@ -15,7 +15,11 @@
   <body class="map-page">
     <main class="page map-layout">
       <p class="back"><a href="index.html">← All types</a></p>
-      <h1>Filter stations</h1>
+      <h1 id="heading">Filter stations</h1>
+      <p class="deal-tabs" role="tablist" aria-label="Deal type">
+        <a id="tab-buy" class="deal-tab" href="filter-stations.html?deal=buy">For sale</a>
+        <a id="tab-rent" class="deal-tab" href="filter-stations.html?deal=rent">For rent</a>
+      </p>
       <p id="summary" class="lead">Loading…</p>
       <div id="error" class="empty" hidden></div>
       <div id="map" class="map-canvas" role="region" aria-label="Filter stations map"></div>
@@ -28,16 +32,30 @@
     <script type="module">
       import { outputUrl } from "./site.js";
 
+      const params = new URLSearchParams(location.search);
+      const deal = params.get("deal") === "rent" ? "rent" : "buy";
+      const dealLabel = deal === "rent" ? "For rent" : "For sale";
+
+      document.title = `Filter stations · ${dealLabel}`;
+      document.getElementById("heading").textContent = `Filter stations · ${dealLabel}`;
+      document.getElementById("tab-buy").classList.toggle("deal-tab-active", deal === "buy");
+      document.getElementById("tab-rent").classList.toggle("deal-tab-active", deal === "rent");
+
       const summary = document.getElementById("summary");
       const error = document.getElementById("error");
       const mapEl = document.getElementById("map");
+      const color = deal === "rent" ? "#0a7a4a" : "#0b5fff";
 
       try {
-        const res = await fetch(outputUrl("filter-stations.geojson"));
-        if (!res.ok) throw new Error(`No filter-stations.geojson (HTTP ${res.status})`);
+        const res = await fetch(outputUrl(`filter-stations-${deal}.geojson`));
+        if (!res.ok) {
+          throw new Error(
+            `No filter-stations-${deal}.geojson (HTTP ${res.status}). Run npm run stations:geojson`
+          );
+        }
         const data = await res.json();
         const features = data.features || [];
-        summary.textContent = `${features.length} station(s) from search preferences`;
+        summary.textContent = `${features.length} station(s) in ${dealLabel.toLowerCase()} search preferences`;
 
         if (!features.length) {
           error.hidden = false;
@@ -58,8 +76,8 @@
             L.circleMarker([lat, lon], {
               radius: 6,
               weight: 1,
-              color: "#0b5fff",
-              fillColor: "#0b5fff",
+              color,
+              fillColor: color,
               fillOpacity: 0.75,
             })
               .bindPopup(name)

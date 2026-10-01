@@ -599,6 +599,27 @@ function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {
   return params;
 }
 
+/** Expand location.station_sets (+ optional location.stations) into a flat stations list. */
+export function expandLocation(doc, location) {
+  const ku = [...(location?.ku || [])];
+  const seen = new Set();
+  const stations = [];
+  const push = (name) => {
+    const s = String(name || "").trim();
+    if (!s || seen.has(s)) return;
+    seen.add(s);
+    stations.push(s);
+  };
+  for (const s of location?.stations || []) push(s);
+  const sets = doc?._station_sets || {};
+  for (const key of location?.station_sets || []) {
+    const list = sets[key];
+    if (!list) throw new Error(`Unknown station_sets key: ${key}`);
+    for (const s of list) push(s);
+  }
+  return { ku, stations, station_sets: location?.station_sets || [] };
+}
+
 export function loadTypePrefs(file, typeKey) {
   const doc = loadYaml(fs.readFileSync(file, "utf8"));
   const defaults = doc.defaults || {};
@@ -639,6 +660,7 @@ export function loadTypePrefs(file, typeKey) {
     };
   }
 
+  merged.location = expandLocation(doc, merged.location || {});
   return merged;
 }
 

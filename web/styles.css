@@ -47,6 +47,38 @@ h1 {
   font-weight: 650;
   margin: 0 0 0.75rem;
   letter-spacing: -0.01em;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+}
+
+.deal-map-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.deal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.deal-tab {
+  font-size: 0.92rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.deal-tab-active {
+  color: var(--ink);
+  border-color: var(--ink);
+  font-weight: 600;
 }
 
 .sort-bar {

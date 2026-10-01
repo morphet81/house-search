@@ -1,6 +1,6 @@
 # House search preferences — LIFULL HOME'S (homes.co.jp)
 # One block per property type. Empty / null = no filter.
-# Location: ku = 区・市名; stations = 駅名 (exact HOME'S labels).
+# Location: ku = 区・市名; stations / station_sets = 駅名 (exact HOME'S labels).
 # budget.buy_max unit = 万円 purchase (13000 = 1億3000万円).
 # budget.rent_max unit = 万円/月 rent.
 # Type price.max overrides budget.buy_max when set.
@@ -29,14 +29,9 @@ defaults:
   # HOME'S query uses next coarser step (22 → 25年以内).
   house_age_years_max: 20 # ≤20 years (kodate buy; mansion / rent override)
 
-# Shared location for all types (also copied into each block)
-# ku: unused — station search only.
-# stations: LFI Tokyo school-bus catchments + Saint Maur (Yokohama) ≤20 min.
-
-_shared_location: &shared_location
-  ku: []
-  stations:
-    # --- LFI Tokyo (campus / bus catchments) ---
+# Named station groups. Buy / rent locations pick which groups to use.
+_station_sets:
+  tokyo_lfi:
     # Campus / Mita north + Toden + Saikyo (LFI ±4)
     - 新板橋
     - 板橋
@@ -130,7 +125,8 @@ _shared_location: &shared_location
     - 五反田
     - 芝公園
     - 御成門
-    # --- Saint Maur Yokohama ≤20 min ---
+  saint_maur:
+    # Saint Maur International School (Yamate-cho) ≤20 min transit
     - 元町・中華街
     - 石川町
     - 山手
@@ -144,6 +140,19 @@ _shared_location: &shared_location
     - 磯子
     - 伊勢佐木長者町
     - 日ノ出町
+
+# Buy (sale) vs rent station catchments — edit independently.
+_buy_location: &buy_location
+  ku: []
+  station_sets:
+    - tokyo_lfi
+    - saint_maur
+
+_rent_location: &rent_location
+  ku: []
+  station_sets:
+    - tokyo_lfi
+    - saint_maur
 
 # 間取り: 3 rooms or more
 _madori_3plus: &madori_3plus
@@ -159,7 +168,7 @@ _madori_3plus: &madori_3plus
 # ---------------------------------------------------------------------------
 kodate:
   listing: chuko # shinchiku | chuko
-  location: *shared_location
+  location: *buy_location
 
   price:
     min: null
@@ -188,7 +197,7 @@ kodate:
 # ---------------------------------------------------------------------------
 mansion:
   listing: chuko # shinchiku | chuko
-  location: *shared_location
+  location: *buy_location
 
   price:
     min: null
@@ -216,7 +225,7 @@ mansion:
 # 土地 (land) — /tochi/ (buy only)
 # ---------------------------------------------------------------------------
 tochi:
-  location: *shared_location
+  location: *buy_location
 
   price:
     min: null
@@ -246,5 +255,8 @@ rent:
   mansion: true
   kodate: true
   overrides:
+    mansion:
+      location: *rent_location
     kodate:
+      location: *rent_location
       house_age_years_max: 30 # buy kodate keeps defaults (≤20)
