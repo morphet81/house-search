@@ -136,6 +136,20 @@ const STATION = {
   五反田: "58600575",
   芝公園: "58706408",
   御成門: "58706409",
+  // Saint Maur (Yokohama) ≤20 min transit
+  元町・中華街: "201309867",
+  石川町: "9300611",
+  山手: "9300612",
+  日本大通り: "201309866",
+  馬車道: "201309865",
+  みなとみらい: "201309864",
+  新高島: "201309863",
+  関内: "9300610",
+  桜木町: "9300609",
+  根岸: "9300613",
+  磯子: "9300614",
+  伊勢佐木長者町: "60406664",
+  日ノ出町: "89405158",
 };
 
 const MADORI = {
@@ -418,16 +432,24 @@ function stationPathListUrl(base, pathKey) {
   return base.replace(/\/list\/?$/, `/${pathKey}-st/list/`);
 }
 
+function prefPathSlug(prefs) {
+  const p = prefs?.prefecture || "東京都";
+  if (p === "神奈川県" || p === "kanagawa") return "kanagawa";
+  if (p === "東京都" || p === "tokyo") return "tokyo";
+  throw new Error(`Unsupported prefecture (add slug map): ${p}`);
+}
+
 function listingBase(typeCfg, prefs) {
   const seg = typeCfg.pathSegment;
+  const pref = prefPathSlug(prefs);
   if (typeCfg.deal === "rent") {
-    return `https://www.homes.co.jp/chintai/${seg}/tokyo/list/`;
+    return `https://www.homes.co.jp/chintai/${seg}/${pref}/list/`;
   }
   if (!typeCfg.hasListingKind) {
-    return `https://www.homes.co.jp/${seg}/tokyo/list/`;
+    return `https://www.homes.co.jp/${seg}/${pref}/list/`;
   }
   const kind = prefs.listing === "shinchiku" ? "shinchiku" : "chuko";
-  return `https://www.homes.co.jp/${seg}/${kind}/tokyo/list/`;
+  return `https://www.homes.co.jp/${seg}/${kind}/${pref}/list/`;
 }
 
 function buildCondParams(typeCfg, prefs, { cities = [], stations = [] } = {}) {

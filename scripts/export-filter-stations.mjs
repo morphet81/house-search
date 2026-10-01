@@ -63,15 +63,19 @@ function loadExistingCoords() {
   }
 }
 
-async function geocodeNominatim(name) {
-  const q = `東京都 ${name}駅`;
+async function geocodeNominatim(name, prefecture = "東京都") {
+  const q = `${prefecture} ${name}駅`;
   const url = new URL("https://nominatim.openstreetmap.org/search");
   url.searchParams.set("q", q);
   url.searchParams.set("format", "json");
   url.searchParams.set("limit", "5");
   url.searchParams.set("countrycodes", "jp");
-  // Tokyo area viewbox: west,north,east,south
-  url.searchParams.set("viewbox", "139.55,35.82,139.92,35.55");
+  // Yokohama / Tokyo viewboxes
+  if (prefecture === "神奈川県") {
+    url.searchParams.set("viewbox", "139.45,35.55,139.75,35.25");
+  } else {
+    url.searchParams.set("viewbox", "139.55,35.82,139.92,35.55");
+  }
   url.searchParams.set("bounded", "1");
 
   const res = await fetch(url, {
@@ -84,14 +88,16 @@ async function geocodeNominatim(name) {
   const rows = await res.json();
   if (!Array.isArray(rows) || !rows.length) return null;
 
-  const inTokyo = (lat, lon) =>
-    lat >= 35.55 && lat <= 35.82 && lon >= 139.55 && lon <= 139.92;
+  const inBox =
+    prefecture === "神奈川県"
+      ? (lat, lon) => lat >= 35.25 && lat <= 35.55 && lon >= 139.45 && lon <= 139.75
+      : (lat, lon) => lat >= 35.55 && lat <= 35.82 && lon >= 139.55 && lon <= 139.92;
 
   for (const row of rows) {
     const lat = Number(row.lat);
     const lon = Number(row.lon);
     if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
-    if (!inTokyo(lat, lon)) continue;
+    if (!inBox(lat, lon)) continue;
     return { lat, lon, display: row.display_name || null };
   }
   return null;
@@ -113,15 +119,16 @@ async function main() {
   const cached = loadExistingCoords();
   const features = [];
   const missing = [];
+  const prefecture = doc.defaults?.prefecture || "東京都";
 
-  console.error(`Stations in prefs: ${names.length}`);
+  console.error(`Stations in prefs: ${names.length} (${prefecture})`);
   for (const name of names) {
     let coords = cached.get(name) || null;
     if (coords) {
       console.error(`  cache  ${name}`);
     } else {
       try {
-        const hit = await geocodeNominatim(name);
+        const hit = await geocodeNominatim(name, prefecture);
         await sleep(1100); // Nominatim usage policy
         if (hit) {
           coords = { lat: hit.lat, lon: hit.lon };
