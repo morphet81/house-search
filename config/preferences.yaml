@@ -250,7 +250,8 @@ _buy_location: &buy_location
     - saint_maur
 
 _rent_location: &rent_location
-  ku: []
+  ku:
+    - 世田谷区 # entire ward (in addition to station sets)
   station_sets:
     - tokyo_lfi
     - saint_maur

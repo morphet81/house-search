@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T03:56:13.390Z",
+  "scrapedAt": "2026-10-01T04:27:29.855Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -7,7 +7,9 @@
   "filters": {
     "type": "mansion_rent",
     "deal": "rent",
-    "ku": [],
+    "ku": [
+      "世田谷区"
+    ],
     "stations": [
       "新板橋",
       "板橋",
@@ -216,100 +218,336 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 92,
+  "count": 107,
   "delta": {
-    "addedCount": 77,
+    "addedCount": 17,
     "removedCount": 2,
     "addedIds": [
-      "5b5358a64d548f5e53ab72185a0437fd4e6fe4e8",
-      "88dafda2a140f0365ac5e28af4b3951736b730bf",
-      "03e6c15dda1c4b1a668f990fe1ab33bcb532950b",
-      "cd379485dd9a7a81aa0fd5d0ae5ebdf3d01ccfe3",
-      "edbca0e85d5ee67128cfa7a4e0987f810b123ebc",
-      "053f0b0dbdb5c33dc35a36f944b7f92df767383a",
-      "1a2248591762e534e0aa44172d9d7e9758ba966b",
-      "52137f9de643b035ad09a04a2e5be9a57513c161",
-      "bb6da1d4beea5832f56165787d92e329990001c1",
-      "325f4b663e1b272fe39558f6d92c36eb37d2e2d0",
-      "8fe85a388600447164a1df1f8032689debeb0273",
-      "8e4844f464a707f3564fd1d1d399bb500be20573",
-      "38e32cfa77d67631f883216dec72b5cd7f8770d7",
-      "47d8757c807b54e191b53bb430f558ed71e5d7c6",
-      "fbb47adac144658ce1f6eef3e973466b6ad5e7a3",
-      "f41b4726dcdb68672c6f2fb341bef0056837f555",
-      "3b85807f40649b34add22cc66b7cdb29054fd41d",
-      "00f8af2eb89d41ad48c863bab7e594f68c027e8d",
-      "8ad3748302eca91644b1ee8ba4e44e8cde44490e",
-      "00b2b41cf5b8687e98a182c041cf631e4c88ee7c",
-      "89d358430d34c98a356b6b8b567cf06e6b2e1628",
-      "941994ba33afe0267576221205f87031618cc66c",
-      "4dda6480cf11f93d8865918d31caf64f664d2721",
-      "a48fcac9d119d512ab97e4feaf9f7c3c82ff1a4d",
-      "f86dc895ad74361bedba22b8cdec7a53291fa708",
-      "09e4502c0ff0d0586173c79cc773ab2e77f3fd5f",
-      "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
-      "02c269772cb6b8c06000383688e30daf47818331",
-      "6e36943339bf0e7775010cdd54eaa519be189364",
-      "1d4a0466bea80da233f1280ebcc56ca4d17a4603",
-      "d78a95411adbb986e0c361c21c6f13cf51e39fae",
-      "25fdf8f6e3c17637471463371707c104dc4e6765",
-      "3e10828fc504e6d6ad72687f327e11b9d815601d",
-      "6f98902310e08f8e9d7bf108e34ae967d7ee9811",
-      "6a4d50a083af3fcb2aec0297a36c0373f99a659f",
-      "0d6c08e1c8898676f31c4f459245b044535c7393",
-      "6113617c52c66b1dde41c2782d1941b5eca4b2dc",
-      "45b40870a109d52c94a8ded5fd45bed62b090db3",
-      "50b9a9e2173f670341c79e7e2c8a9c1d782002e5",
-      "d63cba38402f6d26629a19744dc0fe5a570546bb",
-      "130a53792ebd184d432cdb706e02237f769a8227",
-      "3e684e3f145745c337fe584b5b4686fb2af79b91",
-      "b926b6440de68b337ace1f362bd0656b12c70ee4",
-      "23f6239dd9c779b9de11e61ab40de2c1aa8532ec",
-      "0343fa04885449c1a0d0efc8721ad0eaf2fc37a7",
-      "29d21bd8547e7390a45e2040600bf1028a191341",
-      "2b32d0022a8f1adb269dcc847ef31edd90542796",
-      "cc9973f48a3177a838f84d784708ca618d8d7ffe",
-      "a8a1dee62b7457448b738e63c92bb655eda308f4",
-      "3c3343e0c0c3568de1c016bdc2faad16487cab99",
-      "d4f5b0b5f27189c9e6b734d2086a892f75f32454",
-      "08614ad9c32e201d72c21a0ebfe28c9fc3f9aad6",
-      "20afefa52c4320509b32cb2492f5e98f76fe3532",
-      "1fd4fc8547e95855bd6305aa70a49ae2b97aeefa",
-      "12f03db54927bbfad6da1a1642023a9c805b6f3f",
-      "18a04a5270b8803ade6f29fabc8e469f5e61557f",
-      "2cc788418eb22f92fd08513a27e932cf9db10fe8",
-      "735c90e007203195d8a51cbfbe8e28bf8cbc9ba0",
-      "b634e53bb52da940f8a6a2acc681fa3fd0fb5689",
-      "d870b2f65a3df4a4169533dc243c32072b12c99c",
-      "bb6d39c38f8e42b44890970f6a690a1ebbb104fe",
-      "2c39022dcefc110c48d7a8ec11793ea05a447c25",
-      "699035a39f63c11cc8d90c7f8e58723584be3e47",
-      "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-      "54fc51eeb577807003e0fee0144d1eedf602e69f",
-      "77b45cdcff484711c239a0202b3242b5523e10ce",
-      "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
-      "61412aca358e721eb2a82eb63bef09bc8cc1b283",
-      "75cd3a5022385c3b9cde209e7ed28d9af0fbec42",
-      "86db291322f9ea5b52eba68ddc8ece9b457b0bf0",
-      "a5c5d8440bc3d28daf974a85eb016295e8aac953",
-      "455ede082466cf343b1ed7a833c80127a4cbd2c3",
-      "4b571bf7720d432231f27f1fd3672db7123f299e",
-      "5395755c5b3b41e6c29a3d7dc29c197409eef7b8",
-      "de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a",
-      "0cf60f56f4544f2b0f12296a2561dce8ba282d32",
-      "3a927bd2eeb2aa9dc47123af5d9e83b5fd76c8fe"
+      "22a771c1ead48f3e75976f9528bf03e8fcfe8576",
+      "5cb172bf67a67d2416a6bf176ff04df36d282885",
+      "60cffb461f780f17304168b6feb228346ce9d9eb",
+      "2d668a2602cb6550ca3fafd5c0976b16a1e490c5",
+      "b237e724b76d11b5aeb5a91176bb0b7635760421",
+      "b33ffa6a29e9038f3671dbf1f15e16e606bbf868",
+      "11e8eb39a67fe499a47e73e1a50ad77a28d9132d",
+      "aea48f475b3300bbba82ef4b907187cf50dda48d",
+      "6b53ec029a5fd93f89bf6298c875cb4dce898690",
+      "77addfefefc3a6c23351ef341ed854981261cf7b",
+      "5285fd202e5b3c2102e3f7b48776ae1ccea7881b",
+      "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+      "5e38be8a668462530d8279e857bcdeb779c50c63",
+      "619ad881cc49c29cb4643344e59b4294cb8dbf21",
+      "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+      "bed1905a795d4808033fb822164c6c5e2a480868",
+      "62462c9e4b151b16b786e60d3666eefb4d32856e"
     ],
     "removedIds": [
-      "14047955b06e51d7f51b2ae9b8e8b1186124857b",
-      "bad7ae10fdb632d62b7b71f83020168c7e44244c"
+      "de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a",
+      "6a0d41892de0d501e31c1ac408bee1e720275d65"
     ]
   },
   "dedupe": {
-    "before": 206,
-    "after": 92,
-    "removedCount": 114,
-    "clusters": 39,
+    "before": 256,
+    "after": 107,
+    "removedCount": 149,
+    "clusters": 50,
     "removed": [
+      {
+        "id": "54baefa495f79d7abb426fef6dfd99c52e11796d",
+        "url": "https://www.homes.co.jp/chintai/room/54baefa495f79d7abb426fef6dfd99c52e11796d/",
+        "keptId": "62462c9e4b151b16b786e60d3666eefb4d32856e",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "302652524e41e983db53153fedc155cdc205d558",
+        "url": "https://www.homes.co.jp/chintai/room/302652524e41e983db53153fedc155cdc205d558/",
+        "keptId": "62462c9e4b151b16b786e60d3666eefb4d32856e",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "59a3d76e6db7ea7bab0f9b74a2ba210c69f9b185",
+        "url": "https://www.homes.co.jp/chintai/room/59a3d76e6db7ea7bab0f9b74a2ba210c69f9b185/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 24,
+        "keptRichness": 28
+      },
+      {
+        "id": "79ae5c50930c6669a80f204ffe56af1edba70eec",
+        "url": "https://www.homes.co.jp/chintai/room/79ae5c50930c6669a80f204ffe56af1edba70eec/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "75974a7ea05a8768f6c0bb4785d20d912f98918d",
+        "url": "https://www.homes.co.jp/chintai/room/75974a7ea05a8768f6c0bb4785d20d912f98918d/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "b3f568055f7044d4b2930ac5dd5ba209e0b68dda",
+        "url": "https://www.homes.co.jp/chintai/room/b3f568055f7044d4b2930ac5dd5ba209e0b68dda/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "e2e33c675f77d4c701be98d3bbdcefc9b1f6c4e5",
+        "url": "https://www.homes.co.jp/chintai/room/e2e33c675f77d4c701be98d3bbdcefc9b1f6c4e5/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "b7d539f6520e6d598cbbda180adf61ae418b053a",
+        "url": "https://www.homes.co.jp/chintai/room/b7d539f6520e6d598cbbda180adf61ae418b053a/",
+        "keptId": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+        "reason": "same_property_less_detail",
+        "richness": 28,
+        "keptRichness": 28
+      },
+      {
+        "id": "8c9ba21245ed4671fc9312705d478bd0cc396d34",
+        "url": "https://www.homes.co.jp/chintai/room/8c9ba21245ed4671fc9312705d478bd0cc396d34/",
+        "keptId": "619ad881cc49c29cb4643344e59b4294cb8dbf21",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
+      },
+      {
+        "id": "5a1dd64a6a4ccc4d49e55003cdd366881ecd0f65",
+        "url": "https://www.homes.co.jp/chintai/room/5a1dd64a6a4ccc4d49e55003cdd366881ecd0f65/",
+        "keptId": "2e6ba1d55ee44daa5ad3a26d9043700aa28e40af",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
+      },
+      {
+        "id": "712b9119f8f6e6d4f30252645b547536331b7b7a",
+        "url": "https://www.homes.co.jp/chintai/room/712b9119f8f6e6d4f30252645b547536331b7b7a/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "652c6dfb5446f3b93cdb0c15677dcf8535d964a8",
+        "url": "https://www.homes.co.jp/chintai/room/652c6dfb5446f3b93cdb0c15677dcf8535d964a8/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "39d82e03525239031a877301145eb4ca2ad8934f",
+        "url": "https://www.homes.co.jp/chintai/room/39d82e03525239031a877301145eb4ca2ad8934f/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "abcce62c297bbfc768bb487f305ca3152c4fb6fc",
+        "url": "https://www.homes.co.jp/chintai/room/abcce62c297bbfc768bb487f305ca3152c4fb6fc/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "e174d4457b26f5009aa317920f0c27a1c8d160ed",
+        "url": "https://www.homes.co.jp/chintai/room/e174d4457b26f5009aa317920f0c27a1c8d160ed/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 28
+      },
+      {
+        "id": "b92031db49a9cc9051e2c0c2eb1191aa4c6f34fc",
+        "url": "https://www.homes.co.jp/chintai/room/b92031db49a9cc9051e2c0c2eb1191aa4c6f34fc/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "9fef1fade5a8fc9fedfbc15615ebb952173e8993",
+        "url": "https://www.homes.co.jp/chintai/room/9fef1fade5a8fc9fedfbc15615ebb952173e8993/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "35fca698843fd022ebef40be28a128c235e6872e",
+        "url": "https://www.homes.co.jp/chintai/room/35fca698843fd022ebef40be28a128c235e6872e/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "357283a49257561040f17dcb91b5daaa3b8be925",
+        "url": "https://www.homes.co.jp/chintai/room/357283a49257561040f17dcb91b5daaa3b8be925/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "8b6998f869d654ec2631c2037f201650f5a2453d",
+        "url": "https://www.homes.co.jp/chintai/room/8b6998f869d654ec2631c2037f201650f5a2453d/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "e306bb07a3d198ad133d13ad19d984716337432f",
+        "url": "https://www.homes.co.jp/chintai/room/e306bb07a3d198ad133d13ad19d984716337432f/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 28,
+        "keptRichness": 28
+      },
+      {
+        "id": "5e37ac249c820225016206535aa7ca00a4c053f2",
+        "url": "https://www.homes.co.jp/chintai/room/5e37ac249c820225016206535aa7ca00a4c053f2/",
+        "keptId": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 28
+      },
+      {
+        "id": "95ac1be7cad0d0cb9f640b5c272ba15122cbee45",
+        "url": "https://www.homes.co.jp/chintai/room/95ac1be7cad0d0cb9f640b5c272ba15122cbee45/",
+        "keptId": "5e38be8a668462530d8279e857bcdeb779c50c63",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 28
+      },
+      {
+        "id": "434b1e1a389ab8a275f91ee9b79578a56eeb56b9",
+        "url": "https://www.homes.co.jp/chintai/room/434b1e1a389ab8a275f91ee9b79578a56eeb56b9/",
+        "keptId": "5e38be8a668462530d8279e857bcdeb779c50c63",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "59ba60f4fa63731cf8a67334b75de39746cced00",
+        "url": "https://www.homes.co.jp/chintai/room/59ba60f4fa63731cf8a67334b75de39746cced00/",
+        "keptId": "5e38be8a668462530d8279e857bcdeb779c50c63",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "450d4afbd41b864a9f6f6cd6d9b3981d314f0d61",
+        "url": "https://www.homes.co.jp/chintai/room/450d4afbd41b864a9f6f6cd6d9b3981d314f0d61/",
+        "keptId": "5e38be8a668462530d8279e857bcdeb779c50c63",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "1d6b8321bf42fc276a67954e44845c4b52424f1c",
+        "url": "https://www.homes.co.jp/chintai/room/1d6b8321bf42fc276a67954e44845c4b52424f1c/",
+        "keptId": "5285fd202e5b3c2102e3f7b48776ae1ccea7881b",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "d998c019bc0f7d012f1a9ac48eb6cd73bdd64849",
+        "url": "https://www.homes.co.jp/chintai/room/d998c019bc0f7d012f1a9ac48eb6cd73bdd64849/",
+        "keptId": "5285fd202e5b3c2102e3f7b48776ae1ccea7881b",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "184420f05ba581176a34ef52dd5f4cd9f37ae4cf",
+        "url": "https://www.homes.co.jp/chintai/room/184420f05ba581176a34ef52dd5f4cd9f37ae4cf/",
+        "keptId": "6b53ec029a5fd93f89bf6298c875cb4dce898690",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "7a75a18282ee78b31636acecc2c22718436723f4",
+        "url": "https://www.homes.co.jp/chintai/room/7a75a18282ee78b31636acecc2c22718436723f4/",
+        "keptId": "11e8eb39a67fe499a47e73e1a50ad77a28d9132d",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "c3710cf71639bdc405c2956476c0d4d567ceffbe",
+        "url": "https://www.homes.co.jp/chintai/room/c3710cf71639bdc405c2956476c0d4d567ceffbe/",
+        "keptId": "b237e724b76d11b5aeb5a91176bb0b7635760421",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "c8d67dbbd2b2429905dfee5bab3a9a410e6eda7f",
+        "url": "https://www.homes.co.jp/chintai/room/c8d67dbbd2b2429905dfee5bab3a9a410e6eda7f/",
+        "keptId": "5cb172bf67a67d2416a6bf176ff04df36d282885",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
+      },
+      {
+        "id": "bc02ca313f78baafd0c4b07a6848d8938a8f09f5",
+        "url": "https://www.homes.co.jp/chintai/room/bc02ca313f78baafd0c4b07a6848d8938a8f09f5/",
+        "keptId": "5cb172bf67a67d2416a6bf176ff04df36d282885",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "e02b665d7c1c8839c248ffecc2cbdfe1bcc4889b",
+        "url": "https://www.homes.co.jp/chintai/room/e02b665d7c1c8839c248ffecc2cbdfe1bcc4889b/",
+        "keptId": "5cb172bf67a67d2416a6bf176ff04df36d282885",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "4252a750aab3133eca5fa7e275763ee72270db4f",
+        "url": "https://www.homes.co.jp/chintai/room/4252a750aab3133eca5fa7e275763ee72270db4f/",
+        "keptId": "60cffb461f780f17304168b6feb228346ce9d9eb",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "cac6071a227159d88f8c7940bbbdb02f7d71da5c",
+        "url": "https://www.homes.co.jp/chintai/room/cac6071a227159d88f8c7940bbbdb02f7d71da5c/",
+        "keptId": "60cffb461f780f17304168b6feb228346ce9d9eb",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "98b9b6e301938744f99ad8f34c0b1b8cf6af4d40",
+        "url": "https://www.homes.co.jp/chintai/room/98b9b6e301938744f99ad8f34c0b1b8cf6af4d40/",
+        "keptId": "22a771c1ead48f3e75976f9528bf03e8fcfe8576",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
       {
         "id": "11663b241e858ec369c3fb9dc90158e11d58047b",
         "url": "https://www.homes.co.jp/chintai/room/11663b241e858ec369c3fb9dc90158e11d58047b/",
@@ -324,22 +562,6 @@
         "keptId": "2cc788418eb22f92fd08513a27e932cf9db10fe8",
         "reason": "same_property_less_detail",
         "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "9f5c4113a705de904a2b0b4d54b4441de03471f6",
-        "url": "https://www.homes.co.jp/chintai/room/9f5c4113a705de904a2b0b4d54b4441de03471f6/",
-        "keptId": "6a0d41892de0d501e31c1ac408bee1e720275d65",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
-        "id": "da1cf720942ec8cd917b802d2221104461d9dde4",
-        "url": "https://www.homes.co.jp/chintai/room/da1cf720942ec8cd917b802d2221104461d9dde4/",
-        "keptId": "6a0d41892de0d501e31c1ac408bee1e720275d65",
-        "reason": "same_property_less_detail",
-        "richness": 26,
         "keptRichness": 27
       },
       {
@@ -365,22 +587,6 @@
         "reason": "same_property_less_detail",
         "richness": 25,
         "keptRichness": 26
-      },
-      {
-        "id": "65f781a27db9bee6a75b1a56ebc5b05f1bf4e318",
-        "url": "https://www.homes.co.jp/chintai/room/65f781a27db9bee6a75b1a56ebc5b05f1bf4e318/",
-        "keptId": "12f03db54927bbfad6da1a1642023a9c805b6f3f",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "c82fb64572dc161bb0e63bd98eccc8961d4267c9",
-        "url": "https://www.homes.co.jp/chintai/room/c82fb64572dc161bb0e63bd98eccc8961d4267c9/",
-        "keptId": "12f03db54927bbfad6da1a1642023a9c805b6f3f",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
       },
       {
         "id": "da27b548a2c2088081749df0e19bc947d77b5a05",
@@ -439,12 +645,20 @@
         "keptRichness": 27
       },
       {
-        "id": "5a1dd64a6a4ccc4d49e55003cdd366881ecd0f65",
-        "url": "https://www.homes.co.jp/chintai/room/5a1dd64a6a4ccc4d49e55003cdd366881ecd0f65/",
-        "keptId": "2e6ba1d55ee44daa5ad3a26d9043700aa28e40af",
+        "id": "de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a",
+        "url": "https://www.homes.co.jp/chintai/room/de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a/",
+        "keptId": "bed1905a795d4808033fb822164c6c5e2a480868",
         "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
+        "richness": 24,
+        "keptRichness": 25
+      },
+      {
+        "id": "d17b4d3ba9b407858ea1f3ef4510ca58c01017ee",
+        "url": "https://www.homes.co.jp/chintai/room/d17b4d3ba9b407858ea1f3ef4510ca58c01017ee/",
+        "keptId": "bed1905a795d4808033fb822164c6c5e2a480868",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
       },
       {
         "id": "8f7783051f63080e73a771aaab44da12f2d9f829",
@@ -463,19 +677,19 @@
         "keptRichness": 28
       },
       {
-        "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
-        "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
-        "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
-        "reason": "same_property_less_detail",
-        "richness": 24,
-        "keptRichness": 28
-      },
-      {
         "id": "90ac604c21eb2879727d2b81677b7b217c5c18d7",
         "url": "https://www.homes.co.jp/chintai/room/90ac604c21eb2879727d2b81677b7b217c5c18d7/",
         "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
         "reason": "same_property_less_detail",
         "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
+        "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
+        "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
+        "reason": "same_property_less_detail",
+        "richness": 24,
         "keptRichness": 28
       },
       {
@@ -575,6 +789,22 @@
         "keptRichness": 25
       },
       {
+        "id": "65f781a27db9bee6a75b1a56ebc5b05f1bf4e318",
+        "url": "https://www.homes.co.jp/chintai/room/65f781a27db9bee6a75b1a56ebc5b05f1bf4e318/",
+        "keptId": "12f03db54927bbfad6da1a1642023a9c805b6f3f",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "c82fb64572dc161bb0e63bd98eccc8961d4267c9",
+        "url": "https://www.homes.co.jp/chintai/room/c82fb64572dc161bb0e63bd98eccc8961d4267c9/",
+        "keptId": "12f03db54927bbfad6da1a1642023a9c805b6f3f",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
+      },
+      {
         "id": "7c99d385d1e7649a545bb319ba8e10925b39597e",
         "url": "https://www.homes.co.jp/chintai/room/7c99d385d1e7649a545bb319ba8e10925b39597e/",
         "keptId": "d4f5b0b5f27189c9e6b734d2086a892f75f32454",
@@ -609,7 +839,7 @@
       {
         "id": "d52879be0ecd45efa42d346339dd8781c0efa117",
         "url": "https://www.homes.co.jp/chintai/room/d52879be0ecd45efa42d346339dd8781c0efa117/",
-        "keptId": "89d358430d34c98a356b6b8b567cf06e6b2e1628",
+        "keptId": "00b2b41cf5b8687e98a182c041cf631e4c88ee7c",
         "reason": "same_property_less_detail",
         "richness": 24,
         "keptRichness": 27
@@ -903,78 +1133,6 @@
         "keptRichness": 25
       },
       {
-        "id": "337fc8108956f83700abee7963b680986ba9d7e5",
-        "url": "https://www.homes.co.jp/chintai/room/337fc8108956f83700abee7963b680986ba9d7e5/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "344dc45f199750195990b269938f9262b6868ea8",
-        "url": "https://www.homes.co.jp/chintai/room/344dc45f199750195990b269938f9262b6868ea8/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "c558ce73d1cca5b4ebcbc27417180385a08813ab",
-        "url": "https://www.homes.co.jp/chintai/room/c558ce73d1cca5b4ebcbc27417180385a08813ab/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8",
-        "url": "https://www.homes.co.jp/chintai/room/9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5",
-        "url": "https://www.homes.co.jp/chintai/room/3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "4bd0f1b3ad87d2305636e0632c81e0f54359eef0",
-        "url": "https://www.homes.co.jp/chintai/room/4bd0f1b3ad87d2305636e0632c81e0f54359eef0/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "4c2656651cc5d0ed9520a0ed8e206b56461a2513",
-        "url": "https://www.homes.co.jp/chintai/room/4c2656651cc5d0ed9520a0ed8e206b56461a2513/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "3b2fc0bb6968065ae1cca9edd1e7bfc001b94d75",
-        "url": "https://www.homes.co.jp/chintai/room/3b2fc0bb6968065ae1cca9edd1e7bfc001b94d75/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
-        "id": "a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e",
-        "url": "https://www.homes.co.jp/chintai/room/a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e/",
-        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 25
-      },
-      {
         "id": "f2856ee1ce8a049698afd97e50fca36a5715b1fe",
         "url": "https://www.homes.co.jp/chintai/room/f2856ee1ce8a049698afd97e50fca36a5715b1fe/",
         "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
@@ -1039,6 +1197,70 @@
         "keptRichness": 25
       },
       {
+        "id": "337fc8108956f83700abee7963b680986ba9d7e5",
+        "url": "https://www.homes.co.jp/chintai/room/337fc8108956f83700abee7963b680986ba9d7e5/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "344dc45f199750195990b269938f9262b6868ea8",
+        "url": "https://www.homes.co.jp/chintai/room/344dc45f199750195990b269938f9262b6868ea8/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "c558ce73d1cca5b4ebcbc27417180385a08813ab",
+        "url": "https://www.homes.co.jp/chintai/room/c558ce73d1cca5b4ebcbc27417180385a08813ab/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8",
+        "url": "https://www.homes.co.jp/chintai/room/9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5",
+        "url": "https://www.homes.co.jp/chintai/room/3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "4bd0f1b3ad87d2305636e0632c81e0f54359eef0",
+        "url": "https://www.homes.co.jp/chintai/room/4bd0f1b3ad87d2305636e0632c81e0f54359eef0/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "4c2656651cc5d0ed9520a0ed8e206b56461a2513",
+        "url": "https://www.homes.co.jp/chintai/room/4c2656651cc5d0ed9520a0ed8e206b56461a2513/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
+        "id": "a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e",
+        "url": "https://www.homes.co.jp/chintai/room/a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e/",
+        "keptId": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 25
+      },
+      {
         "id": "a64062004918245bce77f821c7ce6fe280aec7b8",
         "url": "https://www.homes.co.jp/chintai/room/a64062004918245bce77f821c7ce6fe280aec7b8/",
         "keptId": "08614ad9c32e201d72c21a0ebfe28c9fc3f9aad6",
@@ -1053,6 +1275,14 @@
         "reason": "same_property_less_detail",
         "richness": 28,
         "keptRichness": 28
+      },
+      {
+        "id": "ad3dbeb526f6216ea6d8f8fe91047143b28b92a4",
+        "url": "https://www.homes.co.jp/chintai/room/ad3dbeb526f6216ea6d8f8fe91047143b28b92a4/",
+        "keptId": "130a53792ebd184d432cdb706e02237f769a8227",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
       },
       {
         "id": "b0b4af2db06a19cc0daa4c173c38b67979dacd65",
@@ -1167,14 +1397,6 @@
         "keptRichness": 27
       },
       {
-        "id": "ad3dbeb526f6216ea6d8f8fe91047143b28b92a4",
-        "url": "https://www.homes.co.jp/chintai/room/ad3dbeb526f6216ea6d8f8fe91047143b28b92a4/",
-        "keptId": "130a53792ebd184d432cdb706e02237f769a8227",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
         "id": "6ad9f048922c1950a1abed5adc79e13fdbce2782",
         "url": "https://www.homes.co.jp/chintai/room/6ad9f048922c1950a1abed5adc79e13fdbce2782/",
         "keptId": "6f98902310e08f8e9d7bf108e34ae967d7ee9811",
@@ -1243,6 +1465,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1279,7 +1502,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "即時"
       },
       "lat": 35.63467623085,
       "lon": 140.10642455668,
@@ -1291,8 +1515,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-18",
-      "publishedText": "情報公開日\n\n2026/08/18",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/18"
     },
     {
       "id": "88dafda2a140f0365ac5e28af4b3951736b730bf",
@@ -1312,6 +1535,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1335,7 +1559,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/24",
+        "publishedText": "情報公開日\n\n2026/09/20",
         "lat": 35.645776890745,
         "lon": 140.09470843167,
         "address": "千葉県千葉市稲毛区小中台町746-1",
@@ -1348,7 +1572,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "9,000円"
+        "managementFeeText": "9,000円",
+        "availableText": "相談"
       },
       "lat": 35.645776890745,
       "lon": 140.09470843167,
@@ -1359,8 +1584,8 @@
       "yearBuilt": 1996,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-24",
-      "publishedText": "情報公開日\n\n2026/08/24",
+      "publishedAt": "2026-09-20",
+      "publishedText": "情報公開日\n\n2026/09/20",
       "dedupedFrom": [
         "adde8b890027b59b9bfbd6e7a31d208614319e72",
         "694fdddfb154149eb07140e5527fe82aed9b890b",
@@ -1368,8 +1593,7 @@
         "e1733952ae5ea0a676934b7bfe56723df1577fa8",
         "225dce2d7df438ab972a76642ccdd3ad62046ff8",
         "5222ee481a5d534ed00460c22336608233bf6602"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "03e6c15dda1c4b1a668f990fe1ab33bcb532950b",
@@ -1389,6 +1613,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1425,7 +1650,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "2026年11月 中旬"
       },
       "lat": 35.798011012123,
       "lon": 139.45739450341,
@@ -1437,8 +1663,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-14",
-      "publishedText": "情報公開日\n\n2026/09/14",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/14"
     },
     {
       "id": "cd379485dd9a7a81aa0fd5d0ae5ebdf3d01ccfe3",
@@ -1458,6 +1683,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1494,7 +1720,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "2026年11月 中旬"
       },
       "lat": 35.796486215004,
       "lon": 139.45854752166,
@@ -1506,8 +1733,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-17",
-      "publishedText": "情報公開日\n\n2026/09/17",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/17"
     },
     {
       "id": "edbca0e85d5ee67128cfa7a4e0987f810b123ebc",
@@ -1527,6 +1753,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1563,7 +1790,8 @@
         "reikinText": "11.8万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.910529225715,
       "lon": 139.47145100213,
@@ -1575,8 +1803,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-03-09",
-      "publishedText": "情報公開日\n\n2026/03/09",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/03/09"
     },
     {
       "id": "053f0b0dbdb5c33dc35a36f944b7f92df767383a",
@@ -1596,6 +1823,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1632,7 +1860,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "相談"
       },
       "lat": 35.808738089005,
       "lon": 139.45570866173,
@@ -1644,14 +1873,13 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-07-19",
-      "publishedText": "情報公開日\n\n2026/07/19",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/19"
     },
     {
       "id": "1a2248591762e534e0aa44172d9d7e9758ba966b",
       "url": "https://www.homes.co.jp/chintai/room/1a2248591762e534e0aa44172d9d7e9758ba966b/",
       "title": "JR総武線 幕張本郷駅 徒歩14分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F1908%2F1908149%2F1908149_2.jpg%3F20260728155154",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F14928%2F14928358%2F14928358_2.jpg%3F20260803110848",
       "priceText": "12.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -1665,6 +1893,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1689,24 +1918,25 @@
         "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日\n\n2026/06/27",
-        "lat": 35.676530282684,
-        "lon": 140.04985570435,
+        "lat": 35.676451403446,
+        "lon": 140.04988487174,
         "address": "千葉県千葉市花見川区幕張本郷7丁目20-30",
         "postalCode": "2620033",
         "yearBuilt": 1992,
         "builtText": "1992年6月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F1908%2F1908149%2F1908149_2.jpg%3F20260728155154",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F14928%2F14928358%2F14928358_2.jpg%3F20260803110848",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "即時"
       },
-      "lat": 35.676530282684,
-      "lon": 140.04985570435,
+      "lat": 35.676451403446,
+      "lon": 140.04988487174,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.676530282684%2C140.04985570435",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.676451403446%2C140.04988487174",
       "ward": "千葉市花見川区",
       "wardEn": null,
       "yearBuilt": 1992,
@@ -1717,8 +1947,7 @@
       "dedupedFrom": [
         "1ce8e1354bbd6a851ea2a5ab52dc46eb1de6897a",
         "b5cfe1f8aa8f6a57fee488a5341cfd4d9037e908"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "52137f9de643b035ad09a04a2e5be9a57513c161",
@@ -1738,6 +1967,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1774,7 +2004,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "相談"
       },
       "lat": 35.808738089005,
       "lon": 139.45570866173,
@@ -1789,8 +2020,7 @@
       "publishedText": "情報公開日\n\n2026/08/20",
       "dedupedFrom": [
         "e0de2dff130b4326017146eefdc798af2ba961a9"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "bb6da1d4beea5832f56165787d92e329990001c1",
@@ -1810,6 +2040,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1846,7 +2077,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "2026年11月 中旬"
       },
       "lat": 35.774439628859,
       "lon": 139.50373205029,
@@ -1858,8 +2090,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-11",
-      "publishedText": "情報公開日\n\n2026/09/11",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/11"
     },
     {
       "id": "325f4b663e1b272fe39558f6d92c36eb37d2e2d0",
@@ -1879,6 +2110,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1915,7 +2147,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "2026年11月 上旬"
       },
       "lat": 35.919330944727,
       "lon": 139.47948662709,
@@ -1930,8 +2163,7 @@
       "publishedText": "情報公開日\n\n2026/07/13",
       "dedupedFrom": [
         "a00ba3acf90015a30d83e966ea59235056992dc2"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "8fe85a388600447164a1df1f8032689debeb0273",
@@ -1951,6 +2183,7 @@
       "reikinText": "14万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -1987,7 +2220,8 @@
         "reikinText": "14万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "相談"
       },
       "lat": 35.666567452133,
       "lon": 140.05789514927,
@@ -2003,8 +2237,7 @@
       "dedupedFrom": [
         "cf69664f2cdda266403f9ace60eb435779218fa1",
         "cfb310730cae20da594eb61d9a81024ea06353d1"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "8e4844f464a707f3564fd1d1d399bb500be20573",
@@ -2024,6 +2257,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2060,7 +2294,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "3,700円"
+        "managementFeeText": "3,700円",
+        "availableText": "即時"
       },
       "lat": 35.802364960598,
       "lon": 139.45723573133,
@@ -2072,8 +2307,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-19",
-      "publishedText": "情報公開日\n\n2026/09/19",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/19"
     },
     {
       "id": "38e32cfa77d67631f883216dec72b5cd7f8770d7",
@@ -2093,6 +2327,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2116,7 +2351,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/20",
+        "publishedText": "情報公開日\n\n2026/09/28",
         "lat": 35.730568650829,
         "lon": 139.48970305822,
         "address": "東京都小平市仲町350-1",
@@ -2129,7 +2364,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "4,000円"
+        "managementFeeText": "4,000円",
+        "availableText": "即時"
       },
       "lat": 35.730568650829,
       "lon": 139.48970305822,
@@ -2140,13 +2376,12 @@
       "yearBuilt": 1995,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-20",
-      "publishedText": "情報公開日\n\n2026/09/20",
+      "publishedAt": "2026-09-28",
+      "publishedText": "情報公開日\n\n2026/09/28",
       "dedupedFrom": [
         "115ce036e56bd0271b83c9d3519f5908c91e4420",
         "7922bc13e72bec1df65cea399b455be3c190811e"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "47d8757c807b54e191b53bb430f558ed71e5d7c6",
@@ -2166,6 +2401,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2202,7 +2438,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.616550010336,
       "lon": 140.09900369446,
@@ -2224,8 +2461,7 @@
         "bf4967d1327aee54bbcd584d836fe09118d5f58d",
         "67e2ffbcf105849016b8dbcadea1975c98ea2960",
         "824a1d016111fcc7c3bea2eb712bfd8cea172e7a"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "fbb47adac144658ce1f6eef3e973466b6ad5e7a3",
@@ -2245,6 +2481,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2281,7 +2518,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "相談"
       },
       "lat": 35.732703761035,
       "lon": 139.60721546146,
@@ -2293,8 +2531,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-18",
-      "publishedText": "情報公開日\n\n2026/09/18",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/18"
     },
     {
       "id": "f41b4726dcdb68672c6f2fb341bef0056837f555",
@@ -2314,6 +2551,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2350,7 +2588,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "3,700円"
+        "managementFeeText": "3,700円",
+        "availableText": "即時"
       },
       "lat": 35.80452851592,
       "lon": 139.453883153,
@@ -2362,8 +2601,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-15",
-      "publishedText": "情報公開日\n\n2026/09/15",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/15"
     },
     {
       "id": "3b85807f40649b34add22cc66b7cdb29054fd41d",
@@ -2383,6 +2621,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2419,7 +2658,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.61652529029,
       "lon": 140.09898147511,
@@ -2435,8 +2675,7 @@
       "dedupedFrom": [
         "88ca0f599e701c5544fc628604d564c5d05eec51",
         "93e542180b7e9a35aa7c86fd114ad822b5a96191"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "00f8af2eb89d41ad48c863bab7e594f68c027e8d",
@@ -2456,6 +2695,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2492,7 +2732,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "9,000円"
+        "managementFeeText": "9,000円",
+        "availableText": "相談"
       },
       "lat": 35.727092690435,
       "lon": 139.52240735424,
@@ -2504,8 +2745,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-13",
-      "publishedText": "情報公開日\n\n2026/07/13",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/13"
     },
     {
       "id": "8ad3748302eca91644b1ee8ba4e44e8cde44490e",
@@ -2525,6 +2765,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2561,7 +2802,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.909273758225,
       "lon": 139.47983922482,
@@ -2573,8 +2815,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-15",
-      "publishedText": "情報公開日\n\n2026/07/15",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/15"
     },
     {
       "id": "00b2b41cf5b8687e98a182c041cf631e4c88ee7c",
@@ -2594,6 +2835,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2630,7 +2872,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "7,000円"
+        "managementFeeText": "7,000円",
+        "availableText": "即時"
       },
       "lat": 35.768058016574,
       "lon": 139.52045449126,
@@ -2644,9 +2887,9 @@
       "publishedAt": "2026-05-26",
       "publishedText": "情報公開日\n\n2026/05/26",
       "dedupedFrom": [
+        "d52879be0ecd45efa42d346339dd8781c0efa117",
         "27bab792a08ea2c1bbd45111f8549c1df713bcd4"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "89d358430d34c98a356b6b8b567cf06e6b2e1628",
@@ -2666,6 +2909,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2702,7 +2946,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "7,000円"
+        "managementFeeText": "7,000円",
+        "availableText": "即時"
       },
       "lat": 35.768276062004,
       "lon": 139.52099832505,
@@ -2714,11 +2959,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-08",
-      "publishedText": "情報公開日\n\n2026/08/08",
-      "dedupedFrom": [
-        "d52879be0ecd45efa42d346339dd8781c0efa117"
-      ],
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/08"
     },
     {
       "id": "941994ba33afe0267576221205f87031618cc66c",
@@ -2738,6 +2979,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2774,7 +3016,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "3,700円"
+        "managementFeeText": "3,700円",
+        "availableText": "即時"
       },
       "lat": 35.803871089401,
       "lon": 139.45385401518,
@@ -2786,8 +3029,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-31",
-      "publishedText": "情報公開日\n\n2026/07/31",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/31"
     },
     {
       "id": "4dda6480cf11f93d8865918d31caf64f664d2721",
@@ -2807,6 +3049,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2843,7 +3086,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "相談"
       },
       "lat": 35.623522824777,
       "lon": 140.1087970293,
@@ -2860,8 +3104,7 @@
         "c000a12f0c824c9bb37c1e59314f18f419614838",
         "2b7bde4ac6d3c99b39e69dbb8dc4ccaf468b429c",
         "8a783aaab2a69518f353e8e005fe1d90983560b5"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "a48fcac9d119d512ab97e4feaf9f7c3c82ff1a4d",
@@ -2881,6 +3124,7 @@
       "reikinText": "16.5万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2904,7 +3148,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/12",
+        "publishedText": "情報公開日\n\n2026/07/05",
         "lat": 35.747707626858,
         "lon": 139.56562006893,
         "address": "東京都西東京市東町3丁目13-21",
@@ -2917,7 +3161,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "相談"
       },
       "lat": 35.747707626858,
       "lon": 139.56562006893,
@@ -2928,9 +3173,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "publishedAt": "2026-07-12",
-      "publishedText": "情報公開日\n\n2026/07/12",
-      "isNew": true
+      "publishedAt": "2026-07-05",
+      "publishedText": "情報公開日\n\n2026/07/05"
     },
     {
       "id": "f86dc895ad74361bedba22b8cdec7a53291fa708",
@@ -2950,6 +3194,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -2986,7 +3231,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,500円"
+        "managementFeeText": "5,500円",
+        "availableText": "2026年11月 中旬"
       },
       "lat": 35.622354430027,
       "lon": 140.11195819822,
@@ -2998,8 +3244,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-09-11",
-      "publishedText": "情報公開日\n\n2026/09/11",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/11"
     },
     {
       "id": "09e4502c0ff0d0586173c79cc773ab2e77f3fd5f",
@@ -3019,6 +3264,7 @@
       "reikinText": "16.8万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3055,7 +3301,8 @@
         "reikinText": "16.8万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "2026年11月 上旬"
       },
       "lat": 35.634632355487,
       "lon": 140.09643734729,
@@ -3067,8 +3314,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-29",
-      "publishedText": "情報公開日\n\n2026/08/29",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/29"
     },
     {
       "id": "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
@@ -3088,6 +3334,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3124,7 +3371,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "16,000円"
+        "managementFeeText": "16,000円",
+        "availableText": "即時"
       },
       "lat": 35.737380365057,
       "lon": 139.60380667521,
@@ -3136,8 +3384,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-09",
-      "publishedText": "情報公開日\n\n2026/07/09",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/09"
     },
     {
       "id": "02c269772cb6b8c06000383688e30daf47818331",
@@ -3157,6 +3404,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3192,7 +3440,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "6,500円"
+        "managementFeeText": "6,500円",
+        "availableText": "即時"
       },
       "lat": 35.919858878485,
       "lon": 139.48756508209,
@@ -3205,8 +3454,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-09-28",
-      "publishedText": "情報公開日\n\n2026/09/28",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/28"
     },
     {
       "id": "6e36943339bf0e7775010cdd54eaa519be189364",
@@ -3226,6 +3474,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3261,7 +3510,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "6,500円"
+        "managementFeeText": "6,500円",
+        "availableText": "即時"
       },
       "lat": 35.919608622581,
       "lon": 139.48732427943,
@@ -3274,8 +3524,7 @@
       "storeys": null,
       "structure": "ALC造",
       "publishedAt": "2026-08-07",
-      "publishedText": "情報公開日\n\n2026/08/07",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/07"
     },
     {
       "id": "1d4a0466bea80da233f1280ebcc56ca4d17a4603",
@@ -3295,6 +3544,7 @@
       "reikinText": "18.5万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3331,7 +3581,8 @@
         "reikinText": "18.5万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "相談"
       },
       "lat": 35.616951344911,
       "lon": 140.11927724248,
@@ -3343,8 +3594,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-10",
-      "publishedText": "情報公開日\n\n2026/09/10",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/10"
     },
     {
       "id": "d78a95411adbb986e0c361c21c6f13cf51e39fae",
@@ -3364,6 +3614,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3400,7 +3651,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "2026年11月 下旬"
       },
       "lat": 35.616947184565,
       "lon": 140.11949444652,
@@ -3415,8 +3667,7 @@
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "5a70767646c67210c79200cb4c28378d2181e7b8"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "25fdf8f6e3c17637471463371707c104dc4e6765",
@@ -3436,6 +3687,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3472,7 +3724,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.730723454434,
       "lon": 139.64982191447,
@@ -3484,8 +3737,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-06-29",
-      "publishedText": "情報公開日\n\n2026/06/29",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/06/29"
     },
     {
       "id": "3e10828fc504e6d6ad72687f327e11b9d815601d",
@@ -3505,6 +3757,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3541,7 +3794,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.71198997183,
       "lon": 139.93875340462,
@@ -3553,8 +3807,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-28",
-      "publishedText": "情報公開日\n\n2026/09/28",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/28"
     },
     {
       "id": "cf7cd06f46949a07cb5ff251792a110352959ea1",
@@ -3574,6 +3827,7 @@
       "reikinText": "19万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3610,7 +3864,8 @@
         "reikinText": "19万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.426985205129,
       "lon": 139.65292014484,
@@ -3623,6 +3878,80 @@
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-20",
       "publishedText": "情報公開日\n\n2026/09/20"
+    },
+    {
+      "id": "22a771c1ead48f3e75976f9528bf03e8fcfe8576",
+      "url": "https://www.homes.co.jp/chintai/room/22a771c1ead48f3e75976f9528bf03e8fcfe8576/",
+      "title": "小田急小田原線 成城学園前駅 徒歩14分の賃貸マンション",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F5037%2Frent%2F220940%2F2%2F2%2Fealr.jpg",
+      "priceText": "19.5万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "84.65m²",
+      "exclusiveAreaText": "84.65m²",
+      "builtText": "築34年",
+      "walkMinutes": 14,
+      "address": "東京都世田谷区成城８丁目31-26",
+      "managementFeeText": "10,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 19.5,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 58.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 84.65,
+      "buildingAreaM2": 84.65,
+      "buildingAgeYears": 33,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/08/08",
+        "lat": 35.649065032299,
+        "lon": 139.59308973289,
+        "address": "東京都世田谷区成城８丁目31-26",
+        "postalCode": "1570066",
+        "yearBuilt": 1993,
+        "builtText": "1993年9月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F5037%2Frent%2F220940%2F2%2F2%2Fealr.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.649065032299,
+      "lon": 139.59308973289,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.649065032299%2C139.59308973289",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 1993,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-08-08",
+      "publishedText": "情報公開日\n\n2026/08/08",
+      "dedupedFrom": [
+        "98b9b6e301938744f99ad8f34c0b1b8cf6af4d40"
+      ],
+      "isNew": true
     },
     {
       "id": "3620c3bf2b0ac5adf25499a789e3189b5ea3067b",
@@ -3642,6 +3971,7 @@
       "reikinText": "19.5万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3678,7 +4008,8 @@
         "reikinText": "19.5万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.394901897944,
       "lon": 139.61230457753,
@@ -3710,6 +4041,7 @@
       "reikinText": "2ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2027年03月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3745,7 +4077,8 @@
         "reikinText": "2ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "2027年03月 上旬"
       },
       "lat": 35.697238967656,
       "lon": 140.00495311301,
@@ -3761,8 +4094,7 @@
       "publishedText": "情報公開日\n\n2026/09/19",
       "dedupedFrom": [
         "6ad9f048922c1950a1abed5adc79e13fdbce2782"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "6a4d50a083af3fcb2aec0297a36c0373f99a659f",
@@ -3782,6 +4114,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3817,7 +4150,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "即時"
       },
       "lat": 35.707608737142,
       "lon": 139.94681900899,
@@ -3835,8 +4169,7 @@
         "b0b4af2db06a19cc0daa4c173c38b67979dacd65",
         "dbbc82ba2778554a4ff9aa5ed46c8addcb355072",
         "f683e3cc253226c0761effd2594af8537d389826"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "0d6c08e1c8898676f31c4f459245b044535c7393",
@@ -3856,6 +4189,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3892,7 +4226,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "即時"
       },
       "lat": 35.609770360751,
       "lon": 140.10438434685,
@@ -3904,14 +4239,13 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-05-06",
-      "publishedText": "情報公開日\n\n2026/05/06",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/05/06"
     },
     {
       "id": "6113617c52c66b1dde41c2782d1941b5eca4b2dc",
       "url": "https://www.homes.co.jp/chintai/room/6113617c52c66b1dde41c2782d1941b5eca4b2dc/",
       "title": "プリメール石神井",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141095%2Frent%2F114059%2F2%2F2%2F0o6j.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138107%2Frent%2F130773%2F2%2F2%2Fsb7h.jpg",
       "priceText": "20.2万円",
       "madori": "4LDK",
       "landAreaText": null,
@@ -3925,6 +4259,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -3948,7 +4283,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/26",
+        "publishedText": "情報公開日\n\n2026/07/20",
         "lat": 35.726117642224,
         "lon": 139.59991329168,
         "address": "東京都練馬区下石神井４丁目30-10",
@@ -3956,12 +4291,13 @@
         "yearBuilt": 1992,
         "builtText": "1992年7月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141095%2Frent%2F114059%2F2%2F2%2F0o6j.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138107%2Frent%2F130773%2F2%2F2%2Fsb7h.jpg",
         "shikikinText": "0.5ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "相談"
       },
       "lat": 35.726117642224,
       "lon": 139.59991329168,
@@ -3972,16 +4308,15 @@
       "yearBuilt": 1992,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-26",
-      "publishedText": "情報公開日\n\n2026/07/26",
+      "publishedAt": "2026-07-20",
+      "publishedText": "情報公開日\n\n2026/07/20",
       "dedupedFrom": [
         "fd757a593bcd27bee65829c15cbbb507e3e06b69",
         "98ea7a8cc05ad19ce75e11cffdcc6070f74ddae4",
         "e2a5148669d2aa7a19568a7b055f7bc9a9727dfa",
         "8f74f155140e8e9b36383d0b05e1142beda192e7",
         "42b2e3e2fc68f3220cb0938857e4f5a81c5f888d"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "45b40870a109d52c94a8ded5fd45bed62b090db3",
@@ -4001,6 +4336,7 @@
       "reikinText": "2ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4036,7 +4372,8 @@
         "reikinText": "2ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "6,000円"
+        "managementFeeText": "6,000円",
+        "availableText": "即時"
       },
       "lat": 35.710658428362,
       "lon": 139.9480940554,
@@ -4053,8 +4390,7 @@
       "dedupedFrom": [
         "bec79a50559fa1559726dcdf7b8ae3b1187f0362",
         "89deeda972cab7e8616b0450e95163be6cf22585"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "2bdea5a16e11cf6cfb054d707fd5706c17a747cf",
@@ -4074,6 +4410,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4110,7 +4447,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "20,000円"
+        "managementFeeText": "20,000円",
+        "availableText": "即時"
       },
       "lat": 35.781733572903,
       "lon": 139.6927420435,
@@ -4142,6 +4480,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4178,7 +4517,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "相談"
       },
       "lat": 35.750688788945,
       "lon": 139.47581038261,
@@ -4190,8 +4530,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-02",
-      "publishedText": "情報公開日\n\n2026/08/02",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/02"
     },
     {
       "id": "d63cba38402f6d26629a19744dc0fe5a570546bb",
@@ -4211,6 +4550,7 @@
       "reikinText": "2ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4246,7 +4586,8 @@
         "reikinText": "2ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "即時"
       },
       "lat": 35.710658428362,
       "lon": 139.9480940554,
@@ -4259,8 +4600,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-05-13",
-      "publishedText": "情報公開日\n\n2026/05/13",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/05/13"
     },
     {
       "id": "130a53792ebd184d432cdb706e02237f769a8227",
@@ -4280,6 +4620,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4303,7 +4644,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/19",
+        "publishedText": "情報公開日\n\n2026/06/25",
         "lat": 35.695851807618,
         "lon": 139.98082826852,
         "address": "千葉県船橋市湊町２丁目8-40",
@@ -4316,7 +4657,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "35,000円"
+        "managementFeeText": "35,000円",
+        "availableText": "即時"
       },
       "lat": 35.695851807618,
       "lon": 139.98082826852,
@@ -4327,12 +4669,11 @@
       "yearBuilt": 2003,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-19",
-      "publishedText": "情報公開日\n\n2026/08/19",
+      "publishedAt": "2026-06-25",
+      "publishedText": "情報公開日\n\n2026/06/25",
       "dedupedFrom": [
         "ad3dbeb526f6216ea6d8f8fe91047143b28b92a4"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "3e684e3f145745c337fe584b5b4686fb2af79b91",
@@ -4352,6 +4693,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4388,7 +4730,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "相談"
       },
       "lat": 35.802711894552,
       "lon": 139.45831423648,
@@ -4400,8 +4743,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-26",
-      "publishedText": "情報公開日\n\n2026/07/26",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/26"
     },
     {
       "id": "b926b6440de68b337ace1f362bd0656b12c70ee4",
@@ -4421,6 +4763,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4457,7 +4800,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "即時"
       },
       "lat": 35.805824232709,
       "lon": 139.45500356097,
@@ -4469,8 +4813,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-12",
-      "publishedText": "情報公開日\n\n2026/09/12",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/12"
     },
     {
       "id": "23f6239dd9c779b9de11e61ab40de2c1aa8532ec",
@@ -4490,6 +4833,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4525,7 +4869,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "8,000円"
+        "managementFeeText": "8,000円",
+        "availableText": "即時"
       },
       "lat": 35.708441686561,
       "lon": 139.94635651454,
@@ -4551,8 +4896,7 @@
         "62cd64ed426ff254667875eaea4a64c727d8d183",
         "bc8d308548531fff02ba6996b6805ac7800b9de9",
         "653db9ad5ead8b7f17d51d60fe2408d98ad3f094"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "0343fa04885449c1a0d0efc8721ad0eaf2fc37a7",
@@ -4572,6 +4916,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4608,7 +4953,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.61125935503,
       "lon": 140.1041893032,
@@ -4620,8 +4966,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-27",
-      "publishedText": "情報公開日\n\n2026/08/27",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/27"
     },
     {
       "id": "29d21bd8547e7390a45e2040600bf1028a191341",
@@ -4641,6 +4986,7 @@
       "reikinText": "22万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4677,7 +5023,8 @@
         "reikinText": "22万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.720976391301,
       "lon": 139.51028807607,
@@ -4692,8 +5039,7 @@
       "publishedText": "情報公開日\n\n2026/08/22",
       "dedupedFrom": [
         "8638469854eaf35639bd4ab3ec681cba8467b6a7"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "2b32d0022a8f1adb269dcc847ef31edd90542796",
@@ -4713,6 +5059,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4749,7 +5096,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "相談"
       },
       "lat": 35.608024897577,
       "lon": 140.12116133289,
@@ -4761,8 +5109,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-28",
-      "publishedText": "情報公開日\n\n2026/09/28",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/28"
     },
     {
       "id": "cc9973f48a3177a838f84d784708ca618d8d7ffe",
@@ -4782,6 +5129,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4818,7 +5166,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "14,000円"
+        "managementFeeText": "14,000円",
+        "availableText": "即時"
       },
       "lat": 35.732174735811,
       "lon": 139.59986555289,
@@ -4830,8 +5179,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-06-27",
-      "publishedText": "情報公開日\n\n2026/06/27",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/06/27"
     },
     {
       "id": "a8a1dee62b7457448b738e63c92bb655eda308f4",
@@ -4851,6 +5199,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "1ヶ月",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4887,7 +5236,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "1ヶ月",
-        "managementFeeText": "7,000円"
+        "managementFeeText": "7,000円",
+        "availableText": "即時"
       },
       "lat": 35.700384064408,
       "lon": 139.84597924298,
@@ -4903,8 +5253,7 @@
       "dedupedFrom": [
         "af527a7a33fbf5581e355c92d50d1d6e4d61453f",
         "121ed0293ed9ea5374c8561ae6226de64f0d91bc"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be",
@@ -4924,6 +5273,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年09月",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -4960,7 +5310,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "2026年09月"
       },
       "lat": 35.780441495779,
       "lon": 139.70309899197,
@@ -4992,6 +5343,7 @@
       "reikinText": "23.5万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5028,7 +5380,8 @@
         "reikinText": "23.5万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "35,000円"
+        "managementFeeText": "35,000円",
+        "availableText": "即時"
       },
       "lat": 35.694975526513,
       "lon": 139.98117188595,
@@ -5043,8 +5396,7 @@
       "publishedText": "情報公開日\n\n2026/06/27",
       "dedupedFrom": [
         "97395289fb3ea653a4de12643605e6df6edfebb0"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "aaf16a0508e0a91f3496cd8bc7bc1104b48345db",
@@ -5064,6 +5416,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年10月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5100,7 +5453,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "2026年10月 上旬"
       },
       "lat": 35.416499864323,
       "lon": 139.63756463889,
@@ -5132,6 +5486,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年09月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5168,7 +5523,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "3,000円"
+        "managementFeeText": "3,000円",
+        "availableText": "2026年09月 下旬"
       },
       "lat": 35.732770390394,
       "lon": 139.64774173152,
@@ -5183,8 +5539,7 @@
       "publishedText": "情報公開日\n\n2026/07/27",
       "dedupedFrom": [
         "7c99d385d1e7649a545bb319ba8e10925b39597e"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "08614ad9c32e201d72c21a0ebfe28c9fc3f9aad6",
@@ -5204,6 +5559,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年08月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5240,7 +5596,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "2026年08月 中旬"
       },
       "lat": 35.714953186395,
       "lon": 139.95706006607,
@@ -5256,8 +5613,7 @@
       "dedupedFrom": [
         "a64062004918245bce77f821c7ce6fe280aec7b8",
         "577b0aeb6abf57adb8c0df978f8fc46644d789d7"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "20afefa52c4320509b32cb2492f5e98f76fe3532",
@@ -5277,6 +5633,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年10月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5313,7 +5670,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "2026年10月 上旬"
       },
       "lat": 35.756481231114,
       "lon": 139.55038212662,
@@ -5325,7 +5683,157 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-28",
-      "publishedText": "情報公開日\n\n2026/09/28",
+      "publishedText": "情報公開日\n\n2026/09/28"
+    },
+    {
+      "id": "5cb172bf67a67d2416a6bf176ff04df36d282885",
+      "url": "https://www.homes.co.jp/chintai/room/5cb172bf67a67d2416a6bf176ff04df36d282885/",
+      "title": "フィオーレ",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F137969%2F2%2F2%2Futsz.jpg",
+      "priceText": "24.4万円",
+      "madori": "4LDK",
+      "landAreaText": null,
+      "buildingAreaText": "90.66m²",
+      "exclusiveAreaText": "90.66m²",
+      "builtText": "築30年",
+      "walkMinutes": 4,
+      "address": "東京都世田谷区南烏山４丁目20-15",
+      "managementFeeText": "15,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年10月 下旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 24.4,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 73.2,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 90.66,
+      "buildingAreaM2": 90.66,
+      "buildingAgeYears": 29,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/25",
+        "lat": 35.670363160208,
+        "lon": 139.60245641845,
+        "address": "東京都世田谷区南烏山４丁目20-15",
+        "postalCode": "1570062",
+        "yearBuilt": 1997,
+        "builtText": "1997年4月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F137969%2F2%2F2%2Futsz.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "15,000円",
+        "availableText": "2026年10月 下旬"
+      },
+      "lat": 35.670363160208,
+      "lon": 139.60245641845,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.670363160208%2C139.60245641845",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 1997,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-25",
+      "publishedText": "情報公開日\n\n2026/09/25",
+      "dedupedFrom": [
+        "c8d67dbbd2b2429905dfee5bab3a9a410e6eda7f",
+        "bc02ca313f78baafd0c4b07a6848d8938a8f09f5",
+        "e02b665d7c1c8839c248ffecc2cbdfe1bcc4889b"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "60cffb461f780f17304168b6feb228346ce9d9eb",
+      "url": "https://www.homes.co.jp/chintai/room/60cffb461f780f17304168b6feb228346ce9d9eb/",
+      "title": "リュゼ経堂",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F138039%2F2%2F2%2Fm3ci.jpg",
+      "priceText": "24.6万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "86.48m²",
+      "exclusiveAreaText": "86.48m²",
+      "builtText": "築33年",
+      "walkMinutes": 11,
+      "address": "東京都世田谷区桜上水３丁目3-17",
+      "managementFeeText": "-",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年12月 上旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 24.6,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 73.8,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 86.48,
+      "buildingAreaM2": 86.48,
+      "buildingAgeYears": 32,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/26",
+        "lat": 35.658951393276,
+        "lon": 139.6338678142,
+        "address": "東京都世田谷区桜上水３丁目3-17",
+        "postalCode": "1560045",
+        "yearBuilt": 1994,
+        "builtText": "1994年4月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F138039%2F2%2F2%2Fm3ci.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "-",
+        "availableText": "2026年12月 上旬"
+      },
+      "lat": 35.658951393276,
+      "lon": 139.6338678142,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.658951393276%2C139.6338678142",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 1994,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-26",
+      "publishedText": "情報公開日\n\n2026/09/26",
+      "dedupedFrom": [
+        "4252a750aab3133eca5fa7e275763ee72270db4f",
+        "cac6071a227159d88f8c7940bbbdb02f7d71da5c"
+      ],
       "isNew": true
     },
     {
@@ -5346,6 +5854,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5382,7 +5891,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.709029150852,
       "lon": 139.65716271614,
@@ -5398,13 +5908,12 @@
       "dedupedFrom": [
         "da27b548a2c2088081749df0e19bc947d77b5a05",
         "d1e114133ae2c3a74f615483564bfdaf8452c6bb"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "12f03db54927bbfad6da1a1642023a9c805b6f3f",
       "url": "https://www.homes.co.jp/chintai/room/12f03db54927bbfad6da1a1642023a9c805b6f3f/",
-      "title": "パークファミリア",
+      "title": "三鷹パークファミリア",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F5023%2Frent%2F257219%2F2%2F2%2F868j.jpg",
       "priceText": "25万円",
       "madori": "3LDK",
@@ -5419,6 +5928,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5455,7 +5965,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.701097861385,
       "lon": 139.56482061475,
@@ -5471,8 +5982,7 @@
       "dedupedFrom": [
         "65f781a27db9bee6a75b1a56ebc5b05f1bf4e318",
         "c82fb64572dc161bb0e63bd98eccc8961d4267c9"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "18a04a5270b8803ade6f29fabc8e469f5e61557f",
@@ -5492,6 +6002,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5528,7 +6039,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.608110443075,
       "lon": 140.12114438643,
@@ -5540,8 +6052,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日\n\n2026/09/05",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/05"
     },
     {
       "id": "2cc788418eb22f92fd08513a27e932cf9db10fe8",
@@ -5554,13 +6065,14 @@
       "buildingAreaText": "99.72m²",
       "exclusiveAreaText": "99.72m²",
       "builtText": "築29年",
-      "walkMinutes": 5,
+      "walkMinutes": 3,
       "address": "東京都江戸川区南小岩8丁目9-3",
       "managementFeeText": "10,000円",
       "shikikinText": "1ヶ月",
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年09月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5597,7 +6109,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "2026年09月 下旬"
       },
       "lat": 35.731740457236,
       "lon": 139.8844794326,
@@ -5612,7 +6125,77 @@
       "publishedText": "情報公開日\n\n2026/08/07",
       "dedupedFrom": [
         "8dc9d8c92563cc91c13ac36a8fd5cc7810724254"
+      ]
+    },
+    {
+      "id": "2d668a2602cb6550ca3fafd5c0976b16a1e490c5",
+      "url": "https://www.homes.co.jp/chintai/room/2d668a2602cb6550ca3fafd5c0976b16a1e490c5/",
+      "title": "レクセルマンション喜多見",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F128320%2Frent%2F71%2F2%2F1%2Fl1ks.jpg",
+      "priceText": "25万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "78.21m²",
+      "exclusiveAreaText": "78.21m²",
+      "builtText": "築26年",
+      "walkMinutes": 6,
+      "address": "東京都世田谷区喜多見９丁目10-21",
+      "managementFeeText": "10,000円",
+      "shikikinText": "2ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年10月 中旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
       ],
+      "priceManYen": 25,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 2,
+      "oneOffManYen": 100,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 78.21,
+      "buildingAreaM2": 78.21,
+      "buildingAgeYears": 25,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/28",
+        "lat": 35.639576533253,
+        "lon": 139.58845522806,
+        "address": "東京都世田谷区喜多見９丁目10-21",
+        "postalCode": "1570067",
+        "yearBuilt": 2001,
+        "builtText": "2001年5月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F128320%2Frent%2F71%2F2%2F1%2Fl1ks.jpg",
+        "shikikinText": "2ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "2026年10月 中旬"
+      },
+      "lat": 35.639576533253,
+      "lon": 139.58845522806,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.639576533253%2C139.58845522806",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2001,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-28",
+      "publishedText": "情報公開日\n\n2026/09/28",
       "isNew": true
     },
     {
@@ -5633,6 +6216,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5669,7 +6253,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.775448695223,
       "lon": 139.72272502343,
@@ -5701,6 +6286,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年12月 中旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5724,7 +6310,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/05",
+        "publishedText": "情報公開日\n\n2026/07/16",
         "lat": 35.631432625999,
         "lon": 140.09314303296,
         "address": "千葉県千葉市稲毛区稲毛台町1-3",
@@ -5737,7 +6323,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "2026年12月 中旬"
       },
       "lat": 35.631432625999,
       "lon": 140.09314303296,
@@ -5748,9 +6335,8 @@
       "yearBuilt": 2008,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-05",
-      "publishedText": "情報公開日\n\n2026/07/05",
-      "isNew": true
+      "publishedAt": "2026-07-16",
+      "publishedText": "情報公開日\n\n2026/07/16"
     },
     {
       "id": "b634e53bb52da940f8a6a2acc681fa3fd0fb5689",
@@ -5770,6 +6356,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5806,7 +6393,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "相談"
       },
       "lat": 35.704394565394,
       "lon": 139.54887572956,
@@ -5821,8 +6409,7 @@
       "publishedText": "情報公開日\n\n2026/07/25",
       "dedupedFrom": [
         "3743ee56427b3d374364da03fae7ebafac86bf65"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "d870b2f65a3df4a4169533dc243c32072b12c99c",
@@ -5842,6 +6429,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5878,7 +6466,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.689048441265,
       "lon": 139.79583895563,
@@ -5890,8 +6479,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-09-29",
-      "publishedText": "情報公開日\n\n2026/09/29",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/29"
     },
     {
       "id": "bb6d39c38f8e42b44890970f6a690a1ebbb104fe",
@@ -5911,6 +6499,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -5934,7 +6523,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/11",
+        "publishedText": "情報公開日\n\n2026/08/23",
         "lat": 35.720558857386,
         "lon": 139.6428095858,
         "address": "東京都中野区若宮３丁目47-7",
@@ -5947,7 +6536,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "5,000円"
+        "managementFeeText": "5,000円",
+        "availableText": "即時"
       },
       "lat": 35.720558857386,
       "lon": 139.6428095858,
@@ -5958,8 +6548,81 @@
       "yearBuilt": 2012,
       "storeys": null,
       "structure": "鉄骨造",
-      "publishedAt": "2026-09-11",
-      "publishedText": "情報公開日\n\n2026/09/11",
+      "publishedAt": "2026-08-23",
+      "publishedText": "情報公開日\n\n2026/08/23"
+    },
+    {
+      "id": "b237e724b76d11b5aeb5a91176bb0b7635760421",
+      "url": "https://www.homes.co.jp/chintai/room/b237e724b76d11b5aeb5a91176bb0b7635760421/",
+      "title": "アイビー世田谷レジデンス",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152524%2Frent%2F63834%2F1%2F1%2F1ozw.jpg",
+      "priceText": "26.1万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "80.72m²",
+      "exclusiveAreaText": "80.72m²",
+      "builtText": null,
+      "walkMinutes": 9,
+      "address": "東京都世田谷区給田３丁目26-7",
+      "managementFeeText": "13,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 26.1,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 78.3,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 80.72,
+      "buildingAreaM2": 80.72,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/18",
+        "lat": 35.665229228295,
+        "lon": 139.58954661089,
+        "address": "東京都世田谷区給田３丁目26-7",
+        "postalCode": "1570064",
+        "yearBuilt": 2026,
+        "builtText": "2026年11月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152524%2Frent%2F63834%2F1%2F1%2F1ozw.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "13,000円",
+        "availableText": "2026年11月 下旬"
+      },
+      "lat": 35.665229228295,
+      "lon": 139.58954661089,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.665229228295%2C139.58954661089",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2026,
+      "buildingAgeYears": 0,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-18",
+      "publishedText": "情報公開日\n\n2026/09/18",
+      "dedupedFrom": [
+        "c3710cf71639bdc405c2956476c0d4d567ceffbe"
+      ],
       "isNew": true
     },
     {
@@ -5980,6 +6643,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6015,7 +6679,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.736233166912,
       "lon": 139.64150573429,
@@ -6033,8 +6698,7 @@
         "9d1b69e9e8a4edd09d4682c62670f537d215118b",
         "9314311b0667e21fd1e6b32f8e9f67d9ae29ce74",
         "9013f79bfa1fed0d84ba0ea23b76b0bbf64e2d3c"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "699035a39f63c11cc8d90c7f8e58723584be3e47",
@@ -6054,6 +6718,7 @@
       "reikinText": "2ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6089,7 +6754,8 @@
         "reikinText": "2ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "2026年11月 下旬"
       },
       "lat": 35.721347959764,
       "lon": 139.59165168623,
@@ -6102,8 +6768,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日\n\n2026/09/05",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/05"
     },
     {
       "id": "88b563fc4e15b985e92d9b4a0580658c245ce039",
@@ -6123,6 +6788,7 @@
       "reikinText": "26.8万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6159,7 +6825,8 @@
         "reikinText": "26.8万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "26,000円"
+        "managementFeeText": "26,000円",
+        "availableText": "即時"
       },
       "lat": 35.420938253813,
       "lon": 139.64800774484,
@@ -6177,10 +6844,81 @@
       ]
     },
     {
+      "id": "b33ffa6a29e9038f3671dbf1f15e16e606bbf868",
+      "url": "https://www.homes.co.jp/chintai/room/b33ffa6a29e9038f3671dbf1f15e16e606bbf868/",
+      "title": "ウエリス世田谷砧",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150220%2Frent%2F149403%2F2%2F2%2Fiuih.jpg",
+      "priceText": "27.5万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "75.01m²",
+      "exclusiveAreaText": "75.01m²",
+      "builtText": "築9年",
+      "walkMinutes": 15,
+      "address": "東京都世田谷区砧１丁目21-18",
+      "managementFeeText": "25,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "相談",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 27.5,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 82.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 75.01,
+      "buildingAreaM2": 75.01,
+      "buildingAgeYears": 9,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/29",
+        "lat": 35.637326445298,
+        "lon": 139.6173898017,
+        "address": "東京都世田谷区砧１丁目21-18",
+        "postalCode": "1570073",
+        "yearBuilt": 2017,
+        "builtText": "2017年12月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150220%2Frent%2F149403%2F2%2F2%2Fiuih.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "25,000円",
+        "availableText": "相談"
+      },
+      "lat": 35.637326445298,
+      "lon": 139.6173898017,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.637326445298%2C139.6173898017",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2017,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-29",
+      "publishedText": "情報公開日\n\n2026/09/29",
+      "isNew": true
+    },
+    {
       "id": "14c0932a68458d85fb25e9c21d1c0d296de0c23d",
       "url": "https://www.homes.co.jp/chintai/room/14c0932a68458d85fb25e9c21d1c0d296de0c23d/",
       "title": "JR総武線 西船橋駅 徒歩4分の賃貸マンション",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14095%2F14095221%2F14095221_2.jpg%3F20260928172255",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141097%2Frent%2F50104%2F2%2F2%2Fsawn.jpg",
       "priceText": "27.9万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -6194,6 +6932,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6216,33 +6955,34 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/09",
-        "lat": 35.705096281449,
-        "lon": 139.95861505505,
+        "publishedText": "情報公開日\n\n2025/12/13",
+        "lat": 35.705119621182,
+        "lon": 139.95895058122,
         "address": "千葉県船橋市印内町640",
         "postalCode": "2730025",
         "yearBuilt": 2026,
         "builtText": "2026年1月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14095%2F14095221%2F14095221_2.jpg%3F20260928172255",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141097%2Frent%2F50104%2F2%2F2%2Fsawn.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "即時"
       },
-      "lat": 35.705096281449,
-      "lon": 139.95861505505,
+      "lat": 35.705119621182,
+      "lon": 139.95895058122,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.705096281449%2C139.95861505505",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.705119621182%2C139.95895058122",
       "ward": null,
       "wardEn": null,
       "yearBuilt": 2026,
       "buildingAgeYears": 0,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-09",
-      "publishedText": "情報公開日\n\n2026/07/09",
+      "publishedAt": "2025-12-13",
+      "publishedText": "情報公開日\n\n2025/12/13",
       "dedupedFrom": [
         "1b3b33d74a993ff7c127023429e1639aaa4fe3a6",
         "5ecfd4800625cfc34a00231b7c2355843fd90b55",
@@ -6254,15 +6994,6 @@
         "cef533ca295e5bd0ece0b94a480f3405356f79ce",
         "b8f1a94e69f27570fa0f44c64a31bbd17bd7fa73",
         "183f89fa3aa16454b4275c541bcf983879a7ad38",
-        "337fc8108956f83700abee7963b680986ba9d7e5",
-        "344dc45f199750195990b269938f9262b6868ea8",
-        "c558ce73d1cca5b4ebcbc27417180385a08813ab",
-        "9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8",
-        "3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5",
-        "4bd0f1b3ad87d2305636e0632c81e0f54359eef0",
-        "4c2656651cc5d0ed9520a0ed8e206b56461a2513",
-        "3b2fc0bb6968065ae1cca9edd1e7bfc001b94d75",
-        "a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e",
         "f2856ee1ce8a049698afd97e50fca36a5715b1fe",
         "083467bf736a29819c34b903f2622b2d30bffb02",
         "ccf38a26f6042ce2e2027181adf743179c9b9266",
@@ -6270,9 +7001,16 @@
         "8cf64a378309d86abf5710e7759e7c989e6a89d3",
         "144e5e22f23bc9a38592e449a3b726124433a70a",
         "b7e11341dad057072ba4e60304be262907d2c2d9",
-        "d42c166ac9d1deda755c8d715c7f8bd8dc17d244"
-      ],
-      "isNew": true
+        "d42c166ac9d1deda755c8d715c7f8bd8dc17d244",
+        "337fc8108956f83700abee7963b680986ba9d7e5",
+        "344dc45f199750195990b269938f9262b6868ea8",
+        "c558ce73d1cca5b4ebcbc27417180385a08813ab",
+        "9bf8d95dad6404d36ecd35eb7eaf09393d9f3da8",
+        "3b3b1d883c8921e77e0f145a58c8f86a4ab1a5e5",
+        "4bd0f1b3ad87d2305636e0632c81e0f54359eef0",
+        "4c2656651cc5d0ed9520a0ed8e206b56461a2513",
+        "a0c873a1d1c71945c122b6f0e9b3df42b18d8b9e"
+      ]
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -6292,6 +7030,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6328,7 +7067,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "13,000円"
+        "managementFeeText": "13,000円",
+        "availableText": "2026年11月 上旬"
       },
       "lat": 35.623774432272,
       "lon": 139.69311640783,
@@ -6363,6 +7103,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6398,7 +7139,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.736231778202,
       "lon": 139.64150656761,
@@ -6417,8 +7159,7 @@
         "3890ac8afe3428a752a857d1358bfea01f007624",
         "187785743a4b6dacd9fd6a4ffbe7d4c4a8a947f1",
         "8014c948f7a40d350849f41105fbeb72082aea10"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "77b45cdcff484711c239a0202b3242b5523e10ce",
@@ -6438,6 +7179,7 @@
       "reikinText": "2ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6473,7 +7215,8 @@
         "reikinText": "2ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "2026年11月 下旬"
       },
       "lat": 35.721347959764,
       "lon": 139.59165168623,
@@ -6486,8 +7229,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-09-07",
-      "publishedText": "情報公開日\n\n2026/09/07",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/07"
     },
     {
       "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
@@ -6507,6 +7249,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6543,7 +7286,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "13,000円"
+        "managementFeeText": "13,000円",
+        "availableText": "2026年11月 上旬"
       },
       "lat": 35.623596944034,
       "lon": 139.69280838554,
@@ -6555,7 +7299,80 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-18",
-      "publishedText": "情報公開日\n\n2026/09/18",
+      "publishedText": "情報公開日\n\n2026/09/18"
+    },
+    {
+      "id": "11e8eb39a67fe499a47e73e1a50ad77a28d9132d",
+      "url": "https://www.homes.co.jp/chintai/room/11e8eb39a67fe499a47e73e1a50ad77a28d9132d/",
+      "title": "小田急小田原線 祖師ヶ谷大蔵駅 徒歩9分の賃貸マンション",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fd126569c%2F56701_521219_2_132000_132000.jpg%3Ft%3D20260929141032",
+      "priceText": "28.5万円",
+      "madori": "4LDK",
+      "landAreaText": null,
+      "buildingAreaText": "93.2m²",
+      "exclusiveAreaText": "93.2m²",
+      "builtText": "築21年",
+      "walkMinutes": 9,
+      "address": "東京都世田谷区祖師谷4丁目20-7",
+      "managementFeeText": "10,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 28.5,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 85.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 93.2,
+      "buildingAreaM2": 93.2,
+      "buildingAgeYears": 20,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/06/12",
+        "lat": 35.648173542675,
+        "lon": 139.60640946891,
+        "address": "東京都世田谷区祖師谷4丁目20-7",
+        "postalCode": "1570072",
+        "yearBuilt": 2006,
+        "builtText": "2006年1月",
+        "structure": "ALC造",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fd126569c%2F56701_521219_2_132000_132000.jpg%3Ft%3D20260929141032",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.648173542675,
+      "lon": 139.60640946891,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.648173542675%2C139.60640946891",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2006,
+      "storeys": null,
+      "structure": "ALC造",
+      "publishedAt": "2026-06-12",
+      "publishedText": "情報公開日\n\n2026/06/12",
+      "dedupedFrom": [
+        "7a75a18282ee78b31636acecc2c22718436723f4"
+      ],
       "isNew": true
     },
     {
@@ -6576,6 +7393,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6612,7 +7430,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "13,000円"
+        "managementFeeText": "13,000円",
+        "availableText": "即時"
       },
       "lat": 35.623348368055,
       "lon": 139.69307698377,
@@ -6627,6 +7446,150 @@
       "publishedText": "情報公開日\n\n2026/07/12",
       "dedupedFrom": [
         "2ab934de22d25e6bee1cc794e028e5780f382370"
+      ]
+    },
+    {
+      "id": "aea48f475b3300bbba82ef4b907187cf50dda48d",
+      "url": "https://www.homes.co.jp/chintai/room/aea48f475b3300bbba82ef4b907187cf50dda48d/",
+      "title": "シャルマン玉川",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100384%2Frent%2F53679%2F2%2F1%2F9eik.jpg",
+      "priceText": "28.8万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "80.75m²",
+      "exclusiveAreaText": "80.75m²",
+      "builtText": "築23年",
+      "walkMinutes": 15,
+      "address": "東京都世田谷区鎌田3丁目",
+      "managementFeeText": "12,000円",
+      "shikikinText": "2ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 28.8,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 2,
+      "oneOffManYen": 115.2,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 80.75,
+      "buildingAreaM2": 80.75,
+      "buildingAgeYears": 22,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/08/13",
+        "lat": 35.618960207767,
+        "lon": 139.61844238972,
+        "address": "東京都世田谷区鎌田3丁目",
+        "postalCode": "1570077",
+        "yearBuilt": 2004,
+        "builtText": "2004年3月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100384%2Frent%2F53679%2F2%2F1%2F9eik.jpg",
+        "shikikinText": "2ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "12,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.618960207767,
+      "lon": 139.61844238972,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.618960207767%2C139.61844238972",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2004,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-08-13",
+      "publishedText": "情報公開日\n\n2026/08/13",
+      "isNew": true
+    },
+    {
+      "id": "6b53ec029a5fd93f89bf6298c875cb4dce898690",
+      "url": "https://www.homes.co.jp/chintai/room/6b53ec029a5fd93f89bf6298c875cb4dce898690/",
+      "title": "京王線 仙川駅 徒歩14分の賃貸マンション",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1d7f6a6b%2F56701_523348_1_132000_132000.jpg%3Ft%3D20260928195521",
+      "priceText": "28.9万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "76.61m²",
+      "exclusiveAreaText": "76.61m²",
+      "builtText": null,
+      "walkMinutes": 14,
+      "address": "東京都世田谷区上祖師谷5丁目20-4",
+      "managementFeeText": "10,000円",
+      "shikikinText": "無",
+      "reikinText": "0.5ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 28.9,
+      "reikinMonths": 0.5,
+      "reikinYen": null,
+      "shikikinMonths": 0,
+      "oneOffManYen": 43.35,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 76.61,
+      "buildingAreaM2": 76.61,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/06/20",
+        "lat": 35.657041283964,
+        "lon": 139.59037936714,
+        "address": "東京都世田谷区上祖師谷5丁目20-4",
+        "postalCode": "1570065",
+        "yearBuilt": 2026,
+        "builtText": "2026年9月",
+        "structure": "ALC造",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1d7f6a6b%2F56701_523348_1_132000_132000.jpg%3Ft%3D20260928195521",
+        "shikikinText": "無",
+        "reikinText": "0.5ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.657041283964,
+      "lon": 139.59037936714,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.657041283964%2C139.59037936714",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2026,
+      "buildingAgeYears": 0,
+      "storeys": null,
+      "structure": "ALC造",
+      "publishedAt": "2026-06-20",
+      "publishedText": "情報公開日\n\n2026/06/20",
+      "dedupedFrom": [
+        "184420f05ba581176a34ef52dd5f4cd9f37ae4cf"
       ],
       "isNew": true
     },
@@ -6648,6 +7611,7 @@
       "reikinText": "28.9万円",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6684,7 +7648,8 @@
         "reikinText": "28.9万円",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.734787201413,
       "lon": 139.703241929,
@@ -6716,6 +7681,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6752,7 +7718,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.702691857795,
       "lon": 139.80443239917,
@@ -6764,7 +7731,77 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-07-02",
-      "publishedText": "情報公開日\n\n2026/07/02",
+      "publishedText": "情報公開日\n\n2026/07/02"
+    },
+    {
+      "id": "77addfefefc3a6c23351ef341ed854981261cf7b",
+      "url": "https://www.homes.co.jp/chintai/room/77addfefefc3a6c23351ef341ed854981261cf7b/",
+      "title": "グランフォート用賀",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158055%2Frent%2F7256%2F2%2F1%2Fyzl8.jpg",
+      "priceText": "29万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "77.8m²",
+      "exclusiveAreaText": "77.8m²",
+      "builtText": "築22年",
+      "walkMinutes": 7,
+      "address": "東京都世田谷区用賀３丁目25",
+      "managementFeeText": "10,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 29,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 87,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 77.8,
+      "buildingAreaM2": 77.8,
+      "buildingAgeYears": 21,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/08/23",
+        "lat": 35.630173312195,
+        "lon": 139.63639874913,
+        "address": "東京都世田谷区用賀３丁目25",
+        "postalCode": "1580097",
+        "yearBuilt": 2005,
+        "builtText": "2005年2月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158055%2Frent%2F7256%2F2%2F1%2Fyzl8.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.630173312195,
+      "lon": 139.63639874913,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.630173312195%2C139.63639874913",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2005,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-08-23",
+      "publishedText": "情報公開日\n\n2026/08/23",
       "isNew": true
     },
     {
@@ -6785,6 +7822,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年10月 上旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6821,7 +7859,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "6,000円"
+        "managementFeeText": "6,000円",
+        "availableText": "2026年10月 上旬"
       },
       "lat": 35.615903323181,
       "lon": 140.10585925222,
@@ -6833,8 +7872,7 @@
       "storeys": null,
       "structure": "軽量鉄骨造",
       "publishedAt": "2026-08-01",
-      "publishedText": "情報公開日\n\n2026/08/01",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/01"
     },
     {
       "id": "a5c5d8440bc3d28daf974a85eb016295e8aac953",
@@ -6854,6 +7892,7 @@
       "reikinText": "1.5ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -6890,7 +7929,8 @@
         "reikinText": "1.5ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "13,000円"
+        "managementFeeText": "13,000円",
+        "availableText": "即時"
       },
       "lat": 35.671646040958,
       "lon": 140.03700476751,
@@ -6902,8 +7942,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-05-13",
-      "publishedText": "情報公開日\n\n2026/05/13",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/05/13"
     },
     {
       "id": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
@@ -6916,15 +7955,17 @@
       "buildingAreaText": "88.52m²",
       "exclusiveAreaText": "88.52m²",
       "builtText": "築25年",
-      "walkMinutes": 12,
+      "walkMinutes": 10,
       "address": "東京都世田谷区下馬5丁目27-15",
       "managementFeeText": "20,000円",
       "shikikinText": "1ヶ月",
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
+        "ku",
         "station"
       ],
       "priceManYen": 31,
@@ -6946,7 +7987,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/07",
+        "publishedText": "情報公開日\n\n2026/04/27",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -6959,7 +8000,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "20,000円"
+        "managementFeeText": "20,000円",
+        "availableText": "即時"
       },
       "lat": 35.63580533495,
       "lon": 139.68398920204,
@@ -6970,8 +8012,83 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-07",
-      "publishedText": "情報公開日\n\n2026/06/07"
+      "publishedAt": "2026-04-27",
+      "publishedText": "情報公開日\n\n2026/04/27"
+    },
+    {
+      "id": "5285fd202e5b3c2102e3f7b48776ae1ccea7881b",
+      "url": "https://www.homes.co.jp/chintai/room/5285fd202e5b3c2102e3f7b48776ae1ccea7881b/",
+      "title": "サリーレ成城",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F134372%2F2%2F2%2Fyjc1.jpg",
+      "priceText": "32万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "86.11m²",
+      "exclusiveAreaText": "86.11m²",
+      "builtText": "築26年",
+      "walkMinutes": 9,
+      "address": "東京都世田谷区成城７丁目12-16",
+      "managementFeeText": "-",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年11月 上旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 32,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 96,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 86.11,
+      "buildingAreaM2": 86.11,
+      "buildingAgeYears": 26,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/07",
+        "lat": 35.646764859243,
+        "lon": 139.59772915233,
+        "address": "東京都世田谷区成城７丁目12-16",
+        "postalCode": "1570066",
+        "yearBuilt": 2000,
+        "builtText": "2000年11月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F134372%2F2%2F2%2Fyjc1.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "-",
+        "availableText": "2026年11月 上旬"
+      },
+      "lat": 35.646764859243,
+      "lon": 139.59772915233,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.646764859243%2C139.59772915233",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2000,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-07",
+      "publishedText": "情報公開日\n\n2026/09/07",
+      "dedupedFrom": [
+        "1d6b8321bf42fc276a67954e44845c4b52424f1c",
+        "d998c019bc0f7d012f1a9ac48eb6cd73bdd64849"
+      ],
+      "isNew": true
     },
     {
       "id": "455ede082466cf343b1ed7a833c80127a4cbd2c3",
@@ -6991,6 +8108,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7027,7 +8145,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "30,000円"
+        "managementFeeText": "30,000円",
+        "availableText": "即時"
       },
       "lat": 35.744913766095,
       "lon": 139.62777127701,
@@ -7039,8 +8158,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-10",
-      "publishedText": "情報公開日\n\n2026/09/10",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/10"
     },
     {
       "id": "4b571bf7720d432231f27f1fd3672db7123f299e",
@@ -7060,6 +8178,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7096,7 +8215,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "30,000円"
+        "managementFeeText": "30,000円",
+        "availableText": "相談"
       },
       "lat": 35.744234164023,
       "lon": 139.62940199881,
@@ -7108,8 +8228,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-27",
-      "publishedText": "情報公開日\n\n2026/08/27",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/27"
     },
     {
       "id": "5395755c5b3b41e6c29a3d7dc29c197409eef7b8",
@@ -7129,6 +8248,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7165,7 +8285,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "30,000円"
+        "managementFeeText": "30,000円",
+        "availableText": "相談"
       },
       "lat": 35.742238858116,
       "lon": 139.63032672244,
@@ -7180,6 +8301,84 @@
       "publishedText": "情報公開日\n\n2026/08/28",
       "dedupedFrom": [
         "11663b241e858ec369c3fb9dc90158e11d58047b"
+      ]
+    },
+    {
+      "id": "2f818eb53d580c410cd278cc1d906f05f8d3dbc2",
+      "url": "https://www.homes.co.jp/chintai/room/2f818eb53d580c410cd278cc1d906f05f8d3dbc2/",
+      "title": "小田急小田原線 祖師ヶ谷大蔵駅 徒歩11分の賃貸マンション",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147181%2Frent%2F53006%2F1%2F2%2Fw42x.jpg",
+      "priceText": "33万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "79.62m²",
+      "exclusiveAreaText": "79.62m²",
+      "builtText": "築14年",
+      "walkMinutes": 10,
+      "address": "東京都世田谷区砧２丁目16-1",
+      "managementFeeText": "20,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "2ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年10月 下旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 33,
+      "reikinMonths": 2,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 132,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 79.62,
+      "buildingAreaM2": 79.62,
+      "buildingAgeYears": 13,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/18",
+        "lat": 35.643402123672,
+        "lon": 139.6163993655,
+        "address": "東京都世田谷区砧２丁目16-1",
+        "postalCode": "1570073",
+        "yearBuilt": 2013,
+        "builtText": "2013年2月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147181%2Frent%2F53006%2F1%2F2%2Fw42x.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "2ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "20,000円",
+        "availableText": "2026年10月 下旬"
+      },
+      "lat": 35.643402123672,
+      "lon": 139.6163993655,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.643402123672%2C139.6163993655",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2013,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-18",
+      "publishedText": "情報公開日\n\n2026/09/18",
+      "dedupedFrom": [
+        "59a3d76e6db7ea7bab0f9b74a2ba210c69f9b185",
+        "79ae5c50930c6669a80f204ffe56af1edba70eec",
+        "75974a7ea05a8768f6c0bb4785d20d912f98918d",
+        "b3f568055f7044d4b2930ac5dd5ba209e0b68dda",
+        "e2e33c675f77d4c701be98d3bbdcefc9b1f6c4e5",
+        "b7d539f6520e6d598cbbda180adf61ae418b053a"
       ],
       "isNew": true
     },
@@ -7201,6 +8400,7 @@
       "reikinText": "1.5ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7237,7 +8437,8 @@
         "reikinText": "1.5ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "2026年11月 下旬"
       },
       "lat": 35.632660562212,
       "lon": 139.7000737948,
@@ -7252,8 +8453,8 @@
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "51f9e93619473610ccbc9a4153280d387861d6ff",
-        "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "90ac604c21eb2879727d2b81677b7b217c5c18d7",
+        "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "69434f185607d9053d3bb12960819d1840a90bda",
         "f57b09897a8ed6a23aa19b38ce14ab9bb1558ab5"
       ]
@@ -7276,6 +8477,7 @@
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7312,7 +8514,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.695770162665,
       "lon": 139.72233131852,
@@ -7325,6 +8528,83 @@
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-11",
       "publishedText": "情報公開日\n\n2026/09/11"
+    },
+    {
+      "id": "5e38be8a668462530d8279e857bcdeb779c50c63",
+      "url": "https://www.homes.co.jp/chintai/room/5e38be8a668462530d8279e857bcdeb779c50c63/",
+      "title": "東急大井町線 等々力駅 徒歩12分の賃貸マンション",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F11811%2F11811119%2F11811119_2.jpg%3F20260911161421",
+      "priceText": "33万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "101.96m²",
+      "exclusiveAreaText": "101.96m²",
+      "builtText": "築25年",
+      "walkMinutes": 12,
+      "address": "東京都世田谷区等々力8丁目19-2",
+      "managementFeeText": "20,000円",
+      "shikikinText": "2ヶ月",
+      "reikinText": "0.5ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "即時",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 33,
+      "reikinMonths": 0.5,
+      "reikinYen": null,
+      "shikikinMonths": 2,
+      "oneOffManYen": 115.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 101.96,
+      "buildingAreaM2": 101.96,
+      "buildingAgeYears": 24,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/06/08",
+        "lat": 35.615192924951,
+        "lon": 139.65242020796,
+        "address": "東京都世田谷区等々力8丁目19-2",
+        "postalCode": "1580082",
+        "yearBuilt": 2002,
+        "builtText": "2002年1月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F11811%2F11811119%2F11811119_2.jpg%3F20260911161421",
+        "shikikinText": "2ヶ月",
+        "reikinText": "0.5ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "20,000円",
+        "availableText": "即時"
+      },
+      "lat": 35.615192924951,
+      "lon": 139.65242020796,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.615192924951%2C139.65242020796",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 2002,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-06-08",
+      "publishedText": "情報公開日\n\n2026/06/08",
+      "dedupedFrom": [
+        "95ac1be7cad0d0cb9f640b5c272ba15122cbee45",
+        "434b1e1a389ab8a275f91ee9b79578a56eeb56b9",
+        "59ba60f4fa63731cf8a67334b75de39746cced00",
+        "450d4afbd41b864a9f6f6cd6d9b3981d314f0d61"
+      ],
+      "isNew": true
     },
     {
       "id": "77a7e0ede1b3cba41d7c5f5c3e58e014a6b8613a",
@@ -7344,6 +8624,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7380,7 +8661,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "20,000円"
+        "managementFeeText": "20,000円",
+        "availableText": "即時"
       },
       "lat": 35.627836543312,
       "lon": 139.70609014347,
@@ -7398,10 +8680,169 @@
       ]
     },
     {
-      "id": "de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a",
-      "url": "https://www.homes.co.jp/chintai/room/de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a/",
-      "title": "クリスタルコート",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141019%2Frent%2F28209%2F2%2F1%2Ffb97.jpg",
+      "id": "619ad881cc49c29cb4643344e59b4294cb8dbf21",
+      "url": "https://www.homes.co.jp/chintai/room/619ad881cc49c29cb4643344e59b4294cb8dbf21/",
+      "title": "パーク・コート等々力",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8374f6de-2e83-4531-b8f0-e9a524bdfd9a_property_picture_3128_large.jpg",
+      "priceText": "33.5万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "91.09m²",
+      "exclusiveAreaText": "91.09m²",
+      "builtText": "築35年",
+      "walkMinutes": 9,
+      "address": "東京都世田谷区等々力８丁目1-1",
+      "managementFeeText": "15,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "2ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 33.5,
+      "reikinMonths": 2,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 134,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 91.09,
+      "buildingAreaM2": 91.09,
+      "buildingAgeYears": 34,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/10/01",
+        "lat": 35.612030221132,
+        "lon": 139.65226229208,
+        "address": "東京都世田谷区等々力８丁目1-1",
+        "postalCode": "1580082",
+        "yearBuilt": 1992,
+        "builtText": "1992年3月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8374f6de-2e83-4531-b8f0-e9a524bdfd9a_property_picture_3128_large.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "2ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "15,000円",
+        "availableText": "2026年11月 下旬"
+      },
+      "lat": 35.612030221132,
+      "lon": 139.65226229208,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.612030221132%2C139.65226229208",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 1992,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-10-01",
+      "publishedText": "情報公開日\n\n2026/10/01",
+      "dedupedFrom": [
+        "8c9ba21245ed4671fc9312705d478bd0cc396d34"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "860fb6f3769613a9296d9274d96d2a3f9bcf19fe",
+      "url": "https://www.homes.co.jp/chintai/room/860fb6f3769613a9296d9274d96d2a3f9bcf19fe/",
+      "title": "東急田園都市線 二子玉川駅 徒歩12分の賃貸マンション",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147181%2Frent%2F53120%2F2%2F1%2F4r8q.jpg",
+      "priceText": "33.5万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "76.5m²",
+      "exclusiveAreaText": "76.5m²",
+      "builtText": "築29年",
+      "walkMinutes": 11,
+      "address": "東京都世田谷区瀬田１丁目15-5",
+      "managementFeeText": "15,000円",
+      "shikikinText": "33.5万円",
+      "reikinText": "33.5万円",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年10月 中旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 33.5,
+      "reikinMonths": null,
+      "reikinYen": 335000,
+      "shikikinMonths": null,
+      "oneOffManYen": 100.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 76.5,
+      "buildingAreaM2": 76.5,
+      "buildingAgeYears": 29,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/09/20",
+        "lat": 35.615174090805,
+        "lon": 139.6335251477,
+        "address": "東京都世田谷区瀬田１丁目15-5",
+        "postalCode": "1580095",
+        "yearBuilt": 1997,
+        "builtText": "1997年11月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147181%2Frent%2F53120%2F2%2F1%2F4r8q.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "15,000円",
+        "availableText": "2026年10月 中旬"
+      },
+      "lat": 35.615174090805,
+      "lon": 139.6335251477,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.615174090805%2C139.6335251477",
+      "ward": "世田谷区",
+      "wardEn": "Setagaya-ku",
+      "yearBuilt": 1997,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-09-20",
+      "publishedText": "情報公開日\n\n2026/09/20",
+      "dedupedFrom": [
+        "712b9119f8f6e6d4f30252645b547536331b7b7a",
+        "652c6dfb5446f3b93cdb0c15677dcf8535d964a8",
+        "39d82e03525239031a877301145eb4ca2ad8934f",
+        "abcce62c297bbfc768bb487f305ca3152c4fb6fc",
+        "e174d4457b26f5009aa317920f0c27a1c8d160ed",
+        "b92031db49a9cc9051e2c0c2eb1191aa4c6f34fc",
+        "9fef1fade5a8fc9fedfbc15615ebb952173e8993",
+        "35fca698843fd022ebef40be28a128c235e6872e",
+        "357283a49257561040f17dcb91b5daaa3b8be925",
+        "8b6998f869d654ec2631c2037f201650f5a2453d",
+        "e306bb07a3d198ad133d13ad19d984716337432f",
+        "5e37ac249c820225016206535aa7ca00a4c053f2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bed1905a795d4808033fb822164c6c5e2a480868",
+      "url": "https://www.homes.co.jp/chintai/room/bed1905a795d4808033fb822164c6c5e2a480868/",
+      "title": "JR中央本線 中野駅 徒歩5分の賃貸マンション",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142121%2Frent%2F35236%2F2%2F1%2F1h5g.jpg",
       "priceText": "34万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -7415,6 +8856,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7438,7 +8880,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/16",
+        "publishedText": "情報公開日\n\n2026/07/31",
         "lat": 35.702597545755,
         "lon": 139.66354132047,
         "address": "東京都中野区中野３丁目",
@@ -7446,12 +8888,13 @@
         "yearBuilt": 1997,
         "builtText": "1997年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141019%2Frent%2F28209%2F2%2F1%2Ffb97.jpg",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142121%2Frent%2F35236%2F2%2F1%2F1h5g.jpg",
         "shikikinText": "2ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "10,000円"
+        "managementFeeText": "10,000円",
+        "availableText": "即時"
       },
       "lat": 35.702597545755,
       "lon": 139.66354132047,
@@ -7462,8 +8905,12 @@
       "yearBuilt": 1997,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-16",
-      "publishedText": "情報公開日\n\n2026/07/16",
+      "publishedAt": "2026-07-31",
+      "publishedText": "情報公開日\n\n2026/07/31",
+      "dedupedFrom": [
+        "de47b107c0dfcc9ce79b6c673d5fe16c4c1f960a",
+        "d17b4d3ba9b407858ea1f3ef4510ca58c01017ee"
+      ],
       "isNew": true
     },
     {
@@ -7477,15 +8924,17 @@
       "buildingAreaText": "103.63m²",
       "exclusiveAreaText": "103.63m²",
       "builtText": "築35年",
-      "walkMinutes": 8,
+      "walkMinutes": 7,
       "address": "東京都世田谷区代田６丁目15-5",
       "managementFeeText": "15,000円",
       "shikikinText": "1ヶ月",
       "reikinText": "無",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
+        "ku",
         "station"
       ],
       "priceManYen": 34.5,
@@ -7520,7 +8969,8 @@
         "reikinText": "無",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "15,000円"
+        "managementFeeText": "15,000円",
+        "availableText": "即時"
       },
       "lat": 35.665726971483,
       "lon": 139.66334836993,
@@ -7555,6 +9005,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7591,7 +9042,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "18,000円"
+        "managementFeeText": "18,000円",
+        "availableText": "即時"
       },
       "lat": 35.625417553702,
       "lon": 139.73376039067,
@@ -7606,8 +9058,7 @@
       "publishedText": "情報公開日\n\n2026/09/22",
       "dedupedFrom": [
         "f272529fc2463b5affd6ac7c5b7ec52d57fe7573"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "3a927bd2eeb2aa9dc47123af5d9e83b5fd76c8fe",
@@ -7627,6 +9078,7 @@
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -7663,7 +9115,8 @@
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "-"
+        "managementFeeText": "-",
+        "availableText": "即時"
       },
       "lat": 35.705738249865,
       "lon": 139.57819317941,
@@ -7675,40 +9128,40 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-02",
-      "publishedText": "情報公開日\n\n2026/08/02",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/02"
     },
     {
-      "id": "6a0d41892de0d501e31c1ac408bee1e720275d65",
-      "url": "https://www.homes.co.jp/chintai/room/6a0d41892de0d501e31c1ac408bee1e720275d65/",
-      "title": "若林プレムヒルズ",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F117949%2F2%2F2%2Fvkhx.jpg",
+      "id": "62462c9e4b151b16b786e60d3666eefb4d32856e",
+      "url": "https://www.homes.co.jp/chintai/room/62462c9e4b151b16b786e60d3666eefb4d32856e/",
+      "title": "グランドメゾン上野毛",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158055%2Frent%2F7724%2F2%2F1%2Fk9eo.jpg",
       "priceText": "35万円",
       "madori": "3LDK",
       "landAreaText": null,
-      "buildingAreaText": "92.93m²",
-      "exclusiveAreaText": "92.93m²",
-      "builtText": "築13年",
-      "walkMinutes": 15,
-      "address": "東京都世田谷区若林２丁目19-16",
-      "managementFeeText": "50,000円",
-      "shikikinText": "1ヶ月",
-      "reikinText": "無",
+      "buildingAreaText": "83.92m²",
+      "exclusiveAreaText": "83.92m²",
+      "builtText": "築3年",
+      "walkMinutes": 6,
+      "address": "東京都世田谷区中町３丁目25-2",
+      "managementFeeText": "31,000円",
+      "shikikinText": "2ヶ月",
+      "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
+      "availableText": "即時",
       "deal": "rent",
       "matchedVia": [
-        "station"
+        "ku"
       ],
       "priceManYen": 35,
-      "reikinMonths": 0,
-      "reikinYen": 0,
-      "shikikinMonths": 1,
-      "oneOffManYen": 70,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 2,
+      "oneOffManYen": 140,
       "oneOffAssumesAgentMonths": 1,
-      "exclusiveAreaM2": 92.93,
-      "buildingAreaM2": 92.93,
-      "buildingAgeYears": 12,
+      "exclusiveAreaM2": 83.92,
+      "buildingAreaM2": 83.92,
+      "buildingAgeYears": 2,
       "detail": {
         "landRight": null,
         "leaseType": null,
@@ -7719,36 +9172,38 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/08",
-        "lat": 35.648423616255,
-        "lon": 139.66237997803,
-        "address": "東京都世田谷区若林２丁目19-16",
-        "postalCode": "1540023",
-        "yearBuilt": 2014,
-        "builtText": "2014年7月",
+        "publishedText": "情報公開日\n\n2026/09/13",
+        "lat": 35.614291932243,
+        "lon": 139.64262385413,
+        "address": "東京都世田谷区中町３丁目25-2",
+        "postalCode": "1580091",
+        "yearBuilt": 2024,
+        "builtText": "2024年6月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125923%2Frent%2F117949%2F2%2F2%2Fvkhx.jpg",
-        "shikikinText": "1ヶ月",
-        "reikinText": "無",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158055%2Frent%2F7724%2F2%2F1%2Fk9eo.jpg",
+        "shikikinText": "2ヶ月",
+        "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
-        "managementFeeText": "50,000円"
+        "managementFeeText": "31,000円",
+        "availableText": "即時"
       },
-      "lat": 35.648423616255,
-      "lon": 139.66237997803,
+      "lat": 35.614291932243,
+      "lon": 139.64262385413,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.648423616255%2C139.66237997803",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.614291932243%2C139.64262385413",
       "ward": "世田谷区",
       "wardEn": "Setagaya-ku",
-      "yearBuilt": 2014,
+      "yearBuilt": 2024,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-08",
-      "publishedText": "情報公開日\n\n2026/06/08",
+      "publishedAt": "2026-09-13",
+      "publishedText": "情報公開日\n\n2026/09/13",
       "dedupedFrom": [
-        "9f5c4113a705de904a2b0b4d54b4441de03471f6",
-        "da1cf720942ec8cd917b802d2221104461d9dde4"
-      ]
+        "54baefa495f79d7abb426fef6dfd99c52e11796d",
+        "302652524e41e983db53153fedc155cdc205d558"
+      ],
+      "isNew": true
     }
   ]
 }

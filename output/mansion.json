@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T03:48:49.280Z",
+  "scrapedAt": "2026-10-01T04:19:16.011Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -132,21 +132,13 @@
   },
   "count": 32,
   "delta": {
-    "addedCount": 5,
-    "removedCount": 5,
+    "addedCount": 1,
+    "removedCount": 1,
     "addedIds": [
-      "b-56060000501",
-      "b-8690107411",
-      "b-1429760019871",
-      "b-1230340085079",
-      "b-1267650039069"
+      "b-1388970018996"
     ],
     "removedIds": [
-      "b-1429760020315",
-      "b-1388970018996",
-      "b-8690105170",
-      "b-1538400011334",
-      "b-1421770029491"
+      "b-8690107411"
     ]
   },
   "dedupe": {
@@ -250,7 +242,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "18,000円"
+        "managementFeeText": "18,000円",
+        "availableText": null
       },
       "lat": 35.421379302904,
       "lon": 139.65801826776,
@@ -308,7 +301,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "11,700円"
+        "managementFeeText": "11,700円",
+        "availableText": null
       },
       "lat": 35.400137336991,
       "lon": 139.60911491917,
@@ -324,8 +318,7 @@
       "dedupedFrom": [
         "b-8690106969",
         "b-1429760020315"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-35007690000145",
@@ -371,7 +364,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "12,400円"
+        "managementFeeText": "12,400円",
+        "availableText": null
       },
       "lat": 35.404611911052,
       "lon": 139.6120014423,
@@ -386,10 +380,10 @@
       "publishedText": "情報公開日：2026/08/29（33日前 公開）"
     },
     {
-      "id": "b-8690107411",
-      "url": "https://www.homes.co.jp/mansion/b-8690107411/",
+      "id": "b-1388970018996",
+      "url": "https://www.homes.co.jp/mansion/b-1388970018996/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F107411%2F2%2F1%2Fe7rb.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138897%2Fsale%2F18996%2F11%2F3%2Fxqrd.jpg",
       "priceText": "5,190万円",
       "madori": "3LDK",
       "landAreaText": "80.06m²",
@@ -397,8 +391,8 @@
       "exclusiveAreaText": "80.06m²",
       "builtText": null,
       "walkMinutes": null,
-      "address": "神奈川県横浜市中区根岸旭台",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.419570848858%2C139.63531470826",
+      "address": "神奈川県横浜市中区根岸旭台1-9",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.419428995966%2C139.63817002736",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -409,30 +403,31 @@
       "detail": {
         "landRight": "所有権",
         "leaseType": null,
-        "zoning": "第一種中高層住居専用地域",
+        "zoning": null,
         "cityPlan": null,
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "5,190万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/05（57日前 公開）",
-        "lat": 35.419570848858,
-        "lon": 139.63531470826,
-        "address": "神奈川県横浜市中区根岸旭台",
+        "publishedText": "情報公開日：2026/08/04（58日前 公開）",
+        "lat": 35.419428995966,
+        "lon": 139.63817002736,
+        "address": "神奈川県横浜市中区根岸旭台1-9",
         "postalCode": "231-0854",
         "yearBuilt": 2004,
         "builtText": "2004年1月（築23年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F869%2Fsale%2F107411%2F2%2F1%2Fe7rb.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138897%2Fsale%2F18996%2F11%2F3%2Fxqrd.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "22,165円"
+        "managementFeeText": "22,165円",
+        "availableText": null
       },
-      "lat": 35.419570848858,
-      "lon": 139.63531470826,
+      "lat": 35.419428995966,
+      "lon": 139.63817002736,
       "locationAccuracy": "coordinates",
       "ward": "横浜市中区",
       "wardEn": null,
@@ -440,8 +435,8 @@
       "buildingAgeYears": 23,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-05",
-      "publishedText": "情報公開日：2026/08/05（57日前 公開）",
+      "publishedAt": "2026-08-04",
+      "publishedText": "情報公開日：2026/08/04（58日前 公開）",
       "isNew": true
     },
     {
@@ -488,7 +483,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "14,300円"
+        "managementFeeText": "14,300円",
+        "availableText": null
       },
       "lat": 35.425234234447,
       "lon": 139.6403179491,
@@ -546,7 +542,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "23,040円"
+        "managementFeeText": "23,040円",
+        "availableText": null
       },
       "lat": 35.423432238146,
       "lon": 139.64120905591,
@@ -604,7 +601,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "10,900円"
+        "managementFeeText": "10,900円",
+        "availableText": null
       },
       "lat": 35.781016209653,
       "lon": 139.69482939476,
@@ -662,7 +660,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "16,510円"
+        "managementFeeText": "16,510円",
+        "availableText": null
       },
       "lat": 35.768283136846,
       "lon": 139.69243511145,
@@ -720,7 +719,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "10,500円"
+        "managementFeeText": "10,500円",
+        "availableText": null
       },
       "lat": 35.401417665617,
       "lon": 139.61646896738,
@@ -781,7 +781,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "15,700円"
+        "managementFeeText": "15,700円",
+        "availableText": null
       },
       "lat": 35.792678881097,
       "lon": 139.69848139159,
@@ -842,7 +843,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "15,880円"
+        "managementFeeText": "15,880円",
+        "availableText": null
       },
       "lat": 35.419552878538,
       "lon": 139.64894216485,
@@ -854,8 +856,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-06-07",
-      "publishedText": "情報公開日：2026/06/07（116日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/06/07（116日前 公開）"
     },
     {
       "id": "b-35006130000082",
@@ -901,7 +902,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "9,700円"
+        "managementFeeText": "9,700円",
+        "availableText": null
       },
       "lat": 35.788436792893,
       "lon": 139.70636978019,
@@ -959,7 +961,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "12,200円"
+        "managementFeeText": "12,200円",
+        "availableText": null
       },
       "lat": 35.769392651025,
       "lon": 139.68933421953,
@@ -1020,7 +1023,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "19,000円"
+        "managementFeeText": "19,000円",
+        "availableText": null
       },
       "lat": 35.435389900921,
       "lon": 139.62463637723,
@@ -1038,7 +1042,7 @@
       "id": "b-1230340085079",
       "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
       "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fevt4.jpg",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fz9ol.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -1073,12 +1077,13 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fevt4.jpg",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fz9ol.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "13,770円"
+        "managementFeeText": "13,770円",
+        "availableText": null
       },
       "lat": 35.79211277634,
       "lon": 139.69633381942,
@@ -1090,8 +1095,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（27日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/04（27日前 公開）"
     },
     {
       "id": "b-1580800000025",
@@ -1137,7 +1141,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "17,100円"
+        "managementFeeText": "17,100円",
+        "availableText": null
       },
       "lat": 35.440168300929,
       "lon": 139.63692209081,
@@ -1195,7 +1200,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "11,800円"
+        "managementFeeText": "11,800円",
+        "availableText": null
       },
       "lat": 35.767350511443,
       "lon": 139.69420055435,
@@ -1253,7 +1259,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "12,200円"
+        "managementFeeText": "12,200円",
+        "availableText": null
       },
       "lat": 35.438879773979,
       "lon": 139.63463761329,
@@ -1311,7 +1318,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "13,000円"
+        "managementFeeText": "13,000円",
+        "availableText": null
       },
       "lat": 35.43866167097,
       "lon": 139.63192229662,
@@ -1369,7 +1377,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "10,800円"
+        "managementFeeText": "10,800円",
+        "availableText": null
       },
       "lat": 35.77359416954,
       "lon": 139.70150245932,
@@ -1427,7 +1436,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "8,800円"
+        "managementFeeText": "8,800円",
+        "availableText": null
       },
       "lat": 35.439227885896,
       "lon": 139.65919801709,
@@ -1485,7 +1495,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "21,950円"
+        "managementFeeText": "21,950円",
+        "availableText": null
       },
       "lat": 35.440609730869,
       "lon": 139.6298590612,
@@ -1543,7 +1554,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "11,300円"
+        "managementFeeText": "11,300円",
+        "availableText": null
       },
       "lat": 35.755249736644,
       "lon": 139.71807984356,
@@ -1601,7 +1613,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "18,570円"
+        "managementFeeText": "18,570円",
+        "availableText": null
       },
       "lat": 35.770261972515,
       "lon": 139.698785047,
@@ -1659,7 +1672,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "19,600円"
+        "managementFeeText": "19,600円",
+        "availableText": null
       },
       "lat": 35.780299370722,
       "lon": 139.68537022869,
@@ -1717,7 +1731,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "23,790円"
+        "managementFeeText": "23,790円",
+        "availableText": null
       },
       "lat": 35.444705495124,
       "lon": 139.64460820394,
@@ -1778,7 +1793,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "21,600円"
+        "managementFeeText": "21,600円",
+        "availableText": null
       },
       "lat": 35.447234754527,
       "lon": 139.63786367578,
@@ -1836,7 +1852,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "15,714円"
+        "managementFeeText": "15,714円",
+        "availableText": null
       },
       "lat": 35.756469586109,
       "lon": 139.7175923359,
@@ -1853,15 +1870,15 @@
     {
       "id": "b-1261160003393",
       "url": "https://www.homes.co.jp/mansion/b-1261160003393/",
-      "title": "中古マンション西早稲田シティタワー/ 11階PR",
+      "title": "",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3393%2F11%2F1%2Fwjwp.jpg",
       "priceText": "10,890万円",
-      "madori": null,
+      "madori": "3LDK",
       "landAreaText": "75.04m²",
-      "buildingAreaText": "75.04m² 3LDK",
-      "exclusiveAreaText": "75.04m² 3LDK",
+      "buildingAreaText": "75.04m²",
+      "exclusiveAreaText": "75.04m²",
       "builtText": null,
-      "walkMinutes": 2,
+      "walkMinutes": null,
       "address": "東京都新宿区西早稲田1丁目23-16",
       "googleMapsUrl": "https://www.google.com/maps?q=35.712555093874%2C139.71774075663",
       "deal": "buy",
@@ -1894,7 +1911,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "22,000円"
+        "managementFeeText": "22,000円",
+        "availableText": null
       },
       "lat": 35.712555093874,
       "lon": 139.71774075663,
@@ -1952,7 +1970,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "10,520円"
+        "managementFeeText": "10,520円",
+        "availableText": null
       },
       "lat": 35.754929736091,
       "lon": 139.71671136173,
@@ -1964,8 +1983,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（25日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/06（25日前 公開）"
     },
     {
       "id": "b-1421770029054",
@@ -2011,7 +2029,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "16,240円"
+        "managementFeeText": "16,240円",
+        "availableText": null
       },
       "lat": 35.743978499727,
       "lon": 139.73857133273,
@@ -2028,15 +2047,15 @@
     {
       "id": "b-1509590000451",
       "url": "https://www.homes.co.jp/mansion/b-1509590000451/",
-      "title": "中古マンションコルティーレ山手町グランドエステート/ 2階PR",
+      "title": "",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150959%2Fsale%2F451%2F11%2F1%2F91cv.jpg",
       "priceText": "11,080万円",
-      "madori": null,
+      "madori": "3LDK",
       "landAreaText": "78.87m²",
-      "buildingAreaText": "78.87m² 3LDK",
-      "exclusiveAreaText": "78.87m² 3LDK",
+      "buildingAreaText": "78.87m²",
+      "exclusiveAreaText": "78.87m²",
       "builtText": null,
-      "walkMinutes": 8,
+      "walkMinutes": null,
       "address": "神奈川県横浜市中区山手町",
       "googleMapsUrl": "https://www.google.com/maps?q=35.436892419317%2C139.65266310799",
       "deal": "buy",
@@ -2069,7 +2088,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "16,760円"
+        "managementFeeText": "16,760円",
+        "availableText": null
       },
       "lat": 35.436892419317,
       "lon": 139.65266310799,

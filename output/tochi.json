@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T03:50:25.169Z",
+  "scrapedAt": "2026-10-01T04:20:49.769Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -177,7 +177,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.429398146784,
       "lon": 139.64836293572,
@@ -234,7 +235,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.424485229625,
       "lon": 139.64325272991,
@@ -291,7 +293,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.429584288759,
       "lon": 139.65031609611,
@@ -348,7 +351,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.429612888724,
       "lon": 139.65001667592,
@@ -405,7 +409,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.429612888724,
       "lon": 139.65001667592,
@@ -462,7 +467,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.759930626431,
       "lon": 139.72952173744,
@@ -519,7 +525,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "0円"
+        "managementFeeText": "0円",
+        "availableText": null
       },
       "lat": 35.760240047734,
       "lon": 139.72996002103,
@@ -576,7 +583,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "・修繕積立金"
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
       },
       "lat": 35.432779959521,
       "lon": 139.64723900834,
@@ -633,7 +641,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.42135704552,
       "lon": 139.64611427768,
@@ -690,7 +699,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "・修繕積立金"
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
       },
       "lat": 35.42156924459,
       "lon": 139.64613954493,
@@ -747,7 +757,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.421344269846,
       "lon": 139.64613955382,
@@ -804,7 +815,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.763493502046,
       "lon": 139.70666798228,
@@ -861,7 +873,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "・修繕積立金"
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
       },
       "lat": 35.421524207451,
       "lon": 139.64454690394,
@@ -918,7 +931,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "0円"
+        "managementFeeText": "0円",
+        "availableText": null
       },
       "lat": 35.425105105573,
       "lon": 139.65168060206,
@@ -975,7 +989,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.425118158956,
       "lon": 139.65165393713,
@@ -1032,7 +1047,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.424875130928,
       "lon": 139.65166311263,
@@ -1089,7 +1105,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.424993171376,
       "lon": 139.6515931139,
@@ -1146,7 +1163,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "・修繕積立金"
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
       },
       "lat": 35.425007059192,
       "lon": 139.65161144513,
@@ -1203,7 +1221,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "・修繕積立金"
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
       },
       "lat": 35.424980117986,
       "lon": 139.65161950107,
@@ -1260,7 +1279,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.425105105573,
       "lon": 139.65168060206,
@@ -1317,7 +1337,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": null
+        "managementFeeText": null,
+        "availableText": null
       },
       "lat": 35.761108250434,
       "lon": 139.72873564573,
@@ -1374,7 +1395,8 @@
         "reikinText": null,
         "guaranteeText": null,
         "shikibikiText": null,
-        "managementFeeText": "0円"
+        "managementFeeText": "0円",
+        "availableText": null
       },
       "lat": 35.760240047734,
       "lon": 139.72996002103,
