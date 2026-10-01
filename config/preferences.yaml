@@ -136,6 +136,10 @@ _buy_location: &buy_location
 _rent_location: &rent_location
   ku:
     - 北区
+  # Extra Seibu Ikebukuro stops (beyond LFI bus catchment)
+  stations:
+    - 石神井公園
+    - 大泉学園
   station_sets:
     - tokyo_lfi
 

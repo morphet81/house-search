@@ -1,9 +1,37 @@
 {
   "type": "FeatureCollection",
-  "generatedAt": "2026-10-01T05:05:33.115Z",
+  "generatedAt": "2026-10-01T21:55:05.364Z",
   "prefsFile": "config/preferences.yaml",
   "deal": "rent",
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6069909,
+          35.7434548
+        ]
+      },
+      "properties": {
+        "name": "石神井公園",
+        "deal": "rent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5865223,
+          35.7495045
+        ]
+      },
+      "properties": {
+        "name": "大泉学園",
+        "deal": "rent"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
