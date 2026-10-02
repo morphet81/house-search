@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T22:14:00.626Z",
+  "scrapedAt": "2026-10-02T06:31:16.615Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -122,12 +122,9 @@
   },
   "count": 3,
   "delta": {
-    "addedCount": 2,
+    "addedCount": 0,
     "removedCount": 0,
-    "addedIds": [
-      "bad43b4458c92eb81f79130913a9ed1fa32ede30",
-      "ed558da16f31e61cdc5edabd6b669115b1d5d422"
-    ],
+    "addedIds": [],
     "removedIds": []
   },
   "dedupe": {
@@ -206,14 +203,13 @@
       "storeys": null,
       "structure": "木造",
       "publishedAt": "2026-08-07",
-      "publishedText": "情報公開日\n\n2026/08/07",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/07"
     },
     {
       "id": "ed558da16f31e61cdc5edabd6b669115b1d5d422",
       "url": "https://www.homes.co.jp/chintai/room/ed558da16f31e61cdc5edabd6b669115b1d5d422/",
       "title": "高野台戸建",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261001052238",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261002052214",
       "priceText": "25万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -259,7 +255,7 @@
         "yearBuilt": 2005,
         "builtText": "2005年9月",
         "structure": "木造",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261001052238",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261002052214",
         "shikikinText": "2ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -277,8 +273,7 @@
       "storeys": null,
       "structure": "木造",
       "publishedAt": "2026-08-07",
-      "publishedText": "情報公開日\n\n2026/08/07",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/08/07"
     },
     {
       "id": "472adfefd631e1c8e4ef5ba69223edb11d682ecc",
@@ -323,7 +318,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/29",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.770719432253,
         "lon": 139.71996517106,
         "address": "東京都北区赤羽西３丁目",
@@ -348,8 +343,8 @@
       "yearBuilt": 2006,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-06-29",
-      "publishedText": "情報公開日\n\n2026/06/29"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     }
   ]
 }

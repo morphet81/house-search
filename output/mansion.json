@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-01T22:11:00.798Z",
+  "scrapedAt": "2026-10-02T06:28:10.852Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,16 +121,10 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 2,
-    "addedIds": [
-      "b-1230340085079",
-      "b-1421770029491"
-    ],
-    "removedIds": [
-      "b-1538400011334",
-      "b-1267650039069"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
     "before": 21,
@@ -139,17 +133,17 @@
     "clusters": 3,
     "removed": [
       {
-        "id": "b-1216390039963",
-        "url": "https://www.homes.co.jp/mansion/b-1216390039963/",
-        "keptId": "b-1540370000256",
+        "id": "b-1216390038880",
+        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
+        "keptId": "b-1539700001082",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 29
       },
       {
-        "id": "b-1216390038880",
-        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
-        "keptId": "b-1539700001082",
+        "id": "b-1216390039963",
+        "url": "https://www.homes.co.jp/mansion/b-1216390039963/",
+        "keptId": "b-1540370000256",
         "reason": "same_property_less_detail",
         "richness": 26,
         "keptRichness": 29
@@ -494,7 +488,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "7,180万円",
+        "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日：2026/06/20（104日前 公開）",
         "lat": 35.769392651025,
@@ -531,7 +525,7 @@
       "id": "b-1230340085079",
       "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fz9ol.jpg",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fo2uv.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -557,7 +551,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "7,280万円",
         "landAreaText": null,
         "publishedText": "情報公開日：2026/09/04（28日前 公開）",
         "lat": 35.79211277634,
@@ -567,7 +561,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fz9ol.jpg",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fo2uv.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -585,8 +579,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（28日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/04（28日前 公開）"
     },
     {
       "id": "b-39051320000349",
@@ -1239,8 +1232,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-21",
-      "publishedText": "情報公開日：2026/08/21（42日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/21（42日前 公開）"
     }
   ]
 }
