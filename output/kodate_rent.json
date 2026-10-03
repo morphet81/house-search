@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-03T10:26:23.851Z",
+  "scrapedAt": "2026-10-03T19:43:49.311Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -138,7 +138,7 @@
     {
       "id": "bad43b4458c92eb81f79130913a9ed1fa32ede30",
       "url": "https://www.homes.co.jp/chintai/room/bad43b4458c92eb81f79130913a9ed1fa32ede30/",
-      "title": "西武池袋線 練馬高野台駅 徒歩13分の賃貸一戸建て",
+      "title": "高野台戸建",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F108640%2Frent%2F159419%2F2%2F2%2Flclw.jpg",
       "priceText": "25万円",
       "madori": "3LDK",
@@ -318,7 +318,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/18",
+        "publishedText": "情報公開日\n\n2026/06/29",
         "lat": 35.770719432253,
         "lon": 139.71996517106,
         "address": "東京都北区赤羽西３丁目",
@@ -343,8 +343,8 @@
       "yearBuilt": 2006,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-09-18",
-      "publishedText": "情報公開日\n\n2026/09/18"
+      "publishedAt": "2026-06-29",
+      "publishedText": "情報公開日\n\n2026/06/29"
     }
   ]
 }
