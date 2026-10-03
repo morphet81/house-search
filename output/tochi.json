@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-02T21:11:52.933Z",
+  "scrapedAt": "2026-10-03T10:24:49.723Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,18 +108,18 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 7,
+  "count": 8,
   "delta": {
     "addedCount": 1,
     "removedCount": 0,
     "addedIds": [
-      "b-1534610004474"
+      "b-37260180000005"
     ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 7,
-    "after": 7,
+    "before": 8,
+    "after": 8,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -242,6 +242,66 @@
       "structure": null,
       "publishedAt": "2026-09-06",
       "publishedText": "情報公開日：2026/09/06（27日前 公開）"
+    },
+    {
+      "id": "b-37260180000005",
+      "url": "https://www.homes.co.jp/tochi/b-37260180000005/",
+      "title": "",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
+      "priceText": "4,380万円",
+      "madori": null,
+      "landAreaText": "80.93m²",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都北区西が丘2丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.765948975089%2C139.71392809908",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 4380,
+      "landAreaM2": 80.93,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種中高層住居専用地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "4,380万円",
+        "landAreaText": "80.93m²",
+        "publishedText": "情報公開日：2026/10/03（本日公開）",
+        "lat": 35.765948975089,
+        "lon": 139.71392809908,
+        "address": "東京都北区西が丘2丁目",
+        "postalCode": "115-0056",
+        "yearBuilt": null,
+        "builtText": null,
+        "structure": null,
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
+      },
+      "lat": 35.765948975089,
+      "lon": 139.71392809908,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": null,
+      "buildingAgeYears": null,
+      "storeys": null,
+      "structure": null,
+      "publishedAt": "2026-10-03",
+      "publishedText": "情報公開日：2026/10/03（本日公開）",
+      "isNew": true
     },
     {
       "id": "b-1170260012309",
@@ -423,7 +483,7 @@
       "id": "b-1534610004474",
       "url": "https://www.homes.co.jp/tochi/b-1534610004474/",
       "title": "",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153461%2Fsale%2F4474%2F2%2F1%2F85lo.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153461%2Fsale%2F4474%2F2%2F1%2Fanzb.jpg",
       "priceText": "5,980万円",
       "madori": null,
       "landAreaText": "281.14m²",
@@ -458,7 +518,7 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153461%2Fsale%2F4474%2F2%2F1%2F85lo.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153461%2Fsale%2F4474%2F2%2F1%2Fanzb.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -476,8 +536,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-03",
-      "publishedText": "情報公開日：2026/10/03（本日公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/10/03（本日公開）"
     },
     {
       "id": "b-1571620000352",

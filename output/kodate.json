@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-02T21:08:33.367Z",
+  "scrapedAt": "2026-10-03T10:21:30.394Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 3,
+  "count": 2,
   "delta": {
     "addedCount": 0,
-    "removedCount": 0,
+    "removedCount": 1,
     "addedIds": [],
-    "removedIds": []
+    "removedIds": [
+      "b-1421770029947"
+    ]
   },
   "dedupe": {
-    "before": 3,
-    "after": 3,
+    "before": 2,
+    "after": 2,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -193,65 +195,6 @@
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
       "publishedText": "情報公開日：2026/09/06（27日前 公開）"
-    },
-    {
-      "id": "b-1421770029947",
-      "url": "https://www.homes.co.jp/kodate/b-1421770029947/",
-      "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F29947%2F2%2F1%2Fcxrx.jpg",
-      "priceText": "9,800万円",
-      "madori": "4SLDK",
-      "landAreaText": "79.99m²",
-      "buildingAreaText": "133.32m²",
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都板橋区本町",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.75985979481%2C139.70852991467",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 9800,
-      "buildingAreaM2": 133.32,
-      "landAreaM2": 79.99,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "準工業地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "9,800万円",
-        "landAreaText": "79.99m²",
-        "publishedText": "情報公開日：2026/09/07（26日前 公開）",
-        "lat": 35.75985979481,
-        "lon": 139.70852991467,
-        "address": "東京都板橋区本町",
-        "postalCode": "173-0001",
-        "yearBuilt": 2025,
-        "builtText": "2025年9月（築2年）",
-        "structure": "木造/3階建",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F29947%2F2%2F1%2Fcxrx.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "0円",
-        "availableText": null
-      },
-      "lat": 35.75985979481,
-      "lon": 139.70852991467,
-      "locationAccuracy": "coordinates",
-      "ward": "板橋区",
-      "wardEn": "Itabashi-ku",
-      "yearBuilt": 2025,
-      "buildingAgeYears": 2,
-      "storeys": 3,
-      "structure": "木造/3階建",
-      "publishedAt": "2026-09-07",
-      "publishedText": "情報公開日：2026/09/07（26日前 公開）"
     },
     {
       "id": "b-1516150002849",
