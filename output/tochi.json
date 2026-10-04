@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-03T19:42:15.040Z",
+  "scrapedAt": "2026-10-04T11:07:47.314Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,16 +108,18 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 8,
+  "count": 9,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1191550007498"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 8,
-    "after": 8,
+    "before": 9,
+    "after": 9,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -416,6 +418,66 @@
       "structure": null,
       "publishedAt": "2026-09-16",
       "publishedText": "情報公開日：2026/09/16（18日前 公開）"
+    },
+    {
+      "id": "b-1191550007498",
+      "url": "https://www.homes.co.jp/tochi/b-1191550007498/",
+      "title": "",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119155%2Fsale%2F7498%2F2%2F1%2Fuzw8.jpg",
+      "priceText": "5,980万円",
+      "madori": null,
+      "landAreaText": "281.14m²",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都北区赤羽北1丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.785713973234%2C139.71408756659",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 5980,
+      "landAreaM2": 281.14,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "5,980万円",
+        "landAreaText": "281.14m²",
+        "publishedText": "情報公開日：2026/10/04（本日公開）",
+        "lat": 35.785713973234,
+        "lon": 139.71408756659,
+        "address": "東京都北区赤羽北1丁目",
+        "postalCode": "115-0052",
+        "yearBuilt": null,
+        "builtText": null,
+        "structure": null,
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F119155%2Fsale%2F7498%2F2%2F1%2Fuzw8.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "・修繕積立金",
+        "availableText": null
+      },
+      "lat": 35.785713973234,
+      "lon": 139.71408756659,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": null,
+      "buildingAgeYears": null,
+      "storeys": null,
+      "structure": null,
+      "publishedAt": "2026-10-04",
+      "publishedText": "情報公開日：2026/10/04（本日公開）",
+      "isNew": true
     },
     {
       "id": "b-1210390001205",
