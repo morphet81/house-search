@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-05T07:40:00.981Z",
+  "scrapedAt": "2026-10-05T12:17:53.919Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -122,11 +122,9 @@
   },
   "count": 4,
   "delta": {
-    "addedCount": 1,
+    "addedCount": 0,
     "removedCount": 0,
-    "addedIds": [
-      "9d1df33cce7f3529fde17cbc21af91a8928a94ed"
-    ],
+    "addedIds": [],
     "removedIds": []
   },
   "dedupe": {
@@ -345,8 +343,7 @@
       "storeys": null,
       "structure": "木造",
       "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "472adfefd631e1c8e4ef5ba69223edb11d682ecc",
