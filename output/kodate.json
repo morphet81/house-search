@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-04T19:53:26.464Z",
+  "scrapedAt": "2026-10-05T07:35:06.036Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 2,
+  "count": 3,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1421770030543"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 2,
-    "after": 2,
+    "before": 3,
+    "after": 3,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -193,6 +195,66 @@
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
       "publishedText": "情報公開日：2026/09/06（29日前 公開）"
+    },
+    {
+      "id": "b-1421770030543",
+      "url": "https://www.homes.co.jp/kodate/b-1421770030543/",
+      "title": "",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F30543%2F2%2F1%2Fwomt.jpg",
+      "priceText": "8,980万円",
+      "madori": "4LDK",
+      "landAreaText": "57.93m²",
+      "buildingAreaText": "101.66m²",
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都豊島区池袋本町1丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.739300039585%2C139.71412971043",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 8980,
+      "buildingAreaM2": 101.66,
+      "landAreaM2": 57.93,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "8,980万円",
+        "landAreaText": "57.93m²",
+        "publishedText": "情報公開日：2026/10/05（本日公開）",
+        "lat": 35.739300039585,
+        "lon": 139.71412971043,
+        "address": "東京都豊島区池袋本町1丁目",
+        "postalCode": "170-0011",
+        "yearBuilt": 2008,
+        "builtText": "2008年7月（築19年）",
+        "structure": "木造/3階建",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F30543%2F2%2F1%2Fwomt.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "0円",
+        "availableText": null
+      },
+      "lat": 35.739300039585,
+      "lon": 139.71412971043,
+      "locationAccuracy": "coordinates",
+      "ward": "豊島区",
+      "wardEn": "Toshima-ku",
+      "yearBuilt": 2008,
+      "buildingAgeYears": 19,
+      "storeys": 3,
+      "structure": "木造/3階建",
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日：2026/10/05（本日公開）",
+      "isNew": true
     },
     {
       "id": "b-1516150002849",
