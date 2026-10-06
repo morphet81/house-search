@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-05T23:05:06.110Z",
+  "scrapedAt": "2026-10-06T11:58:31.162Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,15 +121,13 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 2,
+    "addedCount": 1,
+    "removedCount": 1,
     "addedIds": [
-      "b-1539700001084",
-      "b-1421770029491"
+      "b-1538400011334"
     ],
     "removedIds": [
-      "b-1539700001082",
-      "b-1267650039069"
+      "b-1230340085079"
     ]
   },
   "dedupe": {
@@ -536,10 +534,10 @@
       ]
     },
     {
-      "id": "b-1230340085079",
-      "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
+      "id": "b-1538400011334",
+      "url": "https://www.homes.co.jp/mansion/b-1538400011334/",
       "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2F0z7t.jpg",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F4kwo.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -567,7 +565,7 @@
         "freeholdMention": true,
         "priceText": "7,280万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/09/04（32日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（41日前 公開）",
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -575,7 +573,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2F0z7t.jpg",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F4kwo.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -592,8 +590,9 @@
       "buildingAgeYears": 25,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（32日前 公開）"
+      "publishedAt": "2026-08-26",
+      "publishedText": "情報公開日：2026/08/26（41日前 公開）",
+      "isNew": true
     },
     {
       "id": "b-39051320000349",
@@ -892,8 +891,7 @@
       "dedupedFrom": [
         "b-1539700001082",
         "b-1216390038880"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-35006130000091",
@@ -1189,8 +1187,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-21",
-      "publishedText": "情報公開日：2026/08/21（46日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/21（46日前 公開）"
     },
     {
       "id": "b-1267650039442",
