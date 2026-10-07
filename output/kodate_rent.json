@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-06T21:31:26.067Z",
+  "scrapedAt": "2026-10-07T11:46:34.816Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -209,7 +209,7 @@
       "id": "ed558da16f31e61cdc5edabd6b669115b1d5d422",
       "url": "https://www.homes.co.jp/chintai/room/ed558da16f31e61cdc5edabd6b669115b1d5d422/",
       "title": "高野台戸建",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261006053142",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261007052607",
       "priceText": "25万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -255,7 +255,7 @@
         "yearBuilt": 2005,
         "builtText": "2005年9月",
         "structure": "木造",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261006053142",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261007052607",
         "shikikinText": "2ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -278,8 +278,8 @@
     {
       "id": "9d1df33cce7f3529fde17cbc21af91a8928a94ed",
       "url": "https://www.homes.co.jp/chintai/room/9d1df33cce7f3529fde17cbc21af91a8928a94ed/",
-      "title": "練馬区東大泉　戸建て",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa2650a7c-8210-4835-90f6-ea2e2654f7cc_property_picture_10253_large.jpg",
+      "title": "練馬区東大泉 戸建て",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa3a8383b-1968-479f-be6e-15720b972112_property_picture_10290_large.jpg",
       "priceText": "28万円",
       "madori": "6SLDK",
       "landAreaText": null,
@@ -325,7 +325,7 @@
         "yearBuilt": 1997,
         "builtText": "1997年8月",
         "structure": "木造",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa2650a7c-8210-4835-90f6-ea2e2654f7cc_property_picture_10253_large.jpg",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa3a8383b-1968-479f-be6e-15720b972112_property_picture_10290_large.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -388,7 +388,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/29",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.770719432253,
         "lon": 139.71996517106,
         "address": "東京都北区赤羽西３丁目",
@@ -413,8 +413,8 @@
       "yearBuilt": 2006,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-06-29",
-      "publishedText": "情報公開日\n\n2026/06/29"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     }
   ]
 }

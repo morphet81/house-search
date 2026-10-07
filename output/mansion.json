@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-06T21:28:16.185Z",
+  "scrapedAt": "2026-10-07T11:43:20.223Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,19 +121,21 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 1,
-    "removedCount": 1,
+    "addedCount": 2,
+    "removedCount": 2,
     "addedIds": [
-      "b-1230340085079"
+      "b-1538400011334",
+      "b-1539700001082"
     ],
     "removedIds": [
-      "b-1538400011334"
+      "b-1230340085079",
+      "b-1539700001084"
     ]
   },
   "dedupe": {
-    "before": 22,
+    "before": 21,
     "after": 18,
-    "removedCount": 4,
+    "removedCount": 3,
     "clusters": 3,
     "removed": [
       {
@@ -141,24 +143,16 @@
         "url": "https://www.homes.co.jp/mansion/b-1216390039963/",
         "keptId": "b-1540370000256",
         "reason": "same_property_less_detail",
-        "richness": 27,
+        "richness": 26,
         "keptRichness": 29
-      },
-      {
-        "id": "b-1539700001082",
-        "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
-        "keptId": "b-1539700001084",
-        "reason": "same_property_less_detail",
-        "richness": 29,
-        "keptRichness": 30
       },
       {
         "id": "b-1216390038880",
         "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
-        "keptId": "b-1539700001084",
+        "keptId": "b-1539700001082",
         "reason": "same_property_less_detail",
         "richness": 26,
-        "keptRichness": 30
+        "keptRichness": 29
       },
       {
         "id": "b-1526290002105",
@@ -174,15 +168,15 @@
     {
       "id": "b-1261160003723",
       "url": "https://www.homes.co.jp/mansion/b-1261160003723/",
-      "title": "",
+      "title": "中古マンションヴェレーナ王子/ 15階PR",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126116%2Fsale%2F3723%2F11%2F1%2F87xc.jpg",
       "priceText": "5,980万円",
-      "madori": "3LDK",
+      "madori": null,
       "landAreaText": "75.88m²",
-      "buildingAreaText": "75.88m²",
-      "exclusiveAreaText": "75.88m²",
+      "buildingAreaText": "75.88m² 3LDK",
+      "exclusiveAreaText": "75.88m² 3LDK",
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 15,
       "address": "東京都北区豊島5丁目2-20",
       "googleMapsUrl": "https://www.google.com/maps?q=35.766099318042%2C139.74811685189",
       "deal": "buy",
@@ -414,15 +408,15 @@
     {
       "id": "b-35006130000082",
       "url": "https://www.homes.co.jp/mansion/b-35006130000082/",
-      "title": "",
+      "title": "中古マンションリノア北赤羽/ 12階PR",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3500613%2Fsale%2F82%2F11%2F3%2F6rp4.jpg",
       "priceText": "6,980万円",
-      "madori": "3LDK",
+      "madori": null,
       "landAreaText": "78.51m²",
-      "buildingAreaText": "78.51m²",
-      "exclusiveAreaText": "78.51m²",
+      "buildingAreaText": "78.51m² 3LDK",
+      "exclusiveAreaText": "78.51m² 3LDK",
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 3,
       "address": "東京都北区浮間1丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.788436792893%2C139.70636978019",
       "deal": "buy",
@@ -534,10 +528,10 @@
       ]
     },
     {
-      "id": "b-1230340085079",
-      "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
+      "id": "b-1538400011334",
+      "url": "https://www.homes.co.jp/mansion/b-1538400011334/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fq3ri.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fook1.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -563,9 +557,9 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "7,280万円",
+        "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/09/04（33日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（42日前 公開）",
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -573,7 +567,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fq3ri.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fook1.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -590,8 +584,8 @@
       "buildingAgeYears": 25,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（33日前 公開）",
+      "publishedAt": "2026-08-26",
+      "publishedText": "情報公開日：2026/08/26（42日前 公開）",
       "isNew": true
     },
     {
@@ -831,24 +825,24 @@
       "publishedText": "情報公開日：2026/07/14（85日前 公開）"
     },
     {
-      "id": "b-1539700001084",
-      "url": "https://www.homes.co.jp/mansion/b-1539700001084/",
-      "title": "中古マンションパークタワー王子リバーグレイス/ 20階PR",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F3%2F0pqu.jpg",
-      "priceText": "9,780万円",
-      "madori": null,
+      "id": "b-1539700001082",
+      "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
+      "title": "",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2Frztx.jpg",
+      "priceText": "9,580万円",
+      "madori": "4LDK",
       "landAreaText": "78.84m²",
-      "buildingAreaText": "78.84m² 4LDK",
-      "exclusiveAreaText": "78.84m² 4LDK",
+      "buildingAreaText": "78.84m²",
+      "exclusiveAreaText": "78.84m²",
       "builtText": null,
-      "walkMinutes": 9,
+      "walkMinutes": null,
       "address": "東京都北区豊島8丁目27-18",
       "googleMapsUrl": "https://www.google.com/maps?q=35.768333853183%2C139.74016493801",
       "deal": "buy",
       "matchedVia": [
         "ku"
       ],
-      "priceManYen": 9780,
+      "priceManYen": 9580,
       "exclusiveAreaM2": 78.84,
       "buildingAreaM2": 78.84,
       "detail": {
@@ -859,7 +853,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "9,780万円",
+        "priceText": "9,580万円",
         "landAreaText": null,
         "publishedText": "情報公開日：2026/07/03（96日前 公開）",
         "lat": 35.768333853183,
@@ -869,7 +863,7 @@
         "yearBuilt": 2007,
         "builtText": "2007年1月（築20年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F3%2F0pqu.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2Frztx.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -889,9 +883,9 @@
       "publishedAt": "2026-07-03",
       "publishedText": "情報公開日：2026/07/03（96日前 公開）",
       "dedupedFrom": [
-        "b-1539700001082",
         "b-1216390038880"
-      ]
+      ],
+      "isNew": true
     },
     {
       "id": "b-35006130000091",
