@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-07T11:46:34.816Z",
+  "scrapedAt": "2026-10-07T21:49:52.246Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -388,7 +388,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/06/29",
         "lat": 35.770719432253,
         "lon": 139.71996517106,
         "address": "東京都北区赤羽西３丁目",
@@ -413,8 +413,8 @@
       "yearBuilt": 2006,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-06-29",
+      "publishedText": "情報公開日\n\n2026/06/29"
     }
   ]
 }
