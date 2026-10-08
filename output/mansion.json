@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-07T21:46:38.267Z",
+  "scrapedAt": "2026-10-08T11:58:06.845Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,15 +121,13 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 2,
+    "addedCount": 1,
+    "removedCount": 1,
     "addedIds": [
-      "b-1230340085079",
-      "b-1267650039069"
+      "b-1251460111042"
     ],
     "removedIds": [
-      "b-1538400011334",
-      "b-1421770029491"
+      "b-1230340085079"
     ]
   },
   "dedupe": {
@@ -139,17 +137,17 @@
     "clusters": 3,
     "removed": [
       {
-        "id": "b-1216390038880",
-        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
-        "keptId": "b-1539700001082",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 30
-      },
-      {
         "id": "b-1216390039963",
         "url": "https://www.homes.co.jp/mansion/b-1216390039963/",
         "keptId": "b-1540370000256",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 29
+      },
+      {
+        "id": "b-1216390038880",
+        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
+        "keptId": "b-1539700001082",
         "reason": "same_property_less_detail",
         "richness": 26,
         "keptRichness": 29
@@ -528,10 +526,10 @@
       ]
     },
     {
-      "id": "b-1230340085079",
-      "url": "https://www.homes.co.jp/mansion/b-1230340085079/",
+      "id": "b-1251460111042",
+      "url": "https://www.homes.co.jp/mansion/b-1251460111042/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fpx7v.jpg",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F1%2F1%2F3oam.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -559,7 +557,7 @@
         "freeholdMention": true,
         "priceText": "7,280万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/09/04（34日前 公開）",
+        "publishedText": "情報公開日：2026/08/27（42日前 公開）",
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -567,7 +565,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F123034%2Fsale%2F85079%2F1%2F1%2Fpx7v.jpg",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F1%2F1%2F3oam.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -584,8 +582,8 @@
       "buildingAgeYears": 25,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（34日前 公開）",
+      "publishedAt": "2026-08-27",
+      "publishedText": "情報公開日：2026/08/27（42日前 公開）",
       "isNew": true
     },
     {
@@ -827,22 +825,22 @@
     {
       "id": "b-1539700001082",
       "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
-      "title": "中古マンションパークタワー王子リバーグレイス/ 19階PR",
+      "title": "",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2Frztx.jpg",
-      "priceText": "9,580万円",
-      "madori": null,
+      "priceText": "9,380万円",
+      "madori": "4LDK",
       "landAreaText": "78.84m²",
-      "buildingAreaText": "78.84m² 4LDK",
-      "exclusiveAreaText": "78.84m² 4LDK",
+      "buildingAreaText": "78.84m²",
+      "exclusiveAreaText": "78.84m²",
       "builtText": null,
-      "walkMinutes": 9,
+      "walkMinutes": null,
       "address": "東京都北区豊島8丁目27-18",
       "googleMapsUrl": "https://www.google.com/maps?q=35.768333853183%2C139.74016493801",
       "deal": "buy",
       "matchedVia": [
         "ku"
       ],
-      "priceManYen": 9580,
+      "priceManYen": 9380,
       "exclusiveAreaM2": 78.84,
       "buildingAreaM2": 78.84,
       "detail": {
@@ -853,7 +851,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "9,580万円",
+        "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日：2026/07/03（97日前 公開）",
         "lat": 35.768333853183,
@@ -1120,8 +1118,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（32日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/06（32日前 公開）"
     },
     {
       "id": "b-1267650039391",
