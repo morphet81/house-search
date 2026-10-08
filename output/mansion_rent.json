@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-08T12:03:07.856Z",
+  "scrapedAt": "2026-10-08T21:49:30.405Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -120,21 +120,18 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 15,
+  "count": 14,
   "delta": {
-    "addedCount": 2,
+    "addedCount": 0,
     "removedCount": 1,
-    "addedIds": [
-      "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
-      "9f5c4113a705de904a2b0b4d54b4441de03471f6"
-    ],
+    "addedIds": [],
     "removedIds": [
-      "6a0d41892de0d501e31c1ac408bee1e720275d65"
+      "2ea0eeca1cba8d6aa3da5e263eded352435472ef"
     ]
   },
   "dedupe": {
-    "before": 26,
-    "after": 15,
+    "before": 25,
+    "after": 14,
     "removedCount": 11,
     "clusters": 7,
     "removed": [
@@ -229,77 +226,6 @@
     ]
   },
   "listings": [
-    {
-      "id": "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
-      "url": "https://www.homes.co.jp/chintai/room/2ea0eeca1cba8d6aa3da5e263eded352435472ef/",
-      "title": "西武池袋線 石神井公園駅 徒歩13分の賃貸マンション",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4737f470-de3d-46b9-a0d3-71a99d782bfb_property_picture_10290_large.jpg",
-      "priceText": "16.9万円",
-      "madori": "3LDK",
-      "landAreaText": null,
-      "buildingAreaText": "80.51m²",
-      "exclusiveAreaText": "80.51m²",
-      "builtText": "築29年",
-      "walkMinutes": 13,
-      "address": "東京都練馬区石神井町５丁目",
-      "managementFeeText": "16,000円",
-      "shikikinText": "1ヶ月",
-      "reikinText": "1ヶ月",
-      "guaranteeText": "-",
-      "shikibikiText": "-",
-      "availableText": "即時",
-      "deal": "rent",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 16.9,
-      "reikinMonths": 1,
-      "reikinYen": null,
-      "shikikinMonths": 1,
-      "oneOffManYen": 50.7,
-      "oneOffAssumesAgentMonths": 1,
-      "exclusiveAreaM2": 80.51,
-      "buildingAreaM2": 80.51,
-      "buildingAgeYears": 28,
-      "detail": {
-        "landRight": null,
-        "leaseType": null,
-        "zoning": null,
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": false,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/07/09",
-        "lat": 35.737380365057,
-        "lon": 139.60380667521,
-        "address": "東京都練馬区石神井町５丁目",
-        "postalCode": "1770041",
-        "yearBuilt": 1998,
-        "builtText": "1998年9月",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4737f470-de3d-46b9-a0d3-71a99d782bfb_property_picture_10290_large.jpg",
-        "shikikinText": "1ヶ月",
-        "reikinText": "1ヶ月",
-        "guaranteeText": "-",
-        "shikibikiText": "-",
-        "managementFeeText": "16,000円",
-        "availableText": "即時"
-      },
-      "lat": 35.737380365057,
-      "lon": 139.60380667521,
-      "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.737380365057%2C139.60380667521",
-      "ward": "練馬区",
-      "wardEn": "Nerima-ku",
-      "yearBuilt": 1998,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-09",
-      "publishedText": "情報公開日\n\n2026/07/09",
-      "isNew": true
-    },
     {
       "id": "d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be",
       "url": "https://www.homes.co.jp/chintai/room/d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be/",
@@ -519,7 +445,7 @@
       "id": "d58f5520a038e497e8ed43a9c3f67fcec5609693",
       "url": "https://www.homes.co.jp/chintai/room/d58f5520a038e497e8ed43a9c3f67fcec5609693/",
       "title": "日暮里舎人ライナー 西日暮里駅 徒歩8分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116846%2Frent%2F322858%2F2%2F2%2Fll53.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F144703%2Frent%2F104828%2F2%2F2%2F3ddh.jpg",
       "priceText": "28万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -557,7 +483,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/09",
+        "publishedText": "情報公開日\n\n2026/09/08",
         "lat": 35.734224425563,
         "lon": 139.76323157382,
         "address": "東京都北区田端１丁目28-4",
@@ -565,7 +491,7 @@
         "yearBuilt": 1995,
         "builtText": "1995年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116846%2Frent%2F322858%2F2%2F2%2Fll53.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F144703%2Frent%2F104828%2F2%2F2%2F3ddh.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
@@ -582,8 +508,8 @@
       "yearBuilt": 1995,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-09",
-      "publishedText": "情報公開日\n\n2026/09/09",
+      "publishedAt": "2026-09-08",
+      "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "57b7358de42479eddf29a42618663b10cf2c8d56"
       ]
@@ -774,7 +700,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/07",
+        "publishedText": "情報公開日\n\n2026/06/11",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -799,8 +725,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-07",
-      "publishedText": "情報公開日\n\n2026/06/07"
+      "publishedAt": "2026-06-11",
+      "publishedText": "情報公開日\n\n2026/06/11"
     },
     {
       "id": "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
@@ -1305,8 +1231,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-06",
-      "publishedText": "情報公開日\n\n2026/10/06",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/06"
     }
   ]
 }
