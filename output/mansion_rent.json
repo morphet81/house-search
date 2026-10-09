@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T12:00:17.836Z",
+  "scrapedAt": "2026-10-09T21:33:14.430Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -123,11 +123,9 @@
   "count": 13,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "677fe0cb130a65bd9535764a7f984d333c72b0e3"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 25,
@@ -156,7 +154,7 @@
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 27,
+        "richness": 25,
         "keptRichness": 27
       },
       {
@@ -450,7 +448,7 @@
       "id": "d58f5520a038e497e8ed43a9c3f67fcec5609693",
       "url": "https://www.homes.co.jp/chintai/room/d58f5520a038e497e8ed43a9c3f67fcec5609693/",
       "title": "日暮里舎人ライナー 西日暮里駅 徒歩8分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116846%2Frent%2F322857%2F2%2F2%2Fskfr.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F144703%2Frent%2F104828%2F2%2F2%2F3ddh.jpg",
       "priceText": "28万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -488,7 +486,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/09",
+        "publishedText": "情報公開日\n\n2026/09/08",
         "lat": 35.734224425563,
         "lon": 139.76323157382,
         "address": "東京都北区田端１丁目28-4",
@@ -496,7 +494,7 @@
         "yearBuilt": 1995,
         "builtText": "1995年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116846%2Frent%2F322857%2F2%2F2%2Fskfr.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F144703%2Frent%2F104828%2F2%2F2%2F3ddh.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
@@ -513,8 +511,8 @@
       "yearBuilt": 1995,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-09",
-      "publishedText": "情報公開日\n\n2026/09/09",
+      "publishedAt": "2026-09-08",
+      "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "57b7358de42479eddf29a42618663b10cf2c8d56"
       ]
@@ -1031,7 +1029,7 @@
       "id": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
       "url": "https://www.homes.co.jp/chintai/room/bad7ae10fdb632d62b7b71f83020168c7e44244c/",
       "title": "サンテラス高輪",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
       "priceText": "34.8万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -1069,7 +1067,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/22",
+        "publishedText": "情報公開日\n\n2026/09/19",
         "lat": 35.625417553702,
         "lon": 139.73376039067,
         "address": "東京都品川区北品川６丁目6-11",
@@ -1077,7 +1075,7 @@
         "yearBuilt": 1997,
         "builtText": "1997年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -1094,8 +1092,8 @@
       "yearBuilt": 1997,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-22",
-      "publishedText": "情報公開日\n\n2026/09/22",
+      "publishedAt": "2026-09-19",
+      "publishedText": "情報公開日\n\n2026/09/19",
       "dedupedFrom": [
         "f272529fc2463b5affd6ac7c5b7ec52d57fe7573"
       ]

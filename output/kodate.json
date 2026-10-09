@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T11:53:25.476Z",
+  "scrapedAt": "2026-10-09T21:26:37.014Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 3,
+  "count": 2,
   "delta": {
     "addedCount": 0,
-    "removedCount": 0,
+    "removedCount": 1,
     "addedIds": [],
-    "removedIds": []
+    "removedIds": [
+      "b-1421770030543"
+    ]
   },
   "dedupe": {
-    "before": 3,
-    "after": 3,
+    "before": 2,
+    "after": 2,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -166,7 +168,7 @@
         "freeholdMention": true,
         "priceText": "8,980万円",
         "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/09/06（33日前 公開）",
+        "publishedText": "情報公開日：2026/09/06（34日前 公開）",
         "lat": 35.739824082023,
         "lon": 139.71169295213,
         "address": "東京都豊島区池袋本町1丁目",
@@ -192,66 +194,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（33日前 公開）"
-    },
-    {
-      "id": "b-1421770030543",
-      "url": "https://www.homes.co.jp/kodate/b-1421770030543/",
-      "title": "",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F30543%2F2%2F1%2Fost6.jpg",
-      "priceText": "8,980万円",
-      "madori": "4LDK",
-      "landAreaText": "57.93m²",
-      "buildingAreaText": "101.66m²",
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都豊島区池袋本町1丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.739300039585%2C139.71412971043",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 8980,
-      "buildingAreaM2": 101.66,
-      "landAreaM2": 57.93,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "第一種住居地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "8,980万円",
-        "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/10/05（4日前 公開）",
-        "lat": 35.739300039585,
-        "lon": 139.71412971043,
-        "address": "東京都豊島区池袋本町1丁目",
-        "postalCode": "170-0011",
-        "yearBuilt": 2008,
-        "builtText": "2008年7月（築19年）",
-        "structure": "木造/3階建",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142177%2Fsale%2F30543%2F2%2F1%2Fost6.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "0円",
-        "availableText": null
-      },
-      "lat": 35.739300039585,
-      "lon": 139.71412971043,
-      "locationAccuracy": "coordinates",
-      "ward": "豊島区",
-      "wardEn": "Toshima-ku",
-      "yearBuilt": 2008,
-      "buildingAgeYears": 19,
-      "storeys": 3,
-      "structure": "木造/3階建",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日：2026/10/05（4日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（34日前 公開）"
     },
     {
       "id": "b-1516150002849",
@@ -285,7 +228,7 @@
         "freeholdMention": true,
         "priceText": "9,950万円",
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（44日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（45日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -311,7 +254,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（44日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（45日前 公開）"
     }
   ]
 }

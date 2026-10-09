@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T11:58:27.480Z",
+  "scrapedAt": "2026-10-09T21:31:27.573Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -247,7 +247,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/07",
+        "publishedText": "情報公開日\n\n2026/08/08",
         "lat": 35.746781003692,
         "lon": 139.61541892035,
         "address": "東京都練馬区高野台4丁目",
@@ -272,8 +272,8 @@
       "yearBuilt": 2005,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-08-07",
-      "publishedText": "情報公開日\n\n2026/08/07"
+      "publishedAt": "2026-08-08",
+      "publishedText": "情報公開日\n\n2026/08/08"
     },
     {
       "id": "9d1df33cce7f3529fde17cbc21af91a8928a94ed",
