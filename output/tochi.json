@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-10T11:09:00.804Z",
+  "scrapedAt": "2026-10-10T20:30:17.910Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,16 +108,18 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 8,
+  "count": 9,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1571620000409"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 8,
-    "after": 8,
+    "before": 9,
+    "after": 9,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -127,7 +129,7 @@
       "id": "b-1412500000746",
       "url": "https://www.homes.co.jp/tochi/b-1412500000746/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2F0bfn.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Ffwk1.jpg",
       "priceText": "4,180万円",
       "madori": null,
       "landAreaText": "126.14m²",
@@ -154,7 +156,7 @@
         "freeholdMention": true,
         "priceText": "4,180万円",
         "landAreaText": "126.14m²",
-        "publishedText": "情報公開日：2026/09/07（33日前 公開）",
+        "publishedText": "情報公開日：2026/09/07（34日前 公開）",
         "lat": 35.759930626431,
         "lon": 139.72952173744,
         "address": "東京都北区岸町2丁目",
@@ -162,7 +164,7 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2F0bfn.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Ffwk1.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -180,7 +182,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-07",
-      "publishedText": "情報公開日：2026/09/07（33日前 公開）"
+      "publishedText": "情報公開日：2026/09/07（34日前 公開）"
     },
     {
       "id": "b-1571620000358",
@@ -213,7 +215,7 @@
         "freeholdMention": true,
         "priceText": "4,180万円",
         "landAreaText": "126.14m²",
-        "publishedText": "情報公開日：2026/09/06（34日前 公開）",
+        "publishedText": "情報公開日：2026/09/06（35日前 公開）",
         "lat": 35.760240047734,
         "lon": 139.72996002103,
         "address": "東京都北区岸町2丁目",
@@ -239,12 +241,12 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（34日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（35日前 公開）"
     },
     {
       "id": "b-37260180000005",
       "url": "https://www.homes.co.jp/tochi/b-37260180000005/",
-      "title": "PR土地北区西が丘二丁目売地",
+      "title": "",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
       "priceText": "4,380万円",
       "madori": null,
@@ -252,7 +254,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": 13,
+      "walkMinutes": null,
       "address": "東京都北区西が丘2丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.765948975089%2C139.71392809908",
       "deal": "buy",
@@ -272,7 +274,7 @@
         "freeholdMention": true,
         "priceText": "4,380万円",
         "landAreaText": "80.93m²",
-        "publishedText": "情報公開日：2026/10/03（7日前 公開）",
+        "publishedText": "情報公開日：2026/10/03（8日前 公開）",
         "lat": 35.765948975089,
         "lon": 139.71392809908,
         "address": "東京都北区西が丘2丁目",
@@ -298,7 +300,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-03",
-      "publishedText": "情報公開日：2026/10/03（7日前 公開）"
+      "publishedText": "情報公開日：2026/10/03（8日前 公開）"
     },
     {
       "id": "b-1170260012309",
@@ -330,7 +332,7 @@
         "freeholdMention": true,
         "priceText": "5,000万円",
         "landAreaText": "171.82m²",
-        "publishedText": "情報公開日：2026/03/09（215日前 公開）",
+        "publishedText": "情報公開日：2026/03/09（216日前 公開）",
         "lat": 35.763493502046,
         "lon": 139.70666798228,
         "address": "東京都板橋区清水町",
@@ -356,7 +358,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-03-09",
-      "publishedText": "情報公開日：2026/03/09（215日前 公開）"
+      "publishedText": "情報公開日：2026/03/09（216日前 公開）"
     },
     {
       "id": "b-1210390001205",
@@ -389,7 +391,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "96.09m²",
-        "publishedText": "情報公開日：2026/09/04（36日前 公開）",
+        "publishedText": "情報公開日：2026/09/04（37日前 公開）",
         "lat": 35.761108250434,
         "lon": 139.72873564573,
         "address": "東京都北区岸町2丁目10-18",
@@ -415,7 +417,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-04",
-      "publishedText": "情報公開日：2026/09/04（36日前 公開）"
+      "publishedText": "情報公開日：2026/09/04（37日前 公開）"
     },
     {
       "id": "b-1388540011562",
@@ -448,7 +450,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "96.09m²",
-        "publishedText": "情報公開日：2026/09/16（24日前 公開）",
+        "publishedText": "情報公開日：2026/09/16（25日前 公開）",
         "lat": 35.761072139682,
         "lon": 139.72859704786,
         "address": "東京都北区岸町2丁目",
@@ -474,7 +476,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-16",
-      "publishedText": "情報公開日：2026/09/16（24日前 公開）"
+      "publishedText": "情報公開日：2026/09/16（25日前 公開）"
     },
     {
       "id": "b-1571620000352",
@@ -507,7 +509,7 @@
         "freeholdMention": true,
         "priceText": "3480万円",
         "landAreaText": "96.09m²",
-        "publishedText": "情報公開日：2026/09/05（35日前 公開）",
+        "publishedText": "情報公開日：2026/09/05（36日前 公開）",
         "lat": 35.760240047734,
         "lon": 139.72996002103,
         "address": "東京都北区岸町2丁目",
@@ -533,7 +535,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日：2026/09/05（35日前 公開）"
+      "publishedText": "情報公開日：2026/09/05（36日前 公開）"
     },
     {
       "id": "b-1191550007498",
@@ -564,9 +566,9 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "5,980万円",
         "landAreaText": "281.14m²",
-        "publishedText": "情報公開日：2026/10/04（6日前 公開）",
+        "publishedText": "情報公開日：2026/10/04（7日前 公開）",
         "lat": 35.785713973234,
         "lon": 139.71408756659,
         "address": "東京都北区赤羽北1丁目",
@@ -592,7 +594,67 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-04",
-      "publishedText": "情報公開日：2026/10/04（6日前 公開）"
+      "publishedText": "情報公開日：2026/10/04（7日前 公開）"
+    },
+    {
+      "id": "b-1571620000409",
+      "url": "https://www.homes.co.jp/tochi/b-1571620000409/",
+      "title": "",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F409%2F1%2F2%2F6cry.jpg",
+      "priceText": "5,980万円",
+      "madori": null,
+      "landAreaText": "281.13m²",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都北区赤羽北1丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.787939541757%2C139.71357002087",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 5980,
+      "landAreaM2": 281.13,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "5,980万円",
+        "landAreaText": "281.13m²",
+        "publishedText": "情報公開日：2026/10/11（本日公開）",
+        "lat": 35.787939541757,
+        "lon": 139.71357002087,
+        "address": "東京都北区赤羽北1丁目",
+        "postalCode": "115-0052",
+        "yearBuilt": null,
+        "builtText": null,
+        "structure": null,
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F409%2F1%2F2%2F6cry.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "0円",
+        "availableText": null
+      },
+      "lat": 35.787939541757,
+      "lon": 139.71357002087,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": null,
+      "buildingAgeYears": null,
+      "storeys": null,
+      "structure": null,
+      "publishedAt": "2026-10-11",
+      "publishedText": "情報公開日：2026/10/11（本日公開）",
+      "isNew": true
     }
   ]
 }

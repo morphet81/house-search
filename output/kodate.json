@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-10T11:05:43.746Z",
+  "scrapedAt": "2026-10-10T20:26:57.059Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -166,7 +166,7 @@
         "freeholdMention": true,
         "priceText": "8,980万円",
         "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/09/06（34日前 公開）",
+        "publishedText": "情報公開日：2026/09/06（35日前 公開）",
         "lat": 35.739824082023,
         "lon": 139.71169295213,
         "address": "東京都豊島区池袋本町1丁目",
@@ -192,7 +192,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（34日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（35日前 公開）"
     },
     {
       "id": "b-1516150002849",
@@ -226,7 +226,7 @@
         "freeholdMention": true,
         "priceText": "9,950万円",
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（45日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（46日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -252,7 +252,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（45日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（46日前 公開）"
     }
   ]
 }
