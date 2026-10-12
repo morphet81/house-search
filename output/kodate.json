@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-12T12:59:38.719Z",
+  "scrapedAt": "2026-10-12T23:25:51.683Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -166,7 +166,7 @@
         "freeholdMention": true,
         "priceText": "8,980万円",
         "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/09/06（36日前 公開）",
+        "publishedText": "情報公開日：2026/09/06（37日前 公開）",
         "lat": 35.739824082023,
         "lon": 139.71169295213,
         "address": "東京都豊島区池袋本町1丁目",
@@ -192,14 +192,14 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（36日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（37日前 公開）"
     },
     {
       "id": "b-1516150002849",
       "url": "https://www.homes.co.jp/kodate/b-1516150002849/",
       "title": "中古一戸建て北区西ケ原4丁目 一戸建てPR",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151615%2Fsale%2F2849%2F2%2F1%2Fa9zn.jpg",
-      "priceText": "9,950万円",
+      "priceText": "9,490万円",
       "madori": null,
       "landAreaText": "121.03m²4SLDK",
       "buildingAreaText": null,
@@ -213,7 +213,7 @@
         "ku",
         "station"
       ],
-      "priceManYen": 9950,
+      "priceManYen": 9490,
       "buildingAreaM2": null,
       "landAreaM2": 121.03,
       "detail": {
@@ -224,9 +224,9 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "9,950万円",
+        "priceText": null,
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（47日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（48日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -252,7 +252,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（47日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（48日前 公開）"
     }
   ]
 }
