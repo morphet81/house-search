@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-12T23:27:36.024Z",
+  "scrapedAt": "2026-10-13T12:38:12.567Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,40 +121,36 @@
   },
   "count": 18,
   "delta": {
-    "addedCount": 3,
-    "removedCount": 3,
+    "addedCount": 1,
+    "removedCount": 1,
     "addedIds": [
-      "b-1538400011334",
-      "b-1370910001884",
-      "b-1267650039069"
+      "b-1539700001084"
     ],
     "removedIds": [
-      "b-1230340085079",
-      "b-1267650039391",
-      "b-1421770029491"
+      "b-1539700001082"
     ]
   },
   "dedupe": {
     "before": 23,
     "after": 18,
     "removedCount": 5,
-    "clusters": 5,
+    "clusters": 4,
     "removed": [
       {
-        "id": "b-1216390038880",
-        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
-        "keptId": "b-1539700001082",
+        "id": "b-1539700001082",
+        "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
+        "keptId": "b-1539700001084",
         "reason": "same_property_less_detail",
-        "richness": 26,
+        "richness": 29,
         "keptRichness": 30
       },
       {
-        "id": "b-1216390039963",
-        "url": "https://www.homes.co.jp/mansion/b-1216390039963/",
-        "keptId": "b-1540370000256",
+        "id": "b-1216390038880",
+        "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
+        "keptId": "b-1539700001084",
         "reason": "same_property_less_detail",
         "richness": 26,
-        "keptRichness": 29
+        "keptRichness": 30
       },
       {
         "id": "b-1267650039391",
@@ -271,7 +267,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "5,980万円",
         "landAreaText": null,
         "publishedText": "情報公開日：2026/09/07（36日前 公開）",
         "lat": 35.781016209653,
@@ -418,10 +414,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-04-03",
-      "publishedText": "情報公開日：2026/04/03（193日前 公開）",
-      "dedupedFrom": [
-        "b-1216390039963"
-      ]
+      "publishedText": "情報公開日：2026/04/03（193日前 公開）"
     },
     {
       "id": "b-35006130000082",
@@ -549,7 +542,7 @@
       "id": "b-1538400011334",
       "url": "https://www.homes.co.jp/mansion/b-1538400011334/",
       "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F6ybe.jpg",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fta8p.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -575,7 +568,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "7,280万円",
+        "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日：2026/08/26（48日前 公開）",
         "lat": 35.79211277634,
@@ -585,7 +578,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F6ybe.jpg",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fta8p.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -603,8 +596,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（48日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/26（48日前 公開）"
     },
     {
       "id": "b-39051320000349",
@@ -902,11 +894,11 @@
       "publishedText": "情報公開日：2026/10/09（4日前 公開）"
     },
     {
-      "id": "b-1539700001082",
-      "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
-      "title": "中古マンションパークタワー王子リバーグレイス/ 19階PR",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2Frztx.jpg",
-      "priceText": "9,380万円",
+      "id": "b-1539700001084",
+      "url": "https://www.homes.co.jp/mansion/b-1539700001084/",
+      "title": "中古マンションパークタワー王子リバーグレイス/ 20階PR",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F3%2F0pqu.jpg",
+      "priceText": "9,780万円",
       "madori": null,
       "landAreaText": "78.84m²",
       "buildingAreaText": "78.84m² 4LDK",
@@ -919,7 +911,7 @@
       "matchedVia": [
         "ku"
       ],
-      "priceManYen": 9380,
+      "priceManYen": 9780,
       "exclusiveAreaM2": 78.84,
       "buildingAreaM2": 78.84,
       "detail": {
@@ -930,7 +922,7 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "9,780万円",
         "landAreaText": null,
         "publishedText": "情報公開日：2026/07/03（102日前 公開）",
         "lat": 35.768333853183,
@@ -940,7 +932,7 @@
         "yearBuilt": 2007,
         "builtText": "2007年1月（築20年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2Frztx.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F3%2F0pqu.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -960,8 +952,10 @@
       "publishedAt": "2026-07-03",
       "publishedText": "情報公開日：2026/07/03（102日前 公開）",
       "dedupedFrom": [
+        "b-1539700001082",
         "b-1216390038880"
-      ]
+      ],
+      "isNew": true
     },
     {
       "id": "b-1370910001884",
@@ -1023,8 +1017,7 @@
       "publishedText": "情報公開日：2026/10/08（5日前 公開）",
       "dedupedFrom": [
         "b-1267650039391"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-35006130000091",
@@ -1201,8 +1194,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（37日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/06（37日前 公開）"
     },
     {
       "id": "b-1370910001885",
