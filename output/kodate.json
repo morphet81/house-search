@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-14T10:03:30.006Z",
+  "scrapedAt": "2026-10-14T20:25:07.840Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -123,11 +123,9 @@
   "count": 1,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "b-1388540011490"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 1,
@@ -169,7 +167,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（49日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（50日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -195,7 +193,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（49日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（50日前 公開）"
     }
   ]
 }
