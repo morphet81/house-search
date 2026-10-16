@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-16T09:39:27.448Z",
+  "scrapedAt": "2026-10-16T19:48:29.444Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 1,
+  "count": 2,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1342150000369"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 1,
-    "after": 1,
+    "before": 2,
+    "after": 2,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -167,7 +169,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（51日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（52日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -193,7 +195,68 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（51日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（52日前 公開）"
+    },
+    {
+      "id": "b-1342150000369",
+      "url": "https://www.homes.co.jp/kodate/b-1342150000369/",
+      "title": "",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F134215%2Fsale%2F369%2F2%2F1%2Fp23w.jpg",
+      "priceText": "10,800万円",
+      "madori": "3LDK",
+      "landAreaText": "93m²",
+      "buildingAreaText": "102.9m²",
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都北区上中里2丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.747857451937%2C139.7468868584",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 10800,
+      "buildingAreaM2": 102.9,
+      "landAreaM2": 93,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "準工業地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "10,800万円",
+        "landAreaText": "93m²",
+        "publishedText": "情報公開日：2026/10/16（1日前 公開）",
+        "lat": 35.747857451937,
+        "lon": 139.7468868584,
+        "address": "東京都北区上中里2丁目",
+        "postalCode": "114-0016",
+        "yearBuilt": 2010,
+        "builtText": "2010年11月（築16年）",
+        "structure": "軽量鉄骨造/3階建",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F134215%2Fsale%2F369%2F2%2F1%2Fp23w.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "0円",
+        "availableText": null
+      },
+      "lat": 35.747857451937,
+      "lon": 139.7468868584,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 2010,
+      "buildingAgeYears": 16,
+      "storeys": 3,
+      "structure": "軽量鉄骨造/3階建",
+      "publishedAt": "2026-10-16",
+      "publishedText": "情報公開日：2026/10/16（1日前 公開）",
+      "isNew": true
     }
   ]
 }
