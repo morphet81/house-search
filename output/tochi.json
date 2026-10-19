@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-18T19:12:52.993Z",
+  "scrapedAt": "2026-10-19T10:44:23.728Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,16 +108,18 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 10,
+  "count": 9,
   "delta": {
     "addedCount": 0,
-    "removedCount": 0,
+    "removedCount": 1,
     "addedIds": [],
-    "removedIds": []
+    "removedIds": [
+      "b-1170260012309"
+    ]
   },
   "dedupe": {
-    "before": 10,
-    "after": 10,
+    "before": 9,
+    "after": 9,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -244,7 +246,7 @@
     {
       "id": "b-37260180000005",
       "url": "https://www.homes.co.jp/tochi/b-37260180000005/",
-      "title": "",
+      "title": "PR土地北区西が丘二丁目売地",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
       "priceText": "4,380万円",
       "madori": null,
@@ -252,7 +254,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 13,
       "address": "東京都北区西が丘2丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.765948975089%2C139.71392809908",
       "deal": "buy",
@@ -299,64 +301,6 @@
       "structure": null,
       "publishedAt": "2026-10-03",
       "publishedText": "情報公開日：2026/10/03（16日前 公開）"
-    },
-    {
-      "id": "b-1170260012309",
-      "url": "https://www.homes.co.jp/tochi/b-1170260012309/",
-      "title": "PR土地板橋区清水町",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F117026%2Fsale%2F12309%2F2%2F2%2F6a6m.jpg",
-      "priceText": "5,000万円",
-      "madori": null,
-      "landAreaText": "171.82m²",
-      "buildingAreaText": null,
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": 4,
-      "address": "東京都板橋区清水町",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.763493502046%2C139.70666798228",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 5000,
-      "landAreaM2": 171.82,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "近隣商業地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "5,000万円",
-        "landAreaText": "171.82m²",
-        "publishedText": "情報公開日：2026/03/09（224日前 公開）",
-        "lat": 35.763493502046,
-        "lon": 139.70666798228,
-        "address": "東京都板橋区清水町",
-        "postalCode": "174-0053",
-        "yearBuilt": null,
-        "builtText": null,
-        "structure": null,
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F117026%2Fsale%2F12309%2F2%2F2%2F6a6m.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": null,
-        "availableText": null
-      },
-      "lat": 35.763493502046,
-      "lon": 139.70666798228,
-      "locationAccuracy": "coordinates",
-      "ward": "板橋区",
-      "wardEn": "Itabashi-ku",
-      "yearBuilt": null,
-      "buildingAgeYears": null,
-      "storeys": null,
-      "structure": null,
-      "publishedAt": "2026-03-09",
-      "publishedText": "情報公開日：2026/03/09（224日前 公開）"
     },
     {
       "id": "b-1210390001205",
