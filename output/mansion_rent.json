@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-19T10:47:41.004Z",
+  "scrapedAt": "2026-10-19T21:27:14.945Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -120,22 +120,19 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 12,
+  "count": 11,
   "delta": {
-    "addedCount": 1,
-    "removedCount": 2,
-    "addedIds": [
-      "677fe0cb130a65bd9535764a7f984d333c72b0e3"
-    ],
+    "addedCount": 0,
+    "removedCount": 1,
+    "addedIds": [],
     "removedIds": [
-      "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
-      "14047955b06e51d7f51b2ae9b8e8b1186124857b"
+      "677fe0cb130a65bd9535764a7f984d333c72b0e3"
     ]
   },
   "dedupe": {
     "before": 20,
-    "after": 12,
-    "removedCount": 8,
+    "after": 11,
+    "removedCount": 9,
     "clusters": 4,
     "removed": [
       {
@@ -157,6 +154,14 @@
       {
         "id": "51f9e93619473610ccbc9a4153280d387861d6ff",
         "url": "https://www.homes.co.jp/chintai/room/51f9e93619473610ccbc9a4153280d387861d6ff/",
+        "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
+        "reason": "same_property_less_detail",
+        "richness": 24,
+        "keptRichness": 28
+      },
+      {
+        "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
+        "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
         "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
         "reason": "same_property_less_detail",
         "richness": 24,
@@ -191,7 +196,7 @@
         "url": "https://www.homes.co.jp/chintai/room/c1b9583c38ac7fd7d72a546e8178328cc1d6cf14/",
         "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
         "reason": "same_property_less_detail",
-        "richness": 27,
+        "richness": 25,
         "keptRichness": 27
       },
       {
@@ -319,7 +324,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -344,8 +349,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -603,7 +608,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/04/27",
+        "publishedText": "情報公開日\n\n2026/06/07",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -628,8 +633,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-04-27",
-      "publishedText": "情報公開日\n\n2026/04/27"
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日\n\n2026/06/07"
     },
     {
       "id": "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
@@ -702,77 +707,6 @@
       "publishedText": "情報公開日\n\n2026/10/06"
     },
     {
-      "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
-      "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
-      "title": "グランフォート目黒",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148018%2Frent%2F25139%2F2%2F1%2Ftj00.jpg",
-      "priceText": "32.5万円",
-      "madori": "3LDK",
-      "landAreaText": null,
-      "buildingAreaText": "82.71m²",
-      "exclusiveAreaText": "82.71m²",
-      "builtText": "築29年",
-      "walkMinutes": 14,
-      "address": "東京都目黒区目黒４丁目",
-      "managementFeeText": "10,000円",
-      "shikikinText": "1ヶ月",
-      "reikinText": "1.5ヶ月",
-      "guaranteeText": "-",
-      "shikibikiText": "-",
-      "availableText": "2026年12月 上旬",
-      "deal": "rent",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 32.5,
-      "reikinMonths": 1.5,
-      "reikinYen": null,
-      "shikikinMonths": 1,
-      "oneOffManYen": 113.75,
-      "oneOffAssumesAgentMonths": 1,
-      "exclusiveAreaM2": 82.71,
-      "buildingAreaM2": 82.71,
-      "buildingAgeYears": 28,
-      "detail": {
-        "landRight": null,
-        "leaseType": null,
-        "zoning": null,
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": false,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/01",
-        "lat": 35.632910802235,
-        "lon": 139.69971409312,
-        "address": "東京都目黒区目黒４丁目",
-        "postalCode": "1530063",
-        "yearBuilt": 1998,
-        "builtText": "1998年9月",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148018%2Frent%2F25139%2F2%2F1%2Ftj00.jpg",
-        "shikikinText": "1ヶ月",
-        "reikinText": "1.5ヶ月",
-        "guaranteeText": "-",
-        "shikibikiText": "-",
-        "managementFeeText": "10,000円",
-        "availableText": "2026年12月 上旬"
-      },
-      "lat": 35.632910802235,
-      "lon": 139.69971409312,
-      "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.632910802235%2C139.69971409312",
-      "ward": "目黒区",
-      "wardEn": "Meguro-ku",
-      "yearBuilt": 1998,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-01",
-      "publishedText": "情報公開日\n\n2026/10/01",
-      "isNew": true
-    },
-    {
       "id": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
       "url": "https://www.homes.co.jp/chintai/room/3edecc67c64f1a83edd2859c4eb6cecac8436c4f/",
       "title": "東急東横線 祐天寺駅 徒歩15分の賃貸マンション",
@@ -843,6 +777,7 @@
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "51f9e93619473610ccbc9a4153280d387861d6ff",
+        "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "90ac604c21eb2879727d2b81677b7b217c5c18d7",
         "69434f185607d9053d3bb12960819d1840a90bda",
         "f57b09897a8ed6a23aa19b38ce14ab9bb1558ab5"

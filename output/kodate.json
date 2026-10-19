@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-19T10:41:08.546Z",
+  "scrapedAt": "2026-10-19T21:20:38.388Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -167,7 +167,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（54日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（55日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -193,7 +193,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（54日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（55日前 公開）"
     },
     {
       "id": "b-1342150000369",
@@ -227,7 +227,7 @@
         "freeholdMention": true,
         "priceText": "10,800万円",
         "landAreaText": "93m²",
-        "publishedText": "情報公開日：2026/10/16（3日前 公開）",
+        "publishedText": "情報公開日：2026/10/16（4日前 公開）",
         "lat": 35.747857451937,
         "lon": 139.7468868584,
         "address": "東京都北区上中里2丁目",
@@ -253,7 +253,7 @@
       "storeys": 3,
       "structure": "軽量鉄骨造/3階建",
       "publishedAt": "2026-10-16",
-      "publishedText": "情報公開日：2026/10/16（3日前 公開）"
+      "publishedText": "情報公開日：2026/10/16（4日前 公開）"
     }
   ]
 }
