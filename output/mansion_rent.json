@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-19T21:27:14.945Z",
+  "scrapedAt": "2026-10-20T10:04:21.342Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -123,11 +123,9 @@
   "count": 11,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "677fe0cb130a65bd9535764a7f984d333c72b0e3"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 20,
@@ -135,6 +133,22 @@
     "removedCount": 9,
     "clusters": 4,
     "removed": [
+      {
+        "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
+        "url": "https://www.homes.co.jp/chintai/room/c1b9583c38ac7fd7d72a546e8178328cc1d6cf14/",
+        "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
+        "url": "https://www.homes.co.jp/chintai/room/14047955b06e51d7f51b2ae9b8e8b1186124857b/",
+        "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
       {
         "id": "8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4",
         "url": "https://www.homes.co.jp/chintai/room/8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4/",
@@ -160,19 +174,19 @@
         "keptRichness": 28
       },
       {
-        "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
-        "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
-        "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
-        "reason": "same_property_less_detail",
-        "richness": 24,
-        "keptRichness": 28
-      },
-      {
         "id": "90ac604c21eb2879727d2b81677b7b217c5c18d7",
         "url": "https://www.homes.co.jp/chintai/room/90ac604c21eb2879727d2b81677b7b217c5c18d7/",
         "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
         "reason": "same_property_less_detail",
         "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "677fe0cb130a65bd9535764a7f984d333c72b0e3",
+        "url": "https://www.homes.co.jp/chintai/room/677fe0cb130a65bd9535764a7f984d333c72b0e3/",
+        "keptId": "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
+        "reason": "same_property_less_detail",
+        "richness": 24,
         "keptRichness": 28
       },
       {
@@ -190,22 +204,6 @@
         "reason": "same_property_less_detail",
         "richness": 28,
         "keptRichness": 28
-      },
-      {
-        "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
-        "url": "https://www.homes.co.jp/chintai/room/c1b9583c38ac7fd7d72a546e8178328cc1d6cf14/",
-        "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
-        "url": "https://www.homes.co.jp/chintai/room/14047955b06e51d7f51b2ae9b8e8b1186124857b/",
-        "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
       }
     ]
   },
@@ -324,7 +322,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -349,8 +347,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -777,8 +775,8 @@
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "51f9e93619473610ccbc9a4153280d387861d6ff",
-        "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "90ac604c21eb2879727d2b81677b7b217c5c18d7",
+        "677fe0cb130a65bd9535764a7f984d333c72b0e3",
         "69434f185607d9053d3bb12960819d1840a90bda",
         "f57b09897a8ed6a23aa19b38ce14ab9bb1558ab5"
       ]
@@ -930,7 +928,7 @@
       "id": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
       "url": "https://www.homes.co.jp/chintai/room/bad7ae10fdb632d62b7b71f83020168c7e44244c/",
       "title": "サンテラス高輪",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
       "priceText": "34.8万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -968,7 +966,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/19",
+        "publishedText": "情報公開日\n\n2026/09/22",
         "lat": 35.625417553702,
         "lon": 139.73376039067,
         "address": "東京都品川区北品川６丁目6-11",
@@ -976,7 +974,7 @@
         "yearBuilt": 1997,
         "builtText": "1997年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F102348%2Frent%2F177976%2F2%2F2%2F0pa4.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F124394%2Frent%2F105710%2F2%2F2%2Fojce.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -993,8 +991,8 @@
       "yearBuilt": 1997,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-19",
-      "publishedText": "情報公開日\n\n2026/09/19",
+      "publishedAt": "2026-09-22",
+      "publishedText": "情報公開日\n\n2026/09/22",
       "dedupedFrom": [
         "f272529fc2463b5affd6ac7c5b7ec52d57fe7573"
       ]
