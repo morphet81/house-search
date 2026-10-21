@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-20T20:18:27.696Z",
+  "scrapedAt": "2026-10-21T10:02:54.964Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,16 +121,10 @@
   },
   "count": 20,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 2,
-    "addedIds": [
-      "b-1216390038582",
-      "b-1421770029491"
-    ],
-    "removedIds": [
-      "b-1358110012731",
-      "b-1267650039069"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
     "before": 24,
@@ -155,20 +149,20 @@
         "keptRichness": 30
       },
       {
+        "id": "b-1526290002105",
+        "url": "https://www.homes.co.jp/mansion/b-1526290002105/",
+        "keptId": "b-1216390038582",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
         "id": "b-1571270000011",
         "url": "https://www.homes.co.jp/mansion/b-1571270000011/",
         "keptId": "b-1534610005307",
         "reason": "same_property_less_detail",
         "richness": 26,
         "keptRichness": 26
-      },
-      {
-        "id": "b-1526290002105",
-        "url": "https://www.homes.co.jp/mansion/b-1526290002105/",
-        "keptId": "b-1216390038582",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
       }
     ]
   },
@@ -416,15 +410,15 @@
     {
       "id": "b-1216390038582",
       "url": "https://www.homes.co.jp/mansion/b-1216390038582/",
-      "title": "",
+      "title": "中古マンション都営三田線 志村坂上駅 徒歩13分PR",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F1%2Fjk0g.jpg",
       "priceText": "6,980万円",
-      "madori": "4LDK",
+      "madori": null,
       "landAreaText": "80.2m²",
-      "buildingAreaText": "80.2m²",
-      "exclusiveAreaText": "80.2m²",
+      "buildingAreaText": "80.2m² 4LDK",
+      "exclusiveAreaText": "80.2m² 4LDK",
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 13,
       "address": "東京都板橋区前野町4丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.769392651025%2C139.68933421953",
       "deal": "buy",
@@ -473,8 +467,7 @@
       "publishedText": "情報公開日：2026/06/20（123日前 公開）",
       "dedupedFrom": [
         "b-1526290002105"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "b-35006130000082",
@@ -540,7 +533,7 @@
       "id": "b-1538400011334",
       "url": "https://www.homes.co.jp/mansion/b-1538400011334/",
       "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F9ktm.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fxunj.jpg",
       "priceText": "7,280万円",
       "madori": "3LDK",
       "landAreaText": "78.45m²",
@@ -576,7 +569,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2F9ktm.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153840%2Fsale%2F11334%2F1%2F1%2Fxunj.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -1307,8 +1300,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-08-21",
-      "publishedText": "情報公開日：2026/08/21（61日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/21（61日前 公開）"
     },
     {
       "id": "b-1370910001885",
