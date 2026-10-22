@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-21T20:25:56.290Z",
+  "scrapedAt": "2026-10-22T10:02:06.764Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -123,12 +123,9 @@
   "count": 0,
   "delta": {
     "addedCount": 0,
-    "removedCount": 2,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "b-1516150002849",
-      "b-1342150000369"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 0,

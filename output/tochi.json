@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-21T20:26:29.789Z",
+  "scrapedAt": "2026-10-22T10:02:40.129Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -111,18 +111,9 @@
   "count": 0,
   "delta": {
     "addedCount": 0,
-    "removedCount": 8,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "b-1412500000746",
-      "b-1571620000358",
-      "b-37260180000005",
-      "b-1210390001205",
-      "b-1571620000352",
-      "b-1412500000764",
-      "b-1571620000409",
-      "b-85920000048"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 0,

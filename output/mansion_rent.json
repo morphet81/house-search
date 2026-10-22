@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-21T20:27:03.717Z",
+  "scrapedAt": "2026-10-22T10:03:14.103Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -123,23 +123,9 @@
   "count": 0,
   "delta": {
     "addedCount": 0,
-    "removedCount": 13,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "d9bfd609f8e36e1460a5c1c6b7d132ad7c7e52be",
-      "d07db07498f03075904f04052e333563b035c949",
-      "14047955b06e51d7f51b2ae9b8e8b1186124857b",
-      "5426cc222b3fd103a02d6e29328c798c0b8bf955",
-      "57b7358de42479eddf29a42618663b10cf2c8d56",
-      "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
-      "cc58fb0f83594a8992e2313642020b65377cf01c",
-      "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
-      "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
-      "3edecc67c64f1a83edd2859c4eb6cecac8436c4f",
-      "4c4e510ee351c80320381b66c6fab1e3894ad644",
-      "77a7e0ede1b3cba41d7c5f5c3e58e014a6b8613a",
-      "bad7ae10fdb632d62b7b71f83020168c7e44244c"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 0,

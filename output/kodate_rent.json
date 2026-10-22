@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-21T20:26:46.546Z",
+  "scrapedAt": "2026-10-22T10:02:56.940Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -123,14 +123,9 @@
   "count": 0,
   "delta": {
     "addedCount": 0,
-    "removedCount": 4,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "bad43b4458c92eb81f79130913a9ed1fa32ede30",
-      "ed558da16f31e61cdc5edabd6b669115b1d5d422",
-      "9d1df33cce7f3529fde17cbc21af91a8928a94ed",
-      "472adfefd631e1c8e4ef5ba69223edb11d682ecc"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 0,
