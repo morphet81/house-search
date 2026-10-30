@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-30T11:25:15.323Z",
+  "scrapedAt": "2026-10-30T21:25:40.014Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,14 +122,13 @@
   },
   "count": 13,
   "delta": {
-    "addedCount": 2,
+    "addedCount": 1,
     "removedCount": 1,
     "addedIds": [
-      "57b7358de42479eddf29a42618663b10cf2c8d56",
-      "6a4c05d1def00ec47b270ca5529b193c885f3a7e"
+      "38a84336a231a3d1f8fa8e891f689954dd25b19d"
     ],
     "removedIds": [
-      "38a84336a231a3d1f8fa8e891f689954dd25b19d"
+      "57b7358de42479eddf29a42618663b10cf2c8d56"
     ]
   },
   "dedupe": {
@@ -141,31 +140,23 @@
       {
         "id": "80479b6095be959e5bbabcd66958086ff64cda0d",
         "url": "https://www.homes.co.jp/chintai/room/80479b6095be959e5bbabcd66958086ff64cda0d/",
-        "keptId": "57b7358de42479eddf29a42618663b10cf2c8d56",
+        "keptId": "38a84336a231a3d1f8fa8e891f689954dd25b19d",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 27
       },
       {
-        "id": "38a84336a231a3d1f8fa8e891f689954dd25b19d",
-        "url": "https://www.homes.co.jp/chintai/room/38a84336a231a3d1f8fa8e891f689954dd25b19d/",
-        "keptId": "57b7358de42479eddf29a42618663b10cf2c8d56",
+        "id": "57b7358de42479eddf29a42618663b10cf2c8d56",
+        "url": "https://www.homes.co.jp/chintai/room/57b7358de42479eddf29a42618663b10cf2c8d56/",
+        "keptId": "38a84336a231a3d1f8fa8e891f689954dd25b19d",
         "reason": "same_property_less_detail",
-        "richness": 24,
+        "richness": 27,
         "keptRichness": 27
       },
       {
         "id": "676d0f7349d60e8331dd22b5ed3c172b154b21ea",
         "url": "https://www.homes.co.jp/chintai/room/676d0f7349d60e8331dd22b5ed3c172b154b21ea/",
-        "keptId": "57b7358de42479eddf29a42618663b10cf2c8d56",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
-        "id": "ed3581cfdc6bb0a4289bfd3197de52bcd3345365",
-        "url": "https://www.homes.co.jp/chintai/room/ed3581cfdc6bb0a4289bfd3197de52bcd3345365/",
-        "keptId": "647b6c707da637c967d0ee2981f70d582bc8ac9c",
+        "keptId": "38a84336a231a3d1f8fa8e891f689954dd25b19d",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 27
@@ -174,6 +165,14 @@
         "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
         "url": "https://www.homes.co.jp/chintai/room/624c92bdd0ffeac7942562b8e319fcad3e12d5b0/",
         "keptId": "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 27
+      },
+      {
+        "id": "ed3581cfdc6bb0a4289bfd3197de52bcd3345365",
+        "url": "https://www.homes.co.jp/chintai/room/ed3581cfdc6bb0a4289bfd3197de52bcd3345365/",
+        "keptId": "647b6c707da637c967d0ee2981f70d582bc8ac9c",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 27
@@ -191,7 +190,7 @@
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 25,
+        "richness": 27,
         "keptRichness": 27
       },
       {
@@ -366,7 +365,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/26",
+        "publishedText": "情報公開日\n\n2026/10/24",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -391,8 +390,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-26",
-      "publishedText": "情報公開日\n\n2026/10/26",
+      "publishedAt": "2026-10-24",
+      "publishedText": "情報公開日\n\n2026/10/24",
       "dedupedFrom": [
         "624c92bdd0ffeac7942562b8e319fcad3e12d5b0"
       ]
@@ -514,7 +513,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -539,8 +538,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -617,82 +616,6 @@
       ]
     },
     {
-      "id": "57b7358de42479eddf29a42618663b10cf2c8d56",
-      "url": "https://www.homes.co.jp/chintai/room/57b7358de42479eddf29a42618663b10cf2c8d56/",
-      "title": "ステラメゾン田端",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe0e03104%2F38137_1563239_17_132000_132000.jpg%3Ft%3D20260909103604",
-      "priceText": "28万円",
-      "madori": "3LDK",
-      "landAreaText": null,
-      "buildingAreaText": "75.02m²",
-      "exclusiveAreaText": "75.02m²",
-      "builtText": "築32年",
-      "walkMinutes": 6,
-      "address": "東京都北区田端1丁目28-4",
-      "managementFeeText": "15,000円",
-      "shikikinText": "1ヶ月",
-      "reikinText": "無",
-      "guaranteeText": "-",
-      "shikibikiText": "-",
-      "availableText": "2026年11月 中旬",
-      "deal": "rent",
-      "matchedVia": [
-        "ku"
-      ],
-      "priceManYen": 28,
-      "reikinMonths": 0,
-      "reikinYen": 0,
-      "shikikinMonths": 1,
-      "oneOffManYen": 56,
-      "oneOffAssumesAgentMonths": 1,
-      "exclusiveAreaM2": 75.02,
-      "buildingAreaM2": 75.02,
-      "buildingAgeYears": 31,
-      "detail": {
-        "landRight": null,
-        "leaseType": null,
-        "zoning": null,
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": false,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/09",
-        "lat": 35.734227480403,
-        "lon": 139.76321768598,
-        "address": "東京都北区田端1丁目28-4",
-        "postalCode": "1140014",
-        "yearBuilt": 1995,
-        "builtText": "1995年10月",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe0e03104%2F38137_1563239_17_132000_132000.jpg%3Ft%3D20260909103604",
-        "shikikinText": "1ヶ月",
-        "reikinText": "無",
-        "guaranteeText": "-",
-        "shikibikiText": "-",
-        "managementFeeText": "15,000円",
-        "availableText": "2026年11月 中旬"
-      },
-      "lat": 35.734227480403,
-      "lon": 139.76321768598,
-      "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.734227480403%2C139.76321768598",
-      "ward": "北区",
-      "wardEn": "Kita-ku",
-      "yearBuilt": 1995,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-09",
-      "publishedText": "情報公開日\n\n2026/09/09",
-      "dedupedFrom": [
-        "80479b6095be959e5bbabcd66958086ff64cda0d",
-        "38a84336a231a3d1f8fa8e891f689954dd25b19d",
-        "676d0f7349d60e8331dd22b5ed3c172b154b21ea"
-      ],
-      "isNew": true
-    },
-    {
       "id": "cc58fb0f83594a8992e2313642020b65377cf01c",
       "url": "https://www.homes.co.jp/chintai/room/cc58fb0f83594a8992e2313642020b65377cf01c/",
       "title": "ローリエ",
@@ -763,6 +686,82 @@
       "publishedText": "情報公開日\n\n2026/05/08"
     },
     {
+      "id": "38a84336a231a3d1f8fa8e891f689954dd25b19d",
+      "url": "https://www.homes.co.jp/chintai/room/38a84336a231a3d1f8fa8e891f689954dd25b19d/",
+      "title": "ステラメゾン田端",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14740%2F14740327%2F14740327_2.jpg%3F20261022125118",
+      "priceText": "30万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "75.02m²",
+      "exclusiveAreaText": "75.02m²",
+      "builtText": "築32年",
+      "walkMinutes": 6,
+      "address": "東京都北区田端1丁目28-4",
+      "managementFeeText": "20,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "無",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2027年01月 中旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 30,
+      "reikinMonths": 0,
+      "reikinYen": 0,
+      "shikikinMonths": 1,
+      "oneOffManYen": 60,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 75.02,
+      "buildingAreaM2": 75.02,
+      "buildingAgeYears": 31,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/10/22",
+        "lat": 35.734227480403,
+        "lon": 139.76321768598,
+        "address": "東京都北区田端1丁目28-4",
+        "postalCode": "1140014",
+        "yearBuilt": 1995,
+        "builtText": "1995年10月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F14740%2F14740327%2F14740327_2.jpg%3F20261022125118",
+        "shikikinText": "1ヶ月",
+        "reikinText": "無",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "20,000円",
+        "availableText": "2027年01月 中旬"
+      },
+      "lat": 35.734227480403,
+      "lon": 139.76321768598,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.734227480403%2C139.76321768598",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 1995,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-10-22",
+      "publishedText": "情報公開日\n\n2026/10/22",
+      "dedupedFrom": [
+        "80479b6095be959e5bbabcd66958086ff64cda0d",
+        "57b7358de42479eddf29a42618663b10cf2c8d56",
+        "676d0f7349d60e8331dd22b5ed3c172b154b21ea"
+      ],
+      "isNew": true
+    },
+    {
       "id": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
       "url": "https://www.homes.co.jp/chintai/room/1cfef6ecfd2391f3f09857abf31ef817ae4699c2/",
       "title": "ラビ学芸大学",
@@ -804,7 +803,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/04/27",
+        "publishedText": "情報公開日\n\n2026/06/07",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -829,8 +828,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-04-27",
-      "publishedText": "情報公開日\n\n2026/04/27"
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日\n\n2026/06/07"
     },
     {
       "id": "1754f2e5d3dc97aa80b20990d28b05f6b03c0210",
@@ -977,8 +976,7 @@
       "storeys": null,
       "structure": "鉄骨造",
       "publishedAt": "2026-10-06",
-      "publishedText": "情報公開日\n\n2026/10/06",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/06"
     },
     {
       "id": "4c4e510ee351c80320381b66c6fab1e3894ad644",
@@ -1134,7 +1132,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 10,
+      "walkMinutes": 9,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",

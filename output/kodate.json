@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-30T11:18:18.127Z",
+  "scrapedAt": "2026-10-30T21:18:46.763Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -164,9 +164,9 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "8,830万円",
         "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/09/06（54日前 公開）",
+        "publishedText": "情報公開日：2026/09/06（55日前 公開）",
         "lat": 35.739832414877,
         "lon": 139.71171017255,
         "address": "東京都豊島区池袋本町1丁目",
@@ -192,7 +192,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-06",
-      "publishedText": "情報公開日：2026/09/06（54日前 公開）"
+      "publishedText": "情報公開日：2026/09/06（55日前 公開）"
     },
     {
       "id": "b-1516150002849",
@@ -226,7 +226,7 @@
         "freeholdMention": true,
         "priceText": "9,490万円",
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（65日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（66日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -252,7 +252,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（65日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（66日前 公開）"
     },
     {
       "id": "b-1342150000369",
@@ -286,7 +286,7 @@
         "freeholdMention": true,
         "priceText": "10,800万円",
         "landAreaText": "93m²",
-        "publishedText": "情報公開日：2026/10/16（14日前 公開）",
+        "publishedText": "情報公開日：2026/10/16（15日前 公開）",
         "lat": 35.747857451937,
         "lon": 139.7468868584,
         "address": "東京都北区上中里2丁目",
@@ -312,7 +312,7 @@
       "storeys": 3,
       "structure": "軽量鉄骨造/3階建",
       "publishedAt": "2026-10-16",
-      "publishedText": "情報公開日：2026/10/16（14日前 公開）"
+      "publishedText": "情報公開日：2026/10/16（15日前 公開）"
     },
     {
       "id": "b-1357690020807",
@@ -343,9 +343,9 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": null,
+        "priceText": "11,480万円",
         "landAreaText": "78.84m²",
-        "publishedText": "情報公開日：2026/09/19（41日前 公開）",
+        "publishedText": "情報公開日：2026/09/19（42日前 公開）",
         "lat": 35.739142432598,
         "lon": 139.71985061918,
         "address": "東京都豊島区上池袋3丁目129-25",
@@ -371,7 +371,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-09-19",
-      "publishedText": "情報公開日：2026/09/19（41日前 公開）"
+      "publishedText": "情報公開日：2026/09/19（42日前 公開）"
     }
   ]
 }
