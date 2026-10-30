@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-29T21:36:36.288Z",
+  "scrapedAt": "2026-10-30T11:23:23.758Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -122,10 +122,14 @@
   },
   "count": 4,
   "delta": {
-    "addedCount": 0,
-    "removedCount": 0,
-    "addedIds": [],
-    "removedIds": []
+    "addedCount": 1,
+    "removedCount": 1,
+    "addedIds": [
+      "37b1bdca581fbba6e275658d2e0716f446f04bcb"
+    ],
+    "removedIds": [
+      "472adfefd631e1c8e4ef5ba69223edb11d682ecc"
+    ]
   },
   "dedupe": {
     "before": 4,
@@ -209,7 +213,7 @@
       "id": "ed558da16f31e61cdc5edabd6b669115b1d5d422",
       "url": "https://www.homes.co.jp/chintai/room/ed558da16f31e61cdc5edabd6b669115b1d5d422/",
       "title": "高野台戸建",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261029052151",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261030052634",
       "priceText": "25万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -247,7 +251,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/08",
+        "publishedText": "情報公開日\n\n2026/08/07",
         "lat": 35.746781003692,
         "lon": 139.61541892035,
         "address": "東京都練馬区高野台4丁目",
@@ -255,7 +259,7 @@
         "yearBuilt": 2005,
         "builtText": "2005年9月",
         "structure": "木造",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261029052151",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261030052634",
         "shikikinText": "2ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -272,8 +276,8 @@
       "yearBuilt": 2005,
       "storeys": null,
       "structure": "木造",
-      "publishedAt": "2026-08-08",
-      "publishedText": "情報公開日\n\n2026/08/08"
+      "publishedAt": "2026-08-07",
+      "publishedText": "情報公開日\n\n2026/08/07"
     },
     {
       "id": "9d1df33cce7f3529fde17cbc21af91a8928a94ed",
@@ -346,11 +350,11 @@
       "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
-      "id": "472adfefd631e1c8e4ef5ba69223edb11d682ecc",
-      "url": "https://www.homes.co.jp/chintai/room/472adfefd631e1c8e4ef5ba69223edb11d682ecc/",
+      "id": "37b1bdca581fbba6e275658d2e0716f446f04bcb",
+      "url": "https://www.homes.co.jp/chintai/room/37b1bdca581fbba6e275658d2e0716f446f04bcb/",
       "title": "JR京浜東北・根岸線 赤羽駅 徒歩10分の賃貸一戸建て",
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa4a391f6-06ec-40fb-9871-ede292f8b787_property_picture_6564_large.jpg",
-      "priceText": "33万円",
+      "priceText": "29.8万円",
       "madori": "4SLDK",
       "landAreaText": null,
       "buildingAreaText": "108.94m²",
@@ -369,11 +373,11 @@
         "ku",
         "station"
       ],
-      "priceManYen": 33,
+      "priceManYen": 29.8,
       "reikinMonths": 1,
       "reikinYen": null,
       "shikikinMonths": 1,
-      "oneOffManYen": 99,
+      "oneOffManYen": 89.4,
       "oneOffAssumesAgentMonths": 1,
       "exclusiveAreaM2": 108.94,
       "buildingAreaM2": 108.94,
@@ -414,7 +418,8 @@
       "storeys": null,
       "structure": "木造",
       "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedText": "情報公開日\n\n2026/08/06",
+      "isNew": true
     }
   ]
 }
