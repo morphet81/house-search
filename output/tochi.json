@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-30T21:22:11.864Z",
+  "scrapedAt": "2026-10-31T10:55:39.799Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,16 +108,18 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 10,
+  "count": 9,
   "delta": {
     "addedCount": 0,
-    "removedCount": 0,
+    "removedCount": 1,
     "addedIds": [],
-    "removedIds": []
+    "removedIds": [
+      "b-1571620000352"
+    ]
   },
   "dedupe": {
-    "before": 10,
-    "after": 10,
+    "before": 9,
+    "after": 9,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -418,65 +420,6 @@
       "publishedText": "情報公開日：2026/09/16（45日前 公開）"
     },
     {
-      "id": "b-1571620000352",
-      "url": "https://www.homes.co.jp/tochi/b-1571620000352/",
-      "title": "",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F352%2F2%2F6%2Fhex8.jpg",
-      "priceText": "5,955万円",
-      "madori": null,
-      "landAreaText": "96.09m²",
-      "buildingAreaText": null,
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都北区岸町2丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.760240047734%2C139.72996002103",
-      "deal": "buy",
-      "matchedVia": [
-        "ku",
-        "station"
-      ],
-      "priceManYen": 5955,
-      "landAreaM2": 96.09,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "第一種住居地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": null,
-        "landAreaText": "96.09m²",
-        "publishedText": "情報公開日：2026/09/05（56日前 公開）",
-        "lat": 35.760240047734,
-        "lon": 139.72996002103,
-        "address": "東京都北区岸町2丁目",
-        "postalCode": "114-0021",
-        "yearBuilt": null,
-        "builtText": null,
-        "structure": null,
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F352%2F2%2F6%2Fhex8.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "0円",
-        "availableText": null
-      },
-      "lat": 35.760240047734,
-      "lon": 139.72996002103,
-      "locationAccuracy": "coordinates",
-      "ward": "北区",
-      "wardEn": "Kita-ku",
-      "yearBuilt": null,
-      "buildingAgeYears": null,
-      "storeys": null,
-      "structure": null,
-      "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日：2026/09/05（56日前 公開）"
-    },
-    {
       "id": "b-1004580046269",
       "url": "https://www.homes.co.jp/tochi/b-1004580046269/",
       "title": "",
@@ -621,7 +564,7 @@
         "landUse": "宅地",
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "5,980万円",
+        "priceText": null,
         "landAreaText": "281.13m²",
         "publishedText": "情報公開日：2026/10/12（19日前 公開）",
         "lat": 35.785705085972,
