@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-03T12:51:46.670Z",
+  "scrapedAt": "2026-11-03T22:18:31.892Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -123,11 +123,13 @@
   "count": 17,
   "delta": {
     "addedCount": 1,
-    "removedCount": 0,
+    "removedCount": 1,
     "addedIds": [
-      "d872bcb981b75f733234051054b797ebaca1a317"
+      "1e7ac42c55f724a97d6eb92498cb7928ddb5af15"
     ],
-    "removedIds": []
+    "removedIds": [
+      "d872bcb981b75f733234051054b797ebaca1a317"
+    ]
   },
   "dedupe": {
     "before": 34,
@@ -256,12 +258,12 @@
         "keptRichness": 27
       },
       {
-        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
-        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
-        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
+        "id": "d872bcb981b75f733234051054b797ebaca1a317",
+        "url": "https://www.homes.co.jp/chintai/room/d872bcb981b75f733234051054b797ebaca1a317/",
+        "keptId": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
         "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
+        "richness": 21,
+        "keptRichness": 26
       },
       {
         "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
@@ -317,7 +319,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/26",
+        "publishedText": "情報公開日\n\n2026/10/25",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -342,8 +344,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-26",
-      "publishedText": "情報公開日\n\n2026/10/26",
+      "publishedAt": "2026-10-25",
+      "publishedText": "情報公開日\n\n2026/10/25",
       "dedupedFrom": [
         "624c92bdd0ffeac7942562b8e319fcad3e12d5b0"
       ]
@@ -423,24 +425,24 @@
       ]
     },
     {
-      "id": "d872bcb981b75f733234051054b797ebaca1a317",
-      "url": "https://www.homes.co.jp/chintai/room/d872bcb981b75f733234051054b797ebaca1a317/",
-      "title": "都営新宿線 曙橋駅 徒歩3分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138199%2Frent%2F70122%2F2%2F1%2F3tq6.jpg",
+      "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
+      "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
+      "title": "パークハウス市谷仲之町",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F12c0b909-5c57-42b5-bca4-8f5b737effe6_property_picture_10289_large.jpg",
       "priceText": "26.5万円",
       "madori": "3LDK",
       "landAreaText": null,
       "buildingAreaText": "76.58m²",
       "exclusiveAreaText": "76.58m²",
       "builtText": "築23年",
-      "walkMinutes": 3,
+      "walkMinutes": 5,
       "address": "東京都新宿区市谷仲之町2-7",
       "managementFeeText": "15,000円",
       "shikikinText": "1ヶ月",
       "reikinText": "1ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
-      "availableText": "2027年01月 下旬",
+      "availableText": "相談",
       "deal": "rent",
       "matchedVia": [
         "station"
@@ -465,25 +467,25 @@
         "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日\n\n2026/11/03",
-        "lat": 35.69369207967,
-        "lon": 139.72294162788,
+        "lat": 35.693745132242,
+        "lon": 139.72305356068,
         "address": "東京都新宿区市谷仲之町2-7",
         "postalCode": "1620064",
         "yearBuilt": 2004,
         "builtText": "2004年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F138199%2Frent%2F70122%2F2%2F1%2F3tq6.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F12c0b909-5c57-42b5-bca4-8f5b737effe6_property_picture_10289_large.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
         "managementFeeText": "15,000円",
-        "availableText": "2027年01月 下旬"
+        "availableText": "相談"
       },
-      "lat": 35.69369207967,
-      "lon": 139.72294162788,
+      "lat": 35.693745132242,
+      "lon": 139.72305356068,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.69369207967%2C139.72294162788",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.693745132242%2C139.72305356068",
       "ward": "新宿区",
       "wardEn": "Shinjuku-ku",
       "yearBuilt": 2004,
@@ -492,7 +494,7 @@
       "publishedAt": "2026-11-03",
       "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
-        "1e7ac42c55f724a97d6eb92498cb7928ddb5af15"
+        "d872bcb981b75f733234051054b797ebaca1a317"
       ],
       "isNew": true
     },
@@ -893,7 +895,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/08",
+        "publishedText": "情報公開日\n\n2026/09/13",
         "lat": 35.73422525881,
         "lon": 139.76323185154,
         "address": "東京都北区田端１丁目28-4",
@@ -918,8 +920,8 @@
       "yearBuilt": 1995,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-08",
-      "publishedText": "情報公開日\n\n2026/09/08",
+      "publishedAt": "2026-09-13",
+      "publishedText": "情報公開日\n\n2026/09/13",
       "dedupedFrom": [
         "80479b6095be959e5bbabcd66958086ff64cda0d",
         "38a84336a231a3d1f8fa8e891f689954dd25b19d"
@@ -1441,7 +1443,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 10,
+      "walkMinutes": 9,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",
