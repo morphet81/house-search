@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-02T23:50:13.268Z",
+  "scrapedAt": "2026-11-03T12:48:15.079Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -111,11 +111,9 @@
   "count": 10,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "b-85920000048"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 10,
@@ -129,7 +127,7 @@
       "id": "b-1412500000746",
       "url": "https://www.homes.co.jp/tochi/b-1412500000746/",
       "title": "",
-      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fgc0d.jpg",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fb059.jpg",
       "priceText": "4,180万円",
       "madori": null,
       "landAreaText": "126.14m²",
@@ -164,7 +162,7 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fgc0d.jpg",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F746%2F4%2F1%2Fb059.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -656,7 +654,7 @@
       "id": "b-1412500000764",
       "url": "https://www.homes.co.jp/tochi/b-1412500000764/",
       "title": "",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F764%2F4%2F1%2F0o9n.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F764%2F4%2F1%2Fhm3e.jpg",
       "priceText": "5,980万円",
       "madori": null,
       "landAreaText": "281.13m²",
@@ -691,7 +689,7 @@
         "yearBuilt": null,
         "builtText": null,
         "structure": null,
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F764%2F4%2F1%2F0o9n.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F141250%2Fsale%2F764%2F4%2F1%2Fhm3e.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
