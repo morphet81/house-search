@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T22:02:35.619Z",
+  "scrapedAt": "2026-11-07T11:46:36.706Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -123,16 +123,14 @@
   "count": 16,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "8ff0ecfc5502d55da57d76e89b2049eb049f1357"
-    ]
+    "removedIds": []
   },
   "dedupe": {
-    "before": 35,
+    "before": 36,
     "after": 16,
-    "removedCount": 19,
+    "removedCount": 20,
     "clusters": 9,
     "removed": [
       {
@@ -174,6 +172,70 @@
         "reason": "same_property_less_detail",
         "richness": 25,
         "keptRichness": 27
+      },
+      {
+        "id": "8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4",
+        "url": "https://www.homes.co.jp/chintai/room/8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4/",
+        "keptId": "4c4e510ee351c80320381b66c6fab1e3894ad644",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "0cf60f56f4544f2b0f12296a2561dce8ba282d32",
+        "url": "https://www.homes.co.jp/chintai/room/0cf60f56f4544f2b0f12296a2561dce8ba282d32/",
+        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
+        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
+        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
+      },
+      {
+        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
+        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
+        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
+        "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
+        "keptId": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
+        "reason": "same_property_less_detail",
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "b139354024c4bcfeb0b6d9479d57cfa0500624cd",
+        "url": "https://www.homes.co.jp/chintai/room/b139354024c4bcfeb0b6d9479d57cfa0500624cd/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 28
+      },
+      {
+        "id": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
+        "url": "https://www.homes.co.jp/chintai/room/db3f4ff9246aeb6318b9880fce93880ae90c7246/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 28,
+        "keptRichness": 28
+      },
+      {
+        "id": "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b",
+        "url": "https://www.homes.co.jp/chintai/room/bc7b50bbd8907b5c831420ed2760d1cf557a4b7b/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 28
       },
       {
         "id": "698ebc4b5edca6ed81b34831556b246ec9fe4042",
@@ -230,62 +292,6 @@
         "reason": "same_property_less_detail",
         "richness": 24,
         "keptRichness": 28
-      },
-      {
-        "id": "b139354024c4bcfeb0b6d9479d57cfa0500624cd",
-        "url": "https://www.homes.co.jp/chintai/room/b139354024c4bcfeb0b6d9479d57cfa0500624cd/",
-        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 28
-      },
-      {
-        "id": "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b",
-        "url": "https://www.homes.co.jp/chintai/room/bc7b50bbd8907b5c831420ed2760d1cf557a4b7b/",
-        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 28
-      },
-      {
-        "id": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
-        "url": "https://www.homes.co.jp/chintai/room/db3f4ff9246aeb6318b9880fce93880ae90c7246/",
-        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
-        "reason": "same_property_less_detail",
-        "richness": 28,
-        "keptRichness": 28
-      },
-      {
-        "id": "8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4",
-        "url": "https://www.homes.co.jp/chintai/room/8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4/",
-        "keptId": "4c4e510ee351c80320381b66c6fab1e3894ad644",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
-      },
-      {
-        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
-        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
-        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
-        "reason": "same_property_less_detail",
-        "richness": 20,
-        "keptRichness": 27
-      },
-      {
-        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
-        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
-        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
-        "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
-        "keptId": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
       }
     ]
   },
@@ -333,7 +339,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/25",
+        "publishedText": "情報公開日\n\n2026/10/24",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -358,8 +364,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-25",
-      "publishedText": "情報公開日\n\n2026/10/25",
+      "publishedAt": "2026-10-24",
+      "publishedText": "情報公開日\n\n2026/10/24",
       "dedupedFrom": [
         "624c92bdd0ffeac7942562b8e319fcad3e12d5b0"
       ]
@@ -625,7 +631,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -650,8 +656,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -799,7 +805,7 @@
     {
       "id": "5720f0adaca481344af948ad6a872f4aff326430",
       "url": "https://www.homes.co.jp/chintai/room/5720f0adaca481344af948ad6a872f4aff326430/",
-      "title": "東急東横線 祐天寺駅 徒歩14分の賃貸マンション",
+      "title": "東急東横線 祐天寺駅 徒歩15分の賃貸マンション",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147649%2Frent%2F238347%2F2%2F2%2Fvs2z.jpg",
       "priceText": "28万円",
       "madori": "3LDK",
@@ -807,7 +813,7 @@
       "buildingAreaText": "82.71m²",
       "exclusiveAreaText": "82.71m²",
       "builtText": "築29年",
-      "walkMinutes": 14,
+      "walkMinutes": 15,
       "address": "東京都目黒区目黒４丁目23-17",
       "managementFeeText": "10,000円",
       "shikikinText": "1ヶ月",
@@ -866,16 +872,16 @@
       "publishedAt": "2026-10-01",
       "publishedText": "情報公開日\n\n2026/10/01",
       "dedupedFrom": [
+        "b139354024c4bcfeb0b6d9479d57cfa0500624cd",
+        "db3f4ff9246aeb6318b9880fce93880ae90c7246",
+        "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b",
         "698ebc4b5edca6ed81b34831556b246ec9fe4042",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
         "8ff0ecfc5502d55da57d76e89b2049eb049f1357",
         "52d1f984718af9d482fd4b2e4273080f758e9255",
         "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
-        "b139354024c4bcfeb0b6d9479d57cfa0500624cd",
-        "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b",
-        "db3f4ff9246aeb6318b9880fce93880ae90c7246"
+        "2d84e5a962d530d8e22b0abcfe9524f7663c90f4"
       ]
     },
     {
@@ -1389,7 +1395,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 9,
+      "walkMinutes": 10,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",
@@ -1448,6 +1454,7 @@
       "publishedAt": "2026-10-21",
       "publishedText": "情報公開日\n\n2026/10/21",
       "dedupedFrom": [
+        "0cf60f56f4544f2b0f12296a2561dce8ba282d32",
         "f272529fc2463b5affd6ac7c5b7ec52d57fe7573"
       ]
     }
