@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-08T11:56:56.102Z",
+  "scrapedAt": "2026-11-08T21:01:47.942Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -123,11 +123,9 @@
   "count": 3,
   "delta": {
     "addedCount": 0,
-    "removedCount": 1,
+    "removedCount": 0,
     "addedIds": [],
-    "removedIds": [
-      "9d1df33cce7f3529fde17cbc21af91a8928a94ed"
-    ]
+    "removedIds": []
   },
   "dedupe": {
     "before": 3,

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-08T11:58:52.186Z",
+  "scrapedAt": "2026-11-08T21:03:39.509Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,16 +122,13 @@
   },
   "count": 17,
   "delta": {
-    "addedCount": 3,
-    "removedCount": 2,
+    "addedCount": 1,
+    "removedCount": 1,
     "addedIds": [
-      "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
-      "8ff0ecfc5502d55da57d76e89b2049eb049f1357",
-      "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2"
+      "5720f0adaca481344af948ad6a872f4aff326430"
     ],
     "removedIds": [
-      "647b6c707da637c967d0ee2981f70d582bc8ac9c",
-      "5720f0adaca481344af948ad6a872f4aff326430"
+      "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2"
     ]
   },
   "dedupe": {
@@ -181,76 +178,68 @@
         "keptRichness": 27
       },
       {
-        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
-        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
-        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
         "id": "698ebc4b5edca6ed81b34831556b246ec9fe4042",
         "url": "https://www.homes.co.jp/chintai/room/698ebc4b5edca6ed81b34831556b246ec9fe4042/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "url": "https://www.homes.co.jp/chintai/room/333f90fe5701d4d791aab47eb543ba790895c3dd/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 24,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
-        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "id": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "url": "https://www.homes.co.jp/chintai/room/1e2a7768486d51fc50e5a76633df3f3f71b3d9e2/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
         "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 24,
-        "keptRichness": 27
+        "keptRichness": 28
+      },
+      {
+        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
       },
       {
         "id": "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
         "url": "https://www.homes.co.jp/chintai/room/2d84e5a962d530d8e22b0abcfe9524f7663c90f4/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 24,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
         "url": "https://www.homes.co.jp/chintai/room/db3f4ff9246aeb6318b9880fce93880ae90c7246/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "5720f0adaca481344af948ad6a872f4aff326430",
-        "url": "https://www.homes.co.jp/chintai/room/5720f0adaca481344af948ad6a872f4aff326430/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b",
         "url": "https://www.homes.co.jp/chintai/room/bc7b50bbd8907b5c831420ed2760d1cf557a4b7b/",
-        "keptId": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 25,
-        "keptRichness": 27
+        "keptRichness": 28
       },
       {
         "id": "8cc3e6a655beaae6b8a4fe37f78c3740b8285bc4",
@@ -258,6 +247,22 @@
         "keptId": "4c4e510ee351c80320381b66c6fab1e3894ad644",
         "reason": "same_property_less_detail",
         "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
+        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
+        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
+        "reason": "same_property_less_detail",
+        "richness": 20,
+        "keptRichness": 27
+      },
+      {
+        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
+        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
+        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
+        "reason": "same_property_less_detail",
+        "richness": 27,
         "keptRichness": 27
       },
       {
@@ -274,14 +279,6 @@
         "keptId": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
         "reason": "same_property_less_detail",
         "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
-        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
-        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
-        "reason": "same_property_less_detail",
-        "richness": 20,
         "keptRichness": 27
       }
     ]
@@ -431,14 +428,13 @@
       "dedupedFrom": [
         "ed3581cfdc6bb0a4289bfd3197de52bcd3345365",
         "647b6c707da637c967d0ee2981f70d582bc8ac9c"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "d872bcb981b75f733234051054b797ebaca1a317",
       "url": "https://www.homes.co.jp/chintai/room/d872bcb981b75f733234051054b797ebaca1a317/",
       "title": "都営新宿線 曙橋駅 徒歩3分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
       "priceText": "26.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -476,7 +472,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/05",
+        "publishedText": "情報公開日\n\n2026/11/03",
         "lat": 35.69369207967,
         "lon": 139.72294162788,
         "address": "東京都新宿区市谷仲之町2-7",
@@ -484,7 +480,7 @@
         "yearBuilt": 2004,
         "builtText": "2004年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -501,8 +497,8 @@
       "yearBuilt": 2004,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-05",
-      "publishedText": "情報公開日\n\n2026/11/05",
+      "publishedAt": "2026-11-03",
+      "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
         "1e7ac42c55f724a97d6eb92498cb7928ddb5af15"
       ]
@@ -621,7 +617,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -646,8 +642,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -791,6 +787,87 @@
       "dedupedFrom": [
         "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14"
       ]
+    },
+    {
+      "id": "5720f0adaca481344af948ad6a872f4aff326430",
+      "url": "https://www.homes.co.jp/chintai/room/5720f0adaca481344af948ad6a872f4aff326430/",
+      "title": "東急東横線 祐天寺駅 徒歩15分の賃貸マンション",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147649%2Frent%2F238347%2F2%2F2%2Fvs2z.jpg",
+      "priceText": "28万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "82.71m²",
+      "exclusiveAreaText": "82.71m²",
+      "builtText": "築29年",
+      "walkMinutes": 15,
+      "address": "東京都目黒区目黒４丁目23-17",
+      "managementFeeText": "10,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2026年11月 下旬",
+      "deal": "rent",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 28,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 84,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 82.71,
+      "buildingAreaM2": 82.71,
+      "buildingAgeYears": 28,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/10/01",
+        "lat": 35.632660562212,
+        "lon": 139.7000737948,
+        "address": "東京都目黒区目黒４丁目23-17",
+        "postalCode": "1530063",
+        "yearBuilt": 1998,
+        "builtText": "1998年9月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147649%2Frent%2F238347%2F2%2F2%2Fvs2z.jpg",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "10,000円",
+        "availableText": "2026年11月 下旬"
+      },
+      "lat": 35.632660562212,
+      "lon": 139.7000737948,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.632660562212%2C139.7000737948",
+      "ward": "目黒区",
+      "wardEn": "Meguro-ku",
+      "yearBuilt": 1998,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-10-01",
+      "publishedText": "情報公開日\n\n2026/10/01",
+      "dedupedFrom": [
+        "698ebc4b5edca6ed81b34831556b246ec9fe4042",
+        "333f90fe5701d4d791aab47eb543ba790895c3dd",
+        "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
+        "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
+        "db3f4ff9246aeb6318b9880fce93880ae90c7246",
+        "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b"
+      ],
+      "isNew": true
     },
     {
       "id": "676d0f7349d60e8331dd22b5ed3c172b154b21ea",
@@ -1077,8 +1154,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-01",
-      "publishedText": "情報公開日\n\n2026/10/01",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/01"
     },
     {
       "id": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
@@ -1152,87 +1228,6 @@
       "dedupedFrom": [
         "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
       ]
-    },
-    {
-      "id": "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
-      "url": "https://www.homes.co.jp/chintai/room/1e2a7768486d51fc50e5a76633df3f3f71b3d9e2/",
-      "title": "グランフォート目黒",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F133153%2Frent%2F543710%2F2%2F2%2F8hft.jpg",
-      "priceText": "32万円",
-      "madori": "3LDK",
-      "landAreaText": null,
-      "buildingAreaText": "82.71m²",
-      "exclusiveAreaText": "82.71m²",
-      "builtText": "築29年",
-      "walkMinutes": 15,
-      "address": "東京都目黒区目黒４丁目23-17",
-      "managementFeeText": "10,000円",
-      "shikikinText": "1ヶ月",
-      "reikinText": "1ヶ月",
-      "guaranteeText": "-",
-      "shikibikiText": "-",
-      "availableText": "2026年12月 上旬",
-      "deal": "rent",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 32,
-      "reikinMonths": 1,
-      "reikinYen": null,
-      "shikikinMonths": 1,
-      "oneOffManYen": 96,
-      "oneOffAssumesAgentMonths": 1,
-      "exclusiveAreaM2": 82.71,
-      "buildingAreaM2": 82.71,
-      "buildingAgeYears": 28,
-      "detail": {
-        "landRight": null,
-        "leaseType": null,
-        "zoning": null,
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": false,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/09/30",
-        "lat": 35.632540009424,
-        "lon": 139.69966883402,
-        "address": "東京都目黒区目黒４丁目23-17",
-        "postalCode": "1530063",
-        "yearBuilt": 1998,
-        "builtText": "1998年9月",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F133153%2Frent%2F543710%2F2%2F2%2F8hft.jpg",
-        "shikikinText": "1ヶ月",
-        "reikinText": "1ヶ月",
-        "guaranteeText": "-",
-        "shikibikiText": "-",
-        "managementFeeText": "10,000円",
-        "availableText": "2026年12月 上旬"
-      },
-      "lat": 35.632540009424,
-      "lon": 139.69966883402,
-      "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.632540009424%2C139.69966883402",
-      "ward": "目黒区",
-      "wardEn": "Meguro-ku",
-      "yearBuilt": 1998,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-09-30",
-      "publishedText": "情報公開日\n\n2026/09/30",
-      "dedupedFrom": [
-        "698ebc4b5edca6ed81b34831556b246ec9fe4042",
-        "333f90fe5701d4d791aab47eb543ba790895c3dd",
-        "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "52d1f984718af9d482fd4b2e4273080f758e9255",
-        "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
-        "db3f4ff9246aeb6318b9880fce93880ae90c7246",
-        "5720f0adaca481344af948ad6a872f4aff326430",
-        "bc7b50bbd8907b5c831420ed2760d1cf557a4b7b"
-      ],
-      "isNew": true
     },
     {
       "id": "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
