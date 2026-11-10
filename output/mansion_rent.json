@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-10T00:39:52.953Z",
+  "scrapedAt": "2026-11-10T13:32:06.369Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,20 +122,15 @@
   },
   "count": 17,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 1,
-    "addedIds": [
-      "14047955b06e51d7f51b2ae9b8e8b1186124857b",
-      "8ff0ecfc5502d55da57d76e89b2049eb049f1357"
-    ],
-    "removedIds": [
-      "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
-    "before": 30,
+    "before": 29,
     "after": 17,
-    "removedCount": 13,
+    "removedCount": 12,
     "clusters": 7,
     "removed": [
       {
@@ -152,14 +147,6 @@
         "keptId": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
         "reason": "same_property_less_detail",
         "richness": 25,
-        "keptRichness": 27
-      },
-      {
-        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
-        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
-        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
-        "reason": "same_property_less_detail",
-        "richness": 27,
         "keptRichness": 27
       },
       {
@@ -195,14 +182,6 @@
         "keptRichness": 28
       },
       {
-        "id": "698ebc4b5edca6ed81b34831556b246ec9fe4042",
-        "url": "https://www.homes.co.jp/chintai/room/698ebc4b5edca6ed81b34831556b246ec9fe4042/",
-        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 28
-      },
-      {
         "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
         "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
@@ -223,7 +202,15 @@
         "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
         "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
         "reason": "same_property_less_detail",
-        "richness": 20,
+        "richness": 26,
+        "keptRichness": 27
+      },
+      {
+        "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
+        "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
+        "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
+        "reason": "same_property_less_detail",
+        "richness": 25,
         "keptRichness": 27
       },
       {
@@ -320,7 +307,7 @@
       "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
       "url": "https://www.homes.co.jp/chintai/room/624c92bdd0ffeac7942562b8e319fcad3e12d5b0/",
       "title": "ＫＥＮＥＤＩＸ北赤羽",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc00a5fd0%2F85701_873609_1_132000_132000.jpg%3Ft%3D19700101090000",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F183b657c%2F85701_873609_1_132000_132000.jpg%3Ft%3D19700101090000",
       "priceText": "18.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -367,7 +354,7 @@
         "yearBuilt": 1999,
         "builtText": "1999年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc00a5fd0%2F85701_873609_1_132000_132000.jpg%3Ft%3D19700101090000",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F183b657c%2F85701_873609_1_132000_132000.jpg%3Ft%3D19700101090000",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
@@ -577,7 +564,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -602,8 +589,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -673,8 +660,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-09-17",
-      "publishedText": "情報公開日\n\n2026/09/17",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/09/17"
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -823,7 +809,6 @@
         "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
-        "698ebc4b5edca6ed81b34831556b246ec9fe4042",
         "52d1f984718af9d482fd4b2e4273080f758e9255",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4"
       ]
@@ -1010,7 +995,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/11",
+        "publishedText": "情報公開日\n\n2026/04/27",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -1035,8 +1020,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-11",
-      "publishedText": "情報公開日\n\n2026/06/11",
+      "publishedAt": "2026-04-27",
+      "publishedText": "情報公開日\n\n2026/04/27",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
       ]
@@ -1109,8 +1094,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-01",
-      "publishedText": "情報公開日\n\n2026/10/01",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/01"
     },
     {
       "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
@@ -1154,7 +1138,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/03",
+        "publishedText": "情報公開日\n\n2026/11/02",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1179,8 +1163,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-03",
-      "publishedText": "情報公開日\n\n2026/11/03",
+      "publishedAt": "2026-11-02",
+      "publishedText": "情報公開日\n\n2026/11/02",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ]
