@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-11T12:43:02.887Z",
+  "scrapedAt": "2026-11-11T23:23:03.501Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -128,9 +128,9 @@
     "removedIds": []
   },
   "dedupe": {
-    "before": 30,
+    "before": 31,
     "after": 17,
-    "removedCount": 13,
+    "removedCount": 14,
     "clusters": 7,
     "removed": [
       {
@@ -155,6 +155,14 @@
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 28,
+        "keptRichness": 28
+      },
+      {
+        "id": "189e93f8e4f3bac66b36f9994e5ac56ce5147c98",
+        "url": "https://www.homes.co.jp/chintai/room/189e93f8e4f3bac66b36f9994e5ac56ce5147c98/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 25,
         "keptRichness": 28
       },
       {
@@ -218,7 +226,7 @@
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 25,
+        "richness": 27,
         "keptRichness": 27
       },
       {
@@ -283,7 +291,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/24",
+        "publishedText": "情報公開日\n\n2026/10/25",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -308,8 +316,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-24",
-      "publishedText": "情報公開日\n\n2026/10/24"
+      "publishedAt": "2026-10-25",
+      "publishedText": "情報公開日\n\n2026/10/25"
     },
     {
       "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
@@ -572,7 +580,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -597,8 +605,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -814,6 +822,7 @@
       "publishedText": "情報公開日\n\n2026/10/01",
       "dedupedFrom": [
         "db3f4ff9246aeb6318b9880fce93880ae90c7246",
+        "189e93f8e4f3bac66b36f9994e5ac56ce5147c98",
         "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
