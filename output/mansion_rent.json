@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-10T22:15:03.338Z",
+  "scrapedAt": "2026-11-11T12:43:02.887Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -128,9 +128,9 @@
     "removedIds": []
   },
   "dedupe": {
-    "before": 29,
+    "before": 30,
     "after": 17,
-    "removedCount": 12,
+    "removedCount": 13,
     "clusters": 7,
     "removed": [
       {
@@ -184,6 +184,14 @@
       {
         "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
         "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
+        "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
+        "reason": "same_property_less_detail",
+        "richness": 24,
+        "keptRichness": 28
+      },
+      {
+        "id": "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
+        "url": "https://www.homes.co.jp/chintai/room/043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 24,
@@ -275,7 +283,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/25",
+        "publishedText": "情報公開日\n\n2026/10/24",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -300,8 +308,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-25",
-      "publishedText": "情報公開日\n\n2026/10/25"
+      "publishedAt": "2026-10-24",
+      "publishedText": "情報公開日\n\n2026/10/24"
     },
     {
       "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
@@ -564,7 +572,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -589,8 +597,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -810,6 +818,7 @@
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "1e2a7768486d51fc50e5a76633df3f3f71b3d9e2",
         "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4"
       ]
     },
@@ -1320,7 +1329,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 9,
+      "walkMinutes": 10,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",
@@ -1386,7 +1395,7 @@
       "id": "eefff725a7c3539ec780bf4bde67b3124663cb26",
       "url": "https://www.homes.co.jp/chintai/room/eefff725a7c3539ec780bf4bde67b3124663cb26/",
       "title": "クレッセント目黒青葉台",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F113000%2Frent%2F12079%2F1%2F2%2Fr7t1.jpg",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142470%2Frent%2F63576%2F2%2F2%2Fvdoa.jpg",
       "priceText": "34.8万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -1424,15 +1433,15 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/22",
-        "lat": 35.647186875878,
-        "lon": 139.69606522062,
+        "publishedText": "情報公開日\n\n2026/10/24",
+        "lat": 35.647286863979,
+        "lon": 139.69604105201,
         "address": "東京都目黒区青葉台１丁目24-2",
         "postalCode": "1530042",
         "yearBuilt": 1997,
         "builtText": "1997年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F113000%2Frent%2F12079%2F1%2F2%2Fr7t1.jpg",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F142470%2Frent%2F63576%2F2%2F2%2Fvdoa.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -1440,17 +1449,17 @@
         "managementFeeText": "20,000円",
         "availableText": "即時"
       },
-      "lat": 35.647186875878,
-      "lon": 139.69606522062,
+      "lat": 35.647286863979,
+      "lon": 139.69604105201,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.647186875878%2C139.69606522062",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.647286863979%2C139.69604105201",
       "ward": "目黒区",
       "wardEn": "Meguro-ku",
       "yearBuilt": 1997,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-22",
-      "publishedText": "情報公開日\n\n2026/10/22"
+      "publishedAt": "2026-10-24",
+      "publishedText": "情報公開日\n\n2026/10/24"
     }
   ]
 }
