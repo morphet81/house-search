@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-12T13:48:11.636Z",
+  "scrapedAt": "2026-11-12T22:39:16.499Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,11 +122,13 @@
   },
   "count": 16,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 1,
-    "addedIds": [],
+    "addedIds": [
+      "ff272115bcfe99ef931fa80e164e55899fb1d79e"
+    ],
     "removedIds": [
-      "8ff0ecfc5502d55da57d76e89b2049eb049f1357"
+      "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
     ]
   },
   "dedupe": {
@@ -148,7 +150,7 @@
         "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
         "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
         "reason": "same_property_less_detail",
-        "richness": 20,
+        "richness": 26,
         "keptRichness": 27
       },
       {
@@ -156,16 +158,16 @@
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 25,
+        "richness": 27,
         "keptRichness": 27
       },
       {
-        "id": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
-        "url": "https://www.homes.co.jp/chintai/room/ff272115bcfe99ef931fa80e164e55899fb1d79e/",
-        "keptId": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
+        "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
+        "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
+        "keptId": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
         "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 28
+        "richness": 26,
+        "keptRichness": 27
       },
       {
         "id": "cf143d3aa99c4fd61b473b9bd007523e0d4a091b",
@@ -1004,7 +1006,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/11",
+        "publishedText": "情報公開日\n\n2026/06/07",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -1029,16 +1031,16 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-11",
-      "publishedText": "情報公開日\n\n2026/06/11",
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日\n\n2026/06/07",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
       ]
     },
     {
-      "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
-      "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
-      "title": "東急田園都市線 桜新町駅 徒歩14分の賃貸マンション",
+      "id": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
+      "url": "https://www.homes.co.jp/chintai/room/ff272115bcfe99ef931fa80e164e55899fb1d79e/",
+      "title": "レジディア世田谷弦巻",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F314%2F314410%2F314410_2.jpg%3F20261102120256",
       "priceText": "31.8万円",
       "madori": "3LDK",
@@ -1105,8 +1107,9 @@
       "publishedAt": "2026-11-02",
       "publishedText": "情報公開日\n\n2026/11/02",
       "dedupedFrom": [
-        "ff272115bcfe99ef931fa80e164e55899fb1d79e"
-      ]
+        "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
+      ],
+      "isNew": true
     },
     {
       "id": "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
