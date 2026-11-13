@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-12T22:39:16.499Z",
+  "scrapedAt": "2026-11-13T13:05:54.817Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -125,10 +125,10 @@
     "addedCount": 1,
     "removedCount": 1,
     "addedIds": [
-      "ff272115bcfe99ef931fa80e164e55899fb1d79e"
+      "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
     ],
     "removedIds": [
-      "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
+      "ff272115bcfe99ef931fa80e164e55899fb1d79e"
     ]
   },
   "dedupe": {
@@ -146,33 +146,9 @@
         "keptRichness": 27
       },
       {
-        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
-        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
-        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
-      },
-      {
         "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
-        "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
-        "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
-        "keptId": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
-      },
-      {
-        "id": "cf143d3aa99c4fd61b473b9bd007523e0d4a091b",
-        "url": "https://www.homes.co.jp/chintai/room/cf143d3aa99c4fd61b473b9bd007523e0d4a091b/",
-        "keptId": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
         "reason": "same_property_less_detail",
         "richness": 25,
         "keptRichness": 27
@@ -194,16 +170,16 @@
         "keptRichness": 28
       },
       {
-        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
+        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 28
       },
       {
-        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
-        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
+        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
@@ -240,6 +216,30 @@
         "reason": "same_property_less_detail",
         "richness": 25,
         "keptRichness": 28
+      },
+      {
+        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
+        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
+        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
+        "reason": "same_property_less_detail",
+        "richness": 20,
+        "keptRichness": 27
+      },
+      {
+        "id": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
+        "url": "https://www.homes.co.jp/chintai/room/ff272115bcfe99ef931fa80e164e55899fb1d79e/",
+        "keptId": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "cf143d3aa99c4fd61b473b9bd007523e0d4a091b",
+        "url": "https://www.homes.co.jp/chintai/room/cf143d3aa99c4fd61b473b9bd007523e0d4a091b/",
+        "keptId": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
+        "reason": "same_property_less_detail",
+        "richness": 25,
+        "keptRichness": 27
       }
     ]
   },
@@ -573,7 +573,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -598,8 +598,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -747,7 +747,7 @@
     {
       "id": "5720f0adaca481344af948ad6a872f4aff326430",
       "url": "https://www.homes.co.jp/chintai/room/5720f0adaca481344af948ad6a872f4aff326430/",
-      "title": "東急東横線 祐天寺駅 徒歩15分の賃貸マンション",
+      "title": "東急東横線 祐天寺駅 徒歩14分の賃貸マンション",
       "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F147649%2Frent%2F238347%2F2%2F2%2Fvs2z.jpg",
       "priceText": "28万円",
       "madori": "3LDK",
@@ -755,7 +755,7 @@
       "buildingAreaText": "82.71m²",
       "exclusiveAreaText": "82.71m²",
       "builtText": "築29年",
-      "walkMinutes": 15,
+      "walkMinutes": 14,
       "address": "東京都目黒区目黒４丁目23-17",
       "managementFeeText": "10,000円",
       "shikikinText": "1ヶ月",
@@ -816,8 +816,8 @@
       "dedupedFrom": [
         "1444543e817ace3e603684dd5f42773b1773192c",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
-        "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
         "db3f4ff9246aeb6318b9880fce93880ae90c7246",
@@ -1038,9 +1038,9 @@
       ]
     },
     {
-      "id": "ff272115bcfe99ef931fa80e164e55899fb1d79e",
-      "url": "https://www.homes.co.jp/chintai/room/ff272115bcfe99ef931fa80e164e55899fb1d79e/",
-      "title": "レジディア世田谷弦巻",
+      "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
+      "url": "https://www.homes.co.jp/chintai/room/3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2/",
+      "title": "東急田園都市線 桜新町駅 徒歩14分の賃貸マンション",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F314%2F314410%2F314410_2.jpg%3F20261102120256",
       "priceText": "31.8万円",
       "madori": "3LDK",
@@ -1079,7 +1079,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/02",
+        "publishedText": "情報公開日\n\n2026/11/03",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1104,10 +1104,10 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-02",
-      "publishedText": "情報公開日\n\n2026/11/02",
+      "publishedAt": "2026-11-03",
+      "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
-        "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
+        "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ],
       "isNew": true
     },
@@ -1126,7 +1126,7 @@
       "address": "東京都練馬区東大泉２丁目5-17",
       "managementFeeText": "10,000円",
       "shikikinText": "無",
-      "reikinText": "2ヶ月",
+      "reikinText": "1.5ヶ月",
       "guaranteeText": "-",
       "shikibikiText": "-",
       "availableText": "即時",
@@ -1135,10 +1135,10 @@
         "station"
       ],
       "priceManYen": 32,
-      "reikinMonths": 2,
+      "reikinMonths": 1.5,
       "reikinYen": null,
       "shikikinMonths": 0,
-      "oneOffManYen": 96,
+      "oneOffManYen": 80,
       "oneOffAssumesAgentMonths": 1,
       "exclusiveAreaM2": 100.82,
       "buildingAreaM2": 100.82,
@@ -1163,7 +1163,7 @@
         "structure": "鉄骨造",
         "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3703836%2Frent%2F1456%2F1%2F1%2F4yvy.jpg",
         "shikikinText": "無",
-        "reikinText": "2ヶ月",
+        "reikinText": "1.5ヶ月",
         "guaranteeText": "-",
         "shikibikiText": "-",
         "managementFeeText": "10,000円",

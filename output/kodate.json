@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-12T22:32:21.588Z",
+  "scrapedAt": "2026-11-13T12:58:58.385Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 4,
+  "count": 5,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1314560009565"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 4,
-    "after": 4,
+    "before": 5,
+    "after": 5,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
@@ -253,6 +255,66 @@
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
       "publishedText": "情報公開日：2026/08/26（79日前 公開）"
+    },
+    {
+      "id": "b-1314560009565",
+      "url": "https://www.homes.co.jp/kodate/b-1314560009565/",
+      "title": "中古一戸建て板橋区板橋1丁目・一戸建PR",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2F6a0879e4%2F36_1752761_1_132000_132000.jpg%3Ft%3D20261113120015",
+      "priceText": "9,980万円",
+      "madori": null,
+      "landAreaText": "72.09m²3SLDK",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": 6,
+      "address": "東京都板橋区板橋1丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.747395810838%2C139.71476266413",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 9980,
+      "buildingAreaM2": null,
+      "landAreaM2": 72.09,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第二種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "9,980万円",
+        "landAreaText": "72.09m²",
+        "publishedText": "情報公開日：2026/11/13（本日公開）",
+        "lat": 35.747395810838,
+        "lon": 139.71476266413,
+        "address": "東京都板橋区板橋1丁目",
+        "postalCode": "173-0004",
+        "yearBuilt": 2010,
+        "builtText": "2010年9月（築17年）",
+        "structure": "木造/3階建",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2F6a0879e4%2F36_1752761_1_132000_132000.jpg%3Ft%3D20261113120015",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": null,
+        "availableText": null
+      },
+      "lat": 35.747395810838,
+      "lon": 139.71476266413,
+      "locationAccuracy": "coordinates",
+      "ward": "板橋区",
+      "wardEn": "Itabashi-ku",
+      "yearBuilt": 2010,
+      "buildingAgeYears": 17,
+      "storeys": 3,
+      "structure": "木造/3階建",
+      "publishedAt": "2026-11-13",
+      "publishedText": "情報公開日：2026/11/13（本日公開）",
+      "isNew": true
     },
     {
       "id": "b-1342150000369",
