@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-13T13:05:54.817Z",
+  "scrapedAt": "2026-11-13T22:27:26.793Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,14 +122,10 @@
   },
   "count": 16,
   "delta": {
-    "addedCount": 1,
-    "removedCount": 1,
-    "addedIds": [
-      "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2"
-    ],
-    "removedIds": [
-      "ff272115bcfe99ef931fa80e164e55899fb1d79e"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
     "before": 29,
@@ -170,16 +166,16 @@
         "keptRichness": 28
       },
       {
-        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
-        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
+        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 28
       },
       {
-        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
+        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
@@ -238,7 +234,7 @@
         "url": "https://www.homes.co.jp/chintai/room/cf143d3aa99c4fd61b473b9bd007523e0d4a091b/",
         "keptId": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
         "reason": "same_property_less_detail",
-        "richness": 25,
+        "richness": 27,
         "keptRichness": 27
       }
     ]
@@ -816,8 +812,8 @@
       "dedupedFrom": [
         "1444543e817ace3e603684dd5f42773b1773192c",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
-        "52d1f984718af9d482fd4b2e4273080f758e9255",
         "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "52d1f984718af9d482fd4b2e4273080f758e9255",
         "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
         "db3f4ff9246aeb6318b9880fce93880ae90c7246",
@@ -1006,7 +1002,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/07",
+        "publishedText": "情報公開日\n\n2026/04/27",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -1031,8 +1027,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-07",
-      "publishedText": "情報公開日\n\n2026/06/07",
+      "publishedAt": "2026-04-27",
+      "publishedText": "情報公開日\n\n2026/04/27",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
       ]
@@ -1108,8 +1104,7 @@
       "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "6a4c05d1def00ec47b270ca5529b193c885f3a7e",
