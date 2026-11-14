@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-14T12:09:14.717Z",
+  "scrapedAt": "2026-11-14T21:10:16.559Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,15 +122,10 @@
   },
   "count": 17,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 1,
-    "addedIds": [
-      "2ea0eeca1cba8d6aa3da5e263eded352435472ef",
-      "8b4f041770bc2f3293c0c15dae86447cbed74879"
-    ],
-    "removedIds": [
-      "624c92bdd0ffeac7942562b8e319fcad3e12d5b0"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
     "before": 31,
@@ -321,8 +316,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-07-09",
-      "publishedText": "情報公開日\n\n2026/07/09",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/07/09"
     },
     {
       "id": "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
@@ -1044,8 +1038,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-11-14",
-      "publishedText": "情報公開日\n\n2026/11/14",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/11/14"
     },
     {
       "id": "1cfef6ecfd2391f3f09857abf31ef817ae4699c2",
