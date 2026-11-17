@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-17T00:44:09.677Z",
+  "scrapedAt": "2026-11-17T14:23:34.462Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -120,26 +120,31 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 17,
+  "count": 18,
   "delta": {
-    "addedCount": 0,
-    "removedCount": 0,
-    "addedIds": [],
-    "removedIds": []
+    "addedCount": 2,
+    "removedCount": 1,
+    "addedIds": [
+      "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
+      "c28aebb5e4a002618a7fce3d7bdbe4b75f4206db"
+    ],
+    "removedIds": [
+      "28255fc40a67577ea6bb7b45ed4d7a72fc083c53"
+    ]
   },
   "dedupe": {
-    "before": 31,
-    "after": 17,
+    "before": 32,
+    "after": 18,
     "removedCount": 14,
     "clusters": 7,
     "removed": [
       {
-        "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
-        "url": "https://www.homes.co.jp/chintai/room/624c92bdd0ffeac7942562b8e319fcad3e12d5b0/",
-        "keptId": "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
+        "id": "9f161524ae580e17169ca9f74ff328249d468fa0",
+        "url": "https://www.homes.co.jp/chintai/room/9f161524ae580e17169ca9f74ff328249d468fa0/",
+        "keptId": "c28aebb5e4a002618a7fce3d7bdbe4b75f4206db",
         "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
+        "richness": 24,
+        "keptRichness": 25
       },
       {
         "id": "c1b9583c38ac7fd7d72a546e8178328cc1d6cf14",
@@ -182,16 +187,16 @@
         "keptRichness": 28
       },
       {
-        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
+        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
         "keptRichness": 28
       },
       {
-        "id": "52d1f984718af9d482fd4b2e4273080f758e9255",
-        "url": "https://www.homes.co.jp/chintai/room/52d1f984718af9d482fd4b2e4273080f758e9255/",
+        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
+        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
         "richness": 27,
@@ -202,7 +207,7 @@
         "url": "https://www.homes.co.jp/chintai/room/043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f/",
         "keptId": "5720f0adaca481344af948ad6a872f4aff326430",
         "reason": "same_property_less_detail",
-        "richness": 27,
+        "richness": 24,
         "keptRichness": 28
       },
       {
@@ -218,7 +223,7 @@
         "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
         "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
         "reason": "same_property_less_detail",
-        "richness": 20,
+        "richness": 26,
         "keptRichness": 27
       },
       {
@@ -319,10 +324,10 @@
       "publishedText": "情報公開日\n\n2026/07/09"
     },
     {
-      "id": "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
-      "url": "https://www.homes.co.jp/chintai/room/28255fc40a67577ea6bb7b45ed4d7a72fc083c53/",
+      "id": "624c92bdd0ffeac7942562b8e319fcad3e12d5b0",
+      "url": "https://www.homes.co.jp/chintai/room/624c92bdd0ffeac7942562b8e319fcad3e12d5b0/",
       "title": "ＫＥＮＥＤＩＸ北赤羽",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fa47237aa%2F15994_5390663_1_132000_132000.jpg%3Ft%3D20261024114150",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150754%2Frent%2F46431%2F2%2F2%2Foyd0.jpg",
       "priceText": "18.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -330,7 +335,7 @@
       "exclusiveAreaText": "75.98m²",
       "builtText": "築28年",
       "walkMinutes": 7,
-      "address": "東京都北区浮間3丁目12-5",
+      "address": "東京都北区浮間３丁目12-5",
       "managementFeeText": "15,000円",
       "shikikinText": "1ヶ月",
       "reikinText": "無",
@@ -362,14 +367,14 @@
         "priceText": null,
         "landAreaText": null,
         "publishedText": "情報公開日\n\n2026/10/24",
-        "lat": 35.786102440013,
-        "lon": 139.69995708671,
-        "address": "東京都北区浮間3丁目12-5",
+        "lat": 35.78612188222,
+        "lon": 139.6999554194,
+        "address": "東京都北区浮間３丁目12-5",
         "postalCode": "1150051",
         "yearBuilt": 1999,
         "builtText": "1999年3月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fa47237aa%2F15994_5390663_1_132000_132000.jpg%3Ft%3D20261024114150",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150754%2Frent%2F46431%2F2%2F2%2Foyd0.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "無",
         "guaranteeText": "-",
@@ -377,10 +382,10 @@
         "managementFeeText": "15,000円",
         "availableText": "2026年12月 中旬"
       },
-      "lat": 35.786102440013,
-      "lon": 139.69995708671,
+      "lat": 35.78612188222,
+      "lon": 139.6999554194,
       "locationAccuracy": "coordinates",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.786102440013%2C139.69995708671",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.78612188222%2C139.6999554194",
       "ward": "北区",
       "wardEn": "Kita-ku",
       "yearBuilt": 1999,
@@ -388,9 +393,82 @@
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-24",
       "publishedText": "情報公開日\n\n2026/10/24",
+      "isNew": true
+    },
+    {
+      "id": "c28aebb5e4a002618a7fce3d7bdbe4b75f4206db",
+      "url": "https://www.homes.co.jp/chintai/room/c28aebb5e4a002618a7fce3d7bdbe4b75f4206db/",
+      "title": "東京メトロ南北線 王子駅 徒歩2分の賃貸マンション",
+      "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F3adef021%2F533_927967_1_132000_132000.jpg%3Ft%3D20261117175438",
+      "priceText": "21万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "75.88m²",
+      "exclusiveAreaText": "75.88m²",
+      "builtText": "築29年",
+      "walkMinutes": 2,
+      "address": "東京都北区王子1丁目",
+      "managementFeeText": "7,500円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "2027年01月 中旬",
+      "deal": "rent",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 21,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 63,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 75.88,
+      "buildingAreaM2": 75.88,
+      "buildingAgeYears": 28,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/11/17",
+        "lat": 35.755751041468,
+        "lon": 139.73780481256,
+        "address": "東京都北区王子1丁目",
+        "postalCode": "1140002",
+        "yearBuilt": 1998,
+        "builtText": "1998年5月",
+        "structure": "SRC(鉄骨鉄筋コンクリート)",
+        "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F3adef021%2F533_927967_1_132000_132000.jpg%3Ft%3D20261117175438",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "7,500円",
+        "availableText": "2027年01月 中旬"
+      },
+      "lat": 35.755751041468,
+      "lon": 139.73780481256,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.755751041468%2C139.73780481256",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 1998,
+      "storeys": null,
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-11-17",
+      "publishedText": "情報公開日\n\n2026/11/17",
       "dedupedFrom": [
-        "624c92bdd0ffeac7942562b8e319fcad3e12d5b0"
-      ]
+        "9f161524ae580e17169ca9f74ff328249d468fa0"
+      ],
+      "isNew": true
     },
     {
       "id": "d872bcb981b75f733234051054b797ebaca1a317",
@@ -579,7 +657,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -604,8 +682,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -824,8 +902,8 @@
         "189e93f8e4f3bac66b36f9994e5ac56ce5147c98",
         "1444543e817ace3e603684dd5f42773b1773192c",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
-        "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "52d1f984718af9d482fd4b2e4273080f758e9255",
+        "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4"
       ]
@@ -1155,7 +1233,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/03",
+        "publishedText": "情報公開日\n\n2026/11/02",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1180,8 +1258,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-03",
-      "publishedText": "情報公開日\n\n2026/11/03",
+      "publishedAt": "2026-11-02",
+      "publishedText": "情報公開日\n\n2026/11/02",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ]
@@ -1337,7 +1415,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 9,
+      "walkMinutes": 10,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",
