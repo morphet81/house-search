@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-19T14:20:28.186Z",
+  "scrapedAt": "2026-11-19T23:27:15.297Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -108,21 +108,83 @@
     "parking": true,
     "landAreaMinM2": 80
   },
-  "count": 8,
+  "count": 9,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "b-1571620000358"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 8,
-    "after": 8,
+    "before": 9,
+    "after": 9,
     "removedCount": 0,
     "clusters": 0,
     "removed": []
   },
   "listings": [
+    {
+      "id": "b-1571620000358",
+      "url": "https://www.homes.co.jp/tochi/b-1571620000358/",
+      "title": "",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F358%2F2%2F1%2Fvh3f.jpg",
+      "priceText": "4,180万円",
+      "madori": null,
+      "landAreaText": "140.56m²",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都北区岸町2丁目",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.760240047734%2C139.72996002103",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 4180,
+      "landAreaM2": 140.56,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "4,180万円",
+        "landAreaText": "140.56m²",
+        "publishedText": "情報公開日：2026/09/06（75日前 公開）",
+        "lat": 35.760240047734,
+        "lon": 139.72996002103,
+        "address": "東京都北区岸町2丁目",
+        "postalCode": "114-0021",
+        "yearBuilt": null,
+        "builtText": null,
+        "structure": null,
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157162%2Fsale%2F358%2F2%2F1%2Fvh3f.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "0円",
+        "availableText": null
+      },
+      "lat": 35.760240047734,
+      "lon": 139.72996002103,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": null,
+      "buildingAgeYears": null,
+      "storeys": null,
+      "structure": null,
+      "publishedAt": "2026-09-06",
+      "publishedText": "情報公開日：2026/09/06（75日前 公開）",
+      "isNew": true
+    },
     {
       "id": "b-35012500000047",
       "url": "https://www.homes.co.jp/tochi/b-35012500000047/",
@@ -154,7 +216,7 @@
         "freeholdMention": true,
         "priceText": "4,380万円",
         "landAreaText": "80.93m²",
-        "publishedText": "情報公開日：2026/11/05（14日前 公開）",
+        "publishedText": "情報公開日：2026/11/05（15日前 公開）",
         "lat": 35.766250029834,
         "lon": 139.71309010268,
         "address": "東京都北区西が丘2丁目",
@@ -180,12 +242,12 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-11-05",
-      "publishedText": "情報公開日：2026/11/05（14日前 公開）"
+      "publishedText": "情報公開日：2026/11/05（15日前 公開）"
     },
     {
       "id": "b-37260180000005",
       "url": "https://www.homes.co.jp/tochi/b-37260180000005/",
-      "title": "",
+      "title": "PR土地北区西が丘二丁目売地",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
       "priceText": "4,380万円",
       "madori": null,
@@ -193,7 +255,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": null,
+      "walkMinutes": 13,
       "address": "東京都北区西が丘2丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.765948975089%2C139.71392809908",
       "deal": "buy",
@@ -213,7 +275,7 @@
         "freeholdMention": true,
         "priceText": "4,380万円",
         "landAreaText": "80.93m²",
-        "publishedText": "情報公開日：2026/10/03（47日前 公開）",
+        "publishedText": "情報公開日：2026/10/03（48日前 公開）",
         "lat": 35.765948975089,
         "lon": 139.71392809908,
         "address": "東京都北区西が丘2丁目",
@@ -239,7 +301,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-03",
-      "publishedText": "情報公開日：2026/10/03（47日前 公開）"
+      "publishedText": "情報公開日：2026/10/03（48日前 公開）"
     },
     {
       "id": "b-1388540011562",
@@ -272,7 +334,7 @@
         "freeholdMention": true,
         "priceText": "5,955万円",
         "landAreaText": "96.09m²",
-        "publishedText": "情報公開日：2026/09/16（64日前 公開）",
+        "publishedText": "情報公開日：2026/09/16（65日前 公開）",
         "lat": 35.761072139682,
         "lon": 139.72859704786,
         "address": "東京都北区岸町2丁目",
@@ -298,7 +360,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-16",
-      "publishedText": "情報公開日：2026/09/16（64日前 公開）"
+      "publishedText": "情報公開日：2026/09/16（65日前 公開）"
     },
     {
       "id": "b-1004580046269",
@@ -330,7 +392,7 @@
         "freeholdMention": true,
         "priceText": "5,980万円",
         "landAreaText": "94.76m²",
-        "publishedText": "情報公開日：2026/10/02（48日前 公開）",
+        "publishedText": "情報公開日：2026/10/02（49日前 公開）",
         "lat": 35.757169759255,
         "lon": 139.70624993916,
         "address": "東京都板橋区大和町",
@@ -356,7 +418,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-02",
-      "publishedText": "情報公開日：2026/10/02（48日前 公開）"
+      "publishedText": "情報公開日：2026/10/02（49日前 公開）"
     },
     {
       "id": "b-1004590049559",
@@ -388,7 +450,7 @@
         "freeholdMention": true,
         "priceText": "5,980万円",
         "landAreaText": "94.76m²",
-        "publishedText": "情報公開日：2026/10/02（48日前 公開）",
+        "publishedText": "情報公開日：2026/10/02（49日前 公開）",
         "lat": 35.757169759255,
         "lon": 139.70624993916,
         "address": "東京都板橋区大和町",
@@ -414,7 +476,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-02",
-      "publishedText": "情報公開日：2026/10/02（48日前 公開）"
+      "publishedText": "情報公開日：2026/10/02（49日前 公開）"
     },
     {
       "id": "b-1412500000764",
@@ -447,7 +509,7 @@
         "freeholdMention": true,
         "priceText": "5,980万円",
         "landAreaText": "281.13m²",
-        "publishedText": "情報公開日：2026/10/12（38日前 公開）",
+        "publishedText": "情報公開日：2026/10/12（39日前 公開）",
         "lat": 35.785705085972,
         "lon": 139.7141108983,
         "address": "東京都北区赤羽北1丁目",
@@ -473,7 +535,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-12",
-      "publishedText": "情報公開日：2026/10/12（38日前 公開）"
+      "publishedText": "情報公開日：2026/10/12（39日前 公開）"
     },
     {
       "id": "b-1571620000315",
@@ -506,7 +568,7 @@
         "freeholdMention": true,
         "priceText": "5,980万円",
         "landAreaText": "81.15m²",
-        "publishedText": "情報公開日：2026/08/11（100日前 公開）",
+        "publishedText": "情報公開日：2026/08/11（101日前 公開）",
         "lat": 35.759669954583,
         "lon": 139.72407998853,
         "address": "東京都北区上十条1丁目",
@@ -532,7 +594,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-08-11",
-      "publishedText": "情報公開日：2026/08/11（100日前 公開）"
+      "publishedText": "情報公開日：2026/08/11（101日前 公開）"
     },
     {
       "id": "b-85920000048",
@@ -564,7 +626,7 @@
         "freeholdMention": true,
         "priceText": "5,980万円",
         "landAreaText": "94.76m²",
-        "publishedText": "情報公開日：2026/10/17（33日前 公開）",
+        "publishedText": "情報公開日：2026/10/17（34日前 公開）",
         "lat": 35.757158094542,
         "lon": 139.70627382649,
         "address": "東京都板橋区大和町1-8",
@@ -590,7 +652,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-10-17",
-      "publishedText": "情報公開日：2026/10/17（33日前 公開）"
+      "publishedText": "情報公開日：2026/10/17（34日前 公開）"
     }
   ]
 }
