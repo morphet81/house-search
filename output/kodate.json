@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-19T23:23:41.334Z",
+  "scrapedAt": "2026-11-20T13:57:32.218Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,21 +120,31 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 6,
+  "count": 4,
   "delta": {
-    "addedCount": 1,
-    "removedCount": 0,
-    "addedIds": [
-      "b-1358110013551"
-    ],
-    "removedIds": []
+    "addedCount": 0,
+    "removedCount": 2,
+    "addedIds": [],
+    "removedIds": [
+      "b-1358110013551",
+      "b-1357690020807"
+    ]
   },
   "dedupe": {
-    "before": 6,
-    "after": 6,
-    "removedCount": 0,
-    "clusters": 0,
-    "removed": []
+    "before": 5,
+    "after": 4,
+    "removedCount": 1,
+    "clusters": 1,
+    "removed": [
+      {
+        "id": "b-1358110013551",
+        "url": "https://www.homes.co.jp/kodate/b-1358110013551/",
+        "keptId": "b-1314560009565",
+        "reason": "same_property_less_detail",
+        "richness": 28,
+        "keptRichness": 28
+      }
+    ]
   },
   "listings": [
     {
@@ -259,15 +269,15 @@
     {
       "id": "b-1314560009565",
       "url": "https://www.homes.co.jp/kodate/b-1314560009565/",
-      "title": "中古一戸建て板橋区板橋1丁目・一戸建PR",
+      "title": "",
       "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2F6a0879e4%2F36_1752761_1_132000_132000.jpg%3Ft%3D20261113120015",
       "priceText": "9,980万円",
-      "madori": null,
-      "landAreaText": "72.09m²3SLDK",
-      "buildingAreaText": null,
+      "madori": "3SLDK",
+      "landAreaText": "72.09m²",
+      "buildingAreaText": "102.65m²",
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": 6,
+      "walkMinutes": null,
       "address": "東京都板橋区板橋1丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.747395810838%2C139.71476266413",
       "deal": "buy",
@@ -275,7 +285,7 @@
         "station"
       ],
       "priceManYen": 9980,
-      "buildingAreaM2": null,
+      "buildingAreaM2": 102.65,
       "landAreaM2": 72.09,
       "detail": {
         "landRight": "所有権",
@@ -313,67 +323,10 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-11-13",
-      "publishedText": "情報公開日：2026/11/13（7日前 公開）"
-    },
-    {
-      "id": "b-1358110013551",
-      "url": "https://www.homes.co.jp/kodate/b-1358110013551/",
-      "title": "",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135811%2Fsale%2F13551%2F2%2F1%2Falln.jpg",
-      "priceText": "9,980万円",
-      "madori": "3SLDK",
-      "landAreaText": "72.09m²",
-      "buildingAreaText": "102.65m²",
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都板橋区板橋1丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.747483300926%2C139.71476071633",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 9980,
-      "buildingAreaM2": 102.65,
-      "landAreaM2": 72.09,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "第二種住居地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "9,980万円",
-        "landAreaText": "72.09m²",
-        "publishedText": "情報公開日：2026/11/19（1日前 公開）",
-        "lat": 35.747483300926,
-        "lon": 139.71476071633,
-        "address": "東京都板橋区板橋1丁目",
-        "postalCode": "173-0004",
-        "yearBuilt": 2010,
-        "builtText": "2010年9月（築17年）",
-        "structure": "木造/3階建",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135811%2Fsale%2F13551%2F2%2F1%2Falln.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "・修繕積立金",
-        "availableText": null
-      },
-      "lat": 35.747483300926,
-      "lon": 139.71476071633,
-      "locationAccuracy": "coordinates",
-      "ward": "板橋区",
-      "wardEn": "Itabashi-ku",
-      "yearBuilt": 2010,
-      "buildingAgeYears": 17,
-      "storeys": 3,
-      "structure": "木造/3階建",
-      "publishedAt": "2026-11-19",
-      "publishedText": "情報公開日：2026/11/19（1日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/11/13（7日前 公開）",
+      "dedupedFrom": [
+        "b-1358110013551"
+      ]
     },
     {
       "id": "b-1342150000369",
@@ -434,65 +387,6 @@
       "structure": "軽量鉄骨造/3階建",
       "publishedAt": "2026-10-16",
       "publishedText": "情報公開日：2026/10/16（35日前 公開）"
-    },
-    {
-      "id": "b-1357690020807",
-      "url": "https://www.homes.co.jp/kodate/b-1357690020807/",
-      "title": "",
-      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg",
-      "priceText": "11,480万円",
-      "madori": "4LDK",
-      "landAreaText": "78.84m²",
-      "buildingAreaText": "108.83m²",
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都豊島区上池袋3丁目129-25",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.739142432598%2C139.71985061918",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 11480,
-      "buildingAreaM2": 108.83,
-      "landAreaM2": 78.84,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "第一種中高層住居専用地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "11,480万円",
-        "landAreaText": "78.84m²",
-        "publishedText": "情報公開日：2026/09/19（62日前 公開）",
-        "lat": 35.739142432598,
-        "lon": 139.71985061918,
-        "address": "東京都豊島区上池袋3丁目129-25",
-        "postalCode": "170-0012",
-        "yearBuilt": 2021,
-        "builtText": "2021年5月（築6年）",
-        "structure": "木造/3階建",
-        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F135769%2Fsale%2F20807%2F2%2F1%2Frt09.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "0円",
-        "availableText": null
-      },
-      "lat": 35.739142432598,
-      "lon": 139.71985061918,
-      "locationAccuracy": "coordinates",
-      "ward": "豊島区",
-      "wardEn": "Toshima-ku",
-      "yearBuilt": 2021,
-      "buildingAgeYears": 6,
-      "storeys": 3,
-      "structure": "木造/3階建",
-      "publishedAt": "2026-09-19",
-      "publishedText": "情報公開日：2026/09/19（62日前 公開）"
     }
   ]
 }
