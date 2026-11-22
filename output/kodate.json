@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-21T21:59:48.833Z",
+  "scrapedAt": "2026-11-22T13:13:39.911Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,18 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 5,
+  "count": 4,
   "delta": {
     "addedCount": 0,
     "removedCount": 1,
     "addedIds": [],
     "removedIds": [
-      "b-1358110013551"
+      "b-1548940001418"
     ]
   },
   "dedupe": {
-    "before": 6,
-    "after": 5,
+    "before": 5,
+    "after": 4,
     "removedCount": 1,
     "clusters": 1,
     "removed": [
@@ -386,66 +386,6 @@
       "structure": "軽量鉄骨造/3階建",
       "publishedAt": "2026-10-16",
       "publishedText": "情報公開日：2026/10/16（37日前 公開）"
-    },
-    {
-      "id": "b-1548940001418",
-      "url": "https://www.homes.co.jp/kodate/b-1548940001418/",
-      "title": "中古一戸建て岸町2丁目戸建PR",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fdd67d9c1%2F70291_64028_1_132000_132000.jpg%3Ft%3D20261104144453",
-      "priceText": "10,800万円",
-      "madori": null,
-      "landAreaText": "141.63m²5SLDK",
-      "buildingAreaText": null,
-      "exclusiveAreaText": null,
-      "builtText": null,
-      "walkMinutes": 6,
-      "address": "東京都北区岸町2丁目7-3",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.759930933947%2C139.73063386506",
-      "deal": "buy",
-      "matchedVia": [
-        "ku",
-        "station"
-      ],
-      "priceManYen": 10800,
-      "buildingAreaM2": null,
-      "landAreaM2": 141.63,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "第一種住居地域",
-        "cityPlan": "市街化区域",
-        "landUse": "宅地",
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": null,
-        "landAreaText": "141.63m²",
-        "publishedText": "情報公開日：2026/11/16（6日前 公開）",
-        "lat": 35.759930933947,
-        "lon": 139.73063386506,
-        "address": "東京都北区岸町2丁目7-3",
-        "postalCode": "114-0021",
-        "yearBuilt": 2011,
-        "builtText": "2011年9月（築16年）",
-        "structure": "軽量鉄骨造/2階建",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fdd67d9c1%2F70291_64028_1_132000_132000.jpg%3Ft%3D20261104144453",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": null,
-        "availableText": null
-      },
-      "lat": 35.759930933947,
-      "lon": 139.73063386506,
-      "locationAccuracy": "coordinates",
-      "ward": "北区",
-      "wardEn": "Kita-ku",
-      "yearBuilt": 2011,
-      "buildingAgeYears": 16,
-      "storeys": 2,
-      "structure": "軽量鉄骨造/2階建",
-      "publishedAt": "2026-11-16",
-      "publishedText": "情報公開日：2026/11/16（6日前 公開）"
     }
   ]
 }
