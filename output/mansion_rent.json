@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-24T03:15:52.206Z",
+  "scrapedAt": "2026-11-24T15:49:15.066Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -122,20 +122,15 @@
   },
   "count": 16,
   "delta": {
-    "addedCount": 2,
-    "removedCount": 1,
-    "addedIds": [
-      "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
-      "c70bd8b0dd3134f5ad2da4ddefe56eb43b61a5b2"
-    ],
-    "removedIds": [
-      "1cfef6ecfd2391f3f09857abf31ef817ae4699c2"
-    ]
+    "addedCount": 0,
+    "removedCount": 0,
+    "addedIds": [],
+    "removedIds": []
   },
   "dedupe": {
-    "before": 29,
+    "before": 27,
     "after": 16,
-    "removedCount": 13,
+    "removedCount": 11,
     "clusters": 7,
     "removed": [
       {
@@ -195,14 +190,6 @@
         "keptRichness": 28
       },
       {
-        "id": "189e93f8e4f3bac66b36f9994e5ac56ce5147c98",
-        "url": "https://www.homes.co.jp/chintai/room/189e93f8e4f3bac66b36f9994e5ac56ce5147c98/",
-        "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
-        "reason": "same_property_less_detail",
-        "richness": 25,
-        "keptRichness": 28
-      },
-      {
         "id": "1444543e817ace3e603684dd5f42773b1773192c",
         "url": "https://www.homes.co.jp/chintai/room/1444543e817ace3e603684dd5f42773b1773192c/",
         "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
@@ -216,14 +203,6 @@
         "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
         "reason": "same_property_less_detail",
         "richness": 24,
-        "keptRichness": 28
-      },
-      {
-        "id": "cf267320af76a6d3fd75e03bc83cde99c6653108",
-        "url": "https://www.homes.co.jp/chintai/room/cf267320af76a6d3fd75e03bc83cde99c6653108/",
-        "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
-        "reason": "same_property_less_detail",
-        "richness": 27,
         "keptRichness": 28
       },
       {
@@ -314,8 +293,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-25",
-      "publishedText": "情報公開日\n\n2026/10/25",
-      "isNew": true
+      "publishedText": "情報公開日\n\n2026/10/25"
     },
     {
       "id": "c28aebb5e4a002618a7fce3d7bdbe4b75f4206db",
@@ -578,7 +556,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/08/06",
+        "publishedText": "情報公開日\n\n2026/10/05",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -603,8 +581,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-08-06",
-      "publishedText": "情報公開日\n\n2026/08/06"
+      "publishedAt": "2026-10-05",
+      "publishedText": "情報公開日\n\n2026/10/05"
     },
     {
       "id": "14047955b06e51d7f51b2ae9b8e8b1186124857b",
@@ -820,10 +798,8 @@
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
         "5720f0adaca481344af948ad6a872f4aff326430",
-        "189e93f8e4f3bac66b36f9994e5ac56ce5147c98",
         "1444543e817ace3e603684dd5f42773b1773192c",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
-        "cf267320af76a6d3fd75e03bc83cde99c6653108",
         "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4"
       ]
@@ -1109,8 +1085,7 @@
       "publishedText": "情報公開日\n\n2026/06/07",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
-      ],
-      "isNew": true
+      ]
     },
     {
       "id": "3adf3a08a8d3a5bc384ce71475abe3d2d0122ce2",
@@ -1154,7 +1129,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/03",
+        "publishedText": "情報公開日\n\n2026/11/02",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1179,8 +1154,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-03",
-      "publishedText": "情報公開日\n\n2026/11/03",
+      "publishedAt": "2026-11-02",
+      "publishedText": "情報公開日\n\n2026/11/02",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ]
