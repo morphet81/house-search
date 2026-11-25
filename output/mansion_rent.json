@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-24T15:49:15.066Z",
+  "scrapedAt": "2026-11-25T01:21:28.656Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -154,7 +154,7 @@
         "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
         "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
         "reason": "same_property_less_detail",
-        "richness": 20,
+        "richness": 26,
         "keptRichness": 27
       },
       {
@@ -1241,7 +1241,7 @@
       "buildingAreaText": "80.24m²",
       "exclusiveAreaText": "80.24m²",
       "builtText": "築30年",
-      "walkMinutes": 10,
+      "walkMinutes": 9,
       "address": "東京都品川区北品川６丁目6-11",
       "managementFeeText": "18,000円",
       "shikikinText": "1ヶ月",
