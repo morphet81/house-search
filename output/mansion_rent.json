@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-25T15:33:43.591Z",
+  "scrapedAt": "2026-11-26T00:55:48.739Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -154,7 +154,7 @@
         "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
         "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
         "reason": "same_property_less_detail",
-        "richness": 26,
+        "richness": 20,
         "keptRichness": 27
       },
       {
@@ -162,7 +162,7 @@
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 27,
+        "richness": 25,
         "keptRichness": 27
       },
       {
@@ -267,7 +267,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/24",
+        "publishedText": "情報公開日\n\n2026/10/25",
         "lat": 35.786403244124,
         "lon": 139.7001326152,
         "address": "東京都北区浮間３丁目12-5",
@@ -292,8 +292,8 @@
       "yearBuilt": 1999,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-24",
-      "publishedText": "情報公開日\n\n2026/10/24"
+      "publishedAt": "2026-10-25",
+      "publishedText": "情報公開日\n\n2026/10/25"
     },
     {
       "id": "c28aebb5e4a002618a7fce3d7bdbe4b75f4206db",
@@ -373,7 +373,7 @@
       "id": "d872bcb981b75f733234051054b797ebaca1a317",
       "url": "https://www.homes.co.jp/chintai/room/d872bcb981b75f733234051054b797ebaca1a317/",
       "title": "都営新宿線 曙橋駅 徒歩3分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
       "priceText": "26.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -411,7 +411,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/05",
+        "publishedText": "情報公開日\n\n2026/11/03",
         "lat": 35.69369207967,
         "lon": 139.72294162788,
         "address": "東京都新宿区市谷仲之町2-7",
@@ -419,7 +419,7 @@
         "yearBuilt": 2004,
         "builtText": "2004年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -436,8 +436,8 @@
       "yearBuilt": 2004,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-05",
-      "publishedText": "情報公開日\n\n2026/11/05",
+      "publishedAt": "2026-11-03",
+      "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
         "1e7ac42c55f724a97d6eb92498cb7928ddb5af15"
       ]
@@ -1056,7 +1056,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/06/11",
+        "publishedText": "情報公開日\n\n2026/06/07",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -1081,8 +1081,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-11",
-      "publishedText": "情報公開日\n\n2026/06/11",
+      "publishedAt": "2026-06-07",
+      "publishedText": "情報公開日\n\n2026/06/07",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
       ]
@@ -1129,7 +1129,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/19",
+        "publishedText": "情報公開日\n\n2026/11/03",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1154,8 +1154,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-19",
-      "publishedText": "情報公開日\n\n2026/11/19",
+      "publishedAt": "2026-11-03",
+      "publishedText": "情報公開日\n\n2026/11/03",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ]
