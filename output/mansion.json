@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-27T14:56:31.782Z",
+  "scrapedAt": "2026-11-28T00:22:25.887Z",
   "source": "homes.co.jp",
   "type": "mansion",
   "deal": "buy",
@@ -121,36 +121,40 @@
   },
   "count": 22,
   "delta": {
-    "addedCount": 6,
-    "removedCount": 4,
+    "addedCount": 3,
+    "removedCount": 3,
     "addedIds": [
-      "b-1216390038582",
-      "b-1251460111042",
-      "b-1251460112369",
-      "b-1370910001914",
-      "b-1357690021159",
-      "b-89610003180"
+      "b-1267650038948",
+      "b-1539700001084",
+      "b-1552210006455"
     ],
     "removedIds": [
-      "b-1230340085079",
-      "b-1267650038948",
-      "b-1267650039069",
-      "b-35007350000032"
+      "b-1216390038582",
+      "b-1539700001082",
+      "b-1251460112369"
     ]
   },
   "dedupe": {
-    "before": 26,
+    "before": 27,
     "after": 22,
-    "removedCount": 4,
+    "removedCount": 5,
     "clusters": 4,
     "removed": [
       {
+        "id": "b-1539700001082",
+        "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
+        "keptId": "b-1539700001084",
+        "reason": "same_property_less_detail",
+        "richness": 29,
+        "keptRichness": 30
+      },
+      {
         "id": "b-1216390038880",
         "url": "https://www.homes.co.jp/mansion/b-1216390038880/",
-        "keptId": "b-1539700001082",
+        "keptId": "b-1539700001084",
         "reason": "same_property_less_detail",
         "richness": 26,
-        "keptRichness": 29
+        "keptRichness": 30
       },
       {
         "id": "b-1370910001884",
@@ -161,29 +165,29 @@
         "keptRichness": 28
       },
       {
-        "id": "b-1526290002105",
-        "url": "https://www.homes.co.jp/mansion/b-1526290002105/",
-        "keptId": "b-1216390038582",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 27
-      },
-      {
         "id": "b-1267650035049",
         "url": "https://www.homes.co.jp/mansion/b-1267650035049/",
         "keptId": "b-1192950012894",
         "reason": "same_property_less_detail",
         "richness": 28,
         "keptRichness": 30
+      },
+      {
+        "id": "b-1216390038582",
+        "url": "https://www.homes.co.jp/mansion/b-1216390038582/",
+        "keptId": "b-1267650038948",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
       }
     ]
   },
   "listings": [
     {
-      "id": "b-1216390038582",
-      "url": "https://www.homes.co.jp/mansion/b-1216390038582/",
+      "id": "b-1267650038948",
+      "url": "https://www.homes.co.jp/mansion/b-1267650038948/",
       "title": "",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F9%2Fmzh3.jpg",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F38948%2F11%2F3%2Fjlnt.jpg",
       "priceText": "6,780万円",
       "madori": "4LDK",
       "landAreaText": "80.2m²",
@@ -191,8 +195,8 @@
       "exclusiveAreaText": "80.2m²",
       "builtText": null,
       "walkMinutes": null,
-      "address": "東京都板橋区前野町4丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.769392651025%2C139.68933421953",
+      "address": "東京都板橋区前野町4丁目1-6",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.769482912816%2C139.68911701216",
       "deal": "buy",
       "matchedVia": [
         "station"
@@ -203,22 +207,22 @@
       "detail": {
         "landRight": "所有権",
         "leaseType": null,
-        "zoning": "準工業地域",
+        "zoning": null,
         "cityPlan": null,
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/06/20（160日前 公開）",
-        "lat": 35.769392651025,
-        "lon": 139.68933421953,
-        "address": "東京都板橋区前野町4丁目",
+        "publishedText": "情報公開日：2026/08/28（92日前 公開）",
+        "lat": 35.769482912816,
+        "lon": 139.68911701216,
+        "address": "東京都板橋区前野町4丁目1-6",
         "postalCode": "174-0063",
         "yearBuilt": 2002,
         "builtText": "2002年9月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F121639%2Fsale%2F38582%2F2%2F9%2Fmzh3.jpg",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126765%2Fsale%2F38948%2F11%2F3%2Fjlnt.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -226,8 +230,8 @@
         "managementFeeText": "12,200円",
         "availableText": null
       },
-      "lat": 35.769392651025,
-      "lon": 139.68933421953,
+      "lat": 35.769482912816,
+      "lon": 139.68911701216,
       "locationAccuracy": "coordinates",
       "ward": "板橋区",
       "wardEn": "Itabashi-ku",
@@ -235,10 +239,10 @@
       "buildingAgeYears": 25,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-06-20",
-      "publishedText": "情報公開日：2026/06/20（160日前 公開）",
+      "publishedAt": "2026-08-28",
+      "publishedText": "情報公開日：2026/08/28（92日前 公開）",
       "dedupedFrom": [
-        "b-1526290002105"
+        "b-1216390038582"
       ],
       "isNew": true
     },
@@ -272,9 +276,9 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "6,790万円",
+        "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/17（41日前 公開）",
+        "publishedText": "情報公開日：2026/10/17（42日前 公開）",
         "lat": 35.786563505494,
         "lon": 139.72094361564,
         "address": "東京都北区岩淵町",
@@ -300,7 +304,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-17",
-      "publishedText": "情報公開日：2026/10/17（41日前 公開）"
+      "publishedText": "情報公開日：2026/10/17（42日前 公開）"
     },
     {
       "id": "b-35012170000023",
@@ -333,7 +337,7 @@
         "freeholdMention": true,
         "priceText": "6,880万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/29（29日前 公開）",
+        "publishedText": "情報公開日：2026/10/29（30日前 公開）",
         "lat": 35.7700927844,
         "lon": 139.69727046046,
         "address": "東京都板橋区大原町",
@@ -359,13 +363,13 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-29",
-      "publishedText": "情報公開日：2026/10/29（29日前 公開）"
+      "publishedText": "情報公開日：2026/10/29（30日前 公開）"
     },
     {
       "id": "b-1251460111042",
       "url": "https://www.homes.co.jp/mansion/b-1251460111042/",
       "title": "中古マンションライオンズヴィアーレ浮間公園/ 2階PR",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F11%2F5%2F2539.jpg",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F11%2F5%2Fre5h.jpg",
       "priceText": "6,980万円",
       "madori": null,
       "landAreaText": "78.45m²",
@@ -393,7 +397,7 @@
         "freeholdMention": true,
         "priceText": "6,980万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/27（92日前 公開）",
+        "publishedText": "情報公開日：2026/08/27（93日前 公開）",
         "lat": 35.79211277634,
         "lon": 139.69633381942,
         "address": "東京都北区浮間2丁目",
@@ -401,7 +405,7 @@
         "yearBuilt": 2002,
         "builtText": "2002年1月（築25年）",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F11%2F5%2F2539.jpg",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F111042%2F11%2F5%2Fre5h.jpg",
         "shikikinText": null,
         "reikinText": null,
         "guaranteeText": null,
@@ -419,8 +423,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-27",
-      "publishedText": "情報公開日：2026/08/27（92日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/08/27（93日前 公開）"
     },
     {
       "id": "b-35012180000053",
@@ -453,7 +456,7 @@
         "freeholdMention": true,
         "priceText": "6,980万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/06（21日前 公開）",
+        "publishedText": "情報公開日：2026/11/06（22日前 公開）",
         "lat": 35.76481245773,
         "lon": 139.6939567884,
         "address": "東京都板橋区前野町1丁目",
@@ -479,7 +482,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-11-06",
-      "publishedText": "情報公開日：2026/11/06（21日前 公開）"
+      "publishedText": "情報公開日：2026/11/06（22日前 公開）"
     },
     {
       "id": "b-35012500000049",
@@ -511,9 +514,9 @@
         "landUse": null,
         "rebuildForbidden": false,
         "freeholdMention": true,
-        "priceText": "6,980万円",
+        "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/05（22日前 公開）",
+        "publishedText": "情報公開日：2026/11/05（23日前 公開）",
         "lat": 35.785217751499,
         "lon": 139.70786617155,
         "address": "東京都北区赤羽北2丁目",
@@ -539,7 +542,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-11-05",
-      "publishedText": "情報公開日：2026/11/05（22日前 公開）"
+      "publishedText": "情報公開日：2026/11/05（23日前 公開）"
     },
     {
       "id": "b-1421770031666",
@@ -572,7 +575,7 @@
         "freeholdMention": true,
         "priceText": "7,000万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/15（12日前 公開）",
+        "publishedText": "情報公開日：2026/11/15（13日前 公開）",
         "lat": 35.739009937341,
         "lon": 139.71946982356,
         "address": "東京都豊島区上池袋3丁目12-16",
@@ -598,7 +601,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-11-15",
-      "publishedText": "情報公開日：2026/11/15（12日前 公開）"
+      "publishedText": "情報公開日：2026/11/15（13日前 公開）"
     },
     {
       "id": "b-39051320000355",
@@ -631,7 +634,7 @@
         "freeholdMention": true,
         "priceText": "7,350万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/23（35日前 公開）",
+        "publishedText": "情報公開日：2026/10/23（36日前 公開）",
         "lat": 35.767350511443,
         "lon": 139.69420055435,
         "address": "東京都板橋区前野町3丁目33-1",
@@ -657,20 +660,20 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-23",
-      "publishedText": "情報公開日：2026/10/23（35日前 公開）"
+      "publishedText": "情報公開日：2026/10/23（36日前 公開）"
     },
     {
       "id": "b-1370910001891",
       "url": "https://www.homes.co.jp/mansion/b-1370910001891/",
-      "title": "中古マンションライネスハイム志村 602/ 6階PR",
+      "title": "",
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Feee1dea1%2F15994_24973_22_132000_132000.jpg%3Ft%3D20261009121814",
       "priceText": "7,999万円",
-      "madori": null,
+      "madori": "4SLDK",
       "landAreaText": "107.1m²",
-      "buildingAreaText": "107.1m² 4SLDK",
-      "exclusiveAreaText": "107.1m² 4SLDK",
+      "buildingAreaText": "107.1m²",
+      "exclusiveAreaText": "107.1m²",
       "builtText": null,
-      "walkMinutes": 5,
+      "walkMinutes": null,
       "address": "東京都板橋区坂下1丁目4-10",
       "googleMapsUrl": "https://www.google.com/maps?q=35.780196393495%2C139.68786390949",
       "deal": "buy",
@@ -690,7 +693,7 @@
         "freeholdMention": true,
         "priceText": "7,999万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/09（49日前 公開）",
+        "publishedText": "情報公開日：2026/10/09（50日前 公開）",
         "lat": 35.780196393495,
         "lon": 139.68786390949,
         "address": "東京都板橋区坂下1丁目4-10",
@@ -716,7 +719,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-09",
-      "publishedText": "情報公開日：2026/10/09（49日前 公開）"
+      "publishedText": "情報公開日：2026/10/09（50日前 公開）"
     },
     {
       "id": "b-8410151347",
@@ -749,7 +752,7 @@
         "freeholdMention": true,
         "priceText": "8,450万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/17（41日前 公開）",
+        "publishedText": "情報公開日：2026/10/17（42日前 公開）",
         "lat": 35.770475540783,
         "lon": 139.69808370918,
         "address": "東京都板橋区大原町13-12",
@@ -775,69 +778,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-10-17",
-      "publishedText": "情報公開日：2026/10/17（41日前 公開）"
-    },
-    {
-      "id": "b-1539700001082",
-      "url": "https://www.homes.co.jp/mansion/b-1539700001082/",
-      "title": "",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2F5zpl.jpg",
-      "priceText": "8,480万円",
-      "madori": "4LDK",
-      "landAreaText": "78.84m²",
-      "buildingAreaText": "78.84m²",
-      "exclusiveAreaText": "78.84m²",
-      "builtText": null,
-      "walkMinutes": null,
-      "address": "東京都北区豊島8丁目27-18",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.768333853183%2C139.74016493801",
-      "deal": "buy",
-      "matchedVia": [
-        "ku"
-      ],
-      "priceManYen": 8480,
-      "exclusiveAreaM2": 78.84,
-      "buildingAreaM2": 78.84,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "工業地域",
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": null,
-        "landAreaText": null,
-        "publishedText": "情報公開日：2026/07/03（147日前 公開）",
-        "lat": 35.768333853183,
-        "lon": 139.74016493801,
-        "address": "東京都北区豊島8丁目27-18",
-        "postalCode": "114-0003",
-        "yearBuilt": 2007,
-        "builtText": "2007年1月（築20年）",
-        "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1082%2F11%2F1%2F5zpl.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "15,850円",
-        "availableText": null
-      },
-      "lat": 35.768333853183,
-      "lon": 139.74016493801,
-      "locationAccuracy": "coordinates",
-      "ward": "北区",
-      "wardEn": "Kita-ku",
-      "yearBuilt": 2007,
-      "buildingAgeYears": 20,
-      "storeys": null,
-      "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-07-03",
-      "publishedText": "情報公開日：2026/07/03（147日前 公開）",
-      "dedupedFrom": [
-        "b-1216390038880"
-      ]
+      "publishedText": "情報公開日：2026/10/17（42日前 公開）"
     },
     {
       "id": "b-35007040000509",
@@ -870,7 +811,7 @@
         "freeholdMention": true,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/10（17日前 公開）",
+        "publishedText": "情報公開日：2026/11/10（18日前 公開）",
         "lat": 35.759685414186,
         "lon": 139.72056028727,
         "address": "東京都板橋区本町",
@@ -896,7 +837,71 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-11-10",
-      "publishedText": "情報公開日：2026/11/10（17日前 公開）"
+      "publishedText": "情報公開日：2026/11/10（18日前 公開）"
+    },
+    {
+      "id": "b-1539700001084",
+      "url": "https://www.homes.co.jp/mansion/b-1539700001084/",
+      "title": "中古マンションパークタワー王子リバーグレイス/ 20階PR",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F4%2Fl7is.jpg",
+      "priceText": "8,980万円",
+      "madori": null,
+      "landAreaText": "78.84m²",
+      "buildingAreaText": "78.84m² 4LDK",
+      "exclusiveAreaText": "78.84m² 4LDK",
+      "builtText": null,
+      "walkMinutes": 9,
+      "address": "東京都北区豊島8丁目27-18",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.768333853183%2C139.74016493801",
+      "deal": "buy",
+      "matchedVia": [
+        "ku"
+      ],
+      "priceManYen": 8980,
+      "exclusiveAreaM2": 78.84,
+      "buildingAreaM2": 78.84,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "工業地域",
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "8,980万円",
+        "landAreaText": null,
+        "publishedText": "情報公開日：2026/07/03（148日前 公開）",
+        "lat": 35.768333853183,
+        "lon": 139.74016493801,
+        "address": "東京都北区豊島8丁目27-18",
+        "postalCode": "114-0003",
+        "yearBuilt": 2007,
+        "builtText": "2007年1月（築20年）",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F153970%2Fsale%2F1084%2F2%2F4%2Fl7is.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "15,850円",
+        "availableText": null
+      },
+      "lat": 35.768333853183,
+      "lon": 139.74016493801,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 2007,
+      "buildingAgeYears": 20,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-07-03",
+      "publishedText": "情報公開日：2026/07/03（148日前 公開）",
+      "dedupedFrom": [
+        "b-1539700001082",
+        "b-1216390038880"
+      ],
+      "isNew": true
     },
     {
       "id": "b-1370910001900",
@@ -930,7 +935,7 @@
         "freeholdMention": true,
         "priceText": "9,280万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/20（38日前 公開）",
+        "publishedText": "情報公開日：2026/10/20（39日前 公開）",
         "lat": 35.753381999247,
         "lon": 139.73248063853,
         "address": "東京都北区王子本町1丁目13-6",
@@ -956,7 +961,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-10-20",
-      "publishedText": "情報公開日：2026/10/20（38日前 公開）"
+      "publishedText": "情報公開日：2026/10/20（39日前 公開）"
     },
     {
       "id": "b-1267650039391",
@@ -974,6 +979,7 @@
       "googleMapsUrl": "https://www.google.com/maps?q=35.743978499727%2C139.73857133273",
       "deal": "buy",
       "matchedVia": [
+        "ku",
         "station"
       ],
       "priceManYen": 9480,
@@ -989,7 +995,7 @@
         "freeholdMention": true,
         "priceText": "9,480万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/02（56日前 公開）",
+        "publishedText": "情報公開日：2026/10/02（57日前 公開）",
         "lat": 35.743978499727,
         "lon": 139.73857133273,
         "address": "東京都北区西ケ原3丁目57-17",
@@ -1015,7 +1021,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-02",
-      "publishedText": "情報公開日：2026/10/02（56日前 公開）",
+      "publishedText": "情報公開日：2026/10/02（57日前 公開）",
       "dedupedFrom": [
         "b-1370910001884"
       ]
@@ -1052,7 +1058,7 @@
         "freeholdMention": true,
         "priceText": "9,980万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/08（50日前 公開）",
+        "publishedText": "情報公開日：2026/10/08（51日前 公開）",
         "lat": 35.749613048311,
         "lon": 139.73504973855,
         "address": "東京都北区滝野川2丁目6-7",
@@ -1078,7 +1084,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-08",
-      "publishedText": "情報公開日：2026/10/08（50日前 公開）"
+      "publishedText": "情報公開日：2026/10/08（51日前 公開）"
     },
     {
       "id": "b-1476140000712",
@@ -1111,7 +1117,7 @@
         "freeholdMention": true,
         "priceText": "9,990万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/08/03（116日前 公開）",
+        "publishedText": "情報公開日：2026/08/03（117日前 公開）",
         "lat": 35.756469586109,
         "lon": 139.7175923359,
         "address": "東京都板橋区加賀1丁目21-1",
@@ -1137,13 +1143,13 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-08-03",
-      "publishedText": "情報公開日：2026/08/03（116日前 公開）"
+      "publishedText": "情報公開日：2026/08/03（117日前 公開）"
     },
     {
-      "id": "b-1251460112369",
-      "url": "https://www.homes.co.jp/mansion/b-1251460112369/",
-      "title": "中古マンショングランフィーネ加賀/ 4階PR",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F112369%2F11%2F5%2Fxuqm.jpg",
+      "id": "b-1370910001914",
+      "url": "https://www.homes.co.jp/mansion/b-1370910001914/",
+      "title": "中古マンショングランフィーネ加賀 421/ 4階PR",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fca1d57df%2F15994_25138_3_132000_132000.jpg%3Ft%3D20261102153539",
       "priceText": "10,390万円",
       "madori": null,
       "landAreaText": "82.12m²",
@@ -1151,66 +1157,6 @@
       "exclusiveAreaText": "82.12m² 4LDK",
       "builtText": null,
       "walkMinutes": 9,
-      "address": "東京都板橋区加賀1丁目",
-      "googleMapsUrl": "https://www.google.com/maps?q=35.754929736099%2C139.71671163949",
-      "deal": "buy",
-      "matchedVia": [
-        "station"
-      ],
-      "priceManYen": 10390,
-      "exclusiveAreaM2": 82.12,
-      "buildingAreaM2": 82.12,
-      "detail": {
-        "landRight": "所有権",
-        "leaseType": null,
-        "zoning": "準工業地域",
-        "cityPlan": null,
-        "landUse": null,
-        "rebuildForbidden": false,
-        "freeholdMention": true,
-        "priceText": "10,390万円",
-        "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/19（39日前 公開）",
-        "lat": 35.754929736099,
-        "lon": 139.71671163949,
-        "address": "東京都板橋区加賀1丁目",
-        "postalCode": "173-0003",
-        "yearBuilt": 1998,
-        "builtText": "1998年2月（築29年）",
-        "structure": "SRC(鉄骨鉄筋コンクリート)",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125146%2Fsale%2F112369%2F11%2F5%2Fxuqm.jpg",
-        "shikikinText": null,
-        "reikinText": null,
-        "guaranteeText": null,
-        "shikibikiText": null,
-        "managementFeeText": "10,520円",
-        "availableText": null
-      },
-      "lat": 35.754929736099,
-      "lon": 139.71671163949,
-      "locationAccuracy": "coordinates",
-      "ward": "板橋区",
-      "wardEn": "Itabashi-ku",
-      "yearBuilt": 1998,
-      "buildingAgeYears": 29,
-      "storeys": null,
-      "structure": "SRC(鉄骨鉄筋コンクリート)",
-      "publishedAt": "2026-10-19",
-      "publishedText": "情報公開日：2026/10/19（39日前 公開）",
-      "isNew": true
-    },
-    {
-      "id": "b-1370910001914",
-      "url": "https://www.homes.co.jp/mansion/b-1370910001914/",
-      "title": "",
-      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fca1d57df%2F15994_25138_3_132000_132000.jpg%3Ft%3D20261102153539",
-      "priceText": "10,390万円",
-      "madori": "4LDK",
-      "landAreaText": "82.12m²",
-      "buildingAreaText": "82.12m²",
-      "exclusiveAreaText": "82.12m²",
-      "builtText": null,
-      "walkMinutes": null,
       "address": "東京都板橋区加賀1丁目14-1",
       "googleMapsUrl": "https://www.google.com/maps?q=35.755036933105%2C139.71622084358",
       "deal": "buy",
@@ -1230,7 +1176,7 @@
         "freeholdMention": true,
         "priceText": "10,390万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/02（25日前 公開）",
+        "publishedText": "情報公開日：2026/11/02（26日前 公開）",
         "lat": 35.755036933105,
         "lon": 139.71622084358,
         "address": "東京都板橋区加賀1丁目14-1",
@@ -1256,7 +1202,66 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-11-02",
-      "publishedText": "情報公開日：2026/11/02（25日前 公開）",
+      "publishedText": "情報公開日：2026/11/02（26日前 公開）"
+    },
+    {
+      "id": "b-1552210006455",
+      "url": "https://www.homes.co.jp/mansion/b-1552210006455/",
+      "title": "",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F155221%2Fsale%2F6455%2F2%2F1%2Foa23.jpg",
+      "priceText": "10,390万円",
+      "madori": "4LDK",
+      "landAreaText": "82.12m²",
+      "buildingAreaText": "82.12m²",
+      "exclusiveAreaText": "82.12m²",
+      "builtText": null,
+      "walkMinutes": null,
+      "address": "東京都板橋区加賀1丁目14-1",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.754929736091%2C139.71671136173",
+      "deal": "buy",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 10390,
+      "exclusiveAreaM2": 82.12,
+      "buildingAreaM2": 82.12,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": "10,390万円",
+        "landAreaText": null,
+        "publishedText": "情報公開日：2026/10/22（37日前 公開）",
+        "lat": 35.754929736091,
+        "lon": 139.71671136173,
+        "address": "東京都板橋区加賀1丁目14-1",
+        "postalCode": "173-0003",
+        "yearBuilt": 1998,
+        "builtText": "1998年2月（築29年）",
+        "structure": "SRC(鉄骨鉄筋コンクリート)",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F155221%2Fsale%2F6455%2F2%2F1%2Foa23.jpg",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": "10,520円",
+        "availableText": null
+      },
+      "lat": 35.754929736091,
+      "lon": 139.71671136173,
+      "locationAccuracy": "coordinates",
+      "ward": "板橋区",
+      "wardEn": "Itabashi-ku",
+      "yearBuilt": 1998,
+      "buildingAgeYears": 29,
+      "storeys": null,
+      "structure": "SRC(鉄骨鉄筋コンクリート)",
+      "publishedAt": "2026-10-22",
+      "publishedText": "情報公開日：2026/10/22（37日前 公開）",
       "isNew": true
     },
     {
@@ -1291,7 +1296,7 @@
         "freeholdMention": true,
         "priceText": "10,980万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/25（2日前 公開）",
+        "publishedText": "情報公開日：2026/11/25（3日前 公開）",
         "lat": 35.777692405598,
         "lon": 139.72550469649,
         "address": "東京都北区赤羽南1丁目15-3",
@@ -1317,7 +1322,7 @@
       "storeys": null,
       "structure": "SRC(鉄骨鉄筋コンクリート)",
       "publishedAt": "2026-11-25",
-      "publishedText": "情報公開日：2026/11/25（2日前 公開）"
+      "publishedText": "情報公開日：2026/11/25（3日前 公開）"
     },
     {
       "id": "b-1192950012894",
@@ -1330,7 +1335,7 @@
       "buildingAreaText": "75.02m² 3LDK",
       "exclusiveAreaText": "75.02m² 3LDK",
       "builtText": null,
-      "walkMinutes": 14,
+      "walkMinutes": 10,
       "address": "東京都豊島区上池袋1丁目32-20",
       "googleMapsUrl": "https://www.google.com/maps?q=35.735627091557%2C139.72344601047",
       "deal": "buy",
@@ -1350,7 +1355,7 @@
         "freeholdMention": true,
         "priceText": "10,999万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2025/12/25（337日前 公開）",
+        "publishedText": "情報公開日：2025/12/25（338日前 公開）",
         "lat": 35.735627091557,
         "lon": 139.72344601047,
         "address": "東京都豊島区上池袋1丁目32-20",
@@ -1376,7 +1381,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2025-12-25",
-      "publishedText": "情報公開日：2025/12/25（337日前 公開）",
+      "publishedText": "情報公開日：2025/12/25（338日前 公開）",
       "dedupedFrom": [
         "b-1267650035049"
       ]
@@ -1412,7 +1417,7 @@
         "freeholdMention": true,
         "priceText": "10,999万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/10/10（48日前 公開）",
+        "publishedText": "情報公開日：2026/10/10（49日前 公開）",
         "lat": 35.735316015319,
         "lon": 139.72343935689,
         "address": "東京都豊島区上池袋1丁目32-20",
@@ -1438,8 +1443,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-10-10",
-      "publishedText": "情報公開日：2026/10/10（48日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/10/10（49日前 公開）"
     },
     {
       "id": "b-89610003180",
@@ -1472,7 +1476,7 @@
         "freeholdMention": true,
         "priceText": "11,499万円",
         "landAreaText": null,
-        "publishedText": "情報公開日：2026/11/23（4日前 公開）",
+        "publishedText": "情報公開日：2026/11/23（5日前 公開）",
         "lat": 35.636617569209,
         "lon": 139.67745000292,
         "address": "東京都世田谷区下馬4丁目",
@@ -1498,8 +1502,7 @@
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
       "publishedAt": "2026-11-23",
-      "publishedText": "情報公開日：2026/11/23（4日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/11/23（5日前 公開）"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-27T14:54:34.864Z",
+  "scrapedAt": "2026-11-28T00:20:28.568Z",
   "source": "homes.co.jp",
   "type": "kodate",
   "deal": "buy",
@@ -120,18 +120,18 @@
     "houseAgeYearsMax": 20,
     "houseAgeQueryStep": 20
   },
-  "count": 4,
+  "count": 5,
   "delta": {
-    "addedCount": 0,
-    "removedCount": 1,
-    "addedIds": [],
-    "removedIds": [
+    "addedCount": 1,
+    "removedCount": 0,
+    "addedIds": [
       "b-1548940001418"
-    ]
+    ],
+    "removedIds": []
   },
   "dedupe": {
-    "before": 5,
-    "after": 4,
+    "before": 6,
+    "after": 5,
     "removedCount": 1,
     "clusters": 1,
     "removed": [
@@ -177,7 +177,7 @@
         "freeholdMention": true,
         "priceText": "8,830万円",
         "landAreaText": "57.93m²",
-        "publishedText": "情報公開日：2026/11/02（25日前 公開）",
+        "publishedText": "情報公開日：2026/11/02（26日前 公開）",
         "lat": 35.739823804284,
         "lon": 139.71169322989,
         "address": "東京都豊島区池袋本町1丁目",
@@ -203,7 +203,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-11-02",
-      "publishedText": "情報公開日：2026/11/02（25日前 公開）"
+      "publishedText": "情報公開日：2026/11/02（26日前 公開）"
     },
     {
       "id": "b-1516150002849",
@@ -237,7 +237,7 @@
         "freeholdMention": true,
         "priceText": "9,490万円",
         "landAreaText": "121.03m²",
-        "publishedText": "情報公開日：2026/08/26（93日前 公開）",
+        "publishedText": "情報公開日：2026/08/26（94日前 公開）",
         "lat": 35.743686286908,
         "lon": 139.73769253032,
         "address": "東京都北区西ケ原4丁目17",
@@ -263,7 +263,7 @@
       "storeys": 2,
       "structure": "木造/2階建",
       "publishedAt": "2026-08-26",
-      "publishedText": "情報公開日：2026/08/26（93日前 公開）"
+      "publishedText": "情報公開日：2026/08/26（94日前 公開）"
     },
     {
       "id": "b-1314560009565",
@@ -296,7 +296,7 @@
         "freeholdMention": true,
         "priceText": "9,980万円",
         "landAreaText": "72.09m²",
-        "publishedText": "情報公開日：2026/11/13（14日前 公開）",
+        "publishedText": "情報公開日：2026/11/13（15日前 公開）",
         "lat": 35.747395810838,
         "lon": 139.71476266413,
         "address": "東京都板橋区板橋1丁目",
@@ -322,7 +322,7 @@
       "storeys": 3,
       "structure": "木造/3階建",
       "publishedAt": "2026-11-13",
-      "publishedText": "情報公開日：2026/11/13（14日前 公開）",
+      "publishedText": "情報公開日：2026/11/13（15日前 公開）",
       "dedupedFrom": [
         "b-1358110013551"
       ]
@@ -359,7 +359,7 @@
         "freeholdMention": true,
         "priceText": "10,800万円",
         "landAreaText": "93m²",
-        "publishedText": "情報公開日：2026/10/16（42日前 公開）",
+        "publishedText": "情報公開日：2026/10/16（43日前 公開）",
         "lat": 35.747857451937,
         "lon": 139.7468868584,
         "address": "東京都北区上中里2丁目",
@@ -385,7 +385,68 @@
       "storeys": 3,
       "structure": "軽量鉄骨造/3階建",
       "publishedAt": "2026-10-16",
-      "publishedText": "情報公開日：2026/10/16（42日前 公開）"
+      "publishedText": "情報公開日：2026/10/16（43日前 公開）"
+    },
+    {
+      "id": "b-1548940001418",
+      "url": "https://www.homes.co.jp/kodate/b-1548940001418/",
+      "title": "中古一戸建て岸町2丁目戸建PR",
+      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fdd67d9c1%2F70291_64028_1_132000_132000.jpg%3Ft%3D20261104144453",
+      "priceText": "10,800万円",
+      "madori": null,
+      "landAreaText": "141.63m²5SLDK",
+      "buildingAreaText": null,
+      "exclusiveAreaText": null,
+      "builtText": null,
+      "walkMinutes": 6,
+      "address": "東京都北区岸町2丁目7-3",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.759930933947%2C139.73063386506",
+      "deal": "buy",
+      "matchedVia": [
+        "ku",
+        "station"
+      ],
+      "priceManYen": 10800,
+      "buildingAreaM2": null,
+      "landAreaM2": 141.63,
+      "detail": {
+        "landRight": "所有権",
+        "leaseType": null,
+        "zoning": "第一種住居地域",
+        "cityPlan": "市街化区域",
+        "landUse": "宅地",
+        "rebuildForbidden": false,
+        "freeholdMention": true,
+        "priceText": null,
+        "landAreaText": "141.63m²",
+        "publishedText": "情報公開日：2026/11/16（12日前 公開）",
+        "lat": 35.759930933947,
+        "lon": 139.73063386506,
+        "address": "東京都北区岸町2丁目7-3",
+        "postalCode": "114-0021",
+        "yearBuilt": 2011,
+        "builtText": "2011年9月（築16年）",
+        "structure": "軽量鉄骨造/2階建",
+        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Fsale%2Fdd67d9c1%2F70291_64028_1_132000_132000.jpg%3Ft%3D20261104144453",
+        "shikikinText": null,
+        "reikinText": null,
+        "guaranteeText": null,
+        "shikibikiText": null,
+        "managementFeeText": null,
+        "availableText": null
+      },
+      "lat": 35.759930933947,
+      "lon": 139.73063386506,
+      "locationAccuracy": "coordinates",
+      "ward": "北区",
+      "wardEn": "Kita-ku",
+      "yearBuilt": 2011,
+      "buildingAgeYears": 16,
+      "storeys": 2,
+      "structure": "軽量鉄骨造/2階建",
+      "publishedAt": "2026-11-16",
+      "publishedText": "情報公開日：2026/11/16（12日前 公開）",
+      "isNew": true
     }
   ]
 }
