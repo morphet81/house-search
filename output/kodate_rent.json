@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-28T00:25:34.748Z",
+  "scrapedAt": "2026-11-28T14:07:06.549Z",
   "source": "homes.co.jp",
   "type": "kodate_rent",
   "deal": "rent",
@@ -209,7 +209,7 @@
       "id": "ed558da16f31e61cdc5edabd6b669115b1d5d422",
       "url": "https://www.homes.co.jp/chintai/room/ed558da16f31e61cdc5edabd6b669115b1d5d422/",
       "title": "高野台戸建",
-      "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261127052504",
+      "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261128052402",
       "priceText": "25万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -255,7 +255,7 @@
         "yearBuilt": 2005,
         "builtText": "2005年9月",
         "structure": "木造",
-        "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261127052504",
+        "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15082%2F15082473%2F15082473_2.jpg%3F20261128052402",
         "shikikinText": "2ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -278,7 +278,7 @@
     {
       "id": "7bfb6b3044b29f84b044013caae285f8444573f5",
       "url": "https://www.homes.co.jp/chintai/room/7bfb6b3044b29f84b044013caae285f8444573f5/",
-      "title": "上馬4丁目戸建",
+      "title": "東急田園都市線 駒沢大学駅 徒歩13分の賃貸一戸建て",
       "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F8126%2F8126360%2F8126360_2.jpg%3F20261123153411",
       "priceText": "32万円",
       "madori": "3LDK",

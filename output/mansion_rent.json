@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-28T00:27:23.641Z",
+  "scrapedAt": "2026-11-28T14:08:54.249Z",
   "source": "homes.co.jp",
   "type": "mansion_rent",
   "deal": "rent",
@@ -120,16 +120,18 @@
     "houseAgeYearsMax": 35,
     "houseAgeQueryStep": 35
   },
-  "count": 15,
+  "count": 16,
   "delta": {
-    "addedCount": 0,
+    "addedCount": 1,
     "removedCount": 0,
-    "addedIds": [],
+    "addedIds": [
+      "023ece751047039471d9558e6a348ec739004bf1"
+    ],
     "removedIds": []
   },
   "dedupe": {
-    "before": 28,
-    "after": 15,
+    "before": 29,
+    "after": 16,
     "removedCount": 13,
     "clusters": 8,
     "removed": [
@@ -166,19 +168,11 @@
         "keptRichness": 27
       },
       {
-        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
-        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
-        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
-        "reason": "same_property_less_detail",
-        "richness": 26,
-        "keptRichness": 27
-      },
-      {
         "id": "f272529fc2463b5affd6ac7c5b7ec52d57fe7573",
         "url": "https://www.homes.co.jp/chintai/room/f272529fc2463b5affd6ac7c5b7ec52d57fe7573/",
         "keptId": "bad7ae10fdb632d62b7b71f83020168c7e44244c",
         "reason": "same_property_less_detail",
-        "richness": 25,
+        "richness": 27,
         "keptRichness": 27
       },
       {
@@ -198,14 +192,6 @@
         "keptRichness": 27
       },
       {
-        "id": "1444543e817ace3e603684dd5f42773b1773192c",
-        "url": "https://www.homes.co.jp/chintai/room/1444543e817ace3e603684dd5f42773b1773192c/",
-        "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
-        "reason": "same_property_less_detail",
-        "richness": 27,
-        "keptRichness": 28
-      },
-      {
         "id": "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "url": "https://www.homes.co.jp/chintai/room/333f90fe5701d4d791aab47eb543ba790895c3dd/",
         "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
@@ -216,6 +202,14 @@
       {
         "id": "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
         "url": "https://www.homes.co.jp/chintai/room/043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f/",
+        "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
+        "reason": "same_property_less_detail",
+        "richness": 27,
+        "keptRichness": 28
+      },
+      {
+        "id": "1444543e817ace3e603684dd5f42773b1773192c",
+        "url": "https://www.homes.co.jp/chintai/room/1444543e817ace3e603684dd5f42773b1773192c/",
         "keptId": "db3f4ff9246aeb6318b9880fce93880ae90c7246",
         "reason": "same_property_less_detail",
         "richness": 27,
@@ -236,10 +230,89 @@
         "reason": "same_property_less_detail",
         "richness": 25,
         "keptRichness": 28
+      },
+      {
+        "id": "1e7ac42c55f724a97d6eb92498cb7928ddb5af15",
+        "url": "https://www.homes.co.jp/chintai/room/1e7ac42c55f724a97d6eb92498cb7928ddb5af15/",
+        "keptId": "d872bcb981b75f733234051054b797ebaca1a317",
+        "reason": "same_property_less_detail",
+        "richness": 20,
+        "keptRichness": 27
       }
     ]
   },
   "listings": [
+    {
+      "id": "023ece751047039471d9558e6a348ec739004bf1",
+      "url": "https://www.homes.co.jp/chintai/room/023ece751047039471d9558e6a348ec739004bf1/",
+      "title": "レーヴ南田中",
+      "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F42e9ae09%2F971_170083_1_132000_132000.jpg%3Ft%3D20261023131835",
+      "priceText": "14.5万円",
+      "madori": "3LDK",
+      "landAreaText": null,
+      "buildingAreaText": "75.56m²",
+      "exclusiveAreaText": "75.56m²",
+      "builtText": "築34年",
+      "walkMinutes": 3,
+      "address": "東京都練馬区南田中3丁目8-25",
+      "managementFeeText": "8,000円",
+      "shikikinText": "1ヶ月",
+      "reikinText": "1ヶ月",
+      "guaranteeText": "-",
+      "shikibikiText": "-",
+      "availableText": "相談",
+      "deal": "rent",
+      "matchedVia": [
+        "station"
+      ],
+      "priceManYen": 14.5,
+      "reikinMonths": 1,
+      "reikinYen": null,
+      "shikikinMonths": 1,
+      "oneOffManYen": 43.5,
+      "oneOffAssumesAgentMonths": 1,
+      "exclusiveAreaM2": 75.56,
+      "buildingAreaM2": 75.56,
+      "buildingAgeYears": 33,
+      "detail": {
+        "landRight": null,
+        "leaseType": null,
+        "zoning": null,
+        "cityPlan": null,
+        "landUse": null,
+        "rebuildForbidden": false,
+        "freeholdMention": false,
+        "priceText": null,
+        "landAreaText": null,
+        "publishedText": "情報公開日\n\n2026/10/23",
+        "lat": 35.738617024814,
+        "lon": 139.61918892708,
+        "address": "東京都練馬区南田中3丁目8-25",
+        "postalCode": "1770035",
+        "yearBuilt": 1993,
+        "builtText": "1993年11月",
+        "structure": "RC(鉄筋コンクリート)",
+        "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F42e9ae09%2F971_170083_1_132000_132000.jpg%3Ft%3D20261023131835",
+        "shikikinText": "1ヶ月",
+        "reikinText": "1ヶ月",
+        "guaranteeText": "-",
+        "shikibikiText": "-",
+        "managementFeeText": "8,000円",
+        "availableText": "相談"
+      },
+      "lat": 35.738617024814,
+      "lon": 139.61918892708,
+      "locationAccuracy": "coordinates",
+      "googleMapsUrl": "https://www.google.com/maps?q=35.738617024814%2C139.61918892708",
+      "ward": "練馬区",
+      "wardEn": "Nerima-ku",
+      "yearBuilt": 1993,
+      "storeys": null,
+      "structure": "RC(鉄筋コンクリート)",
+      "publishedAt": "2026-10-23",
+      "publishedText": "情報公開日\n\n2026/10/23",
+      "isNew": true
+    },
     {
       "id": "28255fc40a67577ea6bb7b45ed4d7a72fc083c53",
       "url": "https://www.homes.co.jp/chintai/room/28255fc40a67577ea6bb7b45ed4d7a72fc083c53/",
@@ -389,7 +462,7 @@
       "id": "d872bcb981b75f733234051054b797ebaca1a317",
       "url": "https://www.homes.co.jp/chintai/room/d872bcb981b75f733234051054b797ebaca1a317/",
       "title": "都営新宿線 曙橋駅 徒歩3分の賃貸マンション",
-      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
+      "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
       "priceText": "26.5万円",
       "madori": "3LDK",
       "landAreaText": null,
@@ -427,7 +500,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/03",
+        "publishedText": "情報公開日\n\n2026/11/05",
         "lat": 35.69369207967,
         "lon": 139.72294162788,
         "address": "東京都新宿区市谷仲之町2-7",
@@ -435,7 +508,7 @@
         "yearBuilt": 2004,
         "builtText": "2004年10月",
         "structure": "RC(鉄筋コンクリート)",
-        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125638%2Frent%2F80991%2F2%2F1%2F4zq0.jpg",
+        "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F158732%2Frent%2F2310%2F2%2F1%2F45lx.jpg",
         "shikikinText": "1ヶ月",
         "reikinText": "1ヶ月",
         "guaranteeText": "-",
@@ -452,8 +525,8 @@
       "yearBuilt": 2004,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-03",
-      "publishedText": "情報公開日\n\n2026/11/03",
+      "publishedAt": "2026-11-05",
+      "publishedText": "情報公開日\n\n2026/11/05",
       "dedupedFrom": [
         "1e7ac42c55f724a97d6eb92498cb7928ddb5af15"
       ]
@@ -572,7 +645,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/10/05",
+        "publishedText": "情報公開日\n\n2026/08/06",
         "lat": 35.775446751384,
         "lon": 139.72273946672,
         "address": "東京都北区赤羽南１丁目1-10",
@@ -597,8 +670,8 @@
       "yearBuilt": 1998,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-10-05",
-      "publishedText": "情報公開日\n\n2026/10/05"
+      "publishedAt": "2026-08-06",
+      "publishedText": "情報公開日\n\n2026/08/06"
     },
     {
       "id": "5426cc222b3fd103a02d6e29328c798c0b8bf955",
@@ -744,9 +817,9 @@
       "publishedAt": "2026-09-08",
       "publishedText": "情報公開日\n\n2026/09/08",
       "dedupedFrom": [
-        "1444543e817ace3e603684dd5f42773b1773192c",
         "333f90fe5701d4d791aab47eb543ba790895c3dd",
         "043a58f3c2e984d2cc15fb8737fad65e8ff2cd1f",
+        "1444543e817ace3e603684dd5f42773b1773192c",
         "2d84e5a962d530d8e22b0abcfe9524f7663c90f4",
         "5720f0adaca481344af948ad6a872f4aff326430"
       ]
@@ -1006,7 +1079,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/04/27",
+        "publishedText": "情報公開日\n\n2026/06/11",
         "lat": 35.63580533495,
         "lon": 139.68398920204,
         "address": "東京都世田谷区下馬5丁目27-15",
@@ -1031,8 +1104,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-04-27",
-      "publishedText": "情報公開日\n\n2026/04/27",
+      "publishedAt": "2026-06-11",
+      "publishedText": "情報公開日\n\n2026/06/11",
       "dedupedFrom": [
         "cf143d3aa99c4fd61b473b9bd007523e0d4a091b"
       ]
@@ -1079,7 +1152,7 @@
         "freeholdMention": false,
         "priceText": null,
         "landAreaText": null,
-        "publishedText": "情報公開日\n\n2026/11/03",
+        "publishedText": "情報公開日\n\n2026/11/02",
         "lat": 35.635875904284,
         "lon": 139.65353317608,
         "address": "東京都世田谷区弦巻2丁目10-9",
@@ -1104,8 +1177,8 @@
       "yearBuilt": 2002,
       "storeys": null,
       "structure": "RC(鉄筋コンクリート)",
-      "publishedAt": "2026-11-03",
-      "publishedText": "情報公開日\n\n2026/11/03",
+      "publishedAt": "2026-11-02",
+      "publishedText": "情報公開日\n\n2026/11/02",
       "dedupedFrom": [
         "ff272115bcfe99ef931fa80e164e55899fb1d79e"
       ]

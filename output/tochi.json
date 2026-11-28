@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-28T00:24:01.177Z",
+  "scrapedAt": "2026-11-28T14:05:34.134Z",
   "source": "homes.co.jp",
   "type": "tochi",
   "deal": "buy",
@@ -110,11 +110,9 @@
   },
   "count": 9,
   "delta": {
-    "addedCount": 1,
+    "addedCount": 0,
     "removedCount": 0,
-    "addedIds": [
-      "b-1571620000352"
-    ],
+    "addedIds": [],
     "removedIds": []
   },
   "dedupe": {
@@ -246,7 +244,7 @@
     {
       "id": "b-37260180000005",
       "url": "https://www.homes.co.jp/tochi/b-37260180000005/",
-      "title": "PR土地北区西が丘二丁目売地",
+      "title": "",
       "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3726018%2Fsale%2F5%2F2%2F1%2Fyl13.jpg",
       "priceText": "4,380万円",
       "madori": null,
@@ -254,7 +252,7 @@
       "buildingAreaText": null,
       "exclusiveAreaText": null,
       "builtText": null,
-      "walkMinutes": 13,
+      "walkMinutes": null,
       "address": "東京都北区西が丘2丁目",
       "googleMapsUrl": "https://www.google.com/maps?q=35.765948975089%2C139.71392809908",
       "deal": "buy",
@@ -418,8 +416,7 @@
       "storeys": null,
       "structure": null,
       "publishedAt": "2026-09-05",
-      "publishedText": "情報公開日：2026/09/05（84日前 公開）",
-      "isNew": true
+      "publishedText": "情報公開日：2026/09/05（84日前 公開）"
     },
     {
       "id": "b-1004580046269",
